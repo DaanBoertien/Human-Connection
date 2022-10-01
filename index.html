@@ -5,19 +5,18 @@ title: Human Connection
 
 {% include nav.html %}
 <div class="container">
+  {% for member in site.team_members %}
   <div class="card">
     <div class="card-image">
-      <img
-        src="assets/images/upload/anne-boertien-visueel-procesbegeleider-zakelijk-tekenen-visueel-verslag-psycholoog.960x0.jpg"
-        alt="Anne Tekent"
-      />
+      <img src="{{member.photo_url}}" alt="{{member.photo_description}}" />
     </div>
     <div class="card-content">
-      <p class="bold">Anne Boertien</p>
-      <p><i class="fa fa-envelope" aria-hidden="true"></i> Anne@humanc.nl</p>
+      <p class="bold">{{member.name}}</p>
+      <p><i class="fa fa-envelope" aria-hidden="true"></i> {{member.email}}</p>
       <p>
-        <i class="fa-solid fa-mobile-screen-button"></i> +31 (0)6 57 74 2619
+        <i class="fa-solid fa-mobile-screen-button"></i> {{member.phonenumber}}
       </p>
     </div>
   </div>
+  {% endfor %}
 </div>

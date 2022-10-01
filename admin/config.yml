@@ -1,0 +1,189 @@
+# backend:
+#   name: github
+#   repo: DaanBoertien/First-Jekkyl-website
+
+backend:
+  name: git-gateway
+  branch: main
+
+# backend:
+#   name: git-gateway
+#   branch: master
+
+media_folder: assets/img/uploads/
+
+collections:
+  - name: "card"
+    label: "Teamleden"
+    files:
+      - name: "home"
+        label: "Home"
+        file: "_data/home.yml"
+        editor:
+          preview: false
+        fields:
+          - label: "Site Title"
+            name: "site-title"
+            widget: "string"
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Occupation 1 (NL)"
+            name: "title1"
+            widget: "string"
+          - label: "Occupation 2 (NL)"
+            name: "title2"
+            widget: "string"
+          - label: "Occupation 1 (EN)"
+            name: "title1-en"
+            widget: "string"
+          - label: "Occupation 2 (EN)"
+            name: "title2-en"
+            widget: "string"
+
+          - label: "Biografie Teaser (NL)"
+            name: "bio-teaser"
+            widget: "text"
+          - label: "Biography teaser (EN)"
+            name: "bio-teaser-en"
+            widget: "text"
+          - label: "YouTube ID"
+            name: "youtube-id"
+            widget: "string"
+          - label: "Caption"
+            name: "video-caption"
+            widget: "string"
+          - label: "Quote (NL)"
+            name: "quote"
+            widget: "text"
+          - label: "Quote Author"
+            name: "quote-author"
+            widget: "string"
+          - label: "Quote (EN)"
+            name: "quote-en"
+            widget: "text"
+          - label: "Quote Author (EN)"
+            name: "quote-author-en"
+            widget: "string"
+
+          - label: "Foto"
+            name: "last-image"
+            widget: "image"
+          - label: "Fotograaf"
+            name: "photographer"
+            widget: "string"
+          - label: "Footer"
+            name: "footer-text"
+            widget: "string"
+      - name: "biografie"
+        label: "Biografie"
+        file: "_data/biografie.yml"
+        editor:
+          preview: false
+        fields:
+          - label: "Biografie NL+EN"
+            name: "main"
+            widget: "list"
+            fields:
+              - label: "Alinea (NL)"
+                name: "alinea-nl"
+                widget: "text"
+              - label: "Alinea (EN)"
+                name: "alinea-en"
+                widget: "text"
+          - label: "Quote (NL)"
+            name: "quote-nl"
+            widget: "text"
+          - label: "Quote (EN)"
+            name: "quote-en"
+            widget: "text"
+          - label: "Quote Author"
+            name: "quote-author"
+            widget: "string"
+          - label: "Foto"
+            name: "image"
+            widget: "image"
+          - label: "Fotograaf"
+            name: "photographer"
+            widget: "string"
+      - name: "contact"
+        label: "Contact"
+        file: "_data/contact.yml"
+        editor:
+          preview: false
+        fields:
+          - label: "Content"
+            name: "content"
+            widget: "string"
+          - label: "Content EN"
+            name: "content-en"
+            widget: "string"
+      - name: "regie"
+        label: "Regie"
+        file: "_data/regie.yml"
+        editor:
+          preview: false
+        fields:
+          - label: Voorwoord (NL)
+            name: voorwoord-nl
+            widget: markdown
+          - label: Voorwoord (EN)
+            name: voorwoord-en
+            widget: markdown
+          - label: "Projecten"
+            label_singular: "Project"
+            name: "project"
+            widget: "list"
+            add_to_top: true
+            fields:
+              - label: "Titel (NL)"
+                name: "title-nl"
+                widget: "string"
+              - label: "Titel (EN)"
+                name: "title-en"
+                widget: "string"
+              - label: "Info (NL)"
+                name: "info-nl"
+                widget: "markdown"
+              - label: "Info (EN)"
+                name: "info-en"
+                widget: "markdown"
+              - label: "YouTube Id"
+                name: "youtube-id"
+                widget: "string"
+                required: false
+              - label: "Foto"
+                name: "url"
+                widget: "image"
+                required: false
+              - label: "Fotograaf"
+                name: "photographer"
+                widget: "string"
+                required: false
+      - name: "donquichot"
+        label: "Don Quichot"
+        file: "_data/donquichot.yml"
+        editor:
+          preview: false
+        fields:
+          - label: Voorwoord (NL)
+            name: preface-nl
+            widget: markdown
+          - label: Voorwoord (EN)
+            name: preface-en
+            widget: markdown
+          - label: "Hoofdstukken"
+            label_singular: "Hoofdstuk"
+            name: "video"
+            widget: "list"
+            add_to_top: false
+            fields:
+              - label: "Titel (NL)"
+                name: "title"
+                widget: "string"
+              - label: "Titel (EN)"
+                name: "title-en"
+                widget: "string"
+              - label: "YouTube Id"
+                name: "youtube-id"
+                widget: "string"

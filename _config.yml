@@ -1,6 +1,9 @@
 baseurl: "/"
 
 permalink: pretty
+
+collections:
+  team_members:
 # timezone: Europe/Amsterdam
 
 # kramdown:
