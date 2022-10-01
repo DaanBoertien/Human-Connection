@@ -10,7 +10,7 @@ backend:
 #   name: git-gateway
 #   branch: master
 
-media_folder: assets/img/uploads/
+media_folder: assets/images/uploads/
 
 collections:
   - name: "team_members"
