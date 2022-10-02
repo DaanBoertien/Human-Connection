@@ -1,7 +1,7 @@
 ---
-name: Dick Waterink
-email: dick@humanc.nl
-phonenumber: +31 5678765
-photo_url: /assets/images/upload/137621573_2978316399065984_3563719731696773950_n.jpg
-photo_description: Dick met Pien
+name: Meggie van de Bunt
+email: meggie@humanc.nl
+phonenumber: 06 12 34 56 78
+photo_url: /assets/images/upload/meggie-vrolijk.jpg
+photo_description: Meggie
 ---
