@@ -1,7 +1,7 @@
 ---
-name: Daan Boertien
-email: Daan@humanc.nl
-phonenumber: +31 (0)6 17054824
-photo_url: /assets/images/upload/klein_daan_zondermuur_kleur_pmt8241.jpg
-photo_description: Daan met een muur
+name: Marit Weiss
+email: marit@humanc.nl
+phonenumber: 06 12 34 56 78
+photo_url: /assets/images/upload/keuze-marit-buiten-1168x526.jpg
+photo_description: "Marit "
 ---
