@@ -121,4 +121,16 @@ template { display: none; }
 
 .card:hover img { transform: scale(119%); }
 
+.Donkerblauw { background-color: darkblue; }
+
+.Lichtblauw { background-color: lightblue; }
+
+.Geel { background-color: yellow; }
+
+.Groen { background-color: green; }
+
+.grijs { background-color: lightgray; }
+
+.Lichtblauw { background-color: rosybrown; }
+
 /*# sourceMappingURL=styles.css.map */

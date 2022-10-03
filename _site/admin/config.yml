@@ -31,3 +31,7 @@ collections:
           name: "photo_description",
           widget: "string",
         }
+      - label: "Achtergrondkleur"
+        name: "bg_color"
+        widget: "select"
+        options: ["Donkerblauw", "Lichtblauw", "Groen", "Grijs", "Geel", "Rood"]

@@ -6,7 +6,7 @@ title: Human Connection
 {% include nav.html %}
 <div class="container">
   {% for member in site.team_members %}
-  <div class="card">
+  <div class="card {{member.bg_color}}">
     <div class="card-image">
       <img src="{{member.photo_url}}" alt="{{member.photo_description}}" />
     </div>
