@@ -107,6 +107,8 @@ template { display: none; }
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
 
+:root { --clr-darkblue: rgba(16,77,152,255); --clr-lightblue: rgba(78,184,232,255); --clr-green: rgba(78,184,232,255); --clr-grey: rgba(78,184,232,255); --clr-yellow: rgba(254,202,38,255); --clr-red: rgba(243,125,112,255); }
+
 .card { background: #0bbbb4; color: white; max-width: 200px; margin-inline: auto; margin-top: 3em; line-height: 1; font-family: 'Inter Tight', sans-serif; font-weight: 200; border-radius: 0px 30px 0px 30px; overflow: hidden; }
 
 .card img { width: 100%; height: 180px; object-fit: cover; transition: transform ease-out .2s; }
@@ -121,16 +123,16 @@ template { display: none; }
 
 .card:hover img { transform: scale(119%); }
 
-.Donkerblauw { background-color: darkblue; }
+.Donkerblauw { background-color: var(--clr-darkblue); }
 
-.Lichtblauw { background-color: lightblue; }
+.Lichtblauw { background-color: var(--clr-lightblue); }
 
-.Geel { background-color: yellow; }
+.Geel { background-color: var(--clr-yellow); }
 
-.Groen { background-color: green; }
+.Groen { background-color: var(--clr-green); }
 
-.Grijs { background-color: lightgray; }
+.Grijs { background-color: var(--clr-grey); }
 
-.Rood { background-color: rosybrown; }
+.Rood { background-color: var(-clr-red); }
 
 /*# sourceMappingURL=styles.css.map */

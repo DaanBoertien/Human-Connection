@@ -42,24 +42,24 @@
 }
 
 .Donkerblauw {
-    background-color: darkblue;
+    background-color: var(--clr-darkblue);
 }
 
 .Lichtblauw {
-    background-color: lightblue;
+    background-color: var(--clr-lightblue);
 }
 .Geel {
-    background-color: yellow;
+    background-color: var(--clr-yellow);
 }
 
 .Groen {
-    background-color: green;
+    background-color: var(--clr-green);
 }
 
 .Grijs {
-    background-color: lightgray;
+    background-color: var(--clr-grey);
 }
 
 .Rood {
-    background-color: rosybrown;
+    background-color: var(-clr-red);
 }
