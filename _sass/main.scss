@@ -7,9 +7,14 @@
     line-height: 1;
     font-family: 'Inter Tight', sans-serif;
     font-weight: 200;
-    border-radius: 0px 30px 0px 30px;
+    border-radius: 0px var(--border-radius) 0px var(--border-radius);
     overflow: hidden;
+    transition: border-radius 0.2s ease-out;
 
+}
+
+.card:hover {
+    border-radius: var(--border-radius) 0px var(--border-radius) 0px;
 }
 
 .card img{
@@ -38,7 +43,7 @@
     cursor: pointer;
 }
 .card:hover img {
-    transform: scale(119%);
+    transform: scale(105%);
 }
 
 .Donkerblauw {
