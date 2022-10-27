@@ -109,6 +109,16 @@ template { display: none; }
 
 :root { --clr-darkblue: rgba(16,77,152,255); --clr-lightblue: rgba(78,184,232,255); --clr-green: rgba(78,184,232,255); --clr-grey: rgba(78,184,232,255); --clr-yellow: rgba(254,202,38,255); --clr-red: rgba(243,125,112,255); --border-radius: 30px; }
 
+.dropdown { position: absolute; right: 5%; overflow: hidden; }
+
+.dropdown .dropbtn { font-size: 16px; border: none; outline: none; background-color: inherit; font-family: inherit; margin: 0; }
+
+.dropdown-content { display: none; background-color: #f9f9f9; min-width: 50px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); z-index: 1; }
+
+.dropdown-content a { float: none; color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
+
+.show { display: block; }
+
 .card { background: #0bbbb4; color: white; max-width: 200px; margin-inline: auto; margin-top: 3em; line-height: 1; font-family: 'Inter Tight', sans-serif; font-weight: 200; border-radius: 0px var(--border-radius) 0px var(--border-radius); overflow: hidden; transition: border-radius 0.2s ease-out; }
 
 .card:hover { border-radius: var(--border-radius) 0px var(--border-radius) 0px; }
