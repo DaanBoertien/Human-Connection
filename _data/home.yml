@@ -1,49 +1,144 @@
----
-slogan: ""
-landing-tekt: ""
-waar-wij-voor-staan: ""
-waar-wijvoor-staan-tekst: ""
-waarde-1-titel: ""
-waarde-1-tekst: ""
-waarde-1-afbeelding: ""
-waarde-2-titel: ""
-waarde-2-tekst: ""
-waarde-2-afbeelding: ""
-waarde-3-titel: ""
-waarde-3-tekst: ""
-waarde-3-afbeelding: ""
-wat-wij-doen: ""
-wat-wij-doen-tekst: ""
-wat-wij-doen-1-titel: ""
-wat-wij-doen-1-tekst: ""
-wat-wij-doen-1-contact: ""
-wat-wij-doen-1-button: ""
-wat-wij-doen-2-titel: ""
-wat-wij-doen-2-tekst: ""
-wat-wij-doen-2-contact: ""
-wat-wij-doen-2-button: ""
-wat-wij-doen-3-titel: ""
-wat-wij-doen-3-tekst: ""
-wat-wij-doen-3-contact: ""
-wat-wij-doen-3-button: ""
-hoe-wij-werken: ""
-wie-wij-zijn: ""
-actievraag: ""
-actievraag-subtitel: ""
-actievraag-button: ""
-partners-titel: ""
-logos:
-  - naam-bedrijf: ""
-    logo-bedrijf: ""
-contact-titel: ""
-contact-omschrijving: ""
-contact-naam: ""
-contact-email: ""
-contact-onderwerp: ""
-contact-bericht: ""
-contact-button: ""
-uitnodiging-adres: ""
-postcode: ""
-afbeelding-kantoor: ""
----
+slogan: Veranderen is mensenwerk
+landing-tekt: |-
+  Wij begeleiden organisaties en professionals zich
 
+  te ontwikkelen naar een gezonde en effectieve werk-
+  cultuur. Met onze frisse blik hebben we de afgelopen
+
+  25 jaar al veel organisaties geholpen proactief te
+  worden. Dat doen we altijd op maat, met oog voor wat
+  de mens(en) beweegt. Daarom zeggen wij dan ook:
+  "Veranderen is mensenwerk".
+waar-wij-voor-staan: Waar wij voor staan
+waar-wijvoor-staan-tekst: |-
+  Congruentie in zeggen & doen is essentieel voor ons. Zowel hoe we onderling
+  samenwerken in ons bedrijf, als hoe we samenwerken met onze opdrachtgevers.
+
+  Aan sommige zaken valt niet te tornen. Wij zijn:
+waarde-1-titel: Mensgericht
+waarde-1-tekst: |-
+  Menselijker maken van de werk-
+  vloer/persoonlijk leiderschap/gelo-
+  ven in ontwikkeling. Autonomie.
+
+  Eigen regie. Zelf ontplooiing. Jezelf
+
+  als instrument. Dubbele hoeveel-
+  heid dus Lorem ipsum dolor sit
+
+  amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt
+  ut labore et dolore magna aliqua.
+waarde-1-afbeelding: /assets/images/upload/f7247289a0b75283c494c26bad7141f7.png
+waarde-2-titel: Transparant
+waarde-2-tekst: |-
+  Menselijker maken van de werk-
+  vloer/persoonlijk leiderschap/gelo-
+  ven in ontwikkeling. Autonomie.
+
+  Eigen regie. Zelf ontplooiing. Jezelf
+
+  als instrument. Dubbele hoeveel-
+  heid dus Lorem ipsum dolor sit
+
+  amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt
+  ut labore et dolore magna aliqua.
+waarde-2-afbeelding: /assets/images/upload/f7247289a0b75283c494c26bad7141f7.png
+waarde-3-titel: Systemisch
+waarde-3-tekst: |-
+  Menselijker maken van de werk-
+  vloer/persoonlijk leiderschap/gelo-
+  ven in ontwikkeling. Autonomie.
+
+  Eigen regie. Zelf ontplooiing. Jezelf
+
+  als instrument. Dubbele hoeveel-
+  heid dus Lorem ipsum dolor sit
+
+  amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt
+  ut labore et dolore magna aliqua.
+waarde-3-afbeelding: /assets/images/upload/f7247289a0b75283c494c26bad7141f7.png
+wat-wij-doen: Wat wij doen
+wat-wij-doen-tekst: >-
+  Introducerende tekst: We werken met een organisatiebrede/holistische blik en
+
+  werken vanuit een aantal expertises zoals Lorem ipsum dolor sit amet, consec
+
+  tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+wat-wij-doen-1-titel: Organisatieontwikkeling & teamontwikkeling
+wat-wij-doen-1-tekst: |-
+  We adviseren en begeleiden teams
+  en organisaties bij veranderingen.
+  Van kortere (teambuilding en
+
+  proactief gedrag) tot langere tra-
+  jecten (blijvende cultuurverande-
+  ring of reorganisaties) en 'alles
+
+  daartussenin'. Ook helpen we bij de
+  transformatie naar meer zelfsturing.
+wat-wij-doen-1-contact: |-
+  Meer weten?
+  Neem contact op met Sjef.
+wat-wij-doen-1-button: Contact met Sjef
+wat-wij-doen-2-titel: Interim management
+wat-wij-doen-2-tekst: |-
+  We nemen voor een bepaalde tijd
+  het roer over of zijn een stevige
+
+  'wingman' van een team of organi-
+  satie. Een aantal van ons is daarbij
+
+  gespecialiseerd in HR-interim of
+  IT-interimmanagement.
+wat-wij-doen-2-contact: |-
+  Meer weten?
+  Neem contact op met Meggie.
+wat-wij-doen-2-button: Contact met Meggie
+wat-wij-doen-3-titel: Leren & ontwikkelen
+wat-wij-doen-3-tekst: |-
+  We helpen organisaties te komen
+  tot een gezond leerklimaat. Met
+  korte interventies en workshops, of
+
+  met het neerzetten van een struc-
+  tuur waarin formeel en informeel
+
+  leren continu 'gewoon wordt'.
+  We organiseren ontwikkeltrajecten
+
+  op maat op het gebied van per-
+  soonlijk leiderschap.
+wat-wij-doen-3-contact: |-
+  Meer weten?
+  Neem contact op met Marit.
+wat-wij-doen-3-button: Contact met Marit
+hoe-wij-werken: Meer weten over hóe wij werken?
+wie-wij-zijn: Wie wij zijn
+actievraag: Waar loop jij tegenaan in je organisatie?
+actievraag-subtitel: Ontdek hoe wij hierbij kunnen helpen.
+actievraag-button: Kom in contact met ons
+partners-titel: Samengewerkt met o.a.
+logos:
+  - naam-bedrijf: Bedrijf 1
+    logo-bedrijf: /assets/images/upload/f7247289a0b75283c494c26bad7141f7.png
+contact-titel: Contact
+contact-omschrijving: |-
+  We komen graag met je in contact. Bel of mail direct een van
+  onze collega’s of vul onderstaand formulier in. Lorem ipsum
+  dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua.
+contact-naam: Naam
+contact-email: E-mail
+contact-onderwerp: Onderwerp
+contact-bericht: Vraag/bericht
+contact-button: Verzend bericht
+uitnodiging: "Of kom langs in ons gezellige/scheve/ pittoreske Amsterdamse kantoor:"
+postcode: 1013 GA Amsterdam
+uitnodiging-adres: ""
+adres: Singel 2a
+afbeelding-kantoor: Afbeelding Kantoor
