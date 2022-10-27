@@ -27,12 +27,12 @@ collections:
       - { label: "Emailadres", name: "email", widget: "string" }
       - { label: "Telefoonnummer", name: "phonenumber", widget: "string" }
       - { label: "Foto", name: "photo_url", widget: "image" }
-      - { label: "Omschrijving", name: "summary", widget: "markdown" }
       - {
           label: "Omschrijving foto",
           name: "photo_description",
           widget: "string",
         }
+      - { label: "Omschrijving", name: "summary", widget: "markdown" }
       - label: "Achtergrondkleur"
         name: "bg_color"
         widget: "select"
