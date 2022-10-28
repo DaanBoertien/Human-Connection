@@ -1,23 +1,23 @@
-<!-- <div id="show-nav" class="dropbtn">
-  <div id="dropdown" onmouseover="myFunction(this)">Menu Name</div>
-
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#option1">Option 1</a>
-    <a href="#option2">Option 2</a>
-    <a href="#option3">Option 3</a>
-  </div>
-</div>
-
-<div
-  id="show-nav"
-  class="dropbtn"
-  style="margin-left: 300px; margin-top: -16px"
->
-  <div id="dropdown" onmouseover="myFunction(this)">Menu Name</div>
-
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#option1">Option 1</a>
-    <a href="#option2">Option 2</a>
-    <a href="#option3">Option 3</a>
-  </div>
-</div> -->
+<img src="button" alt="" />
+<nav role="navigation">
+  <ul>
+    <li>
+      <a href="#" aria-haspopup="true">Wie wij zijn</a>
+      <ul class="dropdown" aria-label="submenu">
+        {% assign members_by_name = site.team | sort: 'name' %} {% for member in
+        members_by_name %}
+        <li><a href="https://www.google.com">{{member.name}}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+    <li>
+      <a href="#" aria-haspopup="true">Wat wij doen</a>
+      <ul class="dropdown" aria-label="submenu">
+        <li><a href="#">Sub-1</a></li>
+        <li><a href="#">Sub-2</a></li>
+        <li><a href="#">Sub-3</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>

@@ -3,7 +3,8 @@ baseurl: "/"
 permalink: pretty
 
 collections:
-  team_members:
+  team:
+    output: true
 # timezone: Europe/Amsterdam
 
 # kramdown:

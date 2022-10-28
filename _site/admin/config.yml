@@ -22,7 +22,14 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Naam", name: "name", widget: "string" }
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "teammembers",
+        }
+      - { label: "Slug", name: "slug", widget: "hidden", default: ":title" }
+      - { label: "Naam", name: "title", widget: "string" }
       - { label: "Functie", name: "function", widget: "string" }
       - { label: "Emailadres", name: "email", widget: "string" }
       - { label: "Telefoonnummer", name: "phonenumber", widget: "string" }

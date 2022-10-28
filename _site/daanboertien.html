@@ -1,13 +1,10 @@
----
----
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{page.title}}</title>
+    <title>Marit Weiss</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +26,38 @@
     />
   </head>
   <body>
-    {% include nav.html %} {{ content }} {% include footer.html %}
+    <img src="button" alt="" />
+<nav role="navigation">
+  <ul>
+    <li>
+      <a href="#" aria-haspopup="true">Wie wij zijn</a>
+      <ul class="dropdown" aria-label="submenu">
+         
+        <li><a href="https://www.google.com"></a></li>
+        
+        <li><a href="https://www.google.com"></a></li>
+        
+        <li><a href="https://www.google.com"></a></li>
+        
+        <li><a href="https://www.google.com"></a></li>
+        
+      </ul>
+    </li>
+    <li>
+      <a href="#" aria-haspopup="true">Wat wij doen</a>
+      <ul class="dropdown" aria-label="submenu">
+        <li><a href="#">Sub-1</a></li>
+        <li><a href="#">Sub-2</a></li>
+        <li><a href="#">Sub-3</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+ 
+
+ <p>Footer</p>
+
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", (user) => {

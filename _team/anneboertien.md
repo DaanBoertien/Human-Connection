@@ -1,5 +1,5 @@
 ---
-name: Anne Boertien
+title: Anne Boertien
 function: "-"
 email: anne@humanc.nl
 phonenumber: 06 36 25 62 32
@@ -15,4 +15,8 @@ summary: >-
   Anderen omschrijven mij als warm en oprecht in relaties, scherp op de inhoud, en praktisch en creatief in de uitvoering.
 photo_description: Anne tekent
 bg_color: Lichtblauw
+layout: teammembers
+permalink: :title
 ---
+
+Anne doet dit en dit
