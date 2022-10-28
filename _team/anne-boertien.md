@@ -1,9 +1,11 @@
 ---
+layout: teammembers
 title: Anne Boertien
 function: "-"
 email: anne@humanc.nl
 phonenumber: 06 36 25 62 32
-photo_url: assets/images/upload/anne-boertien-visueel-procesbegeleider-zakelijk-tekenen-visueel-verslag-psycholoog.960x0.jpg
+photo_url: /assets/images/upload/anne-boertien-visueel-procesbegeleider-zakelijk-tekenen-visueel-verslag-psycholoog.960x0.jpg
+photo_description: Anne tekent
 summary: >-
   Potentie maximaal benutten en mensen in beweging brengen, dat zijn **mijn**
   belangrijkste drijfveren in **mijn** werk.
@@ -13,9 +15,7 @@ summary: >-
 
 
   Anderen omschrijven mij als warm en oprecht in relaties, scherp op de inhoud, en praktisch en creatief in de uitvoering.
-photo_description: Anne tekent
 bg_color: Lichtblauw
-layout: teammembers
 ---
 
 Anne doet dit en dit
