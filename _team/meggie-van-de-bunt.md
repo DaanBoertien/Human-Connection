@@ -8,5 +8,4 @@ photo_url: /assets/images/upload/meggie-vrolijk.jpg
 photo_description: Meggie
 summary: O﻿mschrijving
 bg_color: Geel
-permalink: :title
 ---

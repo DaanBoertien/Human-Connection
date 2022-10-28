@@ -8,5 +8,4 @@ photo_url: /assets/images/upload/keuze-marit-buiten-1168x526.jpg
 photo_description: "Marit "
 summary: D﻿oet dingen
 bg_color: Rood
-permalink: :title
 ---

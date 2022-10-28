@@ -8,5 +8,4 @@ photo_url: /assets/images/upload/keuze-gerke-buiten-1168x526.jpg
 photo_description: gerke
 summary: a﻿sdf
 bg_color: Donkerblauw
-permalink: :title
 ---
