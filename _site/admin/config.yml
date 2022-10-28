@@ -17,8 +17,8 @@ collections:
     label_singular: "Teamlid"
     folder: "_team/"
     create: true
-    summary: "{{name}}"
-    slug: "{{name}}"
+    summary: "{{title}}"
+    slug: "{{title}}"
     editor:
       preview: false
     fields:
@@ -28,7 +28,6 @@ collections:
           widget: "hidden",
           default: "teammembers",
         }
-      - { label: "Slug", name: "slug", widget: "hidden", default: ":title" }
       - { label: "Naam", name: "title", widget: "string" }
       - { label: "Functie", name: "function", widget: "string" }
       - { label: "Emailadres", name: "email", widget: "string" }
