@@ -12,10 +12,10 @@ backend:
 media_folder: assets/images/upload/
 
 collections:
-  - name: "team_members"
+  - name: "team"
     label: "Teamleden"
     label_singular: "Teamlid"
-    folder: "_team_members/"
+    folder: "_team/"
     create: true
     summary: "{{name}}"
     slug: "{{name}}"
