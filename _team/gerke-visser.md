@@ -1,6 +1,6 @@
 ---
 layout: teammembers
-title: Gerke Visser
+title: Gerke Visser Extra
 function: "-"
 email: gerke@humanc.nl
 phonenumber: 06 12 34 56 78
