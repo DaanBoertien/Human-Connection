@@ -4,9 +4,9 @@
     <li>
       <a href="#" aria-haspopup="true">Wie wij zijn</a>
       <ul class="dropdown" aria-label="submenu">
-        {% assign members_by_name = site.team | sort: 'name' %} {% for member in
-        members_by_name %}
-        <li><a href="https://www.google.com">{{member.name}}</a></li>
+        {% assign members_by_name = site.team | sort: 'title' %} {% for member
+        in members_by_name %}
+        <li><a href="/team/{{member.slug}}">{{member.title}}</a></li>
         {% endfor %}
       </ul>
     </li>
