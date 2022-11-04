@@ -77,22 +77,13 @@ title: Human Connection
         </p>
       </div>
 
-      <h2>{{site.data.home.wie-wij-zijn}}</h2>
+      <h2 class="wiewijzijntitle">{{site.data.home.wie-wij-zijn}}</h2>
       {% for member in site.team %}
-      <div class="card {{member.bg_color}}">
-        <div class="card-image">
-          <img src="{{member.photo_url}}" alt="{{member.photo_description}}" />
-        </div>
-        <div class="card-content">
-          <p class="bold">{{member.name}}</p>
-          <p>
-            <i class="fa fa-envelope" aria-hidden="true"></i> {{member.email}}
-          </p>
-          <p>
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            {{member.phonenumber}}
-          </p>
-        </div>
+      <div class="photo">
+        <img src="{{member.photo_url}}" alt="{{member.photo_description}}" />
+
+        <p class="bold tight-text member-title">{{member.title}}</p>
+        <p class="tight-text member-function">{{member.function}}</p>
       </div>
       {% endfor %}
     </div>

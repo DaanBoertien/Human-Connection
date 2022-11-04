@@ -74,6 +74,45 @@ body {
     padding-top: 4em;
 }
 
+.wiewijzijntitle {
+    color: var(--clr-darkblue);
+    margin-top: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.member-title{
+    margin-bottom: 0;
+}
+
+.member-function {
+    margin-top: 0;
+    margin-bottom: 3em;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo img {
+    width: 50vw;
+    height: 50vw;
+    object-fit: cover;
+    transition: border-radius 0.2s ease-out;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.photo img:hover {
+    border-top-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0;
+
+}
+
 
 
 .card {

@@ -555,6 +555,18 @@ body { height: 100%; }
 
 .wwdfirstitem { padding-top: 4em; }
 
+.wiewijzijntitle { color: var(--clr-darkblue); margin-top: 2em; text-align: center; margin-bottom: 2em; }
+
+.member-title { margin-bottom: 0; }
+
+.member-function { margin-top: 0; margin-bottom: 3em; }
+
+.photo { display: flex; flex-direction: column; align-items: center; }
+
+.photo img { width: 50vw; height: 50vw; object-fit: cover; transition: border-radius 0.2s ease-out; border-top-right-radius: var(--border-radius); border-bottom-left-radius: var(--border-radius); }
+
+.photo img:hover { border-top-left-radius: var(--border-radius); border-bottom-right-radius: var(--border-radius); border-top-right-radius: 0px; border-bottom-left-radius: 0; }
+
 .card { background: #0bbbb4; color: white; max-width: 200px; margin-top: 3em; line-height: 1; font-family: 'Inter Tight', sans-serif; font-weight: 200; border-radius: 0px var(--border-radius) 0px var(--border-radius); overflow: hidden; transition: border-radius 0.2s ease-out; }
 
 .card:hover { border-radius: var(--border-radius) 0px var(--border-radius) 0px; }
@@ -586,5 +598,21 @@ body { height: 100%; }
 .btn:hover { cursor: pointer; }
 
 .btn a { text-decoration: none; font-weight: 500; }
+
+.Donkerblauw { background-color: var(--clr-darkblue); }
+
+.Lichtblauw { background-color: var(--clr-lightblue); }
+
+.Geel { background-color: var(--clr-yellow); }
+
+.Groen { background-color: var(--clr-green); }
+
+.Grijs { background-color: var(--clr-grey); }
+
+.Rood { background-color: var(-clr-red); }
+
+.bold { font-weight: 500; }
+
+.tight-text { line-height: 1.0; }
 
 /*# sourceMappingURL=styles.css.map */

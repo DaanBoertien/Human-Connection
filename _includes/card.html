@@ -1,0 +1,15 @@
+{% for member in site.team %}
+<div class="card {{member.bg_color}}">
+  <div class="card-image">
+    <img src="{{member.photo_url}}" alt="{{member.photo_description}}" />
+  </div>
+  <div class="card-content">
+    <p class="bold">{{member.name}}</p>
+    <p><i class="fa fa-envelope" aria-hidden="true"></i> {{member.email}}</p>
+    <p>
+      <i class="fa-solid fa-mobile-screen-button"></i>
+      {{member.phonenumber}}
+    </p>
+  </div>
+</div>
+{% endfor %}
