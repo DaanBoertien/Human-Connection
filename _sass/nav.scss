@@ -17,12 +17,15 @@ nav {
   border-radius: 0px 0px 30px 0px;
 }
 
-.extracorner {
+.extracorner::after {
   position: absolute;
-  top: 92.28px;
+  content: '';
+  top: 100%;
   left: 0;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
+  background-image: url('/assets/images/upload/roundedcornerFIRSTDRAFT.png')
+  // clip-path: inset(0% 45% 0% 45% round 100px);
 }
 
 

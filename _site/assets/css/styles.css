@@ -111,13 +111,13 @@ template { display: none; }
 
 body { font-family: 'Inter', sans-serif; }
 
-p { font-weight: 300; }
+p { font-weight: 300; line-height: 1.6; }
 
 a { text-decoration: none; }
 
 nav { display: flex; padding: 1em; justify-content: space-between; justify-items: center; justify-self: auto; background: white; position: absolute; top: 0; left: 0; right: 2em; z-index: 1000; border-radius: 0px 0px 30px 0px; }
 
-.extracorner { position: absolute; top: 92.28px; left: 0; width: 30px; height: 30px; }
+.extracorner::after { position: absolute; content: ''; top: 100%; left: 0; width: 60px; height: 60px; background-image: url("/assets/images/upload/roundedcornerFIRSTDRAFT.png"); }
 
 nav img { max-width: 50%; }
 
