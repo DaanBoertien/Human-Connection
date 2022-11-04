@@ -535,6 +535,8 @@ body { height: 100%; }
 
 .landing { display: flex; flex-direction: column-reverse; background-color: var(--clr-green); color: white; padding-bottom: var(--spacer-small); }
 
+.vision { color: var(--clr-darkblue); text-align: center; padding: 2em; }
+
 .card { background: #0bbbb4; color: white; max-width: 200px; margin-top: 3em; line-height: 1; font-family: 'Inter Tight', sans-serif; font-weight: 200; border-radius: 0px var(--border-radius) 0px var(--border-radius); overflow: hidden; transition: border-radius 0.2s ease-out; }
 
 .card:hover { border-radius: var(--border-radius) 0px var(--border-radius) 0px; }
