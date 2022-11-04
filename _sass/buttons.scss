@@ -1,0 +1,38 @@
+.btn {
+    
+    border-radius: 100px;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    display: inline-block;
+    
+}
+
+.btn-outline {
+    border: 2px solid black;
+}
+
+.btn-full {
+    background-color: var(--clr-darkblue);
+    border: 2px solid var(--clr-darkblue);
+    color: white;
+}
+
+.btn-full a {
+    color: white;
+}
+
+.btn-outline a {
+    color: black;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+    
+    font-weight: 500;
+}

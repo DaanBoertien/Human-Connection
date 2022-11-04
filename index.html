@@ -24,66 +24,78 @@ title: Human Connection
       <p>{{site.data.home.waar-wijvoor-staan-tekst}}</p>
     </div>
     <div class="wijzijn">
-      <div>
-        <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-        <p>{{site.data.home.waarde-1-titel}}</p>
-        <p>{{site.data.home.waarde-1-tekst}}</p>
-      </div>
-      <div>
-        <img src="{{site.data.home.waarde-2-afbeelding}}" alt="" />
-        <p>{{site.data.home.waarde-2-titel}}</p>
-        <p>{{site.data.home.waarde-2-tekst}}</p>
-      </div>
-      <div>
-        <img src="{{site.data.home.waarde-3-afbeelding}}" alt="" />
-        <p>{{site.data.home.waarde-3-titel}}</p>
-        <p>{{site.data.home.waarde-3-tekst}}</p>
+      <div class="innercontainer">
+        <div class="waardes">
+          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+          <h3>{{site.data.home.waarde-1-titel}}</h3>
+          <p>{{site.data.home.waarde-1-tekst}}</p>
+        </div>
+        <div class="waardes">
+          <img src="{{site.data.home.waarde-2-afbeelding}}" alt="" />
+          <h3>{{site.data.home.waarde-2-titel}}</h3>
+          <p>{{site.data.home.waarde-2-tekst}}</p>
+        </div>
+        <div class="waardes">
+          <img src="{{site.data.home.waarde-3-afbeelding}}" alt="" />
+          <h3>{{site.data.home.waarde-3-titel}}</h3>
+          <p>{{site.data.home.waarde-3-tekst}}</p>
+        </div>
       </div>
     </div>
     <div class="watwijdoen">
       <h2>{{site.data.home.wat-wij-doen}}</h2>
       <p>{{site.data.home.wat-wij-doen-tekst}}</p>
     </div>
-    <div class="watwijdoenopsomming">
-      <div>
-        <p>{{site.data.home.wat-wij-doen-1-titel}}</p>
-        <p>{{site.data.home.wat-wij-doen-1-tekst}}</p>
-        <p>{{site.data.home.wat-wij-doen-1-contact}}</p>
-        <p>{{site.data.home.wat-wij-doen-1-button}}</p>
+    <div class="innercontainer">
+      <div class="watwijdoenopsomming">
+        <div>
+          <h3 class="wwdfirstitem">{{site.data.home.wat-wij-doen-1-titel}}</h3>
+          <p>{{site.data.home.wat-wij-doen-1-tekst}}</p>
+          <p>{{site.data.home.wat-wij-doen-1-contact | markdownify}}</p>
+          <p class="btn btn-outline">
+            <a href="#">{{site.data.home.wat-wij-doen-1-button}}</a>
+          </p>
+        </div>
+        <div>
+          <h3>{{site.data.home.wat-wij-doen-2-titel}}</h3>
+          <p>{{site.data.home.wat-wij-doen-2-tekst}}</p>
+          <p>{{site.data.home.wat-wij-doen-2-contact | markdownify}}</p>
+          <p class="btn btn-outline">
+            <a href="#">{{site.data.home.wat-wij-doen-2-button}}</a>
+          </p>
+        </div>
+        <div>
+          <h3>{{site.data.home.wat-wij-doen-3-titel}}</h3>
+          <p>{{site.data.home.wat-wij-doen-3-tekst}}</p>
+          <p>{{site.data.home.wat-wij-doen-3-contact | markdownify}}</p>
+          <p class="btn btn-outline">
+            <a href="">{{site.data.home.wat-wij-doen-3-button}}</a>
+          </p>
+        </div>
+        <p class="btn btn-full">
+          <a href="#">{{site.data.home.hoe-wij-werken}}</a>
+        </p>
       </div>
-      <div>
-        <p>{{site.data.home.wat-wij-doen-2-titel}}</p>
-        <p>{{site.data.home.wat-wij-doen-2-tekst}}</p>
-        <p>{{site.data.home.wat-wij-doen-2-contact}}</p>
-        <p>{{site.data.home.wat-wij-doen-2-button}}</p>
-      </div>
-      <div>
-        <p>{{site.data.home.wat-wij-doen-3-titel}}</p>
-        <p>{{site.data.home.wat-wij-doen-3-tekst}}</p>
-        <p>{{site.data.home.wat-wij-doen-3-contact}}</p>
-        <p>{{site.data.home.wat-wij-doen-3-button}}</p>
-      </div>
-      <p>{{site.data.home.hoe-wij-werken}}</p>
-    </div>
 
-    <h2>{{site.data.home.wie-wij-zijn}}</h2>
-    {% for member in site.team %}
-    <div class="card {{member.bg_color}}">
-      <div class="card-image">
-        <img src="{{member.photo_url}}" alt="{{member.photo_description}}" />
+      <h2>{{site.data.home.wie-wij-zijn}}</h2>
+      {% for member in site.team %}
+      <div class="card {{member.bg_color}}">
+        <div class="card-image">
+          <img src="{{member.photo_url}}" alt="{{member.photo_description}}" />
+        </div>
+        <div class="card-content">
+          <p class="bold">{{member.name}}</p>
+          <p>
+            <i class="fa fa-envelope" aria-hidden="true"></i> {{member.email}}
+          </p>
+          <p>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            {{member.phonenumber}}
+          </p>
+        </div>
       </div>
-      <div class="card-content">
-        <p class="bold">{{member.name}}</p>
-        <p>
-          <i class="fa fa-envelope" aria-hidden="true"></i> {{member.email}}
-        </p>
-        <p>
-          <i class="fa-solid fa-mobile-screen-button"></i>
-          {{member.phonenumber}}
-        </p>
-      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
 
     <div class="actievraag">
       <div class="actievraag-content">

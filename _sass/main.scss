@@ -14,10 +14,64 @@ body {
     padding-bottom: var(--spacer-small);
 }
 
-.vision {
-    color: var(--clr-darkblue);
+.vision, .watwijdoen {
+    
     text-align: center;
     padding: 2em;
+}
+
+.vision {
+    color: var(--clr-darkblue);
+}
+
+.watwijdoen {
+    color: white;
+    background-color: var(--clr-darkblue);
+    position: relative;
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.watwijdoen::after {
+    position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  width: 30px;
+  height: 60px;
+  border-top-left-radius: 30px;
+  box-shadow: 0 -30px 0 0 var(--clr-darkblue);
+  background: transparant;
+}
+
+.wijzijn{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.wijzijn img{
+    max-width: 50vw;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.waardes{
+    display: flex;
+    flex-direction: column;
+}
+
+.watwijdoenopsomming {
+    background-color: var(--clr-lightestblue);
+    margin-top: -3em;
+    margin-left: -1em;
+    padding-left: 1em;
+    margin-right: -1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+}
+
+.wwdfirstitem {
+    padding-top: 4em;
 }
 
 
