@@ -1,8 +1,26 @@
+body {
+    height: 100%;
+}
+
+.innercontainer {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.landing {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: var(--clr-green);
+    color: white;
+    padding-bottom: var(--spacer-small);
+}
+
+
+
 .card {
     background: #0bbbb4;
     color: white;
     max-width: 200px;
-    margin-inline: auto;
+    // margin-inline: auto;
     margin-top: 3em;
     line-height: 1;
     font-family: 'Inter Tight', sans-serif;
@@ -46,25 +64,3 @@
     transform: scale(105%);
 }
 
-.Donkerblauw {
-    background-color: var(--clr-darkblue);
-}
-
-.Lichtblauw {
-    background-color: var(--clr-lightblue);
-}
-.Geel {
-    background-color: var(--clr-yellow);
-}
-
-.Groen {
-    background-color: var(--clr-green);
-}
-
-.Grijs {
-    background-color: var(--clr-grey);
-}
-
-.Rood {
-    background-color: var(-clr-red);
-}
