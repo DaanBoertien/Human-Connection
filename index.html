@@ -109,40 +109,64 @@ title: Human Connection
     </div>
 
     <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+    <div class="extra-swiper-wrapper">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-        </div>
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
       </div>
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
     </div>
+    <div class="innercontainer">
+      <div class="contact">
+        <h2>{{site.data.home.contact-titel}}</h2>
+        <p>{{site.data.home.contact-omschrijving}}</p>
 
-    <div class="contact">Contact Form</div>
+        <form name="contact" netlify>
+          <p>
+            <label>Naam <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>Onderwerp <input type="text" name="subject" /></label>
+          </p>
+          <p>
+            <label>Email <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label>Bericht <input type="textarea" name="name" /></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </div>
+    </div>
   </main>
 </div>

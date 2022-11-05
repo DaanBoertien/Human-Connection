@@ -142,15 +142,23 @@ body {
     margin: 0;
 }
 
-.swiper {
-    max-width: 70vw;
-    overflow: visible;
-}
-.swiper-button-prev {
-    transform: translateX(-20px);
-    
+.partners h2 {
+    text-align: center;
+    color: var(--clr-darkblue);
+    margin-bottom: 1em;
+    margin-top: 1.5em;
 }
 
+
+
+.swiper {
+    max-width: 70vw;
+    margin-bottom: 2em;
+}
+
+.contact h2 {
+    color: var(--clr-darkblue);
+}
 
 
 
