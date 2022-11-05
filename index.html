@@ -91,19 +91,21 @@ title: Human Connection
     <div class="actievraag">
       <div class="actievraag-content">
         <h2>{{site.data.home.actievraag}}</h2>
-        <p>{{site.data.home.actievraag-subtitel}}</p>
-        <p>{{site.data.home.actievraag-button}}</p>
+        <p class="ontdek">{{site.data.home.actievraag-subtitel}}</p>
+        <p class="btn btn-full">
+          <a href="#">{{site.data.home.actievraag-button}}</a>
+        </p>
       </div>
       <div class="actie-image">
-        <!-- <img src="vraagtekens" alt="" /> -->
+        <img
+          src="/assets/images/upload/istockphoto-873956336-612x612.jpg"
+          alt=""
+        />
       </div>
     </div>
     <div class="partners">
       <h2>{{site.data.home.partners-titel}}</h2>
       <!-- Build Slider -->
-      {% for logo in site.data.home.logos %}
-      <img src="{{logo.logo-bedrijf}}" alt="" />
-      {% endfor %}
     </div>
 
     <!-- Slider main container -->
@@ -136,13 +138,11 @@ title: Human Connection
           <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
         </div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
       <!-- If we need navigation buttons -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
+
     <div class="contact">Contact Form</div>
   </main>
 </div>

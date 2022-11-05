@@ -97,8 +97,8 @@ body {
 }
 
 .photo img {
-    width: 50vw;
-    height: 50vw;
+    width: 75vw;
+    height: 75vw;
     object-fit: cover;
     transition: border-radius 0.2s ease-out;
     border-top-right-radius: var(--border-radius);
@@ -112,6 +112,45 @@ body {
     border-bottom-left-radius: 0;
 
 }
+
+
+.actievraag-content {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+    background-color: var(--clr-yellow);
+    color: white;
+}
+
+.actievraag p {
+    // margin: 0;
+    // font-weight: 500;
+    
+}
+
+.actievraag img {
+    object-fit: cover;
+}
+
+.ontdek {
+    font-size: 1.2rem;
+    margin-top: 0.5em;
+}
+
+.actievraag h2 {
+    margin: 0;
+}
+
+.swiper {
+    max-width: 70vw;
+    overflow: visible;
+}
+.swiper-button-prev {
+    transform: translateX(-20px);
+    
+}
+
 
 
 

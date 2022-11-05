@@ -13,16 +13,17 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   centeredSlides: true,
-  slidesPerView: 6,
-  spaceBetween: 20,
+  slidesPerView: 3,
+  spaceBetween: 40,
+
   autoplay: true,
 
 
   // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true,
+  // },
 
   // Navigation arrows
   navigation: {
