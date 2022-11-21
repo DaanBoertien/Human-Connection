@@ -617,7 +617,7 @@ button[type="submit"] { font-weight: 700; margin-left: auto; }
 
 .did-floating-label-content { position: relative; margin-bottom: 0; }
 
-.did-floating-label { color: #1e4c82; font-size: 13px; font-weight: normal; position: absolute; pointer-events: none; left: 15px; top: 11px; padding: 0 5px; background: #fff; transition: 0.2s ease all; -moz-transition: 0.2s ease all; -webkit-transition: 0.2s ease all; }
+.did-floating-label { color: var(--clr-black); font-size: 13px; font-weight: normal; position: absolute; pointer-events: none; left: 15px; top: 11px; padding: 0 5px; background: #fff; transition: 0.2s ease all; -moz-transition: 0.2s ease all; -webkit-transition: 0.2s ease all; }
 
 .did-floating-input, .did-floating-select { display: block; width: calc(100% - 2.75em); height: 36px; padding: 0 20px; background: #fff; color: var(--clr-black); font-family: inherit; font-weight: inherit; font-size: inherit; border-radius: 20px; border: 1px solid #d2d5da; }
 
