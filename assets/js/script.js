@@ -15,7 +15,7 @@ const swiper = new Swiper('.swiper', {
   centeredSlides: true,
   slidesPerView: 3,
   spaceBetween: 40,
-
+  speed: 200,
   autoplay: true,
 
 

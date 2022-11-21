@@ -2,6 +2,12 @@ body {
     height: 100%;
 }
 
+.container {
+    // max-width: 1056px;
+    // margin: 0 auto;
+    // box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
+}
+
 .innercontainer {
     padding-left: 1em;
     padding-right: 1em;
@@ -12,6 +18,49 @@ body {
     background-color: var(--clr-green);
     color: white;
     padding-bottom: var(--spacer-small);
+    
+}
+
+.img-overlay-wrap, .actie-image {
+
+    position: relative;
+ 
+  display: inline-block; 
+  
+   
+}
+
+.img-overlay-wrap img, .actie-image img { /* <= optional, for responsiveness */
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+ }
+
+
+ 
+ .img-overlay-wrap svg{
+   position: absolute;
+   bottom: 0px;
+   left: 0;
+   z-index: 3;
+   height: 30px;
+   width: 100%;
+ }
+
+ .actie-image svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 30px;
+    width: 100%;
+ }
+
+
+
+.landing p {
+    color: white;
 }
 
 .vision, .watwijdoen {
@@ -20,8 +69,8 @@ body {
     padding: 2em;
 }
 
-.vision {
-    color: var(--clr-darkblue);
+.vision h2{
+    color: var(--clr-black);
 }
 
 .watwijdoen {
@@ -29,6 +78,10 @@ body {
     background-color: var(--clr-darkblue);
     position: relative;
     border-bottom-right-radius: var(--border-radius);
+}
+
+.watwijdoen p {
+    color: white;
 }
 
 .watwijdoen::after {
@@ -82,7 +135,7 @@ body {
 }
 
 .member-title{
-    margin-bottom: 0;
+    margin-bottom: .5em;
 }
 
 .member-function {
@@ -144,7 +197,7 @@ body {
 
 .partners h2 {
     text-align: center;
-    color: var(--clr-darkblue);
+
     margin-bottom: 1em;
     margin-top: 1.5em;
 }
@@ -157,23 +210,27 @@ body {
 }
 
 .contact {
-    background-color: var(--clr-lightestblue);
+    background-color: var(--clr-light-grey);
     margin-left: -1em;
     margin-right: -1em;
+    padding-top: 1rem;
     padding-left: 1em;
     padding-right: 1em;
 }
 
 .contact h2 {
-    color: var(--clr-darkblue);
+    margin-top: 2em;
 }
+
+
 
 form {
     display: flex;
     flex-direction: column;
     margin-top: 2em;
     margin-bottom: 2em;
-    max-width: 500px;
+    max-width: 100%;
+    padding-right: 1em;
   }
 
   form input {
@@ -188,13 +245,15 @@ form {
     font-size: inherit;
     border-radius: 30px;
     border: 1px solid lightgray;
-    background: white;
+    
   }
   
   input,
   textarea {
     padding: .5em;
     margin-bottom: 1.5em;
+    width: 100%;
+    background: white;
   }
   
   textarea {
@@ -204,22 +263,20 @@ form {
   }
   
   label {
-    color: black;
+    color: var(--clr-black);
     margin-bottom: 0.2em;
   }
-  
-  input[type="submit"] {
-    
-    padding: 0.75em 1;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    background-color: var(--clr-darkblue);
-  }
+
 
   form button {
+    color: white;
+    padding: 0.75em 1em;
     background-color: var(--clr-darkblue);
-    color: blue;
-    padding: .5em 1em;
+    font-weight: 700;
+  }
+
+  button[type="submit"] {
+    font-weight: 700;
   }
 
 

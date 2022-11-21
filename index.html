@@ -12,13 +12,17 @@ title: Human Connection
           <p>{{site.data.home.landing-tekt | markdownify}}</p>
         </div>
       </div>
-      <div class="landing-image">
+
+      <div class="img-overlay-wrap">
         <img
+          class="landing-image"
           src="assets/images/upload/depositphotos_106363032-stock-photo-silhouette-of-sky-diver-flies.jpg"
           alt=""
         />
+        {% include svg1.html %}
       </div>
     </div>
+
     <div class="vision">
       <h2>{{site.data.home.waar-wij-voor-staan}}</h2>
       <p>{{site.data.home.waar-wijvoor-staan-tekst}}</p>
@@ -101,6 +105,7 @@ title: Human Connection
           src="/assets/images/upload/istockphoto-873956336-612x612.jpg"
           alt=""
         />
+        {% include svg2.html %}
       </div>
     </div>
     <div class="partners">
@@ -160,10 +165,12 @@ title: Human Connection
             <label>Email <input type="email" name="email" /></label>
           </p>
           <p>
-            <label>Bericht <input type="textarea" name="bericht" /></label>
+            <label
+              >Vraag/Bericht <input type="textarea" name="bericht"
+            /></label>
           </p>
           <p>
-            <button type="submit">Send</button>
+            <button type="submit">Verzend bericht</button>
           </p>
         </form>
       </div>

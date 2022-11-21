@@ -1,7 +1,7 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
-html { line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+html { line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ box-sizing: border-box; }
 
 /* Sections ========================================================================== */
 /** Remove the margin in all browsers. */
@@ -107,11 +107,13 @@ template { display: none; }
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
 
-:root { --clr-darkblue: rgba(16,77,152,255); --clr-lightblue: rgba(78,184,232,255); --clr-lightestblue: rgba(237,242,251,255); --clr-green: rgba(77,175,176,255); --clr-grey: rgba(78,184,232,255); --clr-yellow: rgba(254,202,38,255); --clr-red: rgba(243,125,112,255); --border-radius: 30px; --spacer-small: 1em; --spacer-medium: 2em; --spacer-large: 3em; --spacer-extralarge: 4em; }
+:root { --clr-darkblue: rgba(21, 63, 143, 1); --clr-lightblue: rgba(78,184,232,255); --clr-lightestblue: rgba(237, 243, 251, 1); --clr-green: rgba(77, 176, 176, 1); --clr-grey: rgba(78,184,232,255); --clr-light-grey: rgba(244, 244, 246, 1); --clr-yellow: rgba(248, 204, 70, 1); --clr-red: rgba(243,125,112,255); --clr-black: rgba(56, 56, 56, 1); --border-radius: 30px; --spacer-small: 1em; --spacer-medium: 2em; --spacer-large: 3em; --spacer-extralarge: 4em; }
 
 body { font-family: 'Inter', sans-serif; }
 
-p { font-weight: 300; line-height: 1.6; }
+p { font-weight: 300; line-height: 1.6; color: var(--clr-black); }
+
+h2 { color: var(--clr-black); }
 
 h3 { color: var(--clr-darkblue); margin-bottom: 0; }
 
@@ -125,15 +127,15 @@ nav img { max-width: 50%; }
 
 ul { list-style: none; margin: 0; padding-left: 0; display: none; }
 
-li { color: black; display: block; float: left; padding: 1rem; position: relative; text-decoration: none; transition-duration: 0.5s; }
+li { color: var(--clr-black); display: block; float: left; padding: 1rem; position: relative; text-decoration: none; transition-duration: 0.5s; }
 
-li a { color: black; }
+li a { color: var(--clr-black); }
 
 li:hover, li:focus-within { cursor: pointer; }
 
 li:focus-within a { outline: none; }
 
-ul li ul { visibility: hidden; background: white; opacity: 0; width: 12rem; position: absolute; transition: all 0.5s ease; margin-top: 1rem; left: 0; right: 0; display: none; border: black solid 1px; }
+ul li ul { visibility: hidden; background: white; opacity: 0; width: 12rem; position: absolute; transition: all 0.5s ease; margin-top: 1rem; left: 0; right: 0; display: none; border: var(--clr-black) solid 1px; }
 
 ul li:hover > ul, ul li:focus-within > ul, ul li ul:hover, ul li ul:focus { visibility: visible; opacity: 1; display: block; }
 
@@ -537,11 +539,23 @@ body { height: 100%; }
 
 .landing { display: flex; flex-direction: column-reverse; background-color: var(--clr-green); color: white; padding-bottom: var(--spacer-small); }
 
+.img-overlay-wrap, .actie-image { position: relative; display: inline-block; }
+
+.img-overlay-wrap img, .actie-image img { /* <= optional, for responsiveness */ display: block; max-width: 100%; height: auto; }
+
+.img-overlay-wrap svg { position: absolute; bottom: 0px; left: 0; z-index: 3; height: 30px; width: 100%; }
+
+.actie-image svg { position: absolute; top: 0; left: 0; z-index: 3; height: 30px; width: 100%; }
+
+.landing p { color: white; }
+
 .vision, .watwijdoen { text-align: center; padding: 2em; }
 
-.vision { color: var(--clr-darkblue); }
+.vision h2 { color: var(--clr-black); }
 
 .watwijdoen { color: white; background-color: var(--clr-darkblue); position: relative; border-bottom-right-radius: var(--border-radius); }
+
+.watwijdoen p { color: white; }
 
 .watwijdoen::after { position: absolute; content: ''; top: 100%; left: 0; width: 30px; height: 60px; border-top-left-radius: 30px; box-shadow: 0 -30px 0 0 var(--clr-darkblue); background: transparant; }
 
@@ -557,7 +571,7 @@ body { height: 100%; }
 
 .wiewijzijntitle { color: var(--clr-darkblue); margin-top: 2em; text-align: center; margin-bottom: 2em; }
 
-.member-title { margin-bottom: 0; }
+.member-title { margin-bottom: .5em; }
 
 .member-function { margin-top: 0; margin-bottom: 3em; }
 
@@ -575,29 +589,29 @@ body { height: 100%; }
 
 .actievraag h2 { margin: 0; }
 
-.partners h2 { text-align: center; color: var(--clr-darkblue); margin-bottom: 1em; margin-top: 1.5em; }
+.partners h2 { text-align: center; margin-bottom: 1em; margin-top: 1.5em; }
 
 .swiper { max-width: 70vw; margin-bottom: 2em; }
 
-.contact { background-color: var(--clr-lightestblue); margin-left: -1em; margin-right: -1em; padding-left: 1em; padding-right: 1em; }
+.contact { background-color: var(--clr-light-grey); margin-left: -1em; margin-right: -1em; padding-top: 1rem; padding-left: 1em; padding-right: 1em; }
 
-.contact h2 { color: var(--clr-darkblue); }
+.contact h2 { margin-top: 2em; }
 
-form { display: flex; flex-direction: column; margin-top: 2em; margin-bottom: 2em; max-width: 500px; }
+form { display: flex; flex-direction: column; margin-top: 2em; margin-bottom: 2em; max-width: 100%; padding-right: 1em; }
 
 form input { display: block; }
 
-button[type="submit"], input, textarea { font-family: inherit; font-weight: inherit; font-size: inherit; border-radius: 30px; border: 1px solid lightgray; background: white; }
+button[type="submit"], input, textarea { font-family: inherit; font-weight: inherit; font-size: inherit; border-radius: 30px; border: 1px solid lightgray; }
 
-input, textarea { padding: .5em; margin-bottom: 1.5em; }
+input, textarea { padding: .5em; margin-bottom: 1.5em; width: 100%; background: white; }
 
 textarea { margin-bottom: 2em; resize: vertical; min-height: 100px; }
 
-label { color: black; margin-bottom: 0.2em; }
+label { color: var(--clr-black); margin-bottom: 0.2em; }
 
-input[type="submit"] { padding: 0.75em 1; letter-spacing: 1px; text-transform: uppercase; background-color: var(--clr-darkblue); }
+form button { color: white; padding: 0.75em 1em; background-color: var(--clr-darkblue); font-weight: 700; }
 
-form button { background-color: var(--clr-darkblue); color: blue; padding: .5em 1em; }
+button[type="submit"] { font-weight: 700; }
 
 .card { background: #0bbbb4; color: white; max-width: 200px; margin-top: 3em; line-height: 1; font-family: 'Inter Tight', sans-serif; font-weight: 200; border-radius: 0px var(--border-radius) 0px var(--border-radius); overflow: hidden; transition: border-radius 0.2s ease-out; }
 
@@ -619,13 +633,13 @@ form button { background-color: var(--clr-darkblue); color: blue; padding: .5em 
 
 .btn { border-radius: 100px; padding-top: 0.3em; padding-bottom: 0.3em; padding-left: 0.8em; padding-right: 0.8em; display: inline-block; }
 
-.btn-outline { border: 2px solid black; }
+.btn-outline { border: 1px solid var(--clr-black); }
 
 .btn-full { background-color: var(--clr-darkblue); border: 2px solid var(--clr-darkblue); color: white; }
 
 .btn-full a { color: white; }
 
-.btn-outline a { color: black; }
+.btn-outline a { color: var(--clr-black); }
 
 .btn:hover { cursor: pointer; }
 

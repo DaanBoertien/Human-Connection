@@ -10,7 +10,8 @@
 }
 
 .btn-outline {
-    border: 2px solid black;
+    border: 1px solid var(--clr-black);
+
 }
 
 .btn-full {
@@ -24,7 +25,7 @@
 }
 
 .btn-outline a {
-    color: black;
+    color: var(--clr-black);
 }
 
 .btn:hover {
