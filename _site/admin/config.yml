@@ -201,4 +201,4 @@ collections:
             widget: "string"
           - label: "Afbeelding Kantoor"
             name: "afbeelding-kantoor"
-            widget: "string"
+            widget: "image"
