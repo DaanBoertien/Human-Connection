@@ -541,6 +541,8 @@ body { height: 100%; }
 
 .img-overlay-wrap, .actie-image { position: relative; display: inline-block; }
 
+.img-overlay-wrap img { height: 100%; min-height: 50vh; object-fit: cover; }
+
 .img-overlay-wrap img, .actie-image img { /* <= optional, for responsiveness */ display: block; max-width: 100%; height: auto; }
 
 .img-overlay-wrap svg { position: absolute; bottom: 0px; left: 0; z-index: 3; height: 30px; width: 100%; }
@@ -554,6 +556,8 @@ body { height: 100%; }
 .vision h2 { color: var(--clr-black); }
 
 .watwijdoen { color: white; background-color: var(--clr-darkblue); position: relative; border-bottom-right-radius: var(--border-radius); }
+
+.watwijdoen h2 { color: white; }
 
 .watwijdoen p { color: white; }
 
@@ -583,11 +587,11 @@ body { height: 100%; }
 
 .actievraag-content { padding-top: 2em; padding-bottom: 2em; padding-left: 3em; padding-right: 3em; background-color: var(--clr-yellow); color: white; }
 
-.actievraag img { object-fit: cover; }
+.actievraag p { color: white; }
 
 .ontdek { font-size: 1.2rem; margin-top: 0.5em; }
 
-.actievraag h2 { margin: 0; }
+.actievraag h2 { margin: 0; color: white; }
 
 .partners h2 { text-align: center; margin-bottom: 1em; margin-top: 1.5em; }
 

@@ -30,10 +30,23 @@ body {
    
 }
 
+.img-overlay-wrap {
+    
+
+}
+
+.img-overlay-wrap img {
+    height: 100%;
+    min-height: 50vh;
+    object-fit: cover;
+
+}
+
 .img-overlay-wrap img, .actie-image img { /* <= optional, for responsiveness */
     display: block;
     max-width: 100%;
     height: auto;
+
 
  }
 
@@ -78,6 +91,10 @@ body {
     background-color: var(--clr-darkblue);
     position: relative;
     border-bottom-right-radius: var(--border-radius);
+}
+
+.watwijdoen h2{
+    color: white;
 }
 
 .watwijdoen p {
@@ -177,14 +194,11 @@ body {
 }
 
 .actievraag p {
-    // margin: 0;
-    // font-weight: 500;
+    color: white;
     
 }
 
-.actievraag img {
-    object-fit: cover;
-}
+
 
 .ontdek {
     font-size: 1.2rem;
@@ -193,6 +207,7 @@ body {
 
 .actievraag h2 {
     margin: 0;
+    color: white;
 }
 
 .partners h2 {
