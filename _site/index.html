@@ -294,25 +294,27 @@ Neem contact op met Marit.</p>
         <p>We komen graag met je in contact. Bel of mail direct een van onze collega’s of vul onderstaand formulier in. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
         <form name="contact" netlify>
-          <p>
-            <label>Naam <input type="text" name="naam" /></label>
-          </p>
-          <p>
-            <label>Onderwerp <input type="text" name="onderwerp" /></label>
-          </p>
-          <p>
-            <label>Email <input type="email" name="email" /></label>
-          </p>
-          <p>
-            <label
-              >Vraag/Bericht <input type="textarea" name="bericht"
-            /></label>
-          </p>
+          <div class="did-floating-label-content">
+            <input class="did-floating-input" type="text" name="naam" placeholder=" ">
+            <label class="did-floating-label">Naam</label>
+          </div>
+          <div class="did-floating-label-content">
+            <input class="did-floating-input" type="text" name="onderwerp" placeholder=" ">
+            <label class="did-floating-label">Onderwerp</label>
+          </div>
+          <div class="did-floating-label-content">
+            <input class="did-floating-input" type="email" name="email" placeholder=" ">
+            <label class="did-floating-label">Email</label>
+          </div>
+          <div class="did-floating-label-content">
+            <input class="did-floating-input" type="textarea" name="bericht" placeholder=" ">
+            <label class="did-floating-label">Vraag/Bericht</label>
+          </div>
+  
           <p>
             <button type="submit">Verzend bericht</button>
           </p>
         </form>
-      </div>
     </div>
   </main>
 </div>
