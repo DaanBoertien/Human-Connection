@@ -230,7 +230,7 @@ form {
     margin-top: 2em;
     margin-bottom: 2em;
     max-width: 100%;
-    padding-right: 2.5em;
+    // padding-right: 2.5em;
   }
 
   form input {
@@ -243,23 +243,31 @@ form {
     font-family: inherit;
     font-weight: inherit;
     font-size: inherit;
-    border-radius: 30px;
+    border-radius: 18px;
     border: 1px solid lightgray;
     
+  }
+
+  button[type="submit"] {
+    border-radius: 30px;
+    margin-bottom: 3em;
   }
   
   input,
   textarea {
-    padding: .5em;
-    margin-bottom: 1.5em;
-    width: 100%;
-    background: white;
+    margin-bottom: 1em;
   }
+
+//   input[type="text"], input[type="email"] {
+    // width: calc(100% - 2.75em);
+//   }
   
   textarea {
     margin-bottom: 2em;
     resize: vertical;
-    min-height: 100px;
+    padding-top: 3em;
+    min-height: 200px;
+    display: inline-block;
   }
   
   label {
@@ -277,11 +285,16 @@ form {
 
   button[type="submit"] {
     font-weight: 700;
+    margin-left: auto;
   }
+
+ 
+
+ 
 
   .did-floating-label-content { 
     position:relative; 
-    margin-bottom:20px; 
+    margin-bottom:0; 
   }
   .did-floating-label {
     color:#1e4c82; 
@@ -300,7 +313,7 @@ form {
   .did-floating-input, .did-floating-select {
 
     display:block;
-    width:100%;
+    width: calc(100% - 2.75em);
 
     height:36px;
     padding: 0 20px;
@@ -309,7 +322,7 @@ form {
     font-family: inherit;
     font-weight: inherit;
     font-size: inherit;
-    border-radius: 30px;
+    border-radius: 20px;
     border: 1px solid rgba(210, 213, 218, 1);
     &:focus{
       outline:none;
@@ -319,15 +332,12 @@ form {
       }
     }
   }
+
+  textarea.did-floating-input {
+    padding-top: 1em;
+  }
   
-  select.did-floating-select {
-    -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-  }
-  select.did-floating-select::-ms-expand {
-    display: none;
-  }
+
   
   .did-floating-input:not(:placeholder-shown) ~ .did-floating-label {
     top:-8px;
