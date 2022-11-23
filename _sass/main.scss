@@ -446,7 +446,7 @@ main li {
 main li::before {
     position: absolute;
     content: '';
-    background-image: url('/assets/images/ul-arrow.svg') ;
+    background: center/contain no-repeat url('/assets/images/ul-arrow.svg') ;
     color: black;
     left: -14px;
     width: 4.6392px;
