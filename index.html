@@ -19,7 +19,7 @@ title: Human Connection
           src="assets/images/upload/parachute.jpg"
           alt=""
         />
-        {% comment %} {% include svg1.html %} {% endcomment %}
+        {% include svg1.html %} 
       </div>
     </div>
 
@@ -82,14 +82,9 @@ title: Human Connection
       </div>
 
       <h2 class="wiewijzijntitle">{{site.data.home.wie-wij-zijn}}</h2>
-      {% for member in site.team %}
-      <div class="photo">
-        <img src="{{member.photo_url}}" alt="{{member.photo_description}}" />
-
-        <p class="bold tight-text member-title">{{member.title}}</p>
-        <p class="tight-text member-function">{{member.function}}</p>
-      </div>
-      {% endfor %}
+      <p class="btn btn-full center">
+        <a href="#">Meet the Team</a>
+      </p>
     </div>
 
     <div class="actievraag">
@@ -105,7 +100,7 @@ title: Human Connection
           src="/assets/images/upload/vraagtekens.jpg"
           alt=""
         />
-        {% comment %}{% include svg2.html %}{% endcomment %}
+        {% include svg2.html %}
       </div>
     </div>
     <div class="partners">

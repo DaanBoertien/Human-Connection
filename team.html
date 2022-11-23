@@ -1,0 +1,14 @@
+---
+layout: default
+title: Team
+---
+
+<h2 class="wiewijzijntitle">{{site.data.home.wie-wij-zijn}}</h2>
+{% for member in site.team %}
+<div class="photo">
+  <img src="{{member.photo_url}}" alt="{{member.photo_description}}" />
+
+  <p class="bold tight-text member-title">{{member.title}}</p>
+  <p class="tight-text member-function">{{member.function}}</p>
+</div>
+{% endfor %}
