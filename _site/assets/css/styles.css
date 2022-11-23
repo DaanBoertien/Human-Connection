@@ -143,7 +143,7 @@ nav img { max-width: 50%; z-index: 100; }
 
 .nav-desktop ul li ul li { clear: both; width: 100%; }
 
-.nav-menu { position: absolute; z-index: 10; top: 0; left: 0; right: -28px; height: 50vh; background: white; color: black; opacity: 0; transition: all 0.4s ease-out; pointer-events: none; display: flex; justify-content: center; align-items: flex-start; padding-top: 8em; transform: translateY(-100%); }
+.nav-menu { position: absolute; z-index: 10; top: 0; left: 0; right: 0px; height: 50vh; background: white; color: black; opacity: 0; transition: all 0.4s ease-out; pointer-events: none; display: flex; justify-content: center; align-items: flex-start; padding-top: 8em; transform: translateY(-100%); }
 
 .nav-menu ul { margin-top: 3em; color: black; display: block; }
 
