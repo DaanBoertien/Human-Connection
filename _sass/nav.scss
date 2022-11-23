@@ -17,7 +17,7 @@ nav {
   width: 85%;
   left: 0;
   right: 1.5em;
-  z-index: 100;
+  z-index: 30;
   border-radius: 0px 0px 30px 0px;
 }
 
@@ -106,6 +106,7 @@ nav ul li ul li {
 
 .nav-menu {
   position: absolute;
+  z-index: 10;
   top: 0;
   left: 0;
   right: -30px;
@@ -113,11 +114,12 @@ nav ul li ul li {
   background: white;
   color: black;
   opacity: 0;
-  transition: all 0.2s ease-out;
+  transition: all 0.4s ease-out;
   pointer-events: none;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 8em;
   transform: translateY(-100%);
 }
 
@@ -133,4 +135,22 @@ nav ul li ul li {
   pointer-events: all;
   transition: opacity 0.2 ease-out;
   transform: translateY(0);
+}
+
+.nav-menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.submenu-mobile {
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-out;
+}
+
+.submenu-mobile-toggle.open .submenu-mobile{
+  height: 100%;
+  opacity: 1;
+  pointer-events: all;
 }

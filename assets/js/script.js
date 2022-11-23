@@ -4,11 +4,16 @@
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu")
+const navUl = document.querySelector(".submenu-mobile-toggle ")
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("is-active");  
   navMenu.classList.toggle("open");
 });
+
+navUl.addEventListener("click", () => {
+  navUl.classList.toggle("open");
+} )
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
