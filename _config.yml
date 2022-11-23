@@ -7,5 +7,5 @@ collections:
     output: true
 # timezone: Europe/Amsterdam
 
-# kramdown:
-#   hard_wrap: true
+kramdown:
+  input: Kramdown
