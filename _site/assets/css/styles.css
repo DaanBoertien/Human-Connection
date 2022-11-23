@@ -125,23 +125,25 @@ nav { display: flex; justify-content: space-between; justify-items: center; just
 
 nav img { max-width: 50%; z-index: 100; }
 
-nav ul { list-style: none; margin: 0; padding-left: 0; display: none; }
+.nav-desktop { display: none; }
 
-nav li { color: var(--clr-black); display: block; float: left; padding: 1rem; position: relative; text-decoration: none; transition-duration: 0.5s; }
+.nav-desktop ul { list-style: none; margin: 0; padding-left: 0; display: none; }
 
-nav li a { color: var(--clr-black); }
+.nav-desktop li { color: var(--clr-black); display: block; float: left; padding: 1rem; position: relative; text-decoration: none; transition-duration: 0.5s; }
 
-nav li:hover, nav li:focus-within { cursor: pointer; }
+.nav-desktop li a { color: var(--clr-black); }
 
-nav li:focus-within a { outline: none; }
+.nav-desktop li:hover, .nav-desktop li:focus-within { cursor: pointer; }
 
-nav ul li ul { visibility: hidden; background: white; opacity: 0; width: 12rem; position: absolute; transition: all 0.5s ease; margin-top: 1rem; left: 0; right: 0; display: none; border: var(--clr-black) solid 1px; }
+.nav-desktop li:focus-within a { outline: none; }
 
-nav ul li:hover > ul, nav ul li:focus-within > ul, nav ul li ul:hover, nav ul li ul:focus { visibility: visible; opacity: 1; display: block; }
+.nav-desktop ul li ul { visibility: hidden; background: white; opacity: 0; width: 12rem; position: absolute; transition: all 0.5s ease; margin-top: 1rem; left: 0; right: 0; display: none; border: var(--clr-black) solid 1px; }
 
-nav ul li ul li { clear: both; width: 100%; }
+.nav-desktop ul li:hover > ul, .nav-desktop ul li:focus-within > ul, .nav-desktop ul li ul:hover, .nav-desktop ul li ul:focus { visibility: visible; opacity: 1; display: block; }
 
-.nav-menu { position: absolute; z-index: 10; top: 0; left: 0; right: -30px; height: 70vh; background: white; color: black; opacity: 0; transition: all 0.4s ease-out; pointer-events: none; display: flex; justify-content: center; align-items: flex-start; padding-top: 8em; transform: translateY(-100%); }
+.nav-desktop ul li ul li { clear: both; width: 100%; }
+
+.nav-menu { position: absolute; z-index: 10; top: 0; left: 0; right: -28px; height: 50vh; background: white; color: black; opacity: 0; transition: all 0.4s ease-out; pointer-events: none; display: flex; justify-content: center; align-items: flex-start; padding-top: 8em; transform: translateY(-100%); }
 
 .nav-menu ul { margin-top: 3em; color: black; display: block; }
 
@@ -151,7 +153,7 @@ nav ul li ul li { clear: both; width: 100%; }
 
 .submenu-mobile { height: 0; opacity: 0; pointer-events: none; transition: all 0.2s ease-out; }
 
-.submenu-mobile-toggle.open .submenu-mobile { height: 100%; opacity: 1; pointer-events: all; }
+.submenu-mobile-toggle.open .submenu-mobile { height: 4em; opacity: 1; pointer-events: all; }
 
 /*! Hamburgers @description Tasty CSS-animated hamburgers @author Jonathan Suh @jonsuh @site https://jonsuh.com/hamburgers @link https://github.com/jonsuh/hamburgers */
 .hamburger { padding: 15px 15px; display: inline-block; cursor: pointer; transition-property: opacity, filter; transition-duration: 0.15s; transition-timing-function: linear; font: inherit; color: inherit; text-transform: none; background-color: transparent; z-index: 1000; border: 0; margin: 0; overflow: visible; }

@@ -9,38 +9,40 @@
       <span class="hamburger-inner"></span>
     </span>
   </button>
-  <ul>
-    <li>
-      <a href="#" aria-haspopup="true">Wie wij zijn</a>
-      <ul class="dropdown" aria-label="submenu">
-        {% assign members_by_name = site.team | sort: 'title' %} {% for member
-        in members_by_name %}
-        <li><a href="/team/{{member.slug}}">{{member.title}}</a></li>
-        {% endfor %}
-      </ul>
-    </li>
-    <li>
-      <a href="#" aria-haspopup="true">Wat we doen</a>
-      <ul class="dropdown" aria-label="submenu">
-        <li><a href="#">Wat wij doen</a></li>
-        <li><a href="#">Hoe wij werken</a></li>
-        <li><a href="#">Connect to Perform</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Contact</a></li>
-  </ul>
+  <div class="nav-desktop">
+    <ul>
+      <li>
+        <a href="#" aria-haspopup="true">Wie wij zijn</a>
+        <ul class="dropdown" aria-label="submenu">
+          {% assign members_by_name = site.team | sort: 'title' %} {% for member
+          in members_by_name %}
+          <li><a href="/team/{{member.slug}}">{{member.title}}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+      <li>
+        <a href="#" aria-haspopup="true">Wat we doen</a>
+        <ul class="dropdown" aria-label="submenu">
+          <li><a href="#">Wat wij doen</a></li>
+          <li><a href="#">Hoe wij werken</a></li>
+          <li><a href="#">Connect to Perform</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <div class="nav-menu">
+    <ul>
+      <li><a href="#">Wie wij zijn</a></li>
+      <li class="submenu-mobile-toggle">
+        <a href="#">Wat we doen</a>
+        <ul class="submenu-mobile">
+          <li><a href="#">Wat wij doen</a></li>
+          <li><a href="#">Hoe wij werken</a></li>
+          <li><a href="#">Connect to Perform</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
 </nav>
-<div class="nav-menu">
-  <ul>
-    <li><a href="#">Wie wij zijn</a></li>
-    <li class="submenu-mobile-toggle">
-      <a href="#">Wat we doen</a>
-      <ul class="submenu-mobile">
-        <li><a href="#">Wat wij doen</a></li>
-        <li><a href="#">Hoe wij werken</a></li>
-        <li><a href="#">Connect to Perform</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</div>
