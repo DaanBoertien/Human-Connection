@@ -425,6 +425,28 @@ form {
     transform: scale(105%);
 }
 
+main ul{
+    line-height: 1.3;
+    font-weight: 300;
+    list-style-image: url('/assets/images/ul-arrow.svg');
+    vertical-align: top;
+}
+
+main li {
+    margin-bottom: 1em;
+    
+
+}
+
+// main li::before {
+//     position: absolute;
+//     font-family: 'Font Awesome 6 Free';
+//     content: url('f054');
+//     color: blacck;
+//     width: 10px;
+//     top: 0px;
+// }
+
 
 
 

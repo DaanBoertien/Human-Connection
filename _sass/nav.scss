@@ -35,7 +35,7 @@ nav img {
   max-width: 50%;
 }
 
-ul {
+nav ul {
 
   list-style: none;
   margin: 0;
@@ -44,7 +44,7 @@ ul {
   
 }
 
-li {
+nav li {
   color: var(--clr-black);
 
   display: block;
@@ -55,20 +55,20 @@ li {
   transition-duration: 0.5s;
 }
   
-li a {
+nav li a {
   color: var(--clr-black);
 }
 
-li:hover,
-li:focus-within {
+nav li:hover,
+nav li:focus-within {
   cursor: pointer;
 }
 
-li:focus-within a {
+nav li:focus-within a {
   outline: none;
 }
 
-ul li ul {
+nav ul li ul {
   visibility: hidden;
   background: white;
   opacity: 0;
@@ -82,16 +82,16 @@ ul li ul {
   border: var(--clr-black) solid 1px;
 }
 
-ul li:hover > ul,
-ul li:focus-within > ul,
-ul li ul:hover,
-ul li ul:focus {
+nav ul li:hover > ul,
+nav ul li:focus-within > ul,
+nav ul li ul:hover,
+nav ul li ul:focus {
    visibility: visible;
    opacity: 1;
    display: block;
 }
 
-ul li ul li {
+nav ul li ul li {
   clear: both;
   width: 100%;
 }

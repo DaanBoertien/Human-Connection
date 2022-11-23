@@ -125,21 +125,21 @@ nav { display: flex; padding: 1em; justify-content: space-between; justify-items
 
 nav img { max-width: 50%; }
 
-ul { list-style: none; margin: 0; padding-left: 0; display: none; }
+nav ul { list-style: none; margin: 0; padding-left: 0; display: none; }
 
-li { color: var(--clr-black); display: block; float: left; padding: 1rem; position: relative; text-decoration: none; transition-duration: 0.5s; }
+nav li { color: var(--clr-black); display: block; float: left; padding: 1rem; position: relative; text-decoration: none; transition-duration: 0.5s; }
 
-li a { color: var(--clr-black); }
+nav li a { color: var(--clr-black); }
 
-li:hover, li:focus-within { cursor: pointer; }
+nav li:hover, nav li:focus-within { cursor: pointer; }
 
-li:focus-within a { outline: none; }
+nav li:focus-within a { outline: none; }
 
-ul li ul { visibility: hidden; background: white; opacity: 0; width: 12rem; position: absolute; transition: all 0.5s ease; margin-top: 1rem; left: 0; right: 0; display: none; border: var(--clr-black) solid 1px; }
+nav ul li ul { visibility: hidden; background: white; opacity: 0; width: 12rem; position: absolute; transition: all 0.5s ease; margin-top: 1rem; left: 0; right: 0; display: none; border: var(--clr-black) solid 1px; }
 
-ul li:hover > ul, ul li:focus-within > ul, ul li ul:hover, ul li ul:focus { visibility: visible; opacity: 1; display: block; }
+nav ul li:hover > ul, nav ul li:focus-within > ul, nav ul li ul:hover, nav ul li ul:focus { visibility: visible; opacity: 1; display: block; }
 
-ul li ul li { clear: both; width: 100%; }
+nav ul li ul li { clear: both; width: 100%; }
 
 /*! Hamburgers @description Tasty CSS-animated hamburgers @author Jonathan Suh @jonsuh @site https://jonsuh.com/hamburgers @link https://github.com/jonsuh/hamburgers */
 .hamburger { padding: 15px 15px; display: inline-block; cursor: pointer; transition-property: opacity, filter; transition-duration: 0.15s; transition-timing-function: linear; font: inherit; color: inherit; text-transform: none; background-color: transparent; border: 0; margin: 0; overflow: visible; }
@@ -654,6 +654,10 @@ textarea.did-floating-input { padding-top: 1em; }
 .card:hover { cursor: pointer; }
 
 .card:hover img { transform: scale(105%); }
+
+main ul { line-height: 1.3; font-weight: 300; list-style-image: url("/assets/images/ul-arrow.svg"); vertical-align: top; }
+
+main li { margin-bottom: 1em; }
 
 .swiper-slide img { width: 100%; }
 
