@@ -661,7 +661,7 @@ main li { margin-bottom: 1em; position: relative; }
 
 main li::before { position: absolute; content: ''; background-image: url("/assets/images/ul-arrow.svg"); color: black; left: -14px; width: 4.6392px; height: 8px; top: 6px; }
 
-.connect-to-perform { background: var(--clr-darkblue); border-bottom-left-radius: var(--border-radius); box-shadow: -70px 0px 0px 0px var(--clr-green), -70px 1px 0px 0px var(--clr-green); margin-left: 2em; padding-top: 2em; padding-left: 2em; z-index: 2; }
+.connect-to-perform { background: var(--clr-darkblue); border-bottom-left-radius: var(--border-radius); box-shadow: -70px 0px 0px 0px var(--clr-green), -70px 1px 0px 0px var(--clr-green); margin-left: 2em; padding-top: 2em; padding-left: 2em; z-index: 2; padding-bottom: 1em; }
 
 footer h2 { color: white; }
 
