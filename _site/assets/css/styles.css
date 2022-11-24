@@ -589,6 +589,10 @@ main { margin-top: -92px; }
 
 .wwdfirstitem { padding-top: 4em; }
 
+.wiewijzijn { display: flex; flex-direction: column; justify-content: center; padding-bottom: 2em; }
+
+.wiewijzijn p { align-self: center; }
+
 .wiewijzijntitle { color: var(--clr-darkblue); margin-top: 2em; text-align: center; margin-bottom: 2em; }
 
 .member-title { margin-bottom: .5em; }
