@@ -587,6 +587,8 @@ body { height: 100%; }
 
 .watwijdoenopsomming { background-color: var(--clr-lightestblue); margin-top: -3em; margin-left: -1em; padding-left: 1em; margin-right: -1em; padding-right: 1em; padding-bottom: 2em; }
 
+.watwijdoenopsomming h3 { margin-top: 1em; }
+
 .wwdfirstitem { padding-top: 4em; }
 
 .wiewijzijn { display: flex; flex-direction: column; justify-content: center; padding-bottom: 2em; }
