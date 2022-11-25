@@ -107,12 +107,12 @@ nav img {
 
 
 .nav-menu {
-  position: absolute;
+  position: fixed;
   z-index: 10;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 50vh;
+  
   background: white;
   color: black;
   opacity: 0;
@@ -123,13 +123,31 @@ nav img {
   align-items: flex-start;
   padding-top: 8em;
   transform: translateY(-100%);
+  padding-bottom: 2em;
 }
 
 .nav-menu ul {
  
   margin-top: 3em;
+  width: 90%;
   color: black;
   display: block;
+  list-style: none;
+  
+}
+
+.nav-menu ul li {
+  padding-left: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border-bottom: 1px solid var(--clr-darkblue);
+  font-weight: 500;
+}
+
+.nav-menu ul li li {
+  border-bottom: 0;
+  font-weight: 300;
+  padding-bottom: 0;
 }
 
 .nav-menu.open {
@@ -144,6 +162,10 @@ nav img {
   margin: 0;
 }
 
+.nav-menu a {
+  color: var(--clr-darkblue);
+}
+
 .submenu-mobile {
   height: 0;
   opacity: 0;
@@ -152,7 +174,28 @@ nav img {
 }
 
 .submenu-mobile-toggle.open .submenu-mobile{
-  height: 4em;
+  height: 5.5em;
   opacity: 1;
   pointer-events: all;
+}
+
+.li-outer.open::after{
+  transform: rotate(180deg);
+}
+
+.li-outer {
+  position: relative;
+}
+
+.li-outer::after{
+  content: '';
+  position: absolute;
+  background: center/contain no-repeat  url('/assets/images/arrow-down.svg');
+  top: 1em;
+  right: 1em;
+  width: 8px;
+  height: 4px;
+  transform: rotate(0deg);
+  color: var(--clr-darkblue);
+  transition: transform 0.2s ease-out;
 }

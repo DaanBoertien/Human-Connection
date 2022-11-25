@@ -472,7 +472,7 @@ main li::before {
     position: absolute;
     content: '';
     background: center/contain no-repeat url('/assets/images/ul-arrow.svg') ;
-    color: black;
+    color: var(--clr-black);
     left: -14px;
     width: 4.6392px;
     height: 8px;
