@@ -119,6 +119,7 @@ nav img {
   transition: all 0.4s ease-out;
   pointer-events: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding-top: 8em;
@@ -138,8 +139,8 @@ nav img {
 
 .nav-menu ul li {
   padding-left: 1em;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: .7em;
+  padding-bottom: .7em;
   border-bottom: 1px solid var(--clr-darkblue);
   font-weight: 500;
 }
@@ -173,10 +174,16 @@ nav img {
   transition: all 0.2s ease-out;
 }
 
-.submenu-mobile-toggle.open .submenu-mobile{
+
+.submenu-mobile-toggle2.open .submenu-mobile{
   height: 5.5em;
   opacity: 1;
-  pointer-events: all;
+}
+
+.submenu-mobile-toggle1.open .submenu-mobile,
+.submenu-mobile-toggle3.open .submenu-mobile{
+  height: 3.5em;
+  opacity: 1;
 }
 
 .li-outer.open::after{
@@ -198,4 +205,9 @@ nav img {
   transform: rotate(0deg);
   color: var(--clr-darkblue);
   transition: transform 0.2s ease-out;
+}
+
+
+.btn-menu {
+  align-self: center;
 }

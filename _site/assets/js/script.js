@@ -4,16 +4,28 @@
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu")
-const navUl = document.querySelector(".submenu-mobile-toggle ")
+const navUl1 = document.querySelector(".submenu-mobile-toggle1 ")
+const navUl2 = document.querySelector(".submenu-mobile-toggle2 ")
+const navUl3 = document.querySelector(".submenu-mobile-toggle3 ")
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("is-active");  
   navMenu.classList.toggle("open");
-});
+})
 
-navUl.addEventListener("click", () => {
-  navUl.classList.toggle("open");
+navUl1.addEventListener("click", () => {
+  navUl1.classList.toggle("open");
 } )
+
+navUl2.addEventListener("click", () => {
+  navUl2.classList.toggle("open");
+} )
+
+navUl3.addEventListener("click", () => {
+  navUl3.classList.toggle("open");
+} )
+
+
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters

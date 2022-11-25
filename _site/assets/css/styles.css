@@ -145,11 +145,11 @@ nav img { max-width: 50%; z-index: 100; }
 
 .nav-desktop ul li ul li { clear: both; width: 100%; }
 
-.nav-menu { position: fixed; z-index: 10; top: 0; left: 0; width: 100vw; background: white; color: black; opacity: 0; transition: all 0.4s ease-out; pointer-events: none; display: flex; justify-content: center; align-items: flex-start; padding-top: 8em; transform: translateY(-100%); padding-bottom: 2em; }
+.nav-menu { position: fixed; z-index: 10; top: 0; left: 0; width: 100vw; background: white; color: black; opacity: 0; transition: all 0.4s ease-out; pointer-events: none; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding-top: 8em; transform: translateY(-100%); padding-bottom: 2em; }
 
 .nav-menu ul { margin-top: 3em; width: 90%; color: black; display: block; list-style: none; }
 
-.nav-menu ul li { padding-left: 1em; padding-top: .5em; padding-bottom: .5em; border-bottom: 1px solid var(--clr-darkblue); font-weight: 500; }
+.nav-menu ul li { padding-left: 1em; padding-top: .7em; padding-bottom: .7em; border-bottom: 1px solid var(--clr-darkblue); font-weight: 500; }
 
 .nav-menu ul li li { border-bottom: 0; font-weight: 300; padding-bottom: 0; }
 
@@ -161,13 +161,17 @@ nav img { max-width: 50%; z-index: 100; }
 
 .submenu-mobile { height: 0; opacity: 0; pointer-events: none; transition: all 0.2s ease-out; }
 
-.submenu-mobile-toggle.open .submenu-mobile { height: 5.5em; opacity: 1; pointer-events: all; }
+.submenu-mobile-toggle2.open .submenu-mobile { height: 5.5em; opacity: 1; }
+
+.submenu-mobile-toggle1.open .submenu-mobile, .submenu-mobile-toggle3.open .submenu-mobile { height: 3.5em; opacity: 1; }
 
 .li-outer.open::after { transform: rotate(180deg); }
 
 .li-outer { position: relative; }
 
 .li-outer::after { content: ''; position: absolute; background: center/contain no-repeat url("/assets/images/arrow-down.svg"); top: 1em; right: 1em; width: 8px; height: 4px; transform: rotate(0deg); color: var(--clr-darkblue); transition: transform 0.2s ease-out; }
+
+.btn-menu { align-self: center; }
 
 /*! Hamburgers @description Tasty CSS-animated hamburgers @author Jonathan Suh @jonsuh @site https://jonsuh.com/hamburgers @link https://github.com/jonsuh/hamburgers */
 .hamburger { padding: 15px 15px; display: inline-block; cursor: pointer; transition-property: opacity, filter; transition-duration: 0.15s; transition-timing-function: linear; font: inherit; color: inherit; text-transform: none; background-color: transparent; z-index: 1000; border: 0; margin: 0; overflow: visible; }
@@ -746,5 +750,7 @@ main { position: relative; }
 .tight-text { line-height: 1.0; }
 
 .center { text-align: center; }
+
+.margin-top-2 { margin-top: 2em; }
 
 /*# sourceMappingURL=styles.css.map */
