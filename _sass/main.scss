@@ -91,7 +91,7 @@ main {
     
     text-align: center;
     padding: 2em;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
 }
 
 .vision h2{
@@ -510,9 +510,7 @@ main {
     position: relative;
 }
 #button-omhoog {
-    position: fixed;
-    bottom: 1.5em;
-    right: 1.5em;
+    
     width: 32px;
     z-index: 1000;
     scroll-behavior: smooth;
@@ -520,4 +518,8 @@ main {
 
 .button-omhoog-link {
     opacity: 0;
+    transform: translateY(100px);
+    position: fixed;
+    bottom: 1.5em;
+    right: 1.5em;
 }

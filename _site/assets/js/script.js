@@ -40,7 +40,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.to('.button-omhoog-link', { autoAlpha: 1,
+gsap.to('.button-omhoog-link', { autoAlpha: 1, y: 0,
   scrollTrigger: {
       trigger: '.landing-content',
       start: 'top top+=100',

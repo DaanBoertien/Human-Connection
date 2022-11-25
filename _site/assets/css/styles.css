@@ -113,7 +113,9 @@ body { font-family: 'Inter', sans-serif; }
 
 p { font-weight: 300; line-height: 1.6; color: var(--clr-black); margin-top: 0; }
 
-h2 { color: var(--clr-black); }
+h1 { margin-bottom: 0.5em; }
+
+h2 { color: var(--clr-black); margin-bottom: .5em; }
 
 h3 { color: var(--clr-darkblue); margin-bottom: .5em; margin-top: 0; }
 
@@ -567,7 +569,7 @@ body { height: 100%; }
 
 .landing p { color: white; font-weight: 500; }
 
-.vision, .watwijdoen { text-align: center; padding: 2em; padding-bottom: 1em; }
+.vision, .watwijdoen { text-align: center; padding: 2em; padding-bottom: 2em; }
 
 .vision h2 { color: var(--clr-black); }
 
@@ -695,9 +697,9 @@ footer h2 { color: white; }
 
 main { position: relative; }
 
-#button-omhoog { position: fixed; bottom: 1.5em; right: 1.5em; width: 32px; z-index: 1000; scroll-behavior: smooth; }
+#button-omhoog { width: 32px; z-index: 1000; scroll-behavior: smooth; }
 
-.button-omhoog-link { opacity: 0; }
+.button-omhoog-link { opacity: 0; transform: translateY(100px); position: fixed; bottom: 1.5em; right: 1.5em; }
 
 .swiper-slide img { width: 100%; }
 
