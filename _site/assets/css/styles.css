@@ -111,15 +111,15 @@ template { display: none; }
 
 body { font-family: 'Inter', sans-serif; }
 
-p { font-weight: 300; line-height: 1.6; color: var(--clr-black); }
+p { font-weight: 300; line-height: 1.6; color: var(--clr-black); margin-top: 0; }
 
 h2 { color: var(--clr-black); }
 
-h3 { color: var(--clr-darkblue); margin-bottom: 0; }
+h3 { color: var(--clr-darkblue); margin-bottom: 0; margin-top: 0; }
 
 a { text-decoration: none; }
 
-nav { display: flex; justify-content: space-between; justify-items: center; justify-self: auto; padding: 1em; background: white; position: sticky; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); top: 0; width: 85%; left: 0; right: 1.5em; z-index: 30; border-radius: 0px 0px 30px 0px; }
+nav { display: flex; justify-content: space-between; justify-items: center; justify-self: auto; padding: 1em; background: white; position: absolute; top: 0; width: 85%; left: 0; right: 1.5em; z-index: 30; border-radius: 0px 0px 30px 0px; }
 
 .extracorner::after { position: absolute; content: ''; top: 100%; left: 0; width: 30px; height: 60px; border-top-left-radius: 30px; box-shadow: 0 -30px 0 0 white; background: transparant; }
 
@@ -162,13 +162,13 @@ nav img { max-width: 50%; z-index: 100; }
 
 .hamburger.is-active:hover { opacity: 0.7; }
 
-.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after { background-color: #000; }
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after { background-color: var(--clr-darkblue); }
 
-.hamburger-box { width: 40px; height: 24px; display: inline-block; position: relative; }
+.hamburger-box { width: 40px; height: 24px; display: inline-block; position: relative; transform: scale(0.75); }
 
 .hamburger-inner { display: block; top: 50%; margin-top: -2px; }
 
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after { width: 40px; height: 4px; background-color: #000; border-radius: 4px; position: absolute; transition-property: transform; transition-duration: 0.15s; transition-timing-function: ease; }
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after { width: 40px; height: 4px; background-color: var(--clr-darkblue); border-radius: 4px; position: absolute; transition-property: transform; transition-duration: 0.15s; transition-timing-function: ease; }
 
 .hamburger-inner::before, .hamburger-inner::after { content: ""; display: block; }
 
@@ -549,8 +549,6 @@ nav img { max-width: 50%; z-index: 100; }
 
 body { height: 100%; }
 
-main { margin-top: -92px; }
-
 .innercontainer { padding-left: 1em; padding-right: 1em; }
 
 .landing { display: flex; flex-direction: column-reverse; background-color: var(--clr-green); color: white; padding-bottom: var(--spacer-small); }
@@ -565,23 +563,25 @@ main { margin-top: -92px; }
 
 .actie-image svg { position: absolute; top: 0; left: 0; z-index: 3; height: 30px; width: 100%; }
 
-.landing p { color: white; }
+.landing p { color: white; font-weight: 500; }
 
-.vision, .watwijdoen { text-align: center; padding: 2em; }
+.vision, .watwijdoen { text-align: center; padding: 2em; padding-bottom: 1em; }
 
 .vision h2 { color: var(--clr-black); }
+
+.vision p { font-weight: 500; }
 
 .watwijdoen { color: white; background-color: var(--clr-darkblue); position: relative; border-bottom-right-radius: var(--border-radius); }
 
 .watwijdoen h2 { color: white; }
 
-.watwijdoen p { color: white; }
+.watwijdoen p { color: white; font-weight: 500; }
 
 .watwijdoen::after { position: absolute; content: ''; top: 100%; left: 0; width: 30px; height: 60px; border-top-left-radius: 30px; box-shadow: 0 -30px 0 0 var(--clr-darkblue); background: transparant; }
 
 .wijzijn { display: flex; flex-direction: column; }
 
-.wijzijn img { max-width: 50vw; margin: 0 auto; margin-bottom: 2em; }
+.wijzijn img { max-width: 50vw; margin: 0 auto; }
 
 .waardes { display: flex; flex-direction: column; }
 
@@ -593,7 +593,7 @@ main { margin-top: -92px; }
 
 .wiewijzijn p { align-self: center; }
 
-.wiewijzijntitle { color: var(--clr-darkblue); margin-top: 2em; text-align: center; margin-bottom: 2em; }
+.wiewijzijntitle { color: var(--clr-black); margin-top: 2em; text-align: center; margin-bottom: 2em; }
 
 .member-title { margin-bottom: .5em; }
 

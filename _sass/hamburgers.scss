@@ -27,13 +27,14 @@
     .hamburger.is-active .hamburger-inner,
     .hamburger.is-active .hamburger-inner::before,
     .hamburger.is-active .hamburger-inner::after {
-      background-color: #000; }
+      background-color: var(--clr-darkblue); }
   
   .hamburger-box {
     width: 40px;
     height: 24px;
     display: inline-block;
-    position: relative; }
+    position: relative; 
+    transform: scale(0.75);}
   
   .hamburger-inner {
     display: block;
@@ -42,7 +43,7 @@
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
       width: 40px;
       height: 4px;
-      background-color: #000;
+      background-color: var(--clr-darkblue);
       border-radius: 4px;
       position: absolute;
       transition-property: transform;

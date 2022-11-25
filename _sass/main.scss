@@ -5,7 +5,7 @@ body {
 }
 
 main {
-    margin-top: -92px;
+    // margin-top: -92px;
 }
 
 
@@ -81,16 +81,22 @@ main {
 
 .landing p {
     color: white;
+    font-weight: 500;
 }
 
 .vision, .watwijdoen {
     
     text-align: center;
     padding: 2em;
+    padding-bottom: 1em;
 }
 
 .vision h2{
     color: var(--clr-black);
+}
+
+.vision p {
+    font-weight: 500;
 }
 
 .watwijdoen {
@@ -106,6 +112,7 @@ main {
 
 .watwijdoen p {
     color: white;
+    font-weight: 500;
 }
 
 .watwijdoen::after {
@@ -129,7 +136,7 @@ main {
 .wijzijn img{
     max-width: 50vw;
     margin: 0 auto;
-    margin-bottom: 2em;
+    
 }
 
 .waardes{
@@ -163,7 +170,7 @@ main {
 }
 
 .wiewijzijntitle {
-    color: var(--clr-darkblue);
+    color: var(--clr-black);
     margin-top: 2em;
     text-align: center;
     margin-bottom: 2em;
