@@ -38,3 +38,13 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.to('.button-omhoog-link', { autoAlpha: 1,
+  scrollTrigger: {
+      trigger: '.landing-content',
+      start: 'top top+=100',
+      toggleActions: 'play none none reverse',
+      markers: false
+  }
+});
