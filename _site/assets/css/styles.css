@@ -169,7 +169,7 @@ nav img { max-width: 50%; z-index: 100; }
 
 .li-outer { position: relative; }
 
-.li-outer::after { content: ''; position: absolute; background: center/contain no-repeat url("/assets/images/arrow-down.svg"); top: 1em; right: 1em; width: 8px; height: 4px; transform: rotate(0deg); color: var(--clr-darkblue); transition: transform 0.2s ease-out; }
+.li-outer::after { content: ''; position: absolute; background: center/contain no-repeat url("/assets/images/arrow-down.svg"); top: 1.2em; right: 1em; width: 8px; height: 4px; transform: rotate(0deg); color: var(--clr-darkblue); transition: transform 0.2s ease-out; }
 
 .btn-menu { align-self: center; }
 
