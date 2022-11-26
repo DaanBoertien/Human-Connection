@@ -717,7 +717,7 @@ main { position: relative; }
 
 #button-omhoog { width: 32px; z-index: 1000; scroll-behavior: smooth; }
 
-.button-omhoog-link { opacity: 0; transform: translateY(100px); position: fixed; bottom: 1.5em; right: 1.5em; }
+.button-omhoog-link { opacity: 0; transform: translateY(100px); position: fixed; bottom: 1.5em; right: 1.5em; z-index: 1000; }
 
 .swiper-slide img { width: 100%; }
 
