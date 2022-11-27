@@ -3,6 +3,7 @@
     nav {
         position: relative;
         border-radius: 0px 0px var(--border-radius-desktop) 0px;
+        width: 87%;
     }
     .extracorner::after {
 
@@ -98,6 +99,7 @@
         line-height : 52px;
         letter-spacing : 0.23px;
         margin-top: 60px;
+        margin-bottom: 16px;
       }
 
       .landing-content p {
