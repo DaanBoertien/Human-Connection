@@ -3,7 +3,7 @@ layout: default
 title: Human Connection
 ---
 
-<div class="container">
+
   <main>
     {% include button-omhoog.html %}
     <div class="landing">
@@ -15,13 +15,16 @@ title: Human Connection
       </div>
 
       <div class="img-overlay-wrap">
+        {% include birthday.html %}
         <img
           class="landing-image"
           src="assets/images/upload/parachute.jpg"
           alt=""
         />
         {% include svg1.html %} 
+        {% include svg1-desktop.html %} 
       </div>
+      
     </div>
 
     <div class="vision">
@@ -89,7 +92,7 @@ title: Human Connection
           {% for member in site.team %}
           <div class="team-foto photo"><a href="/team/{{member.slug}}">
             
-              <img src="{{member.photo_url}}" alt="{{member.photo_description}}" class="photo"/>
+              <div class="photo-wrapper"><img src="{{member.photo_url}}" alt="{{member.photo_description}}" class="photo"/></div>
           </a>
             <a href="/team/{{member.slug}}">
               <p class="bold">{{member.title}}</p>
@@ -195,4 +198,4 @@ title: Human Connection
       
     </div>
   </main>
-</div>
+
