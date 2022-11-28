@@ -3,205 +3,228 @@ layout: default
 title: Human Connection
 ---
 
-
-  <main>
-    {% include button-omhoog.html %}
-    <div class="landing">
-      <div class="innercontainer">
-        <div class="landing-content">
-          <h1>{{site.data.home.slogan}}</h1>
-          {{site.data.home.landing-tekt | markdownify}}
-        </div>
-      </div>
-
-      <div class="img-overlay-wrap">
-        {% include birthday.html %}
-        <img
-          class="landing-image"
-          src="assets/images/upload/parachute.jpg"
-          alt=""
-        />
-        {% include svg1.html %} 
-        {% include svg1-desktop.html %} 
-      </div>
-      
-    </div>
-
-    <div class="vision">
-      <h2>{{site.data.home.waar-wij-voor-staan}}</h2>
-      {{site.data.home.waar-wijvoor-staan-tekst | markdownify}}
-    </div>
-    <div class="wijzijn">
-      <div class="innercontainer wijzijn-flex">
-        <div class="waardes">
-          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-          <h3>{{site.data.home.waarde-1-titel}}</h3>
-          {{site.data.home.waarde-1-tekst | markdownify}}
-        </div>
-        <div class="waardes">
-          <img src="{{site.data.home.waarde-2-afbeelding}}" alt="" />
-          <h3>{{site.data.home.waarde-2-titel}}</h3>
-          {{site.data.home.waarde-2-tekst | markdownify}}
-        </div>
-        <div class="waardes">
-          <img src="{{site.data.home.waarde-3-afbeelding}}" alt="" />
-          <h3>{{site.data.home.waarde-3-titel}}</h3>
-          {{site.data.home.waarde-3-tekst | markdownify}}
-        </div>
+<main>
+  {% include button-omhoog.html %}
+  <div class="landing">
+    <div class="innercontainer">
+      <div class="landing-content">
+        <h1>{{site.data.home.slogan}}</h1>
+        {{site.data.home.landing-tekt | markdownify}}
       </div>
     </div>
-    <div class="watwijdoen">
-      <h2>{{site.data.home.wat-wij-doen}}</h2>
-      {{site.data.home.wat-wij-doen-tekst | markdownify}}
+
+    <div class="img-overlay-wrap">
+      {% include birthday.html %}
+      <img
+        class="landing-image"
+        src="assets/images/upload/parachute.jpg"
+        alt=""
+      />
+      {% include svg1.html %} {% include svg1-desktop.html %}
     </div>
-    <div class="watwijdoenopsomming">
-      <div class="innercontainer">
-      
-        <div class="wwd-grid">
-          <div>
-            <h3 class="wwdfirstitem">{{site.data.home.wat-wij-doen-1-titel}}</h3>
-            {{site.data.home.wat-wij-doen-1-tekst | markdownify}}
-            {{site.data.home.wat-wij-doen-1-contact | markdownify}}
-            <p class="btn btn-outline">
-              <a href="#">{{site.data.home.wat-wij-doen-1-button}}</a>
-            </p>
-          </div>
-          <div>
-            <h3>{{site.data.home.wat-wij-doen-2-titel}}</h3>
-            {{site.data.home.wat-wij-doen-2-tekst | markdownify}}
-            {{site.data.home.wat-wij-doen-2-contact | markdownify}}
-            <p class="btn btn-outline">
-              <a href="#">{{site.data.home.wat-wij-doen-2-button}}</a>
-            </p>
-          </div>
-          <div>
-            <h3>{{site.data.home.wat-wij-doen-3-titel}}</h3>
-            {{site.data.home.wat-wij-doen-3-tekst | markdownify}}
-            {{site.data.home.wat-wij-doen-3-contact | markdownify}}
-            <p class="btn btn-outline">
-              <a href="">{{site.data.home.wat-wij-doen-3-button}}</a>
-            </p>
-          </div>
+  </div>
+
+  <div class="vision">
+    <h2>{{site.data.home.waar-wij-voor-staan}}</h2>
+    {{site.data.home.waar-wijvoor-staan-tekst | markdownify}}
+  </div>
+  <div class="wijzijn">
+    <div class="innercontainer wijzijn-flex">
+      <div class="waardes">
+        <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+        <h3>{{site.data.home.waarde-1-titel}}</h3>
+        {{site.data.home.waarde-1-tekst | markdownify}}
+      </div>
+      <div class="waardes">
+        <img src="{{site.data.home.waarde-2-afbeelding}}" alt="" />
+        <h3>{{site.data.home.waarde-2-titel}}</h3>
+        {{site.data.home.waarde-2-tekst | markdownify}}
+      </div>
+      <div class="waardes">
+        <img src="{{site.data.home.waarde-3-afbeelding}}" alt="" />
+        <h3>{{site.data.home.waarde-3-titel}}</h3>
+        {{site.data.home.waarde-3-tekst | markdownify}}
+      </div>
+    </div>
+  </div>
+  <div class="watwijdoen">
+    <h2>{{site.data.home.wat-wij-doen}}</h2>
+    {{site.data.home.wat-wij-doen-tekst | markdownify}}
+  </div>
+  <div class="watwijdoenopsomming">
+    <div class="innercontainer">
+      <div class="wwd-grid">
+        <div>
+          <h3 class="wwdfirstitem">{{site.data.home.wat-wij-doen-1-titel}}</h3>
+          {{site.data.home.wat-wij-doen-1-tekst | markdownify}}
+          {{site.data.home.wat-wij-doen-1-contact | markdownify}}
+          <p class="btn btn-outline">
+            <a href="#">{{site.data.home.wat-wij-doen-1-button}}</a>
+          </p>
         </div>
+        <div>
+          <h3>{{site.data.home.wat-wij-doen-2-titel}}</h3>
+          {{site.data.home.wat-wij-doen-2-tekst | markdownify}}
+          {{site.data.home.wat-wij-doen-2-contact | markdownify}}
+          <p class="btn btn-outline">
+            <a href="#">{{site.data.home.wat-wij-doen-2-button}}</a>
+          </p>
+        </div>
+        <div>
+          <h3>{{site.data.home.wat-wij-doen-3-titel}}</h3>
+          {{site.data.home.wat-wij-doen-3-tekst | markdownify}}
+          {{site.data.home.wat-wij-doen-3-contact | markdownify}}
+          <p class="btn btn-outline">
+            <a href="">{{site.data.home.wat-wij-doen-3-button}}</a>
+          </p>
+        </div>
+      </div>
+      <div class="centered">
         <p class="btn btn-full">
           <a href="#">{{site.data.home.hoe-wij-werken}}</a>
         </p>
       </div>
     </div>
+  </div>
 
-      <div class="wiewijzijn">
-        <div class="innercontainer">
-          <h2 class="wiewijzijntitle">{{site.data.home.wie-wij-zijn}}</h2>
-          
-          <div class="team-fotos">
-            {% for member in site.team %}
-            <div class="team-foto photo"><a href="/team/{{member.slug}}">
-          
-                <div class="photo-wrapper"><img src="{{member.photo_url}}" alt="{{member.photo_description}}" class="photo"/></div>
-            </a>
-              <a href="/team/{{member.slug}}">
-                <p class="bold">{{member.title}}</p>
-              </a>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-        
-  
-
-
-      </div>
-    
-
-    <div class="actievraag">
-      <div class="actievraag-content">
-        <h2>{{site.data.home.actievraag}}</h2>
-        <p class="ontdek">{{site.data.home.actievraag-subtitel}}</p>
-        <p class="btn btn-full">
-          <a href="#">{{site.data.home.actievraag-button}}</a>
-        </p>
-      </div>
-      <div class="actie-image">
-        <img
-          src="/assets/images/upload/vraagtekens.jpg"
-          alt=""
-        />
-        {% include svg2.html %}
-      </div>
-    </div>
-    <div class="partners">
-      <h2>{{site.data.home.partners-titel}}</h2>
-      <!-- Build Slider -->
-    </div>
-
-    <!-- Slider main container -->
-    <div class="extra-swiper-wrapper">
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-          </div>
-        </div>
-        <!-- If we need navigation buttons -->
-        <!-- <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div> -->
-      </div>
-    </div>
+  <div class="wiewijzijn">
     <div class="innercontainer">
-      <div class="contact">
-        <h2>{{site.data.home.contact-titel}}</h2>
-        <p>{{site.data.home.contact-omschrijving}}</p>
+      <h2 class="wiewijzijntitle">{{site.data.home.wie-wij-zijn}}</h2>
 
-        <form name="contact" netlify>
-          <div class="did-floating-label-content">
-            <input class="did-floating-input" type="text" name="naam" placeholder=" ">
-            <label class="did-floating-label">Naam</label>
-          </div>
-          <div class="did-floating-label-content">
-            <input class="did-floating-input" type="text" name="onderwerp" placeholder=" ">
-            <label class="did-floating-label">Onderwerp</label>
-          </div>
-          <div class="did-floating-label-content">
-            <input class="did-floating-input" type="email" name="email" placeholder=" ">
-            <label class="did-floating-label">Email</label>
-          </div>
-          <div class="did-floating-label-content">
-            <textarea id="bericht" rows="6" cols="50" class="did-floating-input" name="bericht" placeholder=" "></textarea>
-            <label class="did-floating-label">Vraag/Bericht</label>
-          </div>
-  
-
-            <button type="submit">Verzend bericht</button>
-        
-        </form>
-        <p>{{site.data.home.uitnodiging}}</p>
-        <p>{{site.data.home.adres}}</p>
-        <p>{{site.data.home.postcode}}</p>
-        <img src="{{site.data.home.afbeelding-kantoor}}" alt="">
-      
+      <div class="team-fotos">
+        {% for member in site.team %}
+        <div class="team-foto photo">
+          <a href="/team/{{member.slug}}">
+            <div class="photo-wrapper">
+              <img
+                src="{{member.photo_url}}"
+                alt="{{member.photo_description}}"
+                class="photo"
+              />
+            </div>
+          </a>
+          <a href="/team/{{member.slug}}">
+            <p class="bold member-name">{{member.title}}</p>
+            <p class="member-function">{{member.function}}</p>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
     </div>
-  </main>
+  </div>
 
+  <div class="actievraag">
+    <div class="actievraag-content">
+      <h2>{{site.data.home.actievraag}}</h2>
+      <p class="ontdek">{{site.data.home.actievraag-subtitel}}</p>
+      <p class="btn btn-full">
+        <a href="#">{{site.data.home.actievraag-button}}</a>
+      </p>
+    </div>
+    <div class="actie-image">
+      <img src="/assets/images/upload/vraagtekens.jpg" alt="" />
+      {% include svg2.html %} {% include svg2-desktop.html %}
+    </div>
+  </div>
+  <div class="partners">
+    <h2>{{site.data.home.partners-titel}}</h2>
+    <!-- Build Slider -->
+  </div>
+
+  <!-- Slider main container -->
+  <div class="extra-swiper-wrapper innercontainer">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+        </div>
+      </div>
+      <!-- If we need navigation buttons -->
+      <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+    </div>
+  </div>
+  <div class="contact">
+    <div class="innercontainer">
+      <h2>{{site.data.home.contact-titel}}</h2>
+      <div class="contact-flex">
+        <div class="contact-left">
+          <p>{{site.data.home.contact-omschrijving}}</p>
+          <form name="contact" netlify>
+            <div class="did-floating-label-content">
+              <input
+                class="did-floating-input"
+                type="text"
+                name="naam"
+                placeholder=" "
+              />
+              <label class="did-floating-label">Naam</label>
+            </div>
+            <div class="did-floating-label-content">
+              <input
+                class="did-floating-input"
+                type="text"
+                name="onderwerp"
+                placeholder=" "
+              />
+              <label class="did-floating-label">Onderwerp</label>
+            </div>
+            <div class="did-floating-label-content">
+              <input
+                class="did-floating-input"
+                type="email"
+                name="email"
+                placeholder=" "
+              />
+              <label class="did-floating-label">Email</label>
+            </div>
+            <div class="did-floating-label-content">
+              <textarea
+                id="bericht"
+                rows="6"
+                cols="50"
+                class="did-floating-input"
+                name="bericht"
+                placeholder=" "
+              ></textarea>
+              <label class="did-floating-label">Vraag/Bericht</label>
+            </div>
+            <button type="submit">Verzend bericht</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div>
+            <p>{{site.data.home.uitnodiging}}</p>
+            <p class="contact-name">Human Connection</p>
+            <p class="contact-address">{{site.data.home.adres}}</p>
+            <p class="contact-zipcode">{{site.data.home.postcode}}</p>
+          </div>
+          <img src="{{site.data.home.afbeelding-kantoor}}" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

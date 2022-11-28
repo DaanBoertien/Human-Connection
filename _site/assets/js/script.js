@@ -37,6 +37,20 @@ const swiper = new Swiper('.swiper', {
   speed: 200,
   autoplay: true,
 
+  breakpoints: {
+
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    768: {
+      slidesPerView: 7,
+      spaceBetween: 40
+    }
+  },
+
 
   // If we need pagination
   // pagination: {
