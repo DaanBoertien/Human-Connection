@@ -127,6 +127,14 @@ logos:
     logo-bedrijf: /assets/images/upload/bloomia.png
   - logo-bedrijf: /assets/images/upload/gemeente-amsterdam.png
     naam-bedrijf: Gemeente Amsterdam
+  - logo-bedrijf: /assets/images/upload/kpn.png
+    naam-bedrijf: KPN
+  - logo-bedrijf: /assets/images/upload/randstad.png
+    naam-bedrijf: Randstad
+  - logo-bedrijf: /assets/images/upload/swarco.png
+    naam-bedrijf: Swarco
+  - logo-bedrijf: /assets/images/upload/topdesk.png
+    naam-bedrijf: TOPdesk
 contact-titel: Contact
 contact-omschrijving: We komen graag met je in contact. Bel of mail direct een
   van onze collega’s of vul onderstaand formulier in. Lorem ipsum dolor sit
