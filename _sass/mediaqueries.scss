@@ -189,6 +189,17 @@
     gap: 0em 4em;
   }
 
+  .photo {
+    img {
+      border-top-right-radius: var(--border-radius-desktop);
+      border-bottom-left-radius: var(--border-radius-desktop);
+      &:hover {
+        border-top-left-radius: var(--border-radius-desktop);
+        border-bottom-right-radius: var(--border-radius-desktop);
+      }
+    }
+  }
+
   .wiewijzijn p {
     font-size: 15px;
   }
