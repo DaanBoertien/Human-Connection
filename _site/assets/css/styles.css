@@ -587,9 +587,9 @@ body { height: 100%; }
 
 .birthday { display: none; }
 
-.img-overlay-wrap .svg1 { position: absolute; bottom: 0px; left: 0; z-index: 3; height: 30px; width: 100%; }
+.img-overlay-wrap .svg1 { position: absolute; bottom: 0px; left: 0; z-index: 3; height: 90px; width: 100%; }
 
-.actie-image .svg1 { position: absolute; top: 0; left: 0; z-index: 3; height: 30px; width: 100%; }
+.actie-image .svg2 { position: absolute; top: 0; left: 0; z-index: 3; width: 100%; }
 
 .landing p { color: white; font-weight: 500; }
 
