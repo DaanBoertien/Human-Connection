@@ -577,7 +577,7 @@ body { height: 100%; }
 
 .img-overlay-wrap, .actie-image { position: relative; display: inline-block; }
 
-.img-overlay-wrap img, .actie-image img { object-fit: cover; }
+.img-overlay-wrap img, .actie-image img { min-height: 50vh; object-fit: cover; }
 
 .img-overlay-wrap img, .actie-image img { /* <= optional, for responsiveness */ display: block; max-width: 100%; height: auto; }
 
