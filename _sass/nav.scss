@@ -8,8 +8,7 @@ nav {
   justify-items: center;
   justify-self: auto;
   padding: 1em;
-  
-  
+
   background: white;
   position: absolute;
   top: 0;
@@ -20,11 +19,9 @@ nav {
   border-radius: 0px 0px 30px 0px;
 }
 
-
-
 .extracorner::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 100%;
   left: 0;
   width: 30px;
@@ -32,9 +29,7 @@ nav {
   border-top-left-radius: 30px;
   box-shadow: 0 -30px 0 0 white;
   background: transparant;
-
 }
-
 
 nav img {
   width: 50%;
@@ -44,29 +39,83 @@ nav img {
 
 .nav-desktop {
   display: none;
+  margin-bottom: 0.3em;
+  cursor: pointer;
+}
+.main-menu-list {
+  position: relative;
+}
+
+.main-menu-list::before {
+  content: "";
+  position: absolute;
+  background: center/contain no-repeat url("/assets/images/arrow-down.svg");
+  top: 0.95em;
+  right: 1.2em;
+  width: 8px;
+  height: 4px;
+  transform: rotate(0deg);
+  color: var(--clr-darkblue);
+  transition: transform 0.4s ease-out;
+}
+.main-menu-list:hover {
+  color: var(--clr-darkblue);
+}
+.main-menu-list:hover::before {
+  transform: rotate(180deg);
+}
+
+.main-menu-link:link,
+.main-menu-link:visited,
+.main-menu-link:active {
+  color: var(--crl-black);
+}
+
+.main-menu {
+  color: var(--clr-black);
+  z-index: 5;
+  cursor: pointer;
 }
 .nav-desktop ul {
-
   list-style: none;
   margin: 0;
   padding-left: 0;
   display: none;
-  
+  cursor: pointer;
 }
 
 .nav-desktop li {
   color: var(--clr-black);
-
+  cursor: pointer;
   display: block;
   float: left;
-  padding: 1rem;
+  padding: 0.4rem 2rem;
   position: relative;
   text-decoration: none;
   transition-duration: 0.5s;
 }
-  
-.nav-desktop li a {
-  color: var(--clr-black);
+
+.dropdown {
+  z-index: 2;
+}
+
+.dropdown:last-child {
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  padding-bottom: 1em;
+}
+
+.dropdown li:nth-child(2) {
+  padding-top: 1.5em;
+}
+
+.menu-filler {
+  background: white;
+  height: 14.5px;
+}
+
+.nav-desktop li .dropdownlink {
+  color: white;
 }
 
 .nav-desktop li:hover,
@@ -79,26 +128,48 @@ nav img {
 }
 
 .nav-desktop ul li ul {
+  a {
+    color: white;
+  }
+  cursor: pointer;
   visibility: hidden;
-  background: white;
+  background: var(--clr-darkblue);
+  color: white;
   opacity: 0;
-  width: 12rem;
+  min-width: max-content;
   position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
+  transition: opacity 0.2s ease-out;
+  margin-top: 0rem;
   left: 0;
   right: 0;
-  display: none;
-  border: var(--clr-black) solid 1px;
+  // display: none;
+  // border: var(--clr-black) solid 1px;
 }
 
 .nav-desktop ul li:hover > ul,
 .nav-desktop ul li:focus-within > ul,
 .nav-desktop ul li ul:hover,
 .nav-desktop ul li ul:focus {
-   visibility: visible;
-   opacity: 1;
-   display: block;
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.dropdown-link::before {
+  position: absolute;
+  content: "";
+  background: center/contain no-repeat url("/assets/images/ul-arrow-white.svg");
+
+  left: 20px;
+  width: 4.6392px;
+  height: 8px;
+  bottom: 11px;
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+.nav-desktop ul li ul li:hover .dropdown-link::before {
+  opacity: 1;
 }
 
 .nav-desktop ul li ul li {
@@ -106,14 +177,13 @@ nav img {
   width: 100%;
 }
 
-
 .nav-menu {
   position: fixed;
   z-index: 10;
   top: 0;
   left: 0;
   width: 100vw;
-  
+
   background: white;
   color: black;
   opacity: 0;
@@ -129,19 +199,17 @@ nav img {
 }
 
 .nav-menu ul {
- 
   margin-top: 3em;
   width: 90%;
   color: black;
   display: block;
   list-style: none;
-  
 }
 
 .nav-menu ul li {
   padding-left: 1em;
-  padding-top: .7em;
-  padding-bottom: .7em;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
   border-bottom: 1px solid var(--clr-darkblue);
   font-weight: 500;
 }
@@ -175,19 +243,18 @@ nav img {
   transition: all 0.2s ease-out;
 }
 
-
-.submenu-mobile-toggle2.open .submenu-mobile{
+.submenu-mobile-toggle2.open .submenu-mobile {
   height: 5.5em;
   opacity: 1;
 }
 
 .submenu-mobile-toggle1.open .submenu-mobile,
-.submenu-mobile-toggle3.open .submenu-mobile{
+.submenu-mobile-toggle3.open .submenu-mobile {
   height: 3.5em;
   opacity: 1;
 }
 
-.li-outer.open::after{
+.li-outer.open::after {
   transform: rotate(180deg);
 }
 
@@ -195,10 +262,10 @@ nav img {
   position: relative;
 }
 
-.li-outer::after{
-  content: '';
+.li-outer::after {
+  content: "";
   position: absolute;
-  background: center/contain no-repeat  url('/assets/images/arrow-down.svg');
+  background: center/contain no-repeat url("/assets/images/arrow-down.svg");
   top: 1.2em;
   right: 1em;
   width: 8px;
@@ -207,7 +274,6 @@ nav img {
   color: var(--clr-darkblue);
   transition: transform 0.2s ease-out;
 }
-
 
 .btn-menu {
   align-self: center;

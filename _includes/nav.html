@@ -10,25 +10,33 @@
     </span>
   </button>
   <div class="nav-desktop">
-    <ul>
-      <li>
-        <a href="#" aria-haspopup="true">Wie wij zijn</a>
+    <ul class="main-menu">
+      <li class="main-menu-list">
+        <a href="#" aria-haspopup="true" class="main-menu-link">Wie wij zijn</a>
         <ul class="dropdown" aria-label="submenu">
+          <li class="menu-filler"></li>
           {% assign members_by_name = site.team | sort: 'title' %} {% for member
           in members_by_name %}
-          <li><a href="/team/{{member.slug}}">{{member.title}}</a></li>
+          <li>
+            <a class="dropdown-link" href="/team/{{member.slug}}"
+              >{{member.title}}</a
+            >
+          </li>
           {% endfor %}
         </ul>
       </li>
-      <li>
-        <a href="#" aria-haspopup="true">Wat we doen</a>
+      <li class="main-menu-list">
+        <a href="#" aria-haspopup="true" class="main-menu-link">Wat we doen</a>
         <ul class="dropdown" aria-label="submenu">
-          <li><a href="#">Wat wij doen</a></li>
-          <li><a href="#">Hoe wij werken</a></li>
-          <li><a href="#">Connect to Perform</a></li>
+          <li class="menu-filler"></li>
+          <li><a href="#" class="dropdown-link">Hoe wij werken</a></li>
+          <li><a href="#" class="dropdown-link">Wat wij doen</a></li>
+          <li><a href="#" class="dropdown-link">Connect to Perform</a></li>
         </ul>
       </li>
-      <li><a href="#">Contact</a></li>
+      <li class="main-menu-list">
+        <a href="#" class="main-menu-link">Contact</a>
+      </li>
     </ul>
   </div>
   <div class="nav-menu">
