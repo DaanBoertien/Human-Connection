@@ -137,30 +137,11 @@ title: Human Connection
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
+        {% for logo in site.data.home.logos %}
         <div class="swiper-slide">
-          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
+          <img src="{{logo.logo-bedrijf}}" alt="logo.naam-bedrijf" />
         </div>
-        <div class="swiper-slide">
-          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
-        </div>
+        {% endfor %}
       </div>
       <!-- If we need navigation buttons -->
       <!-- <div class="swiper-button-prev"></div>
