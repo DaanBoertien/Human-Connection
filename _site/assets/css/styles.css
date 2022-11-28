@@ -571,7 +571,7 @@ body { height: 100%; }
 
 .container { max-width: 1056px; margin: 0 auto; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15); }
 
-.innercontainer { padding-left: 1em; padding-right: 1em; }
+.innercontainer { padding-left: 1em; padding-right: 1em; max-width: 656px; margin: 0 auto; }
 
 .landing { display: flex; flex-direction: column-reverse; background-color: var(--clr-green); color: white; padding-bottom: var(--spacer-small); }
 
@@ -611,9 +611,11 @@ body { height: 100%; }
 
 .wijzijn img { max-width: 50vw; margin: 0 auto; }
 
+.wiewijzijn p { font-size: 0.8em; line-height: 1.15; margin-top: .5em; }
+
 .waardes { display: flex; flex-direction: column; }
 
-.watwijdoenopsomming { background-color: var(--clr-lightestblue); margin-top: -3em; margin-left: -1em; padding-left: 1em; margin-right: -1em; padding-right: 1em; padding-bottom: 2em; }
+.watwijdoenopsomming { background-color: var(--clr-lightestblue); margin-top: -3em; padding-bottom: 2em; }
 
 .watwijdoenopsomming h3 { margin-top: 1em; }
 
@@ -763,6 +765,6 @@ main { position: relative; }
 
 .margin-top-2 { margin-top: 2em; }
 
-@media (min-width: 768px) { nav { position: relative; border-radius: 0px 0px var(--border-radius-desktop) 0px; width: 87%; } .extracorner::after { width: var(--border-radius-desktop); height: calc(var(--border-radius-desktop) * 2); border-top-left-radius: var(--border-radius-desktop); box-shadow: 0 calc(var(--border-radius-desktop) * -1) 0 0 white; } .hamburger { display: none; } .mainlogo { padding: 1em; padding-bottom: .75em; } .landing { flex-direction: row-reverse; padding-bottom: 0; box-shadow: 0 -130px 0 0 var(--clr-green); } .img-overlay-wrap { flex: 1 1 0px; position: relative; } .innercontainer { flex: 1 1 0px; } .img-overlay-wrap img { height: 100%; } .img-overlay-wrap img, .actie-image img { /* <= optional, for responsiveness */ height: 100%; } .img-overlay-wrap .svg1 { display: none; } .actie-image .svg1 { display: none; } .img-overlay-wrap .svg1-desktop { display: block; position: absolute; top: 0px; right: 0; z-index: 3; height: 100%; width: 120px; } .img-overlay-wrap svg { right: 0; } .birthday { position: absolute; z-index: 2; display: block; right: 40px; top: 50%; height: 145px; padding-right: 30px; border-top-left-radius: var(--border-radius-desktop); } .birthday-25 { font-size: 100px; margin-bottom: 0; line-height: 1; } .birthday-jaar { margin-top: 0; font-size: 43px; line-height: 1; } h1 { font-weight: bold; font-size: 45px; line-height: 52px; letter-spacing: 0.23px; margin-top: 60px; margin-bottom: 16px; } .landing-content p { font-size: 15px; line-height: 25px; font-weight: 300; max-width: 400px; } .landing-content { padding-bottom: 60px; } }
+@media (min-width: 768px) { nav { position: relative; border-radius: 0px 0px var(--border-radius-desktop) 0px; width: 87%; } .extracorner::after { width: var(--border-radius-desktop); height: calc(var(--border-radius-desktop) * 2); border-top-left-radius: var(--border-radius-desktop); box-shadow: 0 calc(var(--border-radius-desktop) * -1) 0 0 white; } .hamburger { display: none; } .mainlogo { padding: 1em; padding-bottom: .75em; } .landing { flex-direction: row-reverse; padding-bottom: 0; box-shadow: 0 -130px 0 0 var(--clr-green); } .img-overlay-wrap { flex: 1 1 0px; position: relative; } .innercontainer { flex: 1 1 0px; max-width: 856px; } .img-overlay-wrap img { height: 100%; } .img-overlay-wrap img, .actie-image img { /* <= optional, for responsiveness */ height: 100%; } .img-overlay-wrap .svg1 { display: none; } .actie-image .svg1 { display: none; } .img-overlay-wrap .svg1-desktop { display: block; position: absolute; top: 0px; right: 0; z-index: 3; height: 100%; width: 120px; } .img-overlay-wrap svg { right: 0; } .birthday { position: absolute; z-index: 2; display: block; right: 40px; top: 50%; height: 145px; padding-right: 30px; border-top-left-radius: var(--border-radius-desktop); } .birthday-25 { font-size: 100px; margin-bottom: 0; line-height: 1; } .birthday-jaar { margin-top: 0; font-size: 43px; line-height: 1; } h1 { font-weight: bold; font-size: 45px; line-height: 52px; letter-spacing: 0.23px; margin-top: 60px; margin-bottom: 16px; } .landing-content p { font-size: 15px; line-height: 25px; font-weight: 300; max-width: 400px; } .landing-content { padding-bottom: 60px; } h2 { font-size: 36px; font-weight: 900; } .vision { padding-top: 3em; } .vision p { font-size: 17px; max-width: 700px; margin: 0 auto; } .wijzijn { display: block; margin-bottom: 60px; } .wijzijn img { max-width: 100%; } .wijzijn-flex, .wwd-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5em; } h3 { font-size: 22px; } .waardes p { font-size: 15px; } .watwijdoen p { max-width: 672px; margin: 0 auto; margin-bottom: 2em; font-size: 17px; } .wwd-grid { padding-top: 5em; } .wwdfirstitem { padding-top: 0; } main ul { padding-left: 16px; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -37,6 +37,7 @@
     }
     .innercontainer {
         flex: 1 1 0px;
+        max-width: 856px;
     }
 
     .img-overlay-wrap img {
@@ -117,4 +118,56 @@
         padding-bottom: 60px;
         
       }
+
+      h2 {
+        font-size: 36px;
+        font-weight: 900;
+      }
+
+      .vision {
+        padding-top: 3em;
+      }
+      .vision p {
+        font-size: 17px;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .wijzijn {
+        display: block;
+        margin-bottom: 60px;
+      }
+        .wijzijn img {
+          max-width: 100%;
+        }
+      .wijzijn-flex, .wwd-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2.5em;
+      }
+      
+      h3 {
+        font-size: 22px;
+      }
+
+      .waardes p {
+        font-size: 15px;
+      }
+
+      .watwijdoen p {
+        max-width: 672px;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        font-size: 17px;
+      }
+      .wwd-grid {
+        padding-top: 5em;
+      }
+      .wwdfirstitem {
+        padding-top: 0;
+      }
+
+      main ul {
+        padding-left: 16px;
+      }
+      
 }

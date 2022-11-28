@@ -21,6 +21,8 @@ main {
 .innercontainer {
     padding-left: 1em;
     padding-right: 1em;
+    max-width: 656px;
+    margin: 0 auto;
     
 }
 .landing {
@@ -152,6 +154,12 @@ main {
     
 }
 
+.wiewijzijn p {
+    font-size: 0.8em;
+    line-height: 1.15;
+    margin-top: .5em;
+}
+
 .waardes{
     display: flex;
     flex-direction: column;
@@ -160,10 +168,10 @@ main {
 .watwijdoenopsomming {
     background-color: var(--clr-lightestblue);
     margin-top: -3em;
-    margin-left: -1em;
-    padding-left: 1em;
-    margin-right: -1em;
-    padding-right: 1em;
+    // margin-left: -1em;
+    // padding-left: 1em;
+    // margin-right: -1em;
+    // padding-right: 1em;
     padding-bottom: 2em;
 }
 

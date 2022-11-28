@@ -32,7 +32,7 @@ title: Human Connection
       {{site.data.home.waar-wijvoor-staan-tekst | markdownify}}
     </div>
     <div class="wijzijn">
-      <div class="innercontainer">
+      <div class="innercontainer wijzijn-flex">
         <div class="waardes">
           <img src="{{site.data.home.waarde-1-afbeelding}}" alt="" />
           <h3>{{site.data.home.waarde-1-titel}}</h3>
@@ -54,58 +54,64 @@ title: Human Connection
       <h2>{{site.data.home.wat-wij-doen}}</h2>
       {{site.data.home.wat-wij-doen-tekst | markdownify}}
     </div>
-    <div class="innercontainer">
-      <div class="watwijdoenopsomming">
-        <div>
-          <h3 class="wwdfirstitem">{{site.data.home.wat-wij-doen-1-titel}}</h3>
-          {{site.data.home.wat-wij-doen-1-tekst | markdownify}}
-          {{site.data.home.wat-wij-doen-1-contact | markdownify}}
-          <p class="btn btn-outline">
-            <a href="#">{{site.data.home.wat-wij-doen-1-button}}</a>
-          </p>
-        </div>
-        <div>
-          <h3>{{site.data.home.wat-wij-doen-2-titel}}</h3>
-          {{site.data.home.wat-wij-doen-2-tekst | markdownify}}
-          {{site.data.home.wat-wij-doen-2-contact | markdownify}}
-          <p class="btn btn-outline">
-            <a href="#">{{site.data.home.wat-wij-doen-2-button}}</a>
-          </p>
-        </div>
-        <div>
-          <h3>{{site.data.home.wat-wij-doen-3-titel}}</h3>
-          {{site.data.home.wat-wij-doen-3-tekst | markdownify}}
-          {{site.data.home.wat-wij-doen-3-contact | markdownify}}
-          <p class="btn btn-outline">
-            <a href="">{{site.data.home.wat-wij-doen-3-button}}</a>
-          </p>
+    <div class="watwijdoenopsomming">
+      <div class="innercontainer">
+      
+        <div class="wwd-grid">
+          <div>
+            <h3 class="wwdfirstitem">{{site.data.home.wat-wij-doen-1-titel}}</h3>
+            {{site.data.home.wat-wij-doen-1-tekst | markdownify}}
+            {{site.data.home.wat-wij-doen-1-contact | markdownify}}
+            <p class="btn btn-outline">
+              <a href="#">{{site.data.home.wat-wij-doen-1-button}}</a>
+            </p>
+          </div>
+          <div>
+            <h3>{{site.data.home.wat-wij-doen-2-titel}}</h3>
+            {{site.data.home.wat-wij-doen-2-tekst | markdownify}}
+            {{site.data.home.wat-wij-doen-2-contact | markdownify}}
+            <p class="btn btn-outline">
+              <a href="#">{{site.data.home.wat-wij-doen-2-button}}</a>
+            </p>
+          </div>
+          <div>
+            <h3>{{site.data.home.wat-wij-doen-3-titel}}</h3>
+            {{site.data.home.wat-wij-doen-3-tekst | markdownify}}
+            {{site.data.home.wat-wij-doen-3-contact | markdownify}}
+            <p class="btn btn-outline">
+              <a href="">{{site.data.home.wat-wij-doen-3-button}}</a>
+            </p>
+          </div>
         </div>
         <p class="btn btn-full">
           <a href="#">{{site.data.home.hoe-wij-werken}}</a>
         </p>
       </div>
+    </div>
 
       <div class="wiewijzijn">
-        <h2 class="wiewijzijntitle">{{site.data.home.wie-wij-zijn}}</h2>
-        
-        <div class="team-fotos">
-          {% for member in site.team %}
-          <div class="team-foto photo"><a href="/team/{{member.slug}}">
-            
-              <div class="photo-wrapper"><img src="{{member.photo_url}}" alt="{{member.photo_description}}" class="photo"/></div>
-          </a>
-            <a href="/team/{{member.slug}}">
-              <p class="bold">{{member.title}}</p>
+        <div class="innercontainer">
+          <h2 class="wiewijzijntitle">{{site.data.home.wie-wij-zijn}}</h2>
+          
+          <div class="team-fotos">
+            {% for member in site.team %}
+            <div class="team-foto photo"><a href="/team/{{member.slug}}">
+          
+                <div class="photo-wrapper"><img src="{{member.photo_url}}" alt="{{member.photo_description}}" class="photo"/></div>
             </a>
+              <a href="/team/{{member.slug}}">
+                <p class="bold">{{member.title}}</p>
+              </a>
+            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
         </div>
         
   
 
 
       </div>
-    </div>
+    
 
     <div class="actievraag">
       <div class="actievraag-content">
