@@ -52,10 +52,6 @@
     max-width: 856px;
   }
 
-  .img-overlay-wrap img {
-    height: 100%;
-  }
-
   .img-overlay-wrap img,
   .actie-image img {
     /* <= optional, for responsiveness */
@@ -113,6 +109,7 @@
     letter-spacing: 0.23px;
     margin-top: 60px;
     margin-bottom: 16px;
+    max-width: 400px;
   }
 
   .landing-content p {
@@ -168,9 +165,11 @@
   }
 
   h3 {
-    font-size: 22px;
+    font-size: 18px;
   }
-
+  .waardes img {
+    width: 75%;
+  }
   .waardes p {
     font-size: 15px;
   }
@@ -361,5 +360,14 @@
     p {
       box-shadow: none;
     }
+  }
+  .connect-to-perform h2 {
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 900px) {
+  .innercontainer {
+    max-width: 956px;
   }
 }

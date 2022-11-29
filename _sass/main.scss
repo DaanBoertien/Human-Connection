@@ -11,7 +11,7 @@ main {
 }
 
 .container {
-  max-width: 1056px;
+  max-width: 1300px;
   margin: 0 auto;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
   overflow: hidden;
@@ -38,22 +38,13 @@ main {
   display: inline-block;
 }
 
-.img-overlay-wrap {
-}
-
 .img-overlay-wrap img,
 .actie-image img {
-  // height: 100%;
-  min-height: 50vh;
+  height: 100%;
   object-fit: cover;
-}
-
-.img-overlay-wrap img,
-.actie-image img {
-  /* <= optional, for responsiveness */
   display: block;
   max-width: 100%;
-  height: auto;
+  height: 50vh;
 }
 
 .img-overlay-wrap .svg1-desktop {
@@ -267,6 +258,10 @@ main {
 .swiper {
   max-width: 70vw;
   margin-bottom: 2em;
+}
+
+.swiper-wrapper {
+  align-items: center;
 }
 
 .contact {
@@ -503,6 +498,7 @@ main li::before {
 
 footer h2 {
   color: white;
+  line-height: 1.4;
 }
 
 .footer {
