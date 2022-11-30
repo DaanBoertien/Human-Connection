@@ -380,6 +380,7 @@ label {
 button[type="submit"] {
   margin-left: auto;
   color: white;
+  padding: 0.5em 0.8em;
 }
 
 .did-floating-label-content {
@@ -551,6 +552,10 @@ footer h2 {
   &-menu {
     display: none;
   }
+}
+
+.footer-menu-items img {
+  width: 20px;
 }
 
 .footer p {

@@ -709,7 +709,7 @@ textarea { margin-bottom: 2em; resize: none; padding-top: 3em; min-height: 200px
 
 label { color: var(--clr-black); margin-bottom: 0.2em; }
 
-button[type="submit"] { margin-left: auto; color: white; }
+button[type="submit"] { margin-left: auto; color: white; padding: 0.5em 0.8em; }
 
 .did-floating-label-content { position: relative; margin-bottom: 0; }
 
@@ -764,6 +764,8 @@ footer h2 { color: white; line-height: 1.4; }
 .footer { padding-top: 2em; padding-left: 2em; color: white; }
 
 .footer-menu { display: none; }
+
+.footer-menu-items img { width: 20px; }
 
 .footer p { color: white; box-shadow: 0px 50px 0px 0px var(--clr-green), -70px 50px 0px 0px var(--clr-green); }
 
