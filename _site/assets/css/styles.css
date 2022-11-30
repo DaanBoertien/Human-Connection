@@ -125,7 +125,7 @@ nav { display: flex; justify-content: space-between; justify-items: center; just
 
 .extracorner::after { position: absolute; content: ""; top: 100%; left: 0; width: 30px; height: 60px; border-top-left-radius: 30px; box-shadow: 0 -30px 0 0 white; background: transparant; }
 
-.mainlogo { width: 50%; max-width: 196px; z-index: 100; }
+.mainlogo { width: 100%; max-width: 196px; z-index: 100; }
 
 .nav-desktop { display: none; margin-bottom: 0.3em; cursor: pointer; }
 
@@ -604,6 +604,8 @@ section { margin-top: 80px; margin-bottom: 80px; }
 .innercontainer, .innercontainer--werken-bij { padding-left: 1em; padding-right: 1em; max-width: 656px; margin: 0 auto; }
 
 .landing { display: flex; flex-direction: column-reverse; background-color: var(--clr-green); color: white; padding-bottom: var(--spacer-small); }
+
+.mainlogolink { z-index: 10000; }
 
 .img-overlay-wrap, .actie-image { position: relative; display: inline-block; }
 

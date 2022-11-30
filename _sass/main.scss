@@ -38,6 +38,10 @@ section {
   padding-bottom: var(--spacer-small);
 }
 
+.mainlogolink {
+  z-index: 10000;
+}
+
 .img-overlay-wrap,
 .actie-image {
   position: relative;
