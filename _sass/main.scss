@@ -638,14 +638,16 @@ main {
         var(--clr-lightblue);
     }
   }
-
-  max-width: 300px;
+  // max-width: 300px;
+  width: 100%;
   // margin-inline: auto;
 
   line-height: 1;
 
   border-radius: 0px var(--border-radius) 0px var(--border-radius);
   @media (min-width: 768px) {
+    max-width: 300px;
+    margin-bottom: 2em;
     border-radius: 0px var(--border-radius-desktop) 0px
       var(--border-radius-desktop);
   }
