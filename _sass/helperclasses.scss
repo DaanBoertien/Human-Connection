@@ -1,44 +1,47 @@
 .Donkerblauw {
-    background-color: var(--clr-darkblue);
+  background-color: var(--clr-darkblue);
 }
 
 .Lichtblauw {
-    background-color: var(--clr-lightblue);
+  background-color: var(--clr-lightblue);
 }
 .Geel {
-    background-color: var(--clr-yellow);
+  background-color: var(--clr-yellow);
 }
 
 .Groen {
-    background-color: var(--clr-green);
+  background-color: var(--clr-green);
 }
 
 .Grijs {
-    background-color: var(--clr-grey);
+  background-color: var(--clr-grey);
 }
 
 .Rood {
-    background-color: var(-clr-red);
+  background-color: var(-clr-red);
 }
 
 .bold {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .tight-text {
-    line-height: 1.0;
+  line-height: 1;
 }
 
 .center {
-    text-align: center;
-    
+  text-align: center;
 }
 
 .centered {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.margin-top-2{
-    margin-top: 2em;
+.margin-top-2 {
+  margin-top: 2em;
+}
+
+.no-border {
+  border: 0;
 }

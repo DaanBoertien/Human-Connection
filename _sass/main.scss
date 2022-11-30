@@ -230,6 +230,30 @@ main {
   display: block;
   padding-bottom: 100%; /* The padding depends on the width, not on the height, so with a padding-bottom of 100% you will get a square */
 }
+.photo-wrapper::before {
+  position: absolute;
+  content: url("/assets/images/ul-arrow-white.svg");
+  background: center/contain no-repeat url("/assets/images/ul-arrow-white.svg");
+  background-size: 25%;
+  color: white;
+  padding-top: 3em;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: opacity 0.2s ease-out;
+  z-index: 10;
+  background-color: var(--clr-red);
+  border-top-right-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  opacity: 0;
+  display: grid;
+  place-items: center;
+}
+
+.photo-wrapper:hover::before {
+  opacity: 1;
+}
 
 .photo-wrapper img {
   position: absolute; /* Take your picture out of the flow */
@@ -244,10 +268,10 @@ main {
 }
 
 .photo img:hover {
-  border-top-left-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0;
+  // border-top-left-radius: var(--border-radius);
+  // border-bottom-right-radius: var(--border-radius);
+  // border-top-right-radius: 0px;
+  // border-bottom-left-radius: 0;
 }
 
 .actievraag-content {
@@ -317,7 +341,6 @@ form input {
   display: block;
 }
 
-button[type="submit"],
 input,
 textarea {
   font-family: inherit;
@@ -327,10 +350,10 @@ textarea {
   border: 1px solid lightgray;
 }
 
-button[type="submit"] {
-  border-radius: 30px;
-  margin-bottom: 3em;
-}
+// button[type="submit"] {
+//   border-radius: 30px;
+//   margin-bottom: 3em;
+// }
 
 input,
 textarea {
@@ -354,16 +377,9 @@ label {
   margin-bottom: 0.2em;
 }
 
-form button {
-  color: white;
-  padding: 0.75em 1em;
-  background-color: var(--clr-darkblue);
-  font-weight: 700;
-}
-
 button[type="submit"] {
-  font-weight: 700;
   margin-left: auto;
+  color: white;
 }
 
 .did-floating-label-content {

@@ -233,6 +233,11 @@
     }
   }
 
+  .photo-wrapper::before {
+    border-top-right-radius: var(--border-radius-desktop);
+    border-bottom-left-radius: var(--border-radius-desktop);
+  }
+
   .wiewijzijn p {
     font-size: 15px;
   }

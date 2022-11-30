@@ -1,39 +1,51 @@
 .btn {
-    
-    border-radius: 100px;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    padding-left: 0.8em;
-    padding-right: 0.8em;
-    display: inline-block;
-    
-}
+  border-radius: 100px;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  display: inline-block;
+  transition: all 0.2s ease-out;
 
-.btn-outline {
+  a {
+    text-decoration: none;
+    font-weight: 500;
+  }
+  &-outline {
     border: 1px solid var(--clr-black);
+    background-color: transparent;
+    a {
+      color: var(--clr-black);
+    }
+    &:hover {
+      background-color: var(--clr-grey);
+      border: 1px solid var(--clr-grey);
+    }
+  }
 
-}
-
-.btn-full {
+  &-full {
     background-color: var(--clr-darkblue);
     border: 2px solid var(--clr-darkblue);
-    color: white;
-}
 
-.btn-full a {
-    color: white;
-}
-
-.btn-outline a {
-    color: var(--clr-black);
-}
-
-.btn:hover {
+    a {
+      color: white;
+    }
+    &:hover {
+      background-color: var(--clr-lightblue);
+      border: 2px solid var(--clr-lightblue);
+    }
+    .connect-to-perform & {
+      border: 2px solid var(--clr-lightblue);
+      &:hover {
+        background-color: var(--clr-grey);
+        border: 2px solid var(--clr-grey);
+        a {
+          color: var(--clr-black);
+        }
+      }
+    }
+  }
+  &:hover {
     cursor: pointer;
-}
-
-.btn a {
-    text-decoration: none;
-    
-    font-weight: 500;
+  }
 }
