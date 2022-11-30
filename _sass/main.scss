@@ -574,7 +574,7 @@ main {
   }
   .grid-layout {
     display: grid;
-    place-items: center;
+
     @media (min-width: 768px) {
       h2 {
         margin-top: 0;
@@ -609,6 +609,7 @@ main {
   background: #0bbbb4;
   position: relative;
   margin-bottom: 3em;
+  place-self: center;
   p {
     color: white;
   }
