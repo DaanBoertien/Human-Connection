@@ -55,10 +55,12 @@
   .button-omhoog-link {
     display: none;
   }
-
+  main {
+    margin-top: 100px;
+  }
   .landing {
     flex-direction: row-reverse;
-    margin-top: 100px;
+
     padding-bottom: 0;
     box-shadow: 0 -300px 0 0 var(--clr-green);
     &--werken-bij {
@@ -405,11 +407,17 @@
   .innercontainer {
     max-width: 956px;
   }
+  .innercontainer--werken-bij {
+    max-width: 756px;
+  }
 }
 
 @media (min-width: 1400px) {
   .innercontainer {
     max-width: 1156px;
+  }
+  .innercontainer--werken-bij {
+    max-width: 856px;
   }
   .contact {
     img {

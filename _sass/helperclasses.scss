@@ -1,16 +1,42 @@
 .Donkerblauw {
   background-color: var(--clr-darkblue);
 }
+.Donkerblauw::after {
+  box-shadow: 0 calc(var(--border-radius) * -1) 0 0 var(--clr-darkblue);
+  @media (min-width: 768px) {
+    box-shadow: 0 calc(var(--border-radius-desktop) * -1) 0 0
+      var(--clr-darkblue);
+  }
+}
 
 .Lichtblauw {
   background-color: var(--clr-lightblue);
 }
+.Lichtblauw::after {
+  box-shadow: 0 calc(var(--border-radius) * -1) 0 0 var(--clr-lightblue);
+  @media (min-width: 768px) {
+    box-shadow: 0 calc(var(--border-radius-desktop) * -1) 0 0
+      var(--clr-lightblue);
+  }
+}
 .Geel {
   background-color: var(--clr-yellow);
+}
+.Geel::after {
+  box-shadow: 0 calc(var(--border-radius) * -1) 0 0 var(--clr-yellow);
+  @media (min-width: 768px) {
+    box-shadow: 0 calc(var(--border-radius-desktop) * -1) 0 0 var(--clr-yellow);
+  }
 }
 
 .Groen {
   background-color: var(--clr-green);
+}
+.Groen::after {
+  box-shadow: 0 calc(var(--border-radius) * -1) 0 0 var(--clr-green);
+  @media (min-width: 768px) {
+    box-shadow: 0 calc(var(--border-radius-desktop) * -1) 0 0 var(--clr-green);
+  }
 }
 
 .Grijs {
@@ -19,6 +45,12 @@
 
 .Rood {
   background-color: var(-clr-red);
+}
+.Rood::after {
+  box-shadow: 0 calc(var(--border-radius) * -1) 0 0 var(--clr-red);
+  @media (min-width: 768px) {
+    box-shadow: 0 calc(var(--border-radius-desktop) * -1) 0 0 var(--clr-red);
+  }
 }
 
 .bold {

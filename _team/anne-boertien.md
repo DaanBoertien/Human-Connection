@@ -9,13 +9,15 @@ photo_description: Anne tekent
 summary: >-
   Potentie maximaal benutten en mensen in beweging brengen, dat zijn **mijn**
   belangrijkste drijfveren in **mijn** werk.
-
-
+uitleg: >-
   Ik hou van het begrijpelijk en tastbaar maken van abstracte, complexe zaken. Visueel, door middel van zakelijk tekenen. Met een goed gesprek en focus op de volledige mens. En oplossingsgericht, vanuit het doel.
 
 
   Anderen omschrijven mij als warm en oprecht in relaties, scherp op de inhoud, en praktisch en creatief in de uitvoering.
 bg_color: Lichtblauw
+card_title: Tijd voor actie?
+soundbites: Anne in soundbites
+soundbites_text: enthousiast, analyserend, diepte, strategisch. Denken vs. voelen. Praktisch. Multitasker.
 ---
 
 Anne doet dit en dit

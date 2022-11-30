@@ -7,5 +7,5 @@ phonenumber: 06 12 34 56 78
 photo_url: /assets/images/upload/marit.jpg
 photo_description: "Marit "
 summary: D﻿oet dingen
-bg_color: Rood
+bg_color: Groen
 ---

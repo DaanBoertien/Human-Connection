@@ -20,13 +20,13 @@
             <ul class="dropdown" aria-label="submenu">
               <li class="menu-filler"></li>
               {% assign members_by_name = site.team | sort: 'title' %} {% for
-              member in members_by_name %}
+              member in members_by_name %} {% if member.in_menu != false %}
               <li>
                 <a class="dropdown-link" href="/team/{{member.slug}}"
                   >{{member.title}}</a
                 >
               </li>
-              {% endfor %}
+              {% endif %} {% endfor %}
             </ul>
           </li>
           <li class="main-menu-list">

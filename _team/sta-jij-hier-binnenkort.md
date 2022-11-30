@@ -8,4 +8,5 @@ photo_url: /assets/images/upload/kom-werken.png
 photo_description: Vacature
 summary: T﻿ekst
 bg_color: Lichtblauw
+in_menu: false
 ---
