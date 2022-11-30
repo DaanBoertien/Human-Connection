@@ -8,14 +8,14 @@ nav {
   justify-items: center;
   justify-self: auto;
   padding: 1em;
-
+  position: fixed;
   background: white;
-  position: absolute;
+  // position: fixed;
   top: 0;
   width: 85%;
   left: 0;
   right: 1.5em;
-  z-index: 30;
+  z-index: 20000;
   border-radius: 0px 0px 30px 0px;
 }
 
@@ -31,7 +31,7 @@ nav {
   background: transparant;
 }
 
-nav img {
+.mainlogo {
   width: 50%;
   max-width: 196px;
   z-index: 100;

@@ -1,74 +1,82 @@
-<nav role="navigation" class="extracorner" id="nav">
-  <img
-    class="mainlogo"
-    src="/assets/images/upload/Logo Human Connection.svg"
-    alt=""
-  />
-  <button class="hamburger hamburger--squeeze" type="button">
-    <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-  </button>
-  <div class="nav-desktop">
-    <ul class="main-menu">
-      <li class="main-menu-list">
-        <a href="#" aria-haspopup="true" class="main-menu-link">Wie wij zijn</a>
-        <ul class="dropdown" aria-label="submenu">
-          <li class="menu-filler"></li>
-          {% assign members_by_name = site.team | sort: 'title' %} {% for member
-          in members_by_name %}
-          <li>
-            <a class="dropdown-link" href="/team/{{member.slug}}"
-              >{{member.title}}</a
+<div class="fixed-wrapper">
+  <div class="fixed-menu">
+    <nav role="navigation" class="extracorner" id="nav">
+      <img
+        class="mainlogo"
+        src="/assets/images/upload/Logo Human Connection.svg"
+        alt=""
+      />
+      <button class="hamburger hamburger--squeeze" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="nav-desktop">
+        <ul class="main-menu">
+          <li class="main-menu-list">
+            <a href="#" aria-haspopup="true" class="main-menu-link"
+              >Wie wij zijn</a
             >
+            <ul class="dropdown" aria-label="submenu">
+              <li class="menu-filler"></li>
+              {% assign members_by_name = site.team | sort: 'title' %} {% for
+              member in members_by_name %}
+              <li>
+                <a class="dropdown-link" href="/team/{{member.slug}}"
+                  >{{member.title}}</a
+                >
+              </li>
+              {% endfor %}
+            </ul>
           </li>
-          {% endfor %}
+          <li class="main-menu-list">
+            <a href="#" aria-haspopup="true" class="main-menu-link"
+              >Wat we doen</a
+            >
+            <ul class="dropdown" aria-label="submenu">
+              <li class="menu-filler"></li>
+              <li><a href="#" class="dropdown-link">Hoe wij werken</a></li>
+              <li><a href="#" class="dropdown-link">Wat wij doen</a></li>
+              <li><a href="#" class="dropdown-link">Connect to Perform</a></li>
+            </ul>
+          </li>
+          <li class="main-menu-list">
+            <a href="#" class="main-menu-link">Contact</a>
+          </li>
         </ul>
-      </li>
-      <li class="main-menu-list">
-        <a href="#" aria-haspopup="true" class="main-menu-link">Wat we doen</a>
-        <ul class="dropdown" aria-label="submenu">
-          <li class="menu-filler"></li>
-          <li><a href="#" class="dropdown-link">Hoe wij werken</a></li>
-          <li><a href="#" class="dropdown-link">Wat wij doen</a></li>
-          <li><a href="#" class="dropdown-link">Connect to Perform</a></li>
+      </div>
+      <div class="nav-menu">
+        <ul class="menu-ul">
+          <li class="submenu-mobile-toggle1 li-outer">
+            <a href="#">Wie wij zijn</a>
+            <ul class="submenu-mobile">
+              <li><a href="#">Wie wij zijn</a></li>
+              <li><a href="#">Hoe wij werken</a></li>
+            </ul>
+          </li>
+          <li class="submenu-mobile-toggle2 li-outer">
+            <a href="#">Wat we doen</a>
+            <ul class="submenu-mobile">
+              <li><a href="#">Wat wij doen</a></li>
+              <li><a href="#">Hoe wij werken</a></li>
+              <li><a href="#">Connect to Perform</a></li>
+            </ul>
+          </li>
+          <li class="submenu-mobile-toggle3 li-outer">
+            <a href="#">Contact</a>
+            <ul class="submenu-mobile">
+              <li><a href="#">Wat wij doen</a></li>
+              <li><a href="#">Hoe wij werken</a></li>
+            </ul>
+          </li>
         </ul>
-      </li>
-      <li class="main-menu-list">
-        <a href="#" class="main-menu-link">Contact</a>
-      </li>
-    </ul>
+        <p class="btn btn-full btn-menu margin-top-2">
+          <a href="#"><i class="fa-solid fa-phone"></i> Bel ons</a>
+        </p>
+        <p class="btn btn-full btn-menu">
+          <a href="#"><i class="fa-solid fa-envelope"></i> Mail ons</a>
+        </p>
+      </div>
+    </nav>
   </div>
-  <div class="nav-menu">
-    <ul class="menu-ul">
-      <li class="submenu-mobile-toggle1 li-outer">
-        <a href="#">Wie wij zijn</a>
-        <ul class="submenu-mobile">
-          <li><a href="#">Wie wij zijn</a></li>
-          <li><a href="#">Hoe wij werken</a></li>
-        </ul>
-      </li>
-      <li class="submenu-mobile-toggle2 li-outer">
-        <a href="#">Wat we doen</a>
-        <ul class="submenu-mobile">
-          <li><a href="#">Wat wij doen</a></li>
-          <li><a href="#">Hoe wij werken</a></li>
-          <li><a href="#">Connect to Perform</a></li>
-        </ul>
-      </li>
-      <li class="submenu-mobile-toggle3 li-outer">
-        <a href="#">Contact</a>
-        <ul class="submenu-mobile">
-          <li><a href="#">Wat wij doen</a></li>
-          <li><a href="#">Hoe wij werken</a></li>
-        </ul>
-      </li>
-    </ul>
-    <p class="btn btn-full btn-menu margin-top-2">
-      <a href="#"><i class="fa-solid fa-phone"></i> Bel ons</a>
-    </p>
-    <p class="btn btn-full btn-menu">
-      <a href="#"><i class="fa-solid fa-envelope"></i> Mail ons</a>
-    </p>
-  </div>
-</nav>
+</div>

@@ -107,7 +107,7 @@ template { display: none; }
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
 
-:root { --clr-darkblue: rgba(21, 63, 143, 1); --clr-lightblue: rgba(78,184,232,255); --clr-lightestblue: rgba(237, 243, 251, 1); --clr-green: rgba(77, 176, 176, 1); --clr-grey: rgba(78,184,232,255); --clr-light-grey: rgba(244, 244, 246, 1); --clr-yellow: rgba(248, 204, 70, 1); --clr-red: rgba(243,125,112,255); --clr-black: rgba(56, 56, 56, 1); --border-radius: 30px; --border-radius-desktop: 47px; --spacer-small: 1em; --spacer-medium: 2em; --spacer-large: 3em; --spacer-extralarge: 4em; }
+:root { --clr-darkblue: rgba(21, 63, 143, 1); --clr-lightblue: rgba(78, 184, 232, 255); --clr-lightestblue: rgba(237, 243, 251, 1); --clr-green: rgba(77, 176, 176, 1); --clr-grey: rgba(78, 184, 232, 255); --clr-light-grey: rgba(244, 244, 246, 1); --clr-yellow: rgba(248, 204, 70, 1); --clr-red: rgba(243, 125, 112, 255); --clr-black: rgba(56, 56, 56, 1); --container-width: 1650px; --border-radius: 30px; --border-radius-desktop: 47px; --spacer-small: 1em; --spacer-medium: 2em; --spacer-large: 3em; --spacer-extralarge: 4em; }
 
 body { font-family: 'Inter', sans-serif; }
 
@@ -121,11 +121,11 @@ h3 { color: var(--clr-darkblue); margin-bottom: .5em; margin-top: 0; }
 
 a { text-decoration: none; }
 
-nav { display: flex; justify-content: space-between; justify-items: center; justify-self: auto; padding: 1em; background: white; position: absolute; top: 0; width: 85%; left: 0; right: 1.5em; z-index: 30; border-radius: 0px 0px 30px 0px; }
+nav { display: flex; justify-content: space-between; justify-items: center; justify-self: auto; padding: 1em; position: fixed; background: white; top: 0; width: 85%; left: 0; right: 1.5em; z-index: 20000; border-radius: 0px 0px 30px 0px; }
 
 .extracorner::after { position: absolute; content: ""; top: 100%; left: 0; width: 30px; height: 60px; border-top-left-radius: 30px; box-shadow: 0 -30px 0 0 white; background: transparant; }
 
-nav img { width: 50%; max-width: 196px; z-index: 100; }
+.mainlogo { width: 50%; max-width: 196px; z-index: 100; }
 
 .nav-desktop { display: none; margin-bottom: 0.3em; cursor: pointer; }
 
@@ -595,7 +595,7 @@ html { scroll-behavior: smooth; }
 
 body { height: 100%; }
 
-.container { max-width: 1300px; margin: 0 auto; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.container { max-width: var(--container-width); margin: 0 auto; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15); overflow: hidden; position: relative; }
 
 .innercontainer { padding-left: 1em; padding-right: 1em; max-width: 656px; margin: 0 auto; }
 
@@ -604,6 +604,8 @@ body { height: 100%; }
 .img-overlay-wrap, .actie-image { position: relative; display: inline-block; }
 
 .img-overlay-wrap img, .actie-image img { height: 100%; object-fit: cover; display: block; max-width: 100%; height: 50vh; }
+
+.actie-image img { height: 100%; }
 
 .img-overlay-wrap .svg1-desktop { display: none; }
 
@@ -661,7 +663,13 @@ body { height: 100%; }
 
 .team-foto { display: flex; flex-direction: column; justify-content: center; text-align: center; }
 
-.photo img { width: 100%; aspect-ratio: 1; object-fit: cover; transition: border-radius 0.2s ease-out; border-top-right-radius: var(--border-radius); border-bottom-left-radius: var(--border-radius); overflow: hidden; }
+.photo img { display: block; object-fit: cover; transition: border-radius 0.2s ease-out; border-top-right-radius: var(--border-radius); border-bottom-left-radius: var(--border-radius); overflow: hidden; }
+
+.photo-wrapper { position: relative; width: 100%; /* The size you want */ }
+
+.photo-wrapper:after { content: ""; display: block; padding-bottom: 100%; /* The padding depends on the width, not on the height, so with a padding-bottom of 100% you will get a square */ }
+
+.photo-wrapper img { position: absolute; /* Take your picture out of the flow */ top: 0; bottom: 0; left: 0; right: 0; /* Make the picture taking the size of it's parent */ width: 100%; /* This if for the object-fit */ height: 100%; /* This if for the object-fit */ object-fit: cover; /* Equivalent of the background-size: cover; of a background-image */ object-position: center; }
 
 .photo img:hover { border-top-left-radius: var(--border-radius); border-bottom-right-radius: var(--border-radius); border-top-right-radius: 0px; border-bottom-left-radius: 0; }
 
@@ -743,7 +751,7 @@ textarea.did-floating-input { padding-top: 1em; }
 
 .card:hover img { transform: scale(105%); }
 
-main ul { line-height: 1.3; font-weight: 300; list-style: none; }
+main ul { line-height: 1.3; font-weight: 300; list-style: none; color: var(--clr-black); }
 
 main li { margin-bottom: 1em; position: relative; }
 
@@ -803,8 +811,16 @@ main { position: relative; }
 
 .margin-top-2 { margin-top: 2em; }
 
-@media (min-width: 768px) { nav { position: relative; border-radius: 0px 0px var(--border-radius-desktop) 0px; width: 87%; } .nav-desktop { display: flex; align-items: end; margin-right: 3em; } .nav-desktop ul { display: block; } .nav-desktop ul li { font-size: 15px; } .extracorner::after { width: var(--border-radius-desktop); height: calc(var(--border-radius-desktop) * 2); border-top-left-radius: var(--border-radius-desktop); box-shadow: 0 calc(var(--border-radius-desktop) * -1) 0 0 white; } .hamburger { display: none; } .mainlogo { padding: 1em; padding-bottom: 0.75em; } .button-omhoog-link { display: none; } .landing { flex-direction: row-reverse; padding-bottom: 0; box-shadow: 0 -130px 0 0 var(--clr-green); } .img-overlay-wrap { flex: 1 1 0px; position: relative; } .innercontainer { flex: 1 1 0px; max-width: 856px; } .img-overlay-wrap img, .actie-image img { /* <= optional, for responsiveness */ height: 100%; } .img-overlay-wrap .svg1 { display: none; } .actie-image .svg1 { display: none; } .img-overlay-wrap .svg1-desktop { display: block; position: absolute; top: 0px; right: 0; z-index: 3; height: 100%; width: 120px; } .img-overlay-wrap svg { right: 0; } .birthday { position: absolute; z-index: 2; display: block; right: 40px; top: 50%; height: 145px; padding-right: 30px; border-top-left-radius: var(--border-radius-desktop); } .birthday-25 { font-size: 100px; margin-bottom: 0; line-height: 1; } .birthday-jaar { margin-top: 0; font-size: 43px; line-height: 1; } h1 { font-weight: bold; font-size: 45px; line-height: 52px; letter-spacing: 0.23px; margin-top: 60px; margin-bottom: 16px; max-width: 400px; } .landing-content p { font-size: 15px; line-height: 25px; font-weight: 300; max-width: 400px; } .landing-content { padding-bottom: 60px; } h2 { font-size: 36px; font-weight: 900; } .vision { padding-top: 3em; } .vision p { font-size: 17px; max-width: 700px; margin: 0 auto; } .wijzijn { display: block; margin-bottom: 60px; } .wijzijn img { max-width: 100%; } .wijzijn-flex, .wwd-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5em; } .watwijdoen { border-bottom-right-radius: var(--border-radius-desktop); } .watwijdoen::after { z-index: 1000; width: var(--border-radius-desktop); height: calc(var(--border-radius-desktop) * 2); border-top-left-radius: var(--border-radius-desktop); box-shadow: 0 calc(var(--border-radius-desktop) * -1) 0 0 var(--clr-darkblue); } .wwd-grid { grid-template-rows: 3; } h3 { font-size: 18px; } .waardes img { width: 75%; } .waardes p { font-size: 15px; } .watwijdoen p { max-width: 672px; margin: 0 auto; margin-bottom: 2em; font-size: 17px; } .wwd-grid { padding-top: 5em; } .wwdfirstitem { padding-top: 0; } main ul { padding-left: 16px; } .watwijdoenopsomming .btn-full { margin-bottom: 2em; } .team-fotos { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0em 4em; } .photo img { border-top-right-radius: var(--border-radius-desktop); border-bottom-left-radius: var(--border-radius-desktop); } .photo img:hover { border-top-left-radius: var(--border-radius-desktop); border-bottom-right-radius: var(--border-radius-desktop); } .wiewijzijn p { font-size: 15px; } .member-name { margin-bottom: 0; } .member-function { margin-top: 0; margin-block-start: 0; } .actievraag { display: flex; } .actievraag-content { flex: 1 1 0px; padding-top: 5em; padding-left: 10em; padding-right: 0; max-width: 320px; } .actievraag-content h2, .ontdek { font-size: 28px; line-height: 39px; } .actie-image { flex: 1 1 0px; object-fit: cover; } .actie-image img { max-height: 404px; width: 100%; } .svg2 { display: none; } .svg2-desktop { top: 0; left: 0; height: 100%; position: absolute; display: block; } .partners h2 { margin-top: 2em; margin-bottom: 1.1em; } .contact { padding-top: 4em; } .contact-flex { display: flex; gap: 6em; } .contact-left { width: 60%; } .contact-info { width: 40%; justify-content: space-between; } .contact-info img { align-self: end; padding-bottom: 5em; width: 400px; margin-bottom: 0; } .contact h2 { margin-top: 0; } .contact img { align-self: end; } .connect-to-perform { border-bottom-left-radius: var(--border-radius-desktop); width: 40%; box-shadow: -35px 0px 0px 0px var(--clr-green), -35px 1px 0px 0px var(--clr-green); } .connect-to-perform h2 { font-size: 17px; margin-bottom: 2em; padding-right: 4em; } .footer-flex { display: flex; } .footer-menu { display: flex; justify-content: space-around; background: var(--clr-green); margin-left: 5em; width: 60%; padding-left: 2em; padding-top: 3em; } .footer-menu a { color: white; display: block; } .footer-bottom { margin-left: 5em; border-bottom-left-radius: var(--border-radius-desktop); margin-bottom: 4em; box-shadow: 0px -50px 0px 0px var(--clr-green); padding-bottom: 2em; padding-left: 3em; margin-top: 1em; display: flex; justify-content: space-between; } .footer-bottom p { font-size: 14px; padding-right: 4em; } .footer-bottom a { color: white; } .footer-link-bold { font-weight: 500; font-size: 17px; margin-bottom: 0.5em; } .footer-link-small { font-size: 15px; font-weight: 300; margin-bottom: 0.4em; } .footer p { box-shadow: none; } .connect-to-perform h2 { line-height: 1.6; } }
+@media (min-width: 768px) { nav { position: relative; border-radius: 0px 0px var(--border-radius-desktop) 0px; max-width: var(--container-width); box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); } .fixed-wrapper { width: 100%; position: absolute; z-index: 20000; top: 0; width: 87%; right: 0; left: 0; /* Move this out to the left of the site body, leaving a 20px gutter */ } /* The element you want to fix the position of */ .fixed-menu { width: 100%; position: fixed; /* Do not set top / left! */ } .nav-desktop { display: flex; align-items: end; margin-right: 3em; } .nav-desktop ul { display: block; } .nav-desktop ul li { font-size: 15px; } .extracorner::after { width: var(--border-radius-desktop); height: calc(var(--border-radius-desktop) * 2); border-top-left-radius: var(--border-radius-desktop); box-shadow: 0 calc(var(--border-radius-desktop) * -1) 0 0 white; } .hamburger { display: none; } .mainlogo { padding: 1em; padding-bottom: 0.75em; } .button-omhoog-link { display: none; } .landing { flex-direction: row-reverse; margin-top: 128px; padding-bottom: 0; box-shadow: 0 -130px 0 0 var(--clr-green); } .img-overlay-wrap { flex: 1 1 0px; position: relative; } .innercontainer { flex: 1 1 0px; max-width: 856px; } .img-overlay-wrap img, .actie-image img { /* <= optional, for responsiveness */ height: 100%; } .img-overlay-wrap .svg1 { display: none; } .actie-image .svg1 { display: none; } .img-overlay-wrap .svg1-desktop { display: block; position: absolute; top: 0px; right: 0; z-index: 3; height: 100%; width: 120px; } .img-overlay-wrap svg { right: 0; } .birthday { position: absolute; z-index: 2; display: block; right: 40px; top: 50%; height: 145px; padding-right: 30px; border-top-left-radius: var(--border-radius-desktop); } .birthday-25 { font-size: 100px; margin-bottom: 0; line-height: 1; } .birthday-jaar { margin-top: 0; font-size: 43px; line-height: 1; } h1 { font-weight: bold; font-size: 45px; line-height: 52px; letter-spacing: 0.23px; margin-top: 60px; margin-bottom: 16px; width: 40vw; max-width: 700px; } .landing-content p { font-size: 15px; line-height: 25px; font-weight: 300; padding-right: 6em; width: 40vw; max-width: 700px; } .landing-content { padding-bottom: 60px; } h2 { font-size: 36px; font-weight: 900; } .vision { padding-top: 3em; } .vision p { font-size: 17px; max-width: 700px; margin: 0 auto; } .wijzijn { display: block; margin-bottom: 60px; } .wijzijn img { max-width: 100%; } .wijzijn-flex, .wwd-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5em; } .watwijdoen { border-bottom-right-radius: var(--border-radius-desktop); } .watwijdoen::after { z-index: 1000; width: var(--border-radius-desktop); height: calc(var(--border-radius-desktop) * 2); border-top-left-radius: var(--border-radius-desktop); box-shadow: 0 calc(var(--border-radius-desktop) * -1) 0 0 var(--clr-darkblue); } .wwd-grid { grid-template-rows: 3; } h3 { font-size: 18px; } .waardes img { width: 75%; } .waardes p { font-size: 15px; } .watwijdoen p { max-width: 672px; margin: 0 auto; margin-bottom: 2em; font-size: 17px; } .wwd-grid { padding-top: 5em; } .wwdfirstitem { padding-top: 0; } main ul { padding-left: 16px; } .watwijdoenopsomming .btn-full { margin-bottom: 2em; } .team-fotos { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0em 4em; } .photo img { border-top-right-radius: var(--border-radius-desktop); border-bottom-left-radius: var(--border-radius-desktop); } .photo img:hover { border-top-left-radius: var(--border-radius-desktop); border-bottom-right-radius: var(--border-radius-desktop); } .wiewijzijn p { font-size: 15px; } .member-name { margin-bottom: 0; } .member-function { margin-top: 0; margin-block-start: 0; } .actievraag { display: flex; } .actievraag-content { flex: 1; padding-top: 5em; padding-left: 10em; padding-right: 0; } .actievraag-content h2, .ontdek { font-size: 28px; line-height: 39px; max-width: 320px; } .actie-image { flex: 1; object-fit: cover; } .actie-image img { max-height: 404px; width: 100%; } .svg2 { display: none; } .svg2-desktop { top: 0; left: 0; height: 100%; position: absolute; display: block; } .partners h2 { margin-top: 2em; margin-bottom: 1.1em; } .contact { padding-top: 4em; } .contact-flex { display: flex; gap: 6em; } .contact-left { width: 60%; } .contact-info { width: 40%; justify-content: space-between; } .contact-info img { padding-bottom: 5em; width: 400px; margin-bottom: 0; } .contact h2 { margin-top: 0; } .connect-to-perform { border-bottom-left-radius: var(--border-radius-desktop); width: 40%; box-shadow: -35px 0px 0px 0px var(--clr-green), -35px 1px 0px 0px var(--clr-green); } .connect-to-perform h2 { font-size: 17px; margin-bottom: 2em; padding-right: 4em; } .footer-flex { display: flex; } .footer-menu { display: flex; justify-content: space-around; background: var(--clr-green); margin-left: 5em; width: 60%; padding-left: 2em; padding-top: 3em; } .footer-menu a { color: white; display: block; } .footer-bottom { margin-left: 5em; border-bottom-left-radius: var(--border-radius-desktop); margin-bottom: 4em; box-shadow: 0px -50px 0px 0px var(--clr-green); padding-bottom: 2em; padding-left: 3em; margin-top: 1em; display: flex; justify-content: space-between; } .footer-bottom p { font-size: 14px; padding-right: 4em; } .footer-bottom a { color: white; } .footer-link-bold { font-weight: 500; font-size: 17px; margin-bottom: 0.5em; } .footer-link-small { font-size: 15px; font-weight: 300; margin-bottom: 0.4em; } .footer p { box-shadow: none; } .connect-to-perform h2 { line-height: 1.6; } }
 
 @media (min-width: 900px) { .innercontainer { max-width: 956px; } }
+
+@media (min-width: 1400px) { .innercontainer { max-width: 1156px; } .contact img { max-height: 350px; width: auto; margin-left: 0; } }
+
+@media (min-width: 1700px) { .fixed-menu { width: 90%; } }
+
+@media (min-width: 1870px) { .fixed-menu { width: 80%; } }
+
+@media (min-width: 2000px) { .fixed-menu { width: 70%; } }
 
 /*# sourceMappingURL=styles.css.map */
