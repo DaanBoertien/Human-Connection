@@ -799,7 +799,7 @@ main .team-member { margin-top: 120px; }
 
 .card .bold { font-weight: 600; }
 
-.card-content { padding-top: 1em; padding-left: 1em; padding-bottom: 1em; z-index: 2; }
+.card-content { padding-top: 1em; padding-left: 1em; padding-bottom: 1em; padding-right: 1em; z-index: 2; }
 
 .swiper-slide img { width: 100%; }
 
