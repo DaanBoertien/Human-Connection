@@ -8,6 +8,7 @@ nav {
   justify-items: center;
   justify-self: auto;
   padding: 1em;
+  padding-right: 2.8em;
   position: fixed;
   background: white;
   // position: fixed;
@@ -40,6 +41,7 @@ nav {
 .nav-desktop {
   display: none;
   margin-bottom: 0.3em;
+
   cursor: pointer;
 }
 .main-menu-list {
@@ -110,8 +112,14 @@ nav {
 }
 
 .menu-filler {
-  background: white;
-  height: 14.5px;
+  background-color: white;
+  opacity: 1;
+  min-height: 14.5px;
+  width: 100%;
+  max-width: 100%;
+  &-contact {
+    max-width: 7em;
+  }
 }
 
 .nav-desktop li .dropdownlink {
