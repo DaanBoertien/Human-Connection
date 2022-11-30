@@ -10,6 +10,11 @@ main {
   // margin-top: -92px;
 }
 
+section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
@@ -18,7 +23,8 @@ main {
   position: relative;
 }
 
-.innercontainer {
+.innercontainer,
+.innercontainer--werken-bij {
   padding-left: 1em;
   padding-right: 1em;
   max-width: 656px;
@@ -581,4 +587,29 @@ main {
   bottom: 1.5em;
   right: 1.5em;
   z-index: 1000;
+}
+
+// Werken bij
+
+.werken-bij {
+  &__title {
+    max-width: 20ch;
+    line-height: 1.4;
+  }
+  h3 {
+    margin-top: 1.5em;
+  }
+  a {
+    color: var(--clr-green);
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  &__contact {
+    p {
+      margin-bottom: 0;
+    }
+  }
+  &__uitzendbureaus {
+    font-style: italic;
+  }
 }

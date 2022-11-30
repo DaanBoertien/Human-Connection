@@ -61,6 +61,9 @@
     margin-top: 100px;
     padding-bottom: 0;
     box-shadow: 0 -300px 0 0 var(--clr-green);
+    &--werken-bij {
+      box-shadow: 0 -300px 0 0 var(--clr-lightblue);
+    }
   }
 
   .img-overlay-wrap {
@@ -70,6 +73,9 @@
   .innercontainer {
     flex: 1 1 0px;
     max-width: 856px;
+    &--werken-bij {
+      max-width: 768px;
+    }
   }
 
   .img-overlay-wrap img,

@@ -1,0 +1,43 @@
+---
+layout: default
+title: Werken bij
+---
+
+<main>
+  {% include button-omhoog.html %}
+  <div class="landing landing--werken-bij Lichtblauw">
+    <div class="innercontainer innercontainer--werken-bij">
+      <div class="landing-content">
+        <h1>{{site.data.werken-bij-ons.title}}</h1>
+        {{site.data.werken-bij-ons.landing-tekst | markdownify}}
+      </div>
+    </div>
+
+    <div class="img-overlay-wrap">
+      <img
+        class="landing-image"
+        src="/assets/images/upload/parachute.jpg"
+        alt=""
+      />
+      {% include svg1-lightblue.html %} {% include svg1-desktop-lightblue.html
+      %}
+    </div>
+  </div>
+  <div class="innercontainer--werken-bij">
+    <section class="werken-bij">
+      <h2 class="werken-bij__title">{{site.data.werken-bij-ons.kop}}</h2>
+      <h3>{{site.data.werken-bij-ons.wat-je-doet}}</h3>
+
+      {{site.data.werken-bij-ons.wat-je-doet-tekst| markdownify}}
+
+      <h3>{{site.data.werken-bij-ons.wat-we-bieden}}</h3>
+      {{site.data.werken-bij-ons.wat-we-bieden-tekst | markdownify}}
+      <div class="werken-bij__contact">
+        {{site.data.werken-bij-ons.contact | markdownify}}
+      </div>
+      <p class="werken-bij__uitzendbureaus">
+        {{site.data.werken-bij-ons.uitzendbureaus}}
+      </p>
+    </section>
+  </div>
+</main>
