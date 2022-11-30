@@ -75,7 +75,7 @@ gsap.to('.button-omhoog-link', { autoAlpha: 1, y: 0,
   }
 });
 
-gsap.to('.mainlogo', {maxWidth: 100, paddingBottom: 0, paddingTop: 0,
+gsap.to('.mainlogo', {width: 120, paddingBottom: 0, paddingTop: 0,
   scrollTrigger: {
     trigger: 'main',
     start: 'top+=200',
