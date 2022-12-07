@@ -137,7 +137,7 @@ nav { display: flex; justify-content: space-between; justify-items: center; just
 
 .main-menu-list:hover::before { transform: rotate(180deg); }
 
-.main-menu-link:visited { color: var(--crl-black); }
+.main-menu-link:link, .main-menu-link:visited { color: var(--crl-black); }
 
 .main-menu { color: var(--clr-black); z-index: 5; cursor: pointer; }
 
