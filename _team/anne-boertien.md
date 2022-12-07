@@ -8,7 +8,7 @@ photo_url: /assets/images/upload/anne-mat.jpg
 photo_description: Anne tekent
 summary: Potentie maximaal benutten en mensen in beweging brengen, dat zijn
   **mijn** belangrijkste drijfveren in **mijn** werk.
-bg_color: Geel
+bg_color: Rood
 card_title: Tijd voor actie?
 soundbites: Anne in soundbites
 soundbites_text: enthousiast, analyserend, diepte, strategisch. Denken vs.
