@@ -9,15 +9,15 @@ collections:
 
 # kramdown:
 #   input: Kramdown
-plugins:
-  - jekyll-compress-images
+# plugins:
+#   - jekyll-compress-images
 
-compress_images:
-  images_path: "assets/images/**/*.{gif,png,jpg,jpeg,svg}"
+# compress_images:
+#   images_path: "assets/images/**/*.{gif,png,jpg,jpeg,svg}"
 
-imageoptim:
-  pngout: false
-  svgo: false
-  verbose: false
-  oxypng: false
-  pngcrush: false
+# imageoptim:
+#   pngout: false
+#   svgo: false
+#   verbose: false
+#   oxypng: false
+#   pngcrush: false

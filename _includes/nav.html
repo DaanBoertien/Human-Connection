@@ -16,7 +16,10 @@
       <div class="nav-desktop">
         <ul class="main-menu">
           <li class="main-menu-list">
-            <a href="#" aria-haspopup="true" class="main-menu-link"
+            <a
+              href="#"
+              aria-haspopup="true"
+              class="main-menu-link {% if page.url contains 'team' %}current{% endif %}"
               >Wie wij zijn</a
             >
             <ul class="dropdown" aria-label="submenu">
@@ -32,7 +35,10 @@
             </ul>
           </li>
           <li class="main-menu-list">
-            <a href="#" aria-haspopup="true" class="main-menu-link"
+            <a
+              href="#"
+              aria-haspopup="true"
+              class="main-menu-link {% if page.url contains 'hoe-wij-werken' or page.url contains 'wat-wij-doen' or page.url contains 'connect' %}current{% endif %}"
               >Wat we doen</a
             >
             <ul class="dropdown" aria-label="submenu">
@@ -43,7 +49,7 @@
             </ul>
           </li>
           <li class="main-menu-list">
-            <a href="#" class="main-menu-link">Contact</a>
+            <a href="#" class="main-menu-link {% if page.url contains 'contact' or page.url contains 'werken-bij' %}current{% endif %}">Contact</a>
             <ul class="dropdown" aria-label="submenu">
               <li class="menu-filler menu-filler-contact"></li>
               <li><a href="#" class="dropdown-link">Contact</a></li>
@@ -61,8 +67,8 @@
           <li class="submenu-mobile-toggle1 li-outer">
             <a href="#">Wie wij zijn</a>
             <ul class="submenu-mobile">
-              <li><a href="#">Wie wij zijn</a></li>
-              <li><a href="#">Hoe wij werken</a></li>
+              <li><a href="#" class="{% if page.url contains 'team' %}current{% endif %}">Wie wij zijn</a></li>
+              <li><a href="#" class="{% if page.url contains 'hoe-wij-werken' %}current{% endif %}">Hoe wij werken</a></li>
             </ul>
           </li>
           <li class="submenu-mobile-toggle2 li-outer">

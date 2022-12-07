@@ -1,0 +1,48 @@
+.btn {
+  border-radius: 100px;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  display: inline-block;
+  transition: all 0.2s ease-out;
+}
+.btn a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.btn-outline {
+  border: 1px solid var(--clr-black);
+  background-color: transparent;
+}
+.btn-outline a {
+  color: var(--clr-black);
+}
+.btn-outline:hover {
+  background-color: var(--clr-grey);
+  border: 1px solid var(--clr-grey);
+}
+.btn-full {
+  background-color: var(--clr-darkblue);
+  border: 2px solid var(--clr-darkblue);
+}
+.btn-full a {
+  color: white;
+}
+.btn-full:hover {
+  background-color: var(--clr-lightblue);
+  border: 2px solid var(--clr-lightblue);
+}
+.connect-to-perform .btn-full {
+  border: 2px solid var(--clr-lightblue);
+}
+.connect-to-perform .btn-full:hover {
+  background-color: var(--clr-grey);
+  border: 2px solid var(--clr-grey);
+}
+.connect-to-perform .btn-full:hover a {
+  color: var(--clr-black);
+}
+.btn:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=buttons.css.map */

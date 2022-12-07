@@ -137,7 +137,7 @@ nav { display: flex; justify-content: space-between; justify-items: center; just
 
 .main-menu-list:hover::before { transform: rotate(180deg); }
 
-.main-menu-link:link, .main-menu-link:visited, .main-menu-link:active { color: var(--crl-black); }
+.main-menu-link:visited { color: var(--crl-black); }
 
 .main-menu { color: var(--clr-black); z-index: 5; cursor: pointer; }
 
@@ -597,7 +597,7 @@ html { scroll-behavior: smooth; }
 
 body { height: 100%; }
 
-section { margin-top: 80px; margin-bottom: 80px; }
+section { padding-top: 80px; padding-bottom: 80px; }
 
 .container { max-width: var(--container-width); margin: 0 auto; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15); overflow: hidden; position: relative; }
 
@@ -719,21 +719,9 @@ button[type="submit"] { margin-left: auto; color: white; padding: 0.5em 0.8em; }
 
 .did-floating-label { color: var(--clr-black); font-size: 13px; font-weight: normal; position: absolute; pointer-events: none; left: 15px; top: 11px; padding: 0 5px; background: #fff; transition: 0.2s ease all; -moz-transition: 0.2s ease all; -webkit-transition: 0.2s ease all; }
 
-.did-floating-input, .did-floating-select { display: block; width: calc(100% - 2.75em); height: 36px; padding: 0 20px; background: #fff; color: var(--clr-black); font-family: inherit; font-weight: inherit; font-size: inherit; border-radius: 20px; border: 1px solid #d2d5da; }
+.did-floating-input, .did-floating-select { display: block; width: calc(100% - 2.75em); position: relative; height: 36px; padding: 26px 20px 0em; background: #fff; color: var(--clr-black); font-family: inherit; font-weight: 300; font-size: 15px; border-radius: 20px; border: 1px solid #d2d5da; }
 
-.did-floating-input:focus, .did-floating-select:focus { outline: none; }
-
-.did-floating-input:focus ~ .did-floating-label, .did-floating-select:focus ~ .did-floating-label { top: -8px; font-size: 13px; }
-
-textarea.did-floating-input { padding-top: 1em; }
-
-.did-floating-input:not(:placeholder-shown) ~ .did-floating-label { top: -8px; font-size: 13px; }
-
-.did-error-input .did-floating-input, .did-error-input .did-floating-select { border: 2px solid #9d3b3b; color: #9d3b3b; }
-
-.did-error-input .did-floating-label { font-weight: 600; color: #9d3b3b; }
-
-.did-error-input .did-floating-select:not([multiple]):not([size]) { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='6' viewBox='0 0 8 6'%3E%3Cpath id='Path_1' data-name='Path 1' d='M371,294l4,6,4-6Z' transform='translate(-371 -294)' fill='%239d3b3b'/%3E%3C/svg%3E%0A"); }
+textarea.did-floating-input { padding-top: 2em; }
 
 .contact-info { display: flex; flex-direction: column; }
 
@@ -773,11 +761,13 @@ main { position: relative; }
 
 .werken-bij__uitzendbureaus { font-style: italic; }
 
-main .team-member { margin-top: 120px; }
+.team-member { box-shadow: 0px -150px 0px 0px var(--clr-light-grey); }
+
+main .team-member { padding-top: 120px; }
 
 .team-member .grid-layout { display: grid; }
 
-@media (min-width: 768px) { .team-member .grid-layout { margin-top: 170px; display: grid; gap: 0em 4em; grid-template: "b a" "b c"; grid-template-rows: auto 1fr; } .team-member .grid-layout h2 { margin-top: 0; } .team-member .grid-layout .a { grid-area: a; max-width: 50ch; } .team-member .grid-layout .b { grid-area: b; } .team-member .grid-layout .c { grid-area: c; margin-bottom: auto; max-width: 50ch; } }
+@media (min-width: 768px) { .team-member .grid-layout { display: grid; gap: 0em 4em; grid-template: "b a" "b c"; grid-template-rows: auto 1fr; } .team-member .grid-layout h2 { margin-top: 0; } .team-member .grid-layout .a { grid-area: a; max-width: 50ch; } .team-member .grid-layout .b { grid-area: b; } .team-member .grid-layout .c { grid-area: c; margin-bottom: auto; max-width: 50ch; } }
 
 .card { background: #0bbbb4; position: relative; margin-bottom: 3em; place-self: center; width: 100%; line-height: 1; border-radius: 0px var(--border-radius) 0px var(--border-radius); }
 
@@ -801,7 +791,7 @@ main .team-member { margin-top: 120px; }
 
 .card .bold { font-weight: 600; }
 
-.card-content { padding-top: 1em; padding-left: 1em; padding-bottom: 1em; padding-right: 1em; z-index: 2; }
+.card-content { padding-top: 1em; padding-left: 1.5em; padding-bottom: 1em; padding-right: 1.5em; z-index: 2; }
 
 .swiper-slide img { width: 100%; }
 
@@ -861,6 +851,8 @@ main .team-member { margin-top: 120px; }
 
 @media (min-width: 768px) { .Rood::after { box-shadow: 0 calc(var(--border-radius-desktop) * -1) 0 0 var(--clr-red); } }
 
+.bg-grey { background-color: var(--clr-light-grey); }
+
 .bold { font-weight: 500; }
 
 .tight-text { line-height: 1; }
@@ -873,9 +865,17 @@ main .team-member { margin-top: 120px; }
 
 .no-border { border: 0; }
 
-@media (min-width: 768px) { nav { position: relative; border-radius: 0px 0px var(--border-radius-desktop) 0px; width: 85%; max-width: var(--container-width); box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); padding-right: 2.8em; } .fixed-wrapper { width: 100%; position: absolute; z-index: 20000; top: 0; width: 90%; right: 0; left: 0; /* Move this out to the left of the site body, leaving a 20px gutter */ } /* The element you want to fix the position of */ .fixed-menu { width: 100%; position: fixed; /* Do not set top / left! */ } .nav-desktop { display: flex; align-items: end; margin-right: 3em; } .nav-desktop ul { display: block; } .nav-desktop ul li { font-size: 15px; } .extracorner::after { width: var(--border-radius-desktop); height: calc(var(--border-radius-desktop) * 2); border-top-left-radius: var(--border-radius-desktop); box-shadow: 0 calc(var(--border-radius-desktop) * -1) 0 0 white; } .hamburger { display: none; } .mainlogo { width: 196px; padding: 1em; padding-bottom: 0.75em; } .button-omhoog-link { display: none; } main { margin-top: 100px; } .landing { flex-direction: row-reverse; padding-bottom: 0; box-shadow: 0 -300px 0 0 var(--clr-green); } .landing--werken-bij { box-shadow: 0 -300px 0 0 var(--clr-lightblue); } .img-overlay-wrap { flex: 1 1 0px; position: relative; } .innercontainer { flex: 1 1 0px; max-width: 856px; } .innercontainer--werken-bij { max-width: 768px; } .img-overlay-wrap img, .actie-image img { /* <= optional, for responsiveness */ height: 100%; } .img-overlay-wrap .svg1 { display: none; } .actie-image .svg1 { display: none; } .img-overlay-wrap .svg1-desktop { display: block; position: absolute; top: 0px; right: 0; z-index: 3; height: 100%; width: 120px; } .img-overlay-wrap svg { right: 0; } .birthday { position: absolute; z-index: 2; display: block; right: 40px; top: 50%; height: 145px; padding-right: 30px; border-top-left-radius: var(--border-radius-desktop); } .birthday-25 { font-size: 100px; margin-bottom: 0; line-height: 1; } .birthday-jaar { margin-top: 0; font-size: 43px; line-height: 1; } h1 { font-weight: bold; font-size: 45px; line-height: 52px; letter-spacing: 0.23px; margin-top: 60px; margin-bottom: 16px; width: 40vw; max-width: 700px; } .landing-content p { font-size: 15px; line-height: 25px; font-weight: 300; padding-right: 6em; width: 40vw; max-width: 700px; } .landing-content { padding-bottom: 60px; } h2 { font-size: 36px; font-weight: 900; } .vision { padding-top: 3em; } .vision p { font-size: 17px; max-width: 700px; margin: 0 auto; } .wijzijn { display: block; margin-bottom: 60px; } .wijzijn img { max-width: 100%; } .wijzijn-flex, .wwd-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5em; } .watwijdoen { border-bottom-right-radius: var(--border-radius-desktop); } .watwijdoen::after { z-index: 1000; width: var(--border-radius-desktop); height: calc(var(--border-radius-desktop) * 2); border-top-left-radius: var(--border-radius-desktop); box-shadow: 0 calc(var(--border-radius-desktop) * -1) 0 0 var(--clr-darkblue); } .wwd-grid { grid-template-rows: 3; } h3 { font-size: 18px; } .waardes img { width: 75%; } .waardes p { font-size: 15px; } .watwijdoen p { max-width: 672px; margin: 0 auto; margin-bottom: 2em; font-size: 17px; } .wwd-grid { padding-top: 5em; } .wwdfirstitem { padding-top: 0; } main ul { padding-left: 16px; } .watwijdoenopsomming .btn-full { margin-bottom: 2em; } .team-fotos { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0em 4em; } .photo img { border-top-right-radius: var(--border-radius-desktop); border-bottom-left-radius: var(--border-radius-desktop); } .photo img:hover { border-top-left-radius: var(--border-radius-desktop); border-bottom-right-radius: var(--border-radius-desktop); } .photo-wrapper::before { border-top-right-radius: var(--border-radius-desktop); border-bottom-left-radius: var(--border-radius-desktop); } .wiewijzijn p { font-size: 15px; } .member-name { margin-bottom: 0; } .member-function { margin-top: 0; margin-block-start: 0; } .actievraag { display: flex; } .actievraag-content { flex: 1; padding-top: 5em; padding-left: 10em; padding-right: 0; } .actievraag-content h2, .ontdek { font-size: 28px; line-height: 39px; max-width: 320px; } .actie-image { flex: 1; object-fit: cover; } .actie-image img { max-height: 404px; width: 100%; } .svg2 { display: none; } .svg2-desktop { top: 0; left: 0; height: 100%; position: absolute; display: block; } .partners h2 { margin-top: 2em; margin-bottom: 1.1em; } .contact { padding-top: 4em; } .contact-flex { display: flex; gap: 6em; } .contact-left { width: 60%; } .contact-info { width: 40%; justify-content: space-between; } .contact-info img { padding-bottom: 5em; width: 400px; margin-bottom: 0; } .contact h2 { margin-top: 0; } .connect-to-perform { border-bottom-left-radius: var(--border-radius-desktop); width: 40%; box-shadow: -35px 0px 0px 0px var(--clr-green), -35px 1px 0px 0px var(--clr-green); } .connect-to-perform h2 { font-size: 17px; margin-bottom: 2em; padding-right: 4em; } .footer-flex { display: flex; } .footer-menu { display: flex; justify-content: space-around; background: var(--clr-green); margin-left: 5em; width: 60%; padding-left: 2em; padding-top: 3em; } .footer-menu a { color: white; display: block; } .footer-bottom { margin-left: 5em; border-bottom-left-radius: var(--border-radius-desktop); margin-bottom: 4em; box-shadow: 0px -50px 0px 0px var(--clr-green); padding-bottom: 2em; padding-left: 3em; margin-top: 1em; display: flex; justify-content: space-between; } .footer-bottom p { font-size: 14px; padding-right: 4em; } .footer-bottom a { color: white; } .footer-link-bold { font-weight: 500; font-size: 17px; margin-bottom: 0.5em; } .footer-link-small { font-size: 15px; font-weight: 300; margin-bottom: 0.4em; } .footer p { box-shadow: none; } .connect-to-perform h2 { line-height: 1.6; } }
+.current { color: var(--clr-darkblue); }
+
+.current:link { color: var(--clr-darkblue); }
+
+.current:visited { color: var(--clr-darkblue); }
+
+@media (min-width: 768px) { nav { position: relative; border-radius: 0px 0px var(--border-radius-desktop) 0px; width: 85%; max-width: var(--container-width); box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); padding-right: 2.8em; } .fixed-wrapper { width: 100%; position: absolute; z-index: 20000; top: 0; width: 90%; right: 0; left: 0; /* Move this out to the left of the site body, leaving a 20px gutter */ } /* The element you want to fix the position of */ .fixed-menu { width: 100%; position: fixed; /* Do not set top / left! */ } .nav-desktop { display: flex; align-items: end; margin-right: 3em; } .nav-desktop ul { display: block; } .nav-desktop ul li { font-size: 15px; } .extracorner::after { width: var(--border-radius-desktop); height: calc(var(--border-radius-desktop) * 2); border-top-left-radius: var(--border-radius-desktop); box-shadow: 0 calc(var(--border-radius-desktop) * -1) 0 0 white; } .hamburger { display: none; } .mainlogo { width: 196px; padding: 1em; padding-bottom: 0.75em; } .button-omhoog-link { display: none; } main { margin-top: 100px; } .landing { flex-direction: row-reverse; padding-bottom: 0; box-shadow: 0 -300px 0 0 var(--clr-green); } .landing--werken-bij { box-shadow: 0 -300px 0 0 var(--clr-lightblue); } .img-overlay-wrap { flex: 1 1 0px; position: relative; } .innercontainer { flex: 1 1 0px; max-width: 856px; } .innercontainer--werken-bij { max-width: 768px; } .img-overlay-wrap img, .actie-image img { /* <= optional, for responsiveness */ height: 100%; } .img-overlay-wrap .svg1 { display: none; } .actie-image .svg1 { display: none; } .img-overlay-wrap .svg1-desktop { display: block; position: absolute; top: 0px; right: 0; z-index: 3; height: 100%; width: 120px; } .img-overlay-wrap svg { right: 0; } .birthday { position: absolute; z-index: 2; display: block; right: 40px; top: 50%; height: 145px; padding-right: 30px; border-top-left-radius: var(--border-radius-desktop); } .birthday-25 { font-size: 100px; margin-bottom: 0; line-height: 1; } .birthday-jaar { margin-top: 0; font-size: 43px; line-height: 1; } h1 { font-weight: bold; font-size: 45px; line-height: 52px; letter-spacing: 0.23px; margin-top: 92px; margin-bottom: 16px; width: 40vw; max-width: 598px; } .landing-content p { font-size: 15px; line-height: 25px; font-weight: 300; padding-right: 6em; width: 40vw; max-width: 598px; } .landing-content { padding-bottom: 60px; } h2 { font-size: 36px; font-weight: 900; } .vision { padding-top: 3em; } .vision p { font-size: 17px; max-width: 700px; margin: 0 auto; } .wijzijn { display: block; margin-bottom: 60px; } .wijzijn img { max-width: 100%; } .wijzijn-flex, .wwd-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5em; } .watwijdoen { border-bottom-right-radius: var(--border-radius-desktop); } .watwijdoen::after { z-index: 1000; width: var(--border-radius-desktop); height: calc(var(--border-radius-desktop) * 2); border-top-left-radius: var(--border-radius-desktop); box-shadow: 0 calc(var(--border-radius-desktop) * -1) 0 0 var(--clr-darkblue); } .wwd-grid { grid-template-rows: 3; } h3 { font-size: 18px; } .waardes img { width: 75%; } .waardes p { font-size: 15px; } .watwijdoen p { max-width: 672px; margin: 0 auto; margin-bottom: 2em; font-size: 17px; } .wwd-grid { padding-top: 5em; } .wwdfirstitem { padding-top: 0; } main ul { padding-left: 16px; } .watwijdoenopsomming .btn-full { margin-bottom: 2em; } .team-fotos { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0em 4em; } .photo img { border-top-right-radius: var(--border-radius-desktop); border-bottom-left-radius: var(--border-radius-desktop); } .photo img:hover { border-top-left-radius: var(--border-radius-desktop); border-bottom-right-radius: var(--border-radius-desktop); } .photo-wrapper::before { border-top-right-radius: var(--border-radius-desktop); border-bottom-left-radius: var(--border-radius-desktop); } .wiewijzijn p { font-size: 15px; } .member-name { margin-bottom: 0; } .member-function { margin-top: 0; margin-block-start: 0; } .actievraag { display: flex; justify-content: end; } .actievraag-content { flex: 1; padding-top: 0em; padding-bottom: 0; padding-right: 2em; display: flex; justify-content: center; flex-direction: column; align-items: flex-end; } .actievraag-content h2, .ontdek { font-size: 28px; line-height: 39px; max-width: 320px; } .actie-image { flex: 1; object-fit: cover; } .actie-image img { max-height: 404px; width: 100%; } .svg2 { display: none; } .svg2-desktop { top: 0; left: 0; height: 100%; position: absolute; display: block; } .partners h2 { margin-top: 2em; margin-bottom: 1.1em; } .contact { padding-top: 4em; } .contact-flex { display: flex; gap: 6em; } .contact-left { width: 60%; } .contact-info { width: 40%; justify-content: space-between; } .contact-info img { padding-bottom: 5em; width: 400px; margin-bottom: 0; } .contact h2 { margin-top: 0; } footer { display: none; } .footer-desktop { width: 100%; display: grid; gap: 2em; color: white; margin-bottom: 5em; grid-template-areas: "white-space green-space menu   menu   menu   menu      connect" "white-space green-space  disclaimer disclaimer disclaimer ontwerp ontwerp"; grid-template-columns: 1fr 3fr 3fr 3fr 3fr 3fr 6fr; grid-template-rows: 2fr 1fr; } .footer-desktop .footer-menu-flex { grid-area: menu; display: flex; gap: 1em; padding-top: 3em; } .footer-desktop .footer-menu-items a { display: block; margin-bottom: 0.5em; } .footer-desktop .footer-link-small { font-weight: 300; } .footer-desktop .green-space { background-color: var(--clr-green); grid-area: 1 / 2 / -1 / -1; z-index: -1; border-bottom-left-radius: var(--border-radius-desktop); } .footer-desktop .connect { grid-area: connect; background: var(--clr-darkblue); padding: 3em 2em 1em; border-bottom-left-radius: var(--border-radius-desktop); min-width: 300px; } .footer-desktop .connect h2 { margin-top: 0; color: white; font-size: 17px; max-width: 25ch; line-height: 1.6; margin-bottom: 1em; } .footer-desktop .ontwerp { grid-area: ontwerp; margin-left: auto; padding-right: 3em; } .footer-desktop .disclaimer { grid-area: disclaimer; } .footer-desktop a, .footer-desktop p { color: white; } }
 
 @media (min-width: 900px) { .innercontainer { max-width: 956px; } .innercontainer--werken-bij { max-width: 756px; } }
+
+@media (min-width: 1100px) { .footer-desktop .footer-menu-flex { gap: 2em; } }
 
 @media (min-width: 1400px) { .innercontainer { max-width: 1156px; } .innercontainer--werken-bij { max-width: 856px; } .contact img { max-height: 350px; width: auto; margin-left: 0; } }
 

@@ -11,8 +11,8 @@ main {
 }
 
 section {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .container {
@@ -361,19 +361,10 @@ textarea {
   border: 1px solid lightgray;
 }
 
-// button[type="submit"] {
-//   border-radius: 30px;
-//   margin-bottom: 3em;
-// }
-
 input,
 textarea {
   margin-bottom: 1em;
 }
-
-//   input[type="text"], input[type="email"] {
-// width: calc(100% - 2.75em);
-//   }
 
 textarea {
   margin-bottom: 2em;
@@ -416,47 +407,26 @@ button[type="submit"] {
 .did-floating-select {
   display: block;
   width: calc(100% - 2.75em);
-
+  position: relative;
   height: 36px;
-  padding: 0 20px;
+  padding: 26px 20px 0em;
   background: #fff;
   color: var(--clr-black);
   font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
+  font-weight: 300;
+  font-size: 15px;
   border-radius: 20px;
   border: 1px solid rgba(210, 213, 218, 1);
-  &:focus {
-    outline: none;
-    ~ .did-floating-label {
-      top: -8px;
-      font-size: 13px;
-    }
-  }
+  // &:focus {
+  //   outline: none;
+  //   ~ .did-floating-label {
+  //     top: -8px;
+  //     font-size: 13px;
+  //   }
 }
 
 textarea.did-floating-input {
-  padding-top: 1em;
-}
-
-.did-floating-input:not(:placeholder-shown) ~ .did-floating-label {
-  top: -8px;
-  font-size: 13px;
-}
-
-.did-error-input {
-  .did-floating-input,
-  .did-floating-select {
-    border: 2px solid #9d3b3b;
-    color: #9d3b3b;
-  }
-  .did-floating-label {
-    font-weight: 600;
-    color: #9d3b3b;
-  }
-  .did-floating-select:not([multiple]):not([size]) {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='6' viewBox='0 0 8 6'%3E%3Cpath id='Path_1' data-name='Path 1' d='M371,294l4,6,4-6Z' transform='translate(-371 -294)' fill='%239d3b3b'/%3E%3C/svg%3E%0A");
-  }
+  padding-top: 2em;
 }
 
 .contact-info {
@@ -573,8 +543,9 @@ main {
 
 //Team-member
 .team-member {
+  box-shadow: 0px -150px 0px 0px var(--clr-light-grey);
   main & {
-    margin-top: 120px;
+    padding-top: 120px;
   }
   .grid-layout {
     display: grid;
@@ -583,7 +554,7 @@ main {
       h2 {
         margin-top: 0;
       }
-      margin-top: 170px;
+      // margin-top: 170px;
       display: grid;
       gap: 0em 4em;
       grid-template:
@@ -678,8 +649,8 @@ main {
 
 .card-content {
   padding-top: 1em;
-  padding-left: 1em;
+  padding-left: 1.5em;
   padding-bottom: 1em;
-  padding-right: 1em;
+  padding-right: 1.5em;
   z-index: 2;
 }

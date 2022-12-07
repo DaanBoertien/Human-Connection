@@ -43,6 +43,9 @@ collections:
         name: "bg_color"
         widget: "select"
         options: ["Donkerblauw", "Lichtblauw", "Groen", "Grijs", "Geel", "Rood"]
+      - { label: "Titel", name: "card_title", widget: "string" }
+      - { label: "Soundbites", name: "soundbites", widget: "string" }
+      - { label: "Soundbites Tekst", name: "soundbites_text", widget: "text" }
   - name: "content"
     label: "Teksten"
     files:

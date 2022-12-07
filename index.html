@@ -115,11 +115,13 @@ title: Human Connection
 
   <div class="actievraag">
     <div class="actievraag-content">
-      <h2>{{site.data.home.actievraag}}</h2>
-      <p class="ontdek">{{site.data.home.actievraag-subtitel}}</p>
-      <p class="btn btn-full">
-        <a href="#">{{site.data.home.actievraag-button}}</a>
-      </p>
+      <div class="actievraag-content-wrapper">
+        <h2>{{site.data.home.actievraag}}</h2>
+        <p class="ontdek">{{site.data.home.actievraag-subtitel}}</p>
+        <p class="btn btn-full">
+          <a href="#">{{site.data.home.actievraag-button}}</a>
+        </p>
+      </div>
     </div>
     <div class="actie-image">
       <img src="/assets/images/upload/vraagtekens.jpg" alt="" />
@@ -160,27 +162,27 @@ title: Human Connection
                 class="did-floating-input"
                 type="text"
                 name="naam"
-                placeholder=" "
+                placeholder="Jouw antwoord"
               />
-              <label class="did-floating-label">Naam</label>
+              <label class="did-floating-label">Naam*</label>
             </div>
             <div class="did-floating-label-content">
               <input
                 class="did-floating-input"
                 type="text"
                 name="onderwerp"
-                placeholder=" "
+                placeholder="Jouw antwoord"
               />
-              <label class="did-floating-label">Onderwerp</label>
+              <label class="did-floating-label">Onderwerp*</label>
             </div>
             <div class="did-floating-label-content">
               <input
                 class="did-floating-input"
                 type="email"
                 name="email"
-                placeholder=" "
+                placeholder="Jouw antwoord"
               />
-              <label class="did-floating-label">Email</label>
+              <label class="did-floating-label">Email*</label>
             </div>
             <div class="did-floating-label-content">
               <textarea
@@ -189,10 +191,11 @@ title: Human Connection
                 cols="50"
                 class="did-floating-input"
                 name="bericht"
-                placeholder=" "
+                placeholder="Jouw antwoord:"
               ></textarea>
-              <label class="did-floating-label">Vraag/Bericht</label>
+              <label class="did-floating-label">Vraag/Bericht*</label>
             </div>
+            <!-- <p>*Vereist</p> -->
             <button type="submit" class="btn btn-full">Verzend bericht</button>
           </form>
         </div>

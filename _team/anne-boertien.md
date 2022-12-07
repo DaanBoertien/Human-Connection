@@ -18,6 +18,5 @@ bg_color: Lichtblauw
 card_title: Tijd voor actie?
 soundbites: Anne in soundbites
 soundbites_text: enthousiast, analyserend, diepte, strategisch. Denken vs. voelen. Praktisch. Multitasker.
+menu: menu-active
 ---
-
-Anne doet dit en dit

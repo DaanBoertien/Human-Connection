@@ -53,6 +53,10 @@
   }
 }
 
+.bg-grey {
+  background-color: var(--clr-light-grey);
+}
+
 .bold {
   font-weight: 500;
 }
@@ -76,4 +80,14 @@
 
 .no-border {
   border: 0;
+}
+
+.current {
+  color: var(--clr-darkblue);
+  &:link {
+    color: var(--clr-darkblue);
+  }
+  &:visited {
+    color: var(--clr-darkblue);
+  }
 }

@@ -136,10 +136,10 @@
     font-size: 45px;
     line-height: 52px;
     letter-spacing: 0.23px;
-    margin-top: 60px;
+    margin-top: 92px;
     margin-bottom: 16px;
     width: 40vw;
-    max-width: 700px;
+    max-width: 598px;
   }
 
   .landing-content p {
@@ -148,7 +148,7 @@
     font-weight: 300;
     padding-right: 6em;
     width: 40vw;
-    max-width: 700px;
+    max-width: 598px;
   }
 
   .landing-content {
@@ -262,15 +262,21 @@
 
   .actievraag {
     display: flex;
+    justify-content: end;
+
     // height: min-content;
   }
 
   .actievraag-content {
     flex: 1;
-    padding-top: 5em;
-    padding-left: 10em;
-    padding-right: 0;
-    // max-width: 320px;
+    padding-top: 0em;
+    // padding-left: 10em;
+    padding-bottom: 0;
+    padding-right: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .actievraag-content h2,
@@ -338,69 +344,92 @@
       // align-self: end;
     }
   }
-  .connect-to-perform {
-    border-bottom-left-radius: var(--border-radius-desktop);
-    width: 40%;
-    box-shadow: -35px 0px 0px 0px var(--clr-green),
-      -35px 1px 0px 0px var(--clr-green);
-    h2 {
-      font-size: 17px;
-      margin-bottom: 2em;
-      padding-right: 4em;
-    }
+  footer {
+    display: none;
   }
-  .footer-flex {
-    display: flex;
-  }
-  .footer {
-    &-menu {
-      display: flex;
-      justify-content: space-around;
-      background: var(--clr-green);
-      margin-left: 5em;
-      width: 60%;
-      padding-left: 2em;
-      padding-top: 3em;
+  .footer-desktop {
+    width: 100%;
+    display: grid;
+    gap: 2em;
+    color: white;
+    margin-bottom: 5em;
+    grid-template-areas:
+      "white-space green-space menu   menu   menu   menu      connect"
+      "white-space green-space  disclaimer disclaimer disclaimer ontwerp ontwerp";
+    grid-template-columns: 1fr 3fr 3fr 3fr 3fr 3fr 6fr;
+    // grid-auto-columns: mincontent;
+    grid-template-rows: 2fr 1fr;
+    // .menu1 {
+    //   grid-area: menu1;
+    //   margin-top: 3em;
+    //   width: min(80px, max-content);
+    // }
+    // .menu2 {
+    //   grid-area: menu2;
+    //   margin-top: 3em;
+    //   width: min(80px, max-content);
+    // }
+    // .menu3 {
+    //   grid-area: menu3;
+    //   margin-top: 3em;
+    //   width: min(80px, max-content);
+    // }
+    // .menu4 {
+    //   grid-area: menu4;
+    //   margin-top: 3em;
+    //   width: min(80px, max-content);
+    // }
 
-      a {
-        color: white;
-        display: block;
-      }
-    }
-    &-bottom {
-      margin-left: 5em;
-      border-bottom-left-radius: var(--border-radius-desktop);
-      margin-bottom: 4em;
-      box-shadow: 0px -50px 0px 0px var(--clr-green);
-      padding-bottom: 2em;
-      padding-left: 3em;
-      margin-top: 1em;
+    .footer-menu-flex {
+      grid-area: menu;
       display: flex;
-      justify-content: space-between;
-      p {
-        font-size: 14px;
-        padding-right: 4em;
-      }
-      a {
-        color: white;
-      }
+      gap: 1em;
+      padding-top: 3em;
     }
-    &-link-bold {
-      font-weight: 500;
-      font-size: 17px;
+    .footer-menu-items a {
+      display: block;
       margin-bottom: 0.5em;
     }
-    &-link-small {
-      font-size: 15px;
+
+    .footer-link-small {
       font-weight: 300;
-      margin-bottom: 0.4em;
     }
+
+    .green-space {
+      background-color: var(--clr-green);
+      grid-area: 1 / 2 / -1 / -1;
+      z-index: -1;
+      border-bottom-left-radius: var(--border-radius-desktop);
+    }
+
+    .connect {
+      grid-area: connect;
+      background: var(--clr-darkblue);
+      padding: 3em 2em 1em;
+      border-bottom-left-radius: var(--border-radius-desktop);
+      min-width: 300px;
+      h2 {
+        margin-top: 0;
+        color: white;
+        font-size: 17px;
+        max-width: 25ch;
+        line-height: 1.6;
+        margin-bottom: 1em;
+      }
+    }
+    .ontwerp {
+      grid-area: ontwerp;
+      margin-left: auto;
+      padding-right: 3em;
+    }
+    .disclaimer {
+      grid-area: disclaimer;
+    }
+
+    a,
     p {
-      box-shadow: none;
+      color: white;
     }
-  }
-  .connect-to-perform h2 {
-    line-height: 1.6;
   }
 }
 
@@ -410,6 +439,12 @@
   }
   .innercontainer--werken-bij {
     max-width: 756px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .footer-desktop .footer-menu-flex {
+    gap: 2em;
   }
 }
 

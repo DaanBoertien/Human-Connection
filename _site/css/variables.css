@@ -1,0 +1,18 @@
+:root {
+  --clr-darkblue: rgba(21, 63, 143, 1);
+  --clr-lightblue: rgba(78, 184, 232, 255);
+  --clr-lightestblue: rgba(237, 243, 251, 1);
+  --clr-green: rgba(77, 176, 176, 1);
+  --clr-grey: rgba(210, 213, 218, 1);
+  --clr-light-grey: rgba(244, 244, 246, 1);
+  --clr-yellow: rgba(248, 204, 70, 1);
+  --clr-red: rgba(243, 125, 112, 255);
+  --clr-black: rgba(56, 56, 56, 1);
+  --container-width: 1650px;
+  --border-radius: 30px;
+  --border-radius-desktop: 47px;
+  --spacer-small: 1em;
+  --spacer-medium: 2em;
+  --spacer-large: 3em;
+  --spacer-extralarge: 4em;
+}/*# sourceMappingURL=variables.css.map */
