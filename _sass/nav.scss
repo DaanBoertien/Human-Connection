@@ -68,8 +68,8 @@ nav {
 }
 
 .main-menu-link:link,
-.main-menu-link:visited {
-  .main-menu-link:active {
+.main-menu-link:visited,
+.main-menu-link:active {
   color: var(--crl-black);
 }
 
