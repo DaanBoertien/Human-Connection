@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Werken bij</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+      integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="fixed-wrapper">
+  <div class="fixed-menu">
+    <nav role="navigation" class="extracorner" id="nav">
+      <a class="mainlogolink" href="/">
+        <img
+          class="mainlogo"
+          src="/assets/images/upload/Logo Human Connection.svg"
+          alt=""
+        />
+      </a>
+      <button class="hamburger hamburger--squeeze" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="nav-desktop">
+        <ul class="main-menu">
+          <li class="main-menu-list">
+            <a
+              href="#"
+              aria-haspopup="true"
+              class="main-menu-link "
+              >Wie wij zijn</a
+            >
+            <ul class="dropdown" aria-label="submenu">
+              <li class="menu-filler"></li>
+                
+              <li>
+                <a class="dropdown-link" href="/team/alexander-van-ravesteyn"
+                  >Alexander van Ravesteyn</a
+                >
+              </li>
+                
+              <li>
+                <a class="dropdown-link" href="/team/anne-boertien"
+                  >Anne Boertien</a
+                >
+              </li>
+                
+              <li>
+                <a class="dropdown-link" href="/team/annet-weitering"
+                  >Annet Weitering</a
+                >
+              </li>
+                
+              <li>
+                <a class="dropdown-link" href="/team/daan-van-der-weele"
+                  >Daan van der Weele</a
+                >
+              </li>
+                
+              <li>
+                <a class="dropdown-link" href="/team/dorothé-wissink"
+                  >Dorothé Wissink</a
+                >
+              </li>
+                
+              <li>
+                <a class="dropdown-link" href="/team/gerke-visser"
+                  >Gerke Visser</a
+                >
+              </li>
+                
+              <li>
+                <a class="dropdown-link" href="/team/jojanneke-van-goinga"
+                  >Jojanneke van Goinga</a
+                >
+              </li>
+                
+              <li>
+                <a class="dropdown-link" href="/team/liesbeth-de-boer"
+                  >Liesbeth de Boer</a
+                >
+              </li>
+                
+              <li>
+                <a class="dropdown-link" href="/team/marit-weiss"
+                  >Marit Weiss</a
+                >
+              </li>
+                
+              <li>
+                <a class="dropdown-link" href="/team/meggie-van-de-bunt"
+                  >Meggie van de Bunt</a
+                >
+              </li>
+                
+              <li>
+                <a class="dropdown-link" href="/team/petra-berry"
+                  >Petra Berry</a
+                >
+              </li>
+                
+              <li>
+                <a class="dropdown-link" href="/team/sjef-van-gool"
+                  >Sjef van Gool</a
+                >
+              </li>
+                  
+              <li>
+                <a class="dropdown-link" href="/team/willemijn-bos"
+                  >Willemijn Bos</a
+                >
+              </li>
+                
+              <li>
+                <a class="dropdown-link" href="/team/willemijn-dekker"
+                  >Willemijn Dekker</a
+                >
+              </li>
+                
+              <li>
+                <a class="dropdown-link" href="/team/zilla-uiterwijk"
+                  >Zilla Uiterwijk</a
+                >
+              </li>
+               
+            </ul>
+          </li>
+          <li class="main-menu-list">
+            <a
+              href="#"
+              aria-haspopup="true"
+              class="main-menu-link current"
+              >Wat we doen</a
+            >
+            <ul class="dropdown" aria-label="submenu">
+              <li class="menu-filler"></li>
+              <li><a href="#" class="dropdown-link">Hoe wij werken</a></li>
+              <li><a href="#" class="dropdown-link">Wat wij doen</a></li>
+              <li><a href="#" class="dropdown-link">Connect to Perform</a></li>
+            </ul>
+          </li>
+          <li class="main-menu-list">
+            <a href="#" class="main-menu-link ">Contact</a>
+            <ul class="dropdown" aria-label="submenu">
+              <li class="menu-filler menu-filler-contact"></li>
+              <li><a href="#" class="dropdown-link">Contact</a></li>
+              <li>
+                <a href="http://localhost:4000/werken-bij" class="dropdown-link"
+                  >Werken bij ons</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-menu">
+        <ul class="menu-ul">
+          <li class="submenu-mobile-toggle1 li-outer">
+            <a href="#">Wie wij zijn</a>
+            <ul class="submenu-mobile">
+              <li><a href="#" class="">Wie wij zijn</a></li>
+              <li><a href="#" class="current">Hoe wij werken</a></li>
+            </ul>
+          </li>
+          <li class="submenu-mobile-toggle2 li-outer">
+            <a href="#">Wat we doen</a>
+            <ul class="submenu-mobile">
+              <li><a href="#">Wat wij doen</a></li>
+              <li><a href="#">Hoe wij werken</a></li>
+              <li><a href="#">Connect to Perform</a></li>
+            </ul>
+          </li>
+          <li class="submenu-mobile-toggle3 li-outer">
+            <a href="#">Contact</a>
+            <ul class="submenu-mobile">
+              <li><a href="#">Wat wij doen</a></li>
+              <li><a href="#">Hoe wij werken</a></li>
+            </ul>
+          </li>
+        </ul>
+        <p class="btn btn-full btn-menu margin-top-2">
+          <a href="#"><i class="fa-solid fa-phone"></i> Bel ons</a>
+        </p>
+        <p class="btn btn-full btn-menu">
+          <a href="#"><i class="fa-solid fa-envelope"></i> Mail ons</a>
+        </p>
+      </div>
+    </nav>
+  </div>
+</div>
+ <main>
+  <a href="#nav" class="button-omhoog-link">
+  <svg
+    id="button-omhoog"
+    data-name="Laag 3"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 36.72 36.72"
+  >
+    <defs>
+      <style>
+        .cls-4 {
+          fill: #fff;
+        }
+
+        .cls-5 {
+          fill: #4db0b0;
+        }
+      </style>
+    </defs>
+    <g id="Laag_3-2" data-name="Laag 3">
+      <path
+        class="cls-5"
+        d="M0,0H27.54c5.07,0,9.18,4.11,9.18,9.18v27.54H9.14c-5.05,0-9.14-4.1-9.14-9.14V0H0Z"
+      />
+      <path
+        id="Path_Copy"
+        data-name="Path Copy"
+        class="cls-4"
+        d="M23.63,22.43l-5.27-5.28-5.28,5.28c-.53,.53-1.39,.53-1.92,0-.53-.53-.53-1.39,0-1.92l6.25-6.23c.53-.52,1.37-.52,1.9,0l6.25,6.23c.53,.53,.53,1.39,0,1.92,0,0,0,0,0,0-.54,.52-1.39,.53-1.93,0Z"
+      />
+    </g>
+  </svg>
+</a>
+
+  <div class="landing landing--werken-bij Lichtblauw">
+    <div class="innercontainer innercontainer--werken-bij">
+      <div class="landing-content">
+        <h1>Hoe wij werken</h1>
+        <p>Is dit ‘hoe wij te werk gaan’? Met de uitgangspunten van slide 5 in ons achterhoofd. Dus concreet hoe we aan de slag gaan. Pragmatici moeten hier een beeld krijgen op hun vraag: hoe werken deze mensen dan? Manier van van maatwerk – traject – veel afstemming en parnterschap en evaluatie?</p>
+
+      </div>
+    </div>
+
+    <div class="img-overlay-wrap">
+      <img
+        class="landing-image"
+        src="/assets/images/upload/parachute.jpg"
+        alt=""
+      />
+      <svg
+  id="Laag_1"
+  data-name="Laag 1"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 404.76 159.71"
+  preserveAspectRatio="none"
+  class="svg1"
+>
+  <defs>
+    <style>
+      .cls-1 {
+        fill: var(--clr-lightblue);
+      }
+    </style>
+  </defs>
+  <g id="Laag_1-2" data-name="Laag 1">
+    <path
+      class="cls-1"
+      d="M151.37,84.62c103.6-.35,189.71-32.14,253.39-84.62V159.71s-404.76,0-404.76,0c16.68-37.26,56.45-75.08,151.37-75.08Z"
+    />
+  </g>
+</svg>
+ <svg
+  id="Laag_6"
+  data-name="Laag 6"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 159.71 404.76"
+  preserveAspectRatio="none"
+  class="svg1-desktop"
+>
+  <defs>
+    <style>
+      .cls-6 {
+        fill: var(--clr-lightblue);
+      }
+    </style>
+  </defs>
+  <g id="Laag_6-2" data-name="Laag 6">
+    <path
+      class="cls-6"
+      d="M84.62,151.37c-.35,103.6-32.14,189.71-84.62,253.39H159.71s0-404.76,0-404.76c-37.26,16.68-75.08,56.45-75.08,151.37Z"
+    />
+  </g>
+</svg>
+
+    </div>
+  </div>
+  <div class="innercontainer--werken-bij">
+    <section class="werken-bij">
+      <h2 class="werken-bij__title">Als coach/begeleider van ontwikkelprogramma’s</h2>
+      <h3>Wat doe je als?</h3>
+
+      <p>Je maakt op maat programma’s waarin medewerkers en managers van organisaties zich kunnen ontwikkelen. Denk hierbij als een jaartraject ‘Persoonlijk Leiderschap’, een ‘Masterclass-traject voor talent’ of andere vormen van trainee- of leiderschapsprogramma’s.</p>
+
+<p>We zoeken iemand die met zelfvertrouwen en een frisse blik voor de groep kan staan en ook in staat is individuele coachgesprekken te voeren. Je frisse blik en creativiteit zijn van harte welkom, evenals je vermogen om, ongeacht de omstandigheden, op een constructieve manier om te gaan met groepsdynamiek. Je blik is breder dan persoonlijke ontwikkeling alleen, je hebt interesse in organisatie ontwikkeling, van strategie tot uitvoering en bent eager om daar meer over te leren. Je kunt goed samenwerken en bent tegelijkertijd autonoom genoeg om in onze kleinschalige, platte organisatie je eigen weg te vinden. Het spiegelen van klanten, collega’s en ook de spotlight op jezelf richten, vind je een mooie uitdaging.</p>
+
+
+      <h3>Dit bieden we je ook</h3>
+      <ul>
+  <li>Een salaris dat past bij jouw kennis en ervaring.</li>
+  <li>Een eindejaarsbonus op basis van de gezamenlijk gemaakte winst.</li>
+  <li>Een laptop, telefoon, 1e klas OV kaart, alles wat je nodig hebt om goed hybride te werken en goede secundaire voorwaarden.</li>
+  <li>Een kantoor in hartje Amsterdam, 2 minuten lopen vanaf CS (waar je alleen hoeft te zijn als je samen met collega’s aan opdrachten werkt).</li>
+</ul>
+
+      <div class="werken-bij__contact">
+        <p>Neem contact op met Meggie via <a href="#">meggie@humanc.nl</a> of  06 50 83 56 58.</p>
+
+      </div>
+      <p class="werken-bij__uitzendbureaus">
+        Uitzend- of wervingsbureaus hoeven niet op deze vacature te reageren.
+      </p>
+    </section>
+  </div>
+</main>
+ <footer>
+ 
+    <div class="footer-flex">
+      <div class="footer-menu">
+        <div class="footer-menu-items">
+          <a href="#" class="footer-link-bold">Wie wij zijn</a
+          ><a href="#" class="footer-link-small">Wie wij zijn</a>
+        </div>
+        <div class="footer-menu-items">
+          <a href="#" class="footer-link-bold">Wat wij doen</a
+          ><a href="#" class="footer-link-small">Wat wij doen</a>
+          <a href="#" class="footer-link-small">Hoe wij werken</a>
+          <a href="#" class="footer-link-small">Connect to perform</a>
+        </div>
+        <div class="footer-menu-items">
+          <a href="#" class="footer-link-bold">Contact</a
+          ><a href="#" class="footer-link-small">Contact</a>
+          <a href="#" class="footer-link-small">Werken bij</a>
+        </div>
+        <div class="footer-menu-items">
+          <a href="#" class="footer-link-bold">Volg ons</a
+          ><a href="#" class="footer-link-small"
+            ><img src="/assets/images/LinkedIn.png" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="connect-to-perform">
+        <h2>Doe je mee met onze Connect to Perform Spelavond?</h2>
+        <p class="btn btn-full Lichtblauw">
+          <a href="#">Ik schrijf me in!</a>
+        </p>
+      </div>
+    </div>
+    <div class="Groen footer footer-bottom">
+      <p>
+        Ontwerp: <a href="https://studioryza.nl">studioryza.nl </a>| Realisatie:
+        Daan Boertien
+      </p>
+      <p>2022 All Rights Reserved | Disclaimer | Cookie Policy | Privacy</p>
+    </div>
+ 
+</footer>
+
+<div class="footer-desktop">
+
+  <div class="footer-menu-flex">
+    <div class="footer-menu-items menu1">
+      <a href="#" class="footer-link-bold">Wie wij zijn</a
+      ><a href="#" class="footer-link-small">Wie wij zijn</a>
+    </div>
+    <div class="footer-menu-items menu2">
+      <a href="#" class="footer-link-bold">Wat wij doen</a
+      ><a href="#" class="footer-link-small">Wat wij doen</a>
+      <a href="#" class="footer-link-small">Hoe wij werken</a>
+      <a href="#" class="footer-link-small">Connect to perform</a>
+    </div>
+    <div class="footer-menu-items menu3">
+      <a href="#" class="footer-link-bold">Contact</a
+      ><a href="#" class="footer-link-small">Contact</a>
+      <a href="#" class="footer-link-small">Werken bij</a>
+    </div>
+    <div class="footer-menu-items menu4">
+      <a href="#" class="footer-link-bold">Volg ons</a
+      ><a href="#" class="footer-link-small"
+        ><img src="/assets/images/LinkedIn.png" alt=""
+      /></a>
+    </div>
+  </div>
+  
+  <div class="connect">
+    <h2>Doe je mee met onze Connect to Perform Spelavond?</h2>
+    <p class="btn btn-full Lichtblauw">
+      <a href="#">Ik schrijf me in!</a>
+    </p>
+  </div>
+
+  
+  <p class="ontwerp">
+    Ontwerp: <a href="https://studioryza.nl">studioryza.nl </a>| Realisatie:
+    Daan Boertien
+  </p>
+  <p class="disclaimer">©2022 All Rights Reserved | Disclaimer | Cookie Policy | Privacy</p>
+  <div class="green-space"></div>
+  </div>
+  
+</div>
+
+    </div>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
