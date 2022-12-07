@@ -44,7 +44,7 @@
 }
 
 .Rood {
-  background-color: var(-clr-red);
+  background-color: var(--clr-red);
 }
 .Rood::after {
   box-shadow: 0 calc(var(--border-radius) * -1) 0 0 var(--clr-red);
