@@ -7,7 +7,7 @@ phonenumber: 06 12 34 56 78
 photo_url: /assets/images/upload/gerke.jpg
 photo_description: gerke
 summary: |+
-  <iframe width="420" height="315"
+  <iframe width="420" height="315" frameborder="0"
   src="https://www.youtube.com/embed/e1c3Un6oGeQ">
   </iframe>
 
