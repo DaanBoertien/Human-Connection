@@ -235,6 +235,10 @@ nav {
   transform: translateY(0);
 }
 
+.nav-menu.open .submenu-mobile a {
+  pointer-events: all;
+}
+
 .nav-menu ul {
   padding: 0;
   margin: 0 auto;
@@ -247,8 +251,12 @@ nav {
 .submenu-mobile {
   height: 0;
   opacity: 0;
-  pointer-events: none;
+  // pointer-events: none;
   transition: all 0.2s ease-out;
+}
+
+.submenu-mobile a {
+  pointer-events: none;
 }
 
 .submenu-mobile-toggle2.open .submenu-mobile {
