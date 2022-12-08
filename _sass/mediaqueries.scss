@@ -24,6 +24,10 @@
     position: fixed;
     /* Do not set top / left! */
   }
+  section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 
   .nav-desktop {
     display: flex;
