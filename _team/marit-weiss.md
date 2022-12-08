@@ -28,6 +28,7 @@ summary: >-
 bg_color: Groen
 card_title: Nog invullen
 soundbites: Marit in soundbites
-soundbites_text: Enthousiast |  Hard lachen | Analyserend | Diepte | Strategisch
-  | Denken vs. voelen | Praktisch | Multitasker | Probeer eens wat anders.
+soundbites_text:
+  "Enthousiast |  Hard lachen | Analyserend | Diepte | Strategisch
+  | Denken vs. voelen | Praktisch | Multitasker | Probeer eens wat anders."
 ---
