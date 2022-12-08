@@ -78,6 +78,10 @@
   margin-top: 2em;
 }
 
+.margin-top-6 {
+  margin-top: 6em;
+}
+
 .no-border {
   border: 0;
 }
@@ -90,4 +94,15 @@
   &:visited {
     color: var(--clr-darkblue);
   }
+}
+
+.padding-top-large {
+  padding-top: 8em;
+  @media (min-width: 768px) {
+    padding-top: 4em;
+  }
+}
+
+.blue-shadow {
+  box-shadow: 0px -200px 0 0 var(--clr-darkblue);
 }

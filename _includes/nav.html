@@ -43,18 +43,18 @@
             >
             <ul class="dropdown" aria-label="submenu">
               <li class="menu-filler"></li>
-              <li><a href="/hoe-wij-werken" class="dropdown-link">Hoe wij werken</a></li>
-              <li><a href="/wat-wij-doen" class="dropdown-link">Wat wij doen</a></li>
-              <li><a href="/connect-to-perform" class="dropdown-link">Connect to Perform</a></li>
+              <li><a href="{{site.data.nav.hoe-wij-werken}}" class="dropdown-link">Hoe wij werken</a></li>
+              <li><a href="{{site.data.nav.wat-wij-doen}}" class="dropdown-link">Wat wij doen</a></li>
+              <li><a href="{{site.data.nav.connect-to-perform}}" class="dropdown-link">Connect to Perform</a></li>
             </ul>
           </li>
           <li class="main-menu-list">
             <a href="#" class="main-menu-link {% if page.url contains 'contact' or page.url contains 'werken-bij' %}current{% endif %}">Contact</a>
             <ul class="dropdown" aria-label="submenu">
               <li class="menu-filler menu-filler-contact"></li>
-              <li><a href="/contact" class="dropdown-link">Contact</a></li>
+              <li><a href="{{site.data.nav.contact}}" class="dropdown-link">Contact</a></li>
               <li>
-                <a href="{{site.url}}/werken-bij" class="dropdown-link"
+                <a href="{{site.data.nav.werken-bij}}" class="dropdown-link"
                   >Werken bij ons</a
                 >
               </li>
@@ -67,23 +67,23 @@
           <li class="submenu-mobile-toggle1 li-outer">
             <a href="#">Wie wij zijn</a>
             <ul class="submenu-mobile">
-              <li><a href="/wie-wij-zijn" class="{% if page.url contains 'team' %}current{% endif %}">Wie wij zijn</a></li>
-              <li><a href="/wat-wij-doen" class="{% if page.url contains 'hoe-wij-werken' %}current{% endif %}">Hoe wij werken</a></li>
+              <li><a href="{{site.data.nav.wie-wij-zijn}}" class="{% if page.url contains 'team' %}current{% endif %}">Wie wij zijn</a></li>
+              <li><a href="{{site.data.nav.hoe-wij-werken}}" class="{% if page.url contains 'hoe-wij-werken' %}current{% endif %}">Hoe wij werken</a></li>
             </ul>
           </li>
           <li class="submenu-mobile-toggle2 li-outer">
             <a href="#">Wat we doen</a>
             <ul class="submenu-mobile">
-              <li><a href="/hoe-wij-werken">Hoe wij werken</a></li>
-              <li><a href="/wat-wij-doen">Wat wij doen</a></li>
-              <li><a href="/connect-to-perform">Connect to Perform</a></li>
+              <li><a href="{{site.data.nav.hoe-wij-werken}}">Hoe wij werken</a></li>
+              <li><a href="{{site.data.nav.wat-wij-doen}}">Wat wij doen</a></li>
+              <li><a href="{{site.data.nav.connect-to-perform}}">Connect to Perform</a></li>
             </ul>
           </li>
           <li class="submenu-mobile-toggle3 li-outer">
             <a href="#">Contact</a>
             <ul class="submenu-mobile">
-              <li><a href="/contact">Contact</a></li>
-              <li><a href="/werken-bij">Werken bij ons</a></li>
+              <li><a href="{{site.data.nav.contact}}">Contact</a></li>
+              <li><a href="{{site.data.nav.werken-bij}}">Werken bij ons</a></li>
             </ul>
           </li>
         </ul>

@@ -1,0 +1,54 @@
+---
+layout: default
+title: Wat wij doen
+---
+
+<main>
+  <div class="watwijdoen padding-top-large blue-shadow">
+    <h2>{{site.data.home.wat-wij-doen}}</h2>
+    {{site.data.home.wat-wij-doen-tekst | markdownify}}
+  </div>
+  <div class="watwijdoenopsomming">
+    <div class="innercontainer">
+      <div class="wwd-grid">
+        <div>
+          <h3 class="wwdfirstitem">{{site.data.home.wat-wij-doen-1-titel}}</h3>
+          {{site.data.home.wat-wij-doen-1-tekst | markdownify}}
+          {{site.data.home.wat-wij-doen-1-contact | markdownify}}
+          <p class="btn btn-outline">
+            <a href="/team/sjef-van-gool/"
+              >{{site.data.home.wat-wij-doen-1-button}}</a
+            >
+          </p>
+        </div>
+        <div>
+          <h3>{{site.data.home.wat-wij-doen-2-titel}}</h3>
+          {{site.data.home.wat-wij-doen-2-tekst | markdownify}}
+          {{site.data.home.wat-wij-doen-2-contact | markdownify}}
+          <p class="btn btn-outline">
+            <a href="/team/meggie-van-de-bunt/"
+              >{{site.data.home.wat-wij-doen-2-button}}</a
+            >
+          </p>
+        </div>
+        <div>
+          <h3>{{site.data.home.wat-wij-doen-3-titel}}</h3>
+          {{site.data.home.wat-wij-doen-3-tekst | markdownify}}
+          {{site.data.home.wat-wij-doen-3-contact | markdownify}}
+          <p class="btn btn-outline">
+            <a href="/team/marit-weiss/"
+              >{{site.data.home.wat-wij-doen-3-button}}</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="centered">
+        <p class="btn btn-full">
+          <a href="{{site.data.nav.hoe-wij-werken}}"
+            >{{site.data.home.hoe-wij-werken}}</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</main>

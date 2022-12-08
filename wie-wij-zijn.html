@@ -1,0 +1,30 @@
+---
+layout: default
+title: Werken bij
+---
+
+<div class="wiewijzijn margin-top-6">
+  <div class="innercontainer">
+    <h2 class="wiewijzijntitle">{{site.data.home.wie-wij-zijn}}</h2>
+
+    <div class="team-fotos">
+      {% for member in site.team %}
+      <div class="team-foto photo">
+        <a href="/team/{{member.slug}}">
+          <div class="photo-wrapper">
+            <img
+              src="{{member.photo_url}}"
+              alt="{{member.photo_description}}"
+              class="photo"
+            />
+          </div>
+        </a>
+        <a href="/team/{{member.slug}}">
+          <p class="bold member-name">{{member.title}}</p>
+          <p class="member-function">{{member.function}}</p>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
