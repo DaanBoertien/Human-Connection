@@ -1,0 +1,68 @@
+---
+layout: default
+title: Contact
+---
+
+<main class="page-contact">
+  <div class="contact">
+    <div class="innercontainer">
+      <h2>{{site.data.home.contact-titel}}</h2>
+      <div class="contact-flex">
+        <div class="contact-left">
+          <p>{{site.data.home.contact-omschrijving}}</p>
+          <form name="contact" netlify>
+            <div class="did-floating-label-content">
+              <input
+                class="did-floating-input"
+                type="text"
+                name="naam"
+                placeholder="Jouw antwoord"
+              />
+              <label class="did-floating-label">Naam*</label>
+            </div>
+            <div class="did-floating-label-content">
+              <input
+                class="did-floating-input"
+                type="text"
+                name="onderwerp"
+                placeholder="Jouw antwoord"
+              />
+              <label class="did-floating-label">Onderwerp*</label>
+            </div>
+            <div class="did-floating-label-content">
+              <input
+                class="did-floating-input"
+                type="email"
+                name="email"
+                placeholder="Jouw antwoord"
+              />
+              <label class="did-floating-label">Email*</label>
+            </div>
+            <div class="did-floating-label-content">
+              <textarea
+                id="bericht"
+                rows="6"
+                cols="50"
+                class="did-floating-input"
+                name="bericht"
+                placeholder="Jouw antwoord:"
+              ></textarea>
+              <label class="did-floating-label">Vraag/Bericht*</label>
+            </div>
+            <!-- <p>*Vereist</p> -->
+            <button type="submit" class="btn btn-full">Verzend bericht</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div>
+            <p>{{site.data.home.uitnodiging}}</p>
+            <p class="contact-name">Human Connection</p>
+            <p class="contact-address">{{site.data.home.adres}}</p>
+            <p class="contact-zipcode">{{site.data.home.postcode}}</p>
+          </div>
+          <img src="{{site.data.home.afbeelding-kantoor}}" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
