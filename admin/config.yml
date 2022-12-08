@@ -212,10 +212,10 @@ collections:
           preview: false
         fields:
           - label: "Pagina titel"
-            name: "slogan"
+            name: "title"
             widget: "string"
           - label: "Uitleg"
-            name: "landing-tekt"
+            name: "landing-tekst"
             widget: "markdown"
           - label: "Missie titel"
             name: "waar-wij-voor-staan"
