@@ -205,9 +205,9 @@ collections:
           - label: "Afbeelding Kantoor"
             name: "afbeelding-kantoor"
             widget: "image"
-      - name: "home"
-        label: "Home"
-        file: "_data/home.yml"
+      - name: "hoe-wij-werken"
+        label: "Hoe wij werken"
+        file: "_data/hoe-wij-werken.yml"
         editor:
           preview: false
         fields:
