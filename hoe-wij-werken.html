@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Werken bij
+title: Hoe wij werken
 ---
 
 <main>
@@ -23,21 +23,27 @@ title: Werken bij
       %}
     </div>
   </div>
-  <div class="innercontainer--werken-bij">
-    <section class="werken-bij">
-      <h2 class="werken-bij__title">{{site.data.hoe-wij-werken.kop}}</h2>
-      <h3>{{site.data.hoe-wij-werken.wat-je-doet}}</h3>
-
-      {{site.data.werken-bij-ons.wat-je-doet-tekst| markdownify}}
-
-      <h3>{{site.data.werken-bij-ons.wat-we-bieden}}</h3>
-      {{site.data.werken-bij-ons.wat-we-bieden-tekst | markdownify}}
-      <div class="werken-bij__contact">
-        {{site.data.werken-bij-ons.contact | markdownify}}
+  <div class="vision">
+    <h2>{{site.data.hoe-wij-werken.waar-wij-voor-staan}}</h2>
+    {{site.data.hoe-wij-werken.waar-wijvoor-staan-tekst | markdownify}}
+  </div>
+  <div class="wijzijn">
+    <div class="innercontainer wijzijn-flex">
+      <div class="waardes">
+        <img src="{{site.data.hoe-wij-werken.waarde-1-afbeelding}}" alt="" />
+        <h3>{{site.data.hoe-wij-werken.waarde-1-titel}}</h3>
+        {{site.data.hoe-wij-werken.waarde-1-tekst | markdownify}}
       </div>
-      <p class="werken-bij__uitzendbureaus">
-        {{site.data.werken-bij-ons.uitzendbureaus}}
-      </p>
-    </section>
+      <div class="waardes">
+        <img src="{{site.data.hoe-wij-werken.waarde-2-afbeelding}}" alt="" />
+        <h3>{{site.data.hoe-wij-werken.waarde-2-titel}}</h3>
+        {{site.data.hoe-wij-werken.waarde-2-tekst | markdownify}}
+      </div>
+      <div class="waardes">
+        <img src="{{site.data.hoe-wij-werken.waarde-3-afbeelding}}" alt="" />
+        <h3>{{site.data.hoe-wij-werken.waarde-3-titel}}</h3>
+        {{site.data.hoe-wij-werken.waarde-3-tekst | markdownify}}
+      </div>
+    </div>
   </div>
 </main>
