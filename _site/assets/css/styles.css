@@ -143,7 +143,7 @@ nav { display: flex; justify-content: space-between; justify-items: center; just
 
 .nav-desktop ul { list-style: none; margin: 0; padding-left: 0; display: none; cursor: pointer; }
 
-.nav-desktop li { color: var(--clr-black); cursor: pointer; display: block; float: left; padding: 0.4rem 2rem; position: relative; text-decoration: none; transition-duration: 0.5s; }
+.nav-desktop li { color: var(--clr-black); cursor: pointer; display: block; float: left; padding: 0.4rem 2rem; position: relative; text-decoration: none; }
 
 .dropdown { z-index: 2; }
 
@@ -679,7 +679,7 @@ section { padding-top: 40px; padding-bottom: 40px; }
 
 .photo-wrapper:after { content: ""; display: block; padding-bottom: 100%; /* The padding depends on the width, not on the height, so with a padding-bottom of 100% you will get a square */ }
 
-.photo-wrapper::before { position: absolute; content: url("/assets/images/ul-arrow-white.svg"); background: center/contain no-repeat url("/assets/images/ul-arrow-white.svg"); background-size: 25%; color: white; padding-top: 3em; left: 0; right: 0; top: 0; bottom: 0; transition: opacity 0.2s ease-out; z-index: 10; background-color: var(--clr-red); border-top-right-radius: var(--border-radius); border-bottom-left-radius: var(--border-radius); opacity: 0; display: grid; place-items: center; }
+.photo-wrapper::before { position: absolute; content: url(""); background: center/contain no-repeat url("/assets/images/ul-arrow-white.svg"); background-size: 25%; color: white; padding-top: 3em; left: 0; right: 0; top: 0; bottom: 0; transition: opacity 0.2s ease-out; z-index: 10; background-color: var(--clr-red); border-top-right-radius: var(--border-radius); border-bottom-left-radius: var(--border-radius); opacity: 0; display: grid; place-items: center; }
 
 .photo-wrapper:hover::before { opacity: 1; }
 
