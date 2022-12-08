@@ -17,7 +17,7 @@ summary: >-
   Anderen omschrijven mij als warm en oprecht in relaties, scherp op de inhoud, en praktisch en creatief in de uitvoering.
 bg_color: Groen
 card_title: Tijd voor actie?
-soundbites: Anne in soundbites
+soundbites: "Leuk feitje: "
 soundbites_text: >
   Wil je meer weten over mijn specialisatie in Zakelijk Tekenen? Kijk dan op
   www.anneboertien.nl 
