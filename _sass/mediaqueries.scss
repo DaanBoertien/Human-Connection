@@ -185,6 +185,17 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2.5em;
   }
+  .wijzijn-flex-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4em;
+    margin-top: 1em;
+    .waarde-4 {
+      margin-left: auto;
+    }
+    .waardes {
+      max-width: 266px;
+    }
+  }
   .watwijdoen {
     border-bottom-right-radius: var(--border-radius-desktop);
   }
