@@ -1,7 +1,7 @@
 ---
 layout: teammembers
 title: Anne Boertien
-function: "-"
+function: Visueel organisatieadviseur | Ontwikkelaar | Coach
 email: anne@humanc.nl
 phonenumber: 06 36 25 62 32
 photo_url: /assets/images/upload/anne-mat.jpg
