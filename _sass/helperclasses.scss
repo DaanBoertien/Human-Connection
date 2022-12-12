@@ -61,6 +61,9 @@
   background-color: var(--clr-light-grey);
 }
 
+.bg-rood {
+  background-color: var(--clr-red);
+}
 .bold {
   font-weight: 500;
 }
@@ -86,8 +89,30 @@
   margin-top: 6em;
 }
 
+.margin-bottom-1em {
+  margin-bottom: 1em;
+}
+.margin-bottom-2 {
+  margin-bottom: 2em;
+}
+
+.margin-bottom-4 {
+  margin-bottom: 4em;
+}
+.block {
+  display: block;
+}
+
+.max-content {
+  width: max-content;
+}
+
 .no-border {
   border: 0;
+}
+
+.fs-16px {
+  font-size: 16px;
 }
 
 .current {
