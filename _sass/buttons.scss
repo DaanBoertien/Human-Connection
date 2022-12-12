@@ -49,3 +49,14 @@
     cursor: pointer;
   }
 }
+
+.btn-ctp {
+  border: 2px solid var(--clr-lightblue);
+  &:hover {
+    background-color: var(--clr-grey);
+    border: 2px solid var(--clr-grey);
+    a {
+      color: var(--clr-black);
+    }
+  }
+}

@@ -835,6 +835,12 @@ main .team-member { padding-top: 120px; }
 
 .btn:hover { cursor: pointer; }
 
+.btn-ctp { border: 2px solid var(--clr-lightblue); }
+
+.btn-ctp:hover { background-color: var(--clr-grey); border: 2px solid var(--clr-grey); }
+
+.btn-ctp:hover a { color: var(--clr-black); }
+
 .Donkerblauw { background-color: var(--clr-darkblue); }
 
 .Donkerblauw::after { box-shadow: 0 calc(var(--border-radius) * -1) 0 0 var(--clr-darkblue); }
