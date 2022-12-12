@@ -72,6 +72,9 @@
       box-shadow: 0 -300px 0 0 var(--clr-lightblue);
     }
   }
+  .landing--yellow {
+    box-shadow: 0 -300px 0 0 var(--clr-yellow);
+  }
 
   .img-overlay-wrap {
     flex: 1 1 0px;
@@ -171,6 +174,10 @@
     font-size: 17px;
     max-width: 700px;
     margin: 0 auto;
+  }
+
+  .p-breed p {
+    max-width: 800px;
   }
   .wijzijn {
     display: block;
