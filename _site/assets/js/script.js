@@ -28,6 +28,7 @@ document.addEventListener('click', event => {
     } else {
       if ( !event.target.closest('.hamburger')){
       navMenu.classList.remove("open");
+      hamburger.classList.toggle("is-active");  
       }
     }
   }
