@@ -387,7 +387,7 @@ collections:
             widget: "string"
           - label: "data"
             name: "data"
-            widget: "string"
+            widget: "list"
             fields:
               - label: "datum"
                 name: "datum"

@@ -23,8 +23,10 @@ bedrijf: Bedrijf*
 functie: Functie*
 telefoonnummer: Telefoonnummer*
 welke: Voor welke avond meld je je aan?*
-data: 'List [ Map { "datum": "8 november (Online/offline)" }, Map { "datum": "9
-  februari 2023" }, Map { "datum": "13 juni 2023" }, Map { "datum": "9 juni
-  2023" } , Map { "datum": "10 juni 2023" }]'
+data: 
+  -datum: 8 november (Online/offline)
+  -datum: 13 juni 2023
+  -datum: 9 juni
+  
 hoe: Via wie of hoe weet je van de Connect to Perform avond?
 reden: Wat is je reden van aanmelden?
