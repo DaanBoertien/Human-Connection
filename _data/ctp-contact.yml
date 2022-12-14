@@ -10,3 +10,21 @@ aanmelding-title: Methoden en Werkvormen
 aanmelding-zoom: Via Zoom
 aanmelding-tekst: >-
   We komen graag met je in contact. Bel of mail direct een van onze collega’s of vul onderstaand formulier in. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+naam: Naam*
+email: Email*
+bedrijf: Bedrijf*
+functie: Functie*
+telefoonnummer: Telefoonnummer*
+welke: Voor welke avond meld je je aan?*
+data:
+  - datum: 8 november (Online/offline)
+  - datum: 9 februari 2023
+  - datum: 13 juni 2023
+  - datum: 9 juni 2023
+hoe: Via wie of hoe weet je van de Connect to Perform avond?
+reden: Wat is je reden van aanmelden?
+meer-informatie: Wil je ook na deze avond door ons geïnformeerd worden over onze
+  activiteiten op het gebied van organisatie- en cultuurontwikkeling?
+  Als je hieronder toestemming geeft dan krijg je voor maximaal 5 jaar
+  informatie van ons over thema-avonden en nieuwsberichten per mail.
+  Je kunt je uiteraard elk moment weer uitschrijven.*

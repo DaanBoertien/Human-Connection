@@ -61,6 +61,10 @@
   color: rgba(236, 247, 253, 1);
 }
 
+.bg-lightestblue {
+  color: rgba(236, 247, 253, 1);
+}
+
 .clr-black {
   color: var(--clr-black);
 }
@@ -133,6 +137,10 @@ button[type="submit"].clr-black {
 
 .no-border {
   border: 0;
+}
+
+.fs-12px {
+  font-size: 12px;
 }
 
 .fs-16px {

@@ -36,7 +36,9 @@ title: Meld je aan
             name="naam"
             placeholder="Jouw antwoord"
           />
-          <label class="did-floating-label">Naam*</label>
+          <label class="did-floating-label"
+            >{{site.data.ctp-contact.naam}}</label
+          >
         </div>
 
         <div class="did-floating-label-content">
@@ -46,7 +48,9 @@ title: Meld je aan
             name="email"
             placeholder="Jouw antwoord"
           />
-          <label class="did-floating-label">Email*</label>
+          <label class="did-floating-label"
+            >{{site.data.ctp-contact.email}}</label
+          >
         </div>
         <div class="did-floating-label-content">
           <input
@@ -55,7 +59,9 @@ title: Meld je aan
             name="bedrijf"
             placeholder="Jouw antwoord"
           />
-          <label class="did-floating-label">Bedrijf*</label>
+          <label class="did-floating-label"
+            >{{site.data.ctp-contact.bedrijf}}</label
+          >
         </div>
         <div class="did-floating-label-content">
           <input
@@ -64,7 +70,9 @@ title: Meld je aan
             name="functie"
             placeholder="Jouw antwoord"
           />
-          <label class="did-floating-label">Functie*</label>
+          <label class="did-floating-label"
+            >{{site.data.ctp-contact.functie}}</label
+          >
         </div>
         <div class="did-floating-label-content">
           <input
@@ -73,45 +81,27 @@ title: Meld je aan
             name="telefoonnummer"
             placeholder="Jouw antwoord"
           />
-          <label class="did-floating-label">Telefoonnummer*</label>
+          <label class="did-floating-label"
+            >{{site.data.ctp-contact.telefoonnummer}}</label
+          >
         </div>
-        <div class="did-floating-label-content">
-          <input
-            class="did-floating-input"
-            type="text"
-            name="functie"
-            placeholder="Jouw antwoord"
-          />
-          <label class="did-floating-label">Functie*</label>
-        </div>
+
         <fieldset class="did-floating-label-content margin-bottom-1em">
           <legend class="did-floating-label">
-            Voor welke avond meld je je aan?
+            {{site.data.ctp-contact.welke}}
           </legend>
           <div>
+            {% for datum in site.data.ctp-contact.data %}
             <div class="flex-radio">
               <input
                 type="radio"
                 id="dateChoice1"
                 name="datum"
-                value="{{eerste}}"
+                value="{{datum.datum}}"
               />
-              <label for="dateChoice1">8 november (Online/offline)</label>
+              <label for="dateChoice1">{{datum.datum}}</label>
             </div>
-
-            <div class="flex-radio">
-              <input type="radio" id="dateChoice2" name="datum" value="phone" />
-              <label for="dateChoice2">9 februari 2023</label>
-            </div>
-
-            <div class="flex-radio">
-              <input type="radio" id="dateChoice3" name="datum" value="mail" />
-              <label for="dateChoice3">13 juni 2023</label>
-            </div>
-            <div class="flex-radio">
-              <input type="radio" id="datetChoice4" name="datum" value="mail" />
-              <label for="contactChoice4">9 juni 2023</label>
-            </div>
+            {% endfor %}
           </div>
         </fieldset>
         <div class="did-floating-label-content">
@@ -122,18 +112,25 @@ title: Meld je aan
             placeholder="Jouw antwoord"
           />
           <label class="did-floating-label"
-            >Via wie of hoe weet je van de Connect to Perform avond?</label
+            >{{site.data.ctp-contact.hoe}}</label
+          >
+        </div>
+        <div class="did-floating-label-content">
+          <input
+            class="did-floating-input"
+            type="text"
+            name="reden"
+            placeholder="Jouw antwoord"
+          />
+          <label class="did-floating-label"
+            >{{site.data.ctp-contact.reden}}</label
           >
         </div>
         <fieldset
           class="did-floating-label-content margin-bottom-1em informeer"
         >
           <legend class="did-floating-label">
-            Wil je ook na deze avond door ons geïnformeerd worden over onze
-            activiteiten op het gebied van organisatie- en cultuurontwikkeling?
-            Als je hieronder toestemming geeft dan krijg je voor maximaal 5 jaar
-            informatie van ons over thema-avonden en nieuwsberichten per mail.
-            Je kunt je uiteraard elk moment weer uitschrijven.*
+            {{site.data.ctp-contact.meer-informatie}}
           </legend>
           <div>
             <div class="flex-radio">
