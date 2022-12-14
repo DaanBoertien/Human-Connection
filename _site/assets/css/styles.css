@@ -917,6 +917,8 @@ button.clr-black[type="submit"] { color: var(--clr-black); }
 
 .tight-text { line-height: 1; }
 
+.relative { position: relative; }
+
 .center { text-align: center; }
 
 .centered { display: flex; justify-content: center; }
