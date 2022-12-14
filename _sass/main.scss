@@ -78,7 +78,7 @@ section {
 
 .img-overlay-wrap .svg1 {
   position: absolute;
-  bottom: 0px;
+  bottom: -1px;
   left: 0;
   z-index: 3;
   height: 90px;
@@ -144,6 +144,9 @@ section {
   border-top-left-radius: 30px;
   box-shadow: 0 -30px 0 0 var(--clr-darkblue);
   background: transparant;
+}
+.watwijdoen-lightblue::after {
+  box-shadow: 0 calc(var(--border-radius) * -1) 0 0 var(--clr-lightblue);
 }
 
 .wijzijn {
