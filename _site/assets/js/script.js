@@ -13,16 +13,47 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("open");
 })
 
+// document.addEventListener("click", (e) => {
+//   if (e.target != navMenu) {
+//     if (navMenu.classList.contains("open")) {
+//       // navMenu.classList.remove("open")
+//       console.log("erbuiten");
+//     }
+//   }
+// })
+document.addEventListener('click', event => {
+  if ( navMenu.classList.contains("open")){
+    if (event.target.closest('.nav-menu')) {
+        return;
+    } else {
+      if ( !event.target.closest('.hamburger')){
+      navMenu.classList.remove("open");
+      }
+    }
+  }
+})
+
+
+
+
+
+
 navUl1.addEventListener("click", () => {
   navUl1.classList.toggle("open");
+  navUl2.classList.remove("open");
+  navUl3.classList.remove("open");
 } )
 
 navUl2.addEventListener("click", () => {
   navUl2.classList.toggle("open");
+  navUl1.classList.remove("open");
+  navUl3.classList.remove("open");
 } )
 
 navUl3.addEventListener("click", () => {
   navUl3.classList.toggle("open");
+  navUl1.classList.remove("open");
+  navUl2.classList.remove("open");
 } )
 
 
