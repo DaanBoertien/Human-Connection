@@ -61,6 +61,14 @@
   color: rgba(236, 247, 253, 1);
 }
 
+.clr-black {
+  color: var(--clr-black);
+}
+
+button[type="submit"].clr-black {
+  color: var(--clr-black);
+}
+
 .bg-grey {
   background-color: var(--clr-light-grey);
 }
@@ -91,7 +99,9 @@
   display: flex;
   justify-content: center;
 }
-
+.margin-top-1 {
+  margin-top: 1em;
+}
 .margin-top-2 {
   margin-top: 2em;
 }
@@ -129,6 +139,10 @@
   font-size: 16px;
 }
 
+.fs-20px {
+  font-size: 20px;
+}
+
 .current {
   color: var(--clr-darkblue);
   &:link {
@@ -157,4 +171,10 @@
 .wat-wij-doen h2,
 .wat-wij-doen p {
   color: rgba(236, 247, 253, 1);
+}
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
 }

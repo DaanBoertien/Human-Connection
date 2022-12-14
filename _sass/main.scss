@@ -368,6 +368,19 @@ textarea {
   border: 1px solid lightgray;
 }
 
+input[type="radio"] {
+  margin-bottom: 0;
+  border: 1px solid var(--clr-black);
+  font-weight: 300;
+}
+
+.flex-radio {
+  display: flex;
+  // align-items: center;
+  gap: 1em;
+  margin-bottom: 0.5em;
+}
+
 input,
 textarea {
   margin-bottom: 1em;
@@ -434,6 +447,31 @@ button[type="submit"] {
 
 textarea.did-floating-input {
   padding-top: 2em;
+}
+
+fieldset {
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  width: calc(100% - 2.75em);
+
+  padding: 40px 20px 0em;
+  margin-bottom: 1em;
+  label {
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+legend {
+  margin-right: 1em;
+}
+
+.informeer {
+  // min-height: 100px;
+  padding-top: 120px;
+}
+button[type="submit"].btn-left {
+  margin-right: auto;
+  margin-left: 0;
 }
 
 .contact-info {
@@ -685,4 +723,14 @@ main {
 .card a:active,
 .card a:visited {
   color: white;
+}
+
+.volgons {
+  margin-bottom: 2em;
+  img {
+    width: 40px;
+    margin-left: 1em;
+  }
+  display: flex;
+  align-items: center;
 }

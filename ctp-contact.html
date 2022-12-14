@@ -1,0 +1,172 @@
+---
+layout: default
+title: Meld je aan
+---
+
+<main>
+  {% include button-omhoog.html %}
+  <div class="landing landing--lightblue bg-lightblue">
+    <div class="innercontainer innercontainer--werken-bij">
+      <div class="landing-content">
+        <h1>{{site.data.ctp-contact.title}}</h1>
+        {{site.data.ctp-contact.landing-tekst | markdownify}}
+      </div>
+    </div>
+
+    <div class="img-overlay-wrap">
+      <img
+        class="landing-image"
+        src="{{site.data.ctp-contact.pagina-afbeelding}}"
+        alt=""
+      />
+      {% include svg1-lightblue.html %} {% include svg1-desktop-lightblue.html
+      %}
+    </div>
+  </div>
+  <div class="connect">
+    <div class="innercontainer innercontainer--ctp margin-bottom-2">
+      <h2 class="margin-top-2">{{site.data.ctp-contact.aanmelding-title}}</h2>
+      <p class="zoom fs-20px">{{site.data.ctp-contact.aanmelding-zoom}}</p>
+      <p class="fs-16-px">{{site.data.ctp-contact.aanmelding-tekst}}</p>
+      <form name="connect to perform inschrijving" netlify>
+        <div class="did-floating-label-content">
+          <input
+            class="did-floating-input"
+            type="text"
+            name="naam"
+            placeholder="Jouw antwoord"
+          />
+          <label class="did-floating-label">Naam*</label>
+        </div>
+
+        <div class="did-floating-label-content">
+          <input
+            class="did-floating-input"
+            type="email"
+            name="email"
+            placeholder="Jouw antwoord"
+          />
+          <label class="did-floating-label">Email*</label>
+        </div>
+        <div class="did-floating-label-content">
+          <input
+            class="did-floating-input"
+            type="text"
+            name="bedrijf"
+            placeholder="Jouw antwoord"
+          />
+          <label class="did-floating-label">Bedrijf*</label>
+        </div>
+        <div class="did-floating-label-content">
+          <input
+            class="did-floating-input"
+            type="text"
+            name="functie"
+            placeholder="Jouw antwoord"
+          />
+          <label class="did-floating-label">Functie*</label>
+        </div>
+        <div class="did-floating-label-content">
+          <input
+            class="did-floating-input"
+            type="tel"
+            name="telefoonnummer"
+            placeholder="Jouw antwoord"
+          />
+          <label class="did-floating-label">Telefoonnummer*</label>
+        </div>
+        <div class="did-floating-label-content">
+          <input
+            class="did-floating-input"
+            type="text"
+            name="functie"
+            placeholder="Jouw antwoord"
+          />
+          <label class="did-floating-label">Functie*</label>
+        </div>
+        <fieldset class="did-floating-label-content margin-bottom-1em">
+          <legend class="did-floating-label">
+            Voor welke avond meld je je aan?
+          </legend>
+          <div>
+            <div class="flex-radio">
+              <input
+                type="radio"
+                id="dateChoice1"
+                name="datum"
+                value="{{eerste}}"
+              />
+              <label for="dateChoice1">8 november (Online/offline)</label>
+            </div>
+
+            <div class="flex-radio">
+              <input type="radio" id="dateChoice2" name="datum" value="phone" />
+              <label for="dateChoice2">9 februari 2023</label>
+            </div>
+
+            <div class="flex-radio">
+              <input type="radio" id="dateChoice3" name="datum" value="mail" />
+              <label for="dateChoice3">13 juni 2023</label>
+            </div>
+            <div class="flex-radio">
+              <input type="radio" id="datetChoice4" name="datum" value="mail" />
+              <label for="contactChoice4">9 juni 2023</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="did-floating-label-content">
+          <input
+            class="did-floating-input"
+            type="text"
+            name="hoe"
+            placeholder="Jouw antwoord"
+          />
+          <label class="did-floating-label"
+            >Via wie of hoe weet je van de Connect to Perform avond?</label
+          >
+        </div>
+        <fieldset
+          class="did-floating-label-content margin-bottom-1em informeer"
+        >
+          <legend class="did-floating-label">
+            Wil je ook na deze avond door ons geïnformeerd worden over onze
+            activiteiten op het gebied van organisatie- en cultuurontwikkeling?
+            Als je hieronder toestemming geeft dan krijg je voor maximaal 5 jaar
+            informatie van ons over thema-avonden en nieuwsberichten per mail.
+            Je kunt je uiteraard elk moment weer uitschrijven.*
+          </legend>
+          <div>
+            <div class="flex-radio">
+              <input
+                type="radio"
+                id="contactChoice1"
+                name="contact"
+                value="email"
+              />
+              <label for="contactChoice1">Ja</label>
+            </div>
+
+            <div class="flex-radio">
+              <input
+                type="radio"
+                id="contactChoice2"
+                name="contact"
+                value="phone"
+              />
+              <label for="contactChoice2">Nee</label>
+            </div>
+          </div>
+        </fieldset>
+        <!-- <p>*Vereist</p> -->
+        <div class="flex space-between">
+          <button type="submit" class="btn btn-full btn-left margin-top-1">
+            Verzend formulier
+          </button>
+          <button type="reset" class="btn btn-outline clr-black margin-top-1">
+            Formulier wissen
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
