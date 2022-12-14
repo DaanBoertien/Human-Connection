@@ -64,6 +64,10 @@
 .bg-rood {
   background-color: var(--clr-red);
 }
+
+.border-left-green {
+  border-left: 2px solid var(--green);
+}
 .bold {
   font-weight: 500;
 }
