@@ -1,7 +1,7 @@
 ---
 layout: teammembers
 title: Willemijn Dekker
-function: Organisatieadviseur | Interim-manager | GZ-psycholoog (dit er op?)
+function: Organisatieadviseur | Interim-manager | Coach
 email: willemijndekker@humanc.nl
 phonenumber: 06 12 34 56 78
 photo_url: /assets/images/upload/willemijn.png
@@ -20,7 +20,7 @@ summary: >-
 
   ​
 bg_color: Groen
-card_title: Nog invullen
+card_title: Willemijn Dekker
 soundbites: "Willemijn in het kort: "
 soundbites_text: Betrokken | Integer | Tempo | Vallen en opstaan | Doelgericht
 ---
