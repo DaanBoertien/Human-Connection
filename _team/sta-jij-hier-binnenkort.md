@@ -31,8 +31,8 @@ summary: >-
 
   * Procesbegeleider voor teams en organisaties die aan de slag willen met bijv. verbeteren samenwerking, communicatie of aanscherpen strategie​
 bg_color: Lichtblauw
-card_title: Nog invullen
-soundbites: Nog invullen
-soundbites_text: Nog invullen
+card_title: " "
+soundbites: " "
+soundbites_text: " "
 in_menu: false
 ---
