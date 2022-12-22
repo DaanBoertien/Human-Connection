@@ -22,7 +22,7 @@ waarde-1-tekst: >-
 
 
   Zelfbewustzijn, eigenaarschap, betrokkenheid en verantwoordelijkheid nemen zijn hierbij de kern. Daar staan we zelf voor en het is ook precies waar we onze klanten bij helpen. We nemen daarbij onze eigen persoonlijkheden, ervaringen en 'menselijkheid' mee in alles wat we doen.
-waarde-1-afbeelding: /assets/images/upload/icoon3.png
+waarde-1-afbeelding: /assets/images/upload/icoon3dun.png
 waarde-2-titel: In vertrouwen
 waarde-2-tekst: >-
   Vertrouwen is voor ons de basis van waaruit we werken. Onderling als collega's
@@ -32,7 +32,7 @@ waarde-2-tekst: >-
 
 
   We benaderen mensen en hun vraagstukken positief: we koesteren uit principe veel vertrouwen in ieders goede intenties, mogelijkheden en veerkracht.
-waarde-2-afbeelding: /assets/images/upload/icoon2.png
+waarde-2-afbeelding: /assets/images/upload/icoon2dun.png
 waarde-3-titel: In context
 waarde-3-tekst: >-
   We bekijken iedere vraag, hoe groot of klein ook, met een brede blik. 'Wat is
@@ -40,8 +40,7 @@ waarde-3-tekst: >-
 
 
   Juist het samenspel tussen allerlei factoren (zoals de organisatie-inrichting, de manier van werken, de cultuur, de veranderende buitenwereld) bepalen het succes. Daarom sluiten we nauw aan bij de context van een organisatie en mensen en is alles wat we doen maatwerk.
-
-waarde-3-afbeelding: /assets/images/upload/icoon1.png
+waarde-3-afbeelding: /assets/images/upload/icoon1dun.png
 wat-wij-doen: Wat wij doen
 wat-wij-doen-tekst: "We benaderen ieder vraagstuk met een organisatiebrede blik.
   Dit doen we vanuit een aantal expertises:"
@@ -96,7 +95,6 @@ wat-wij-doen-2-contact: |-
   Neem bijvoorbeeld contact op met Meggie of Dorothé.
 wat-wij-doen-2-button: Contact met Meggie
 wat-wij-doen-2-link: /team/meggie-van-de-bunt/
-
 wat-wij-doen-3-titel: Leren & ontwikkelen
 wat-wij-doen-3-tekst: >-
   We begeleiden persoonlijke en professionele ontwikkeling voor bestuurders,
@@ -122,8 +120,8 @@ wat-wij-doen-3-contact: |-
   **Meer weten?**\
   Neem contact op met bijvoorbeeld Marit of Annet.
 wat-wij-doen-3-button: Contact met Marit
-wat-wij-doen-3-link: /team/marit-weiss/
 hoe-wij-werken: Meer weten over hóe wij werken?
+wat-wij-doen-3-link: /team/marit-weiss/
 wie-wij-zijn: Wie wij zijn
 actievraag: Waar loop jij tegenaan in je organisatie?
 actievraag-subtitel: Ontdek hoe wij hierbij kunnen helpen.
@@ -151,9 +149,9 @@ contact-naam: Naam
 contact-email: E-mail
 contact-onderwerp: Onderwerp
 contact-bericht: Vraag/bericht
-contact-button: Verzend bericht
 uitnodiging: "Of kom langs in ons pittoreske Amsterdamse kantoor:"
-adres: Singel 2a
 postcode: 1013 GA Amsterdam
 uitnodiging-adres: ""
+contact-button: Verzend bericht
+adres: Singel 2a
 afbeelding-kantoor: /assets/images/upload/kantoor.png
