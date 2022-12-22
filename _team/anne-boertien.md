@@ -7,8 +7,8 @@ phonenumber: 06 36 25 62 32
 photo_url: /assets/images/upload/anne-mat.jpg
 photo_description: Anne tekent
 summary: >-
-  [www.anneboertien.nl](www.anneboertien.nl)Potentie maximaal benutten en mensen
-  in beweging brengen, dat zijn mijn belangrijkste drijfveren in mijn werk.
+  Potentie maximaal benutten en mensen in beweging brengen, dat zijn mijn
+  belangrijkste drijfveren in mijn werk.
 
 
   Ik hou van het begrijpelijk en tastbaar maken van abstracte, complexe zaken. Visueel, door middel van zakelijk tekenen. Met een goed gesprek en focus op de volledige mens. En oplossingsgericht, vanuit het doel.
