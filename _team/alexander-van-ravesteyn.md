@@ -20,7 +20,7 @@ summary: >-
 
   Een portie humor en prettig onderling contact zijn hierbij voor mij onontbeerlijk.
 bg_color: Donkerblauw
-card_title: Nog invullen
+card_title: Alexander Ravesteyn
 soundbites: "Alexander in het kort: "
 soundbites_text: |-
   Toegankelijk en betrokken​ | Nuchter en no-nonsens​ | 
