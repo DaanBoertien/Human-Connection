@@ -20,7 +20,7 @@ summary: >-
 
   Ik werk als adviseur en begeleider op opdrachten bij organisatieveranderingen, teamontwikkeling en talentprogramma's.
 bg_color: Donkerblauw
-card_title: nog invullen
+card_title: Willemijn Bos
 soundbites: "Willemijn in soundbites: "
 soundbites_text: Enthousiast | Verbindend | Resultaatgericht | Open blik | Flexibel
 ---
