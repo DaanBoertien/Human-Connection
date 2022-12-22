@@ -138,6 +138,8 @@ logos:
     naam-bedrijf: KPN
   - logo-bedrijf: /assets/images/upload/randstad.png
     naam-bedrijf: Randstad
+  - logo-bedrijf: /assets/images/upload/sein.png
+    naam-bedrijf: SEIN
   - logo-bedrijf: /assets/images/upload/gemeentebaarn.png
     naam-bedrijf: GEMEENTEBAARN
   - logo-bedrijf: /assets/images/upload/swarco.png
@@ -160,14 +162,12 @@ logos:
     naam-bedrijf: MVR
   - logo-bedrijf: /assets/images/upload/gemeenterotterdam.png
     naam-bedrijf: GEMEENTEROTTERDAM
-  - logo-bedrijf: /assets/images/upload/hilversum.png
-    naam-bedrijf: GEMEENTEHILVERSUM
   - logo-bedrijf: /assets/images/upload/wonenlimburg.png
     naam-bedrijf: WONENLIMBURG
   - logo-bedrijf: /assets/images/upload/ogd.png
     naam-bedrijf: OGD
-  - logo-bedrijf: /assets/images/upload/sein.png
-    naam-bedrijf: SEIN
+  - logo-bedrijf: /assets/images/upload/hilversum.png
+    naam-bedrijf: GEMEENTEHILVERSUM
   - logo-bedrijf: /assets/images/upload/triplejump.png
     naam-bedrijf: TRIPLE JUMP
   - logo-bedrijf: /assets/images/upload/voort.png
