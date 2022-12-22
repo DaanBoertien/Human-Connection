@@ -24,7 +24,7 @@ summary: >-
   * Vanuit je eigen expertise (trainer, organisatieadviseur, veranderaar, procesbegeleider, coach) en met je eigen netwerk.
 bg_color: Lichtblauw
 card_title: " "
-soundbites: " "
+soundbites: " Neem contact op met Meggie van de Bunt"
 soundbites_text: " "
 in_menu: false
 ---
