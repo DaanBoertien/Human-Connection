@@ -138,10 +138,40 @@ logos:
     naam-bedrijf: KPN
   - logo-bedrijf: /assets/images/upload/randstad.png
     naam-bedrijf: Randstad
+  - logo-bedrijf: /assets/images/upload/gemeentebaarn.png
+    naam-bedrijf: GEMEENTEBAARN
   - logo-bedrijf: /assets/images/upload/swarco.png
     naam-bedrijf: Swarco
   - logo-bedrijf: /assets/images/upload/topdesk.png
     naam-bedrijf: TOPdesk
+  - logo-bedrijf: /assets/images/upload/alifa.png
+    naam-bedrijf: ALIFA
+  - logo-bedrijf: /assets/images/upload/gemeentedeventer.png
+    naam-bedrijf: GEMEENTEDEVENTER
+  - logo-bedrijf: /assets/images/upload/bindkracht.png
+    naam-bedrijf: BINDKRACHT10
+  - logo-bedrijf: /assets/images/upload/brink.png
+    naam-bedrijf: BRINK
+  - logo-bedrijf: /assets/images/upload/company.png
+    naam-bedrijf: COMPANYINFO
+  - logo-bedrijf: /assets/images/upload/erasmusmc.png
+    naam-bedrijf: ERASMUSMC
+  - logo-bedrijf: /assets/images/upload/mvr.png
+    naam-bedrijf: MVR
+  - logo-bedrijf: /assets/images/upload/gemeenterotterdam.png
+    naam-bedrijf: GEMEENTEROTTERDAM
+  - logo-bedrijf: /assets/images/upload/hilversum.png
+    naam-bedrijf: GEMEENTEHILVERSUM
+  - logo-bedrijf: /assets/images/upload/wonenlimburg.png
+    naam-bedrijf: WONENLIMBURG
+  - logo-bedrijf: /assets/images/upload/ogd.png
+    naam-bedrijf: OGD
+  - logo-bedrijf: /assets/images/upload/sein.png
+    naam-bedrijf: SEIN
+  - logo-bedrijf: /assets/images/upload/triplejump.png
+    naam-bedrijf: TRIPLE JUMP
+  - logo-bedrijf: /assets/images/upload/voort.png
+    naam-bedrijf: VOORT
 contact-titel: Contact
 contact-omschrijving: We komen graag met je in contact. Bel of mail direct een
   van onze collega’s of vul onderstaand formulier in.
