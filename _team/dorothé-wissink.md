@@ -7,7 +7,7 @@ phonenumber: 06 52 39 36 80
 photo_url: /assets/images/upload/dorothe-mat.jpg
 photo_description: Dorothé Wissink consultant interim
 summary: >-
-  Ik ben een doorgewinterde interim manager en adviseur strategisch management
+  Ik ben een doorgewinterde interim-manager en adviseur strategisch management
   in het publieke domein. ​
 
 
@@ -19,7 +19,7 @@ summary: >-
 
   ​Voor de begeleiding van conflicten in en tussen organisaties ben ik ook inzetbaar als (Mfn-geregistreerd) mediator.
 bg_color: Lichtblauw
-card_title: Nog invullen
+card_title: Dorothé Wissink
 soundbites: "Klanten noemen mij: "
 soundbites_text: Doortastend, integer en op samenwerking gercht. Sterk op
   verbinding en processen. Resultaatgericht.
