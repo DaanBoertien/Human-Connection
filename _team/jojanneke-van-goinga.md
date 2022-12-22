@@ -8,7 +8,7 @@ photo_url: /assets/images/upload/jojanneke.jpg
 photo_description: Jojanneke
 summary: T﻿ekst
 bg_color: Donkerblauw
-card_title: Nog invullen
+card_title: Jojanneke van Goïnga
 soundbites: Nog invullen
 soundbites_text: Nog invullen
 ---
