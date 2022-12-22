@@ -26,7 +26,7 @@ summary: >-
 
   ​
 bg_color: Geel
-card_title: Nog invullen
+card_title: Meggie van de Bunt
 soundbites: "Meggie in drie woorden: "
 soundbites_text: Vakkennis | Vertrouwen | Verbinding
 ---
