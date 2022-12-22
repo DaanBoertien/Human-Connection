@@ -18,7 +18,7 @@ summary: >-
 
   Soms waan ik me in het Chinees Staatscircus, druk doende alle bordjes in de lucht te houden. En als er een valt? Dan leer ik van de scherven en pas de lering toe binnen het project. Fouten maken mag, leren ervan moet!
 bg_color: Groen
-card_title: Nog invullen
-soundbites: Nog invullen
-soundbites_text: Nog invullen
+card_title: Sjef van Gool
+soundbites: "Sjef in het kort: "
+soundbites_text: Energiek | Optimist van nature | Verbinder | Scherpe analyses | Familieman
 ---
