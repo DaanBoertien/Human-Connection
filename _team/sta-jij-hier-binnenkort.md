@@ -22,7 +22,7 @@ summary: >-
   * Aan je eigen ontwikkeling en die van ons bedrijf. Waarbij je veel ruimte krijgt om je eigen ontwikkelrichting te kiezen en je initiatief neemt om je kennis en ideeën te verbinden aan onze organisatie.
 
   * Vanuit je eigen expertise (trainer, organisatieadviseur, veranderaar, procesbegeleider, coach) en met je eigen netwerk.
-bg_color: Lichtblauw
+bg_color: Donkerblauw
 card_title: " "
 soundbites: " Neem contact op met Meggie van de Bunt"
 soundbites_text: " "
