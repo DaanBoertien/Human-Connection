@@ -4,7 +4,7 @@ title: "Werk jij binnenkort bij ons? "
 function: Organisatieadviseur
 email: jouwnaam@humanc.nl
 phonenumber: 06 12 34 56 78
-photo_url: /assets/images/upload/kom-werken.png
+photo_url: /assets/images/upload/lij.png
 photo_description: Vacature
 summary: >-
   We houden onze blik open voor nieuwe collega's. Of dat voor de nabije of
