@@ -2,8 +2,8 @@
 layout: teammembers
 title: "Werk jij binnenkort bij ons? "
 function: Organisatieadviseur
-email: jouwnaam@humanc.nl
-phonenumber: 06 12 34 56 78
+email: meggie@humanc.nl
+phonenumber: 06 50 83 56 58
 photo_url: /assets/images/upload/icoon-werken-bij.png
 photo_description: Vacature
 summary: >-
@@ -21,15 +21,7 @@ summary: >-
 
   * Aan je eigen ontwikkeling en die van ons bedrijf. Waarbij je veel ruimte krijgt om je eigen ontwikkelrichting te kiezen en je initiatief neemt om je kennis en ideeën te verbinden aan onze organisatie.
 
-
-  We zijn actief op zoek naar mensen die 1 of meer van onderstaande expertises meebrengen:
-
-
-  * Trainer voor (persoonlijk) leiderschapsprogramma's​
-
-  * Organisatie adviseur om (verander)strategie te kunnen vertalen in uitvoeringsplannen​
-
-  * Procesbegeleider voor teams en organisaties die aan de slag willen met bijv. verbeteren samenwerking, communicatie of aanscherpen strategie​
+  * Vanuit je eigen expertise (trainer, organisatieadviseur, veranderaar, procesbegeleider, coach) en met je eigen netwerk.
 bg_color: Lichtblauw
 card_title: " "
 soundbites: " "
