@@ -26,7 +26,7 @@ summary: >-
 
   Resultaatgericht als ik ben, zoek ik samen met de opdrachtgever of coachee naar hoe het leereffect het grootst mogelijk kan zijn. Ik ben dan ook erg geïnteresseerd in (wetenschappelijke) inzichten en innovatieve trends op het gebied van psychologie en leren en ontwikkelen in organisaties.
 bg_color: Groen
-card_title: Marit Weiss
+card_title: Tijd voor actie?
 soundbites: Marit in soundbites
 soundbites_text: Enthousiast |  Hard lachen | Analyserend | Diepte | Strategisch
   | Denken vs. voelen | Praktisch | Multitasker | Probeer eens wat anders.
