@@ -19,7 +19,7 @@ summary: >-
 
   ​Voor de begeleiding van conflicten in en tussen organisaties ben ik ook inzetbaar als (Mfn-geregistreerd) mediator.
 bg_color: Lichtblauw
-card_title: Dorothé Wissink
+card_title: Tijd voor actie?
 soundbites: "Klanten noemen mij: "
 soundbites_text: Doortastend, integer en op samenwerking gercht. Sterk op
   verbinding en processen. Resultaatgericht.
