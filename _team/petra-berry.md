@@ -21,7 +21,9 @@ summary: >-
 
   Mensen (her)verbinden is mijn passie: met hun persoonlijk doelen (individuele coaching), teamdoelen (teamcoaching) en met dat waar de organisatie voor staat (organisatieontwikkeling).
 bg_color: Groen
-card_title: Petra Berry
-soundbites: Nog invullen
-soundbites_text: Nog invullen
+card_title: Tijd voor actie?
+soundbites: "Hoe ik werk: "
+soundbites_text: “Ik kom snel tot de kern, ben oplossingsgericht en praktisch.
+  Jezelf beter laten voelen zonder dat eerst de omgeving moet veranderen is waar
+  ik naar streef." ​
 ---
