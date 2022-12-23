@@ -19,7 +19,7 @@ summary: >-
 
   Ik ben een echte generalist. Ik heb brede ervaring in verandermanagement als leidinggevende, programmamanager en adviseur bij verschillende organisaties in diverse sectoren. Ik heb daarnaast verdiepende ervaring binnen HR met een focus op leiderschapsontwikkeling en ik ben opgeleid als coach.​
 bg_color: Donkerblauw
-card_title: Zilla Uiterwijk
+card_title: Tijd voor actie?
 soundbites: Mensen die met me hebben samengewerkt, zien mij als...
 soundbites_text: "Iemand met gevoel voor humor, een helikopterview en een
   creatief brein. Daarbij ben ik pragmatisch, positief, verbindend en blijf ik
