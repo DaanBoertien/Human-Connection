@@ -26,7 +26,7 @@ summary: >-
 
   Specialismen: verandermanagement en leren en ontwikkelen
 bg_color: Donkerblauw
-card_title: Annet Weitering
+card_title: Tijd voor actie?
 soundbites: "Annet in het kort: "
 soundbites_text: Persoonlijk | Pragmatisch | Positief | Praktisch
 ---
