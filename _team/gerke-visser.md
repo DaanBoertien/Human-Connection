@@ -26,7 +26,7 @@ summary: >-
 
   Klik [hier](https://www.youtube.com/watch?v=e1c3Un6oGeQ) om die te bekijken.​
 bg_color: Donkerblauw
-card_title: Gerke Visser
+card_title: Tijd voor actie?
 soundbites: "Gerke in het kort:"
 soundbites_text: |-
   Molenaar | Integer | Doorgewinterd | Robuust
