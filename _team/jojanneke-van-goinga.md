@@ -7,22 +7,30 @@ phonenumber: 06 10 89 14 26
 photo_url: /assets/images/upload/jojanneke.jpg
 photo_description: Jojanneke
 summary: >-
-  Ik ben een energiek, eigen- wijze, eminence -grise Friezin die met humor en
-  gezond relativeringsvermogen mensen in beweging brengt. ​
+  Mensen en organisaties een stap verder brengen, daar draait het om voor mij.
+  Dit doe ik door anderen te helpen het beste uit zichzelf te halen, te werken
+  aan het team en aan betere processen of structuren. ​
 
 
-  Ik heb een passie voor "wat er nog meer is". Ik onderzoek graag de verborgen mogelijkheden van mensen in teams en organisaties. ​
+  ​Bij elk vraagstuk kijk ik vanuit de samenhang tussen:​
 
 
-  Verbinden en samenwerken stimuleren door  vragenderwijs gezamenlijk tot oplossingen te komen.​
+  * (organisatie) doelen​
+
+  * Structuur en inrichting​
+
+  * Onderlinge samenwerking en dynamiek​
+
+  * De context waarin men zit​
 
 
-  Enthousiast, nieuwsgierig en zorgvuldig geef ik een impuls aan mensen in hun persoonlijke ontwikkeling. Leiderschap en talentontwikkeling hebben mijn speciale belangstelling. ​
+  ​Als organisatiecoach, trainer en individuele coach begeleid ik teams en managers in vraagstukken zoals samenwerking, heldere doelstellingen en effectief communiceren. Belangrijk is te ontdekken: wat is hier echt aan de hand? En vanuit daar aan te sluiten bij wat nodig is. Door maatwerk en verbinding.​
 
 
-  Ik ben een goede gesprekspartner voor leidinggevenden en professionals op alle niveaus.  Als coach, trainer en organisatieadviseur voor onderwijs, zorg en bedrijfsleven  werk ik persoonlijk, pragmatisch en resultaatgericht.​
+  ​In interimopdrachten zet ik mijn HR expertise in. Uitgangspunt is dat HR ondersteunend is aan de organisatiedoelen, structuur en cultuur. ​
 bg_color: Donkerblauw
 card_title: Tijd voor actie?
-soundbites: "De kern is:"
-soundbites_text: Bewegen, bezinnen en bezielen
+soundbites: "Werk je met mij? Dan krijg je: "
+soundbites_text: "Betrokkenheid, zorgvuldigheid, transparantie, verbinding,
+  resultaatgerichtheid en scherpte. "
 ---
