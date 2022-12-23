@@ -25,7 +25,7 @@ summary: >-
 
   Liefdevol en confronterend help ik een team de goede richting in en verwonder ik me  daarbij iedere keer weer over zowel de hogere productiviteit als het toegenomen geluk bij de teamleden.
 bg_color: Lichtblauw
-card_title: Daan van der Weele
+card_title: Tijd voor actie?
 soundbites: "Daan in het kort: "
 soundbites_text: Verbindend, werkend met wat er op dat moment is, oog voor de
   mens, technisch en hands on
