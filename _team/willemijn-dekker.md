@@ -20,7 +20,7 @@ summary: >-
 
   ​
 bg_color: Groen
-card_title: Willemijn Dekker
+card_title: Tijd voor actie?
 soundbites: "Willemijn in het kort: "
 soundbites_text: Betrokken | Integer | Tempo | Vallen en opstaan | Doelgericht
 ---
