@@ -26,7 +26,7 @@ summary: >-
 
   ​
 bg_color: Geel
-card_title: Meggie van de Bunt
+card_title: Tijd voor actie?
 soundbites: "Meggie in drie woorden: "
 soundbites_text: Vakkennis | Vertrouwen | Verbinding
 ---
