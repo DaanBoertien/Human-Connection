@@ -4,7 +4,7 @@ title: Annet Weitering
 function: Organisatieontwikkelaar | Adviseur leren & ontwikkelen
 email: annet@humanc.nl
 phonenumber: 06 12 34 56 78
-photo_url: /assets/images/upload/annet.jpg
+photo_url: /assets/images/upload/foto-annet-1.jpg
 photo_description: Annet
 summary: >-
   Vanuit verschillende rollen (manager, adviseur, sparringpartner, facilitator,
@@ -13,10 +13,8 @@ summary: >-
 
 
   Ik ben een energieke, veelzijdige begeleider van verander- en ontwikkeltrajecten met scherp gevoel voor mensen en wat er tussen hen gebeurt. Ik ben sterk in het benoemen van wat ik ter plekke hoor en zie en aarzel niet om dat terug te geven. Op die wijze bied ik  kennis, ervaring, feedback en steun die er toe doen.  ​
-
-
-  Ik kan goed relativeren en heb een onvoorwaardelijke positieve blik. ​
-
+uitleg: >-2
+   Ik kan goed relativeren en heb een onvoorwaardelijke positieve blik. ​
 
   Je zou mijn manier van werken die van de praktische precisie kunnen noemen. Ik kan goed kijken naar mensen, maar kan ook zaken concreet en hanteerbaar te maken en sturen op resultaat. ​
 
