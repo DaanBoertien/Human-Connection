@@ -39,6 +39,7 @@ collections:
           widget: "string",
         }
       - { label: "Omschrijving", name: "summary", widget: "markdown" }
+      - { label: "Uitleg", name: "uitleg", widget: "markdown" }
       - label: "Achtergrondkleur"
         name: "bg_color"
         widget: "select"
