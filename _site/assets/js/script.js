@@ -107,13 +107,13 @@ gsap.to('.button-omhoog-link', { autoAlpha: 1, y: 0,
   }
 });
 
-gsap.to('.mainlogo', {width: 120, paddingBottom: 0, paddingTop: 0,
+gsap.to('.mainlogo', {width: 120, paddingBottom: 0, paddingTop: 0, 
   scrollTrigger: {
     trigger: 'main',
     start: 'top+=200',
-    
+    end: 'top+=600',
     toggleActions: 'play none none reverse',
-    markers: false,
+    // markers: true,
     // ease: "power1.inOut",
-    duration: 0.5
+    // duration: 0.5
   }});
