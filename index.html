@@ -100,7 +100,8 @@ title: Human Connection
       <h2 class="wiewijzijntitle">{{site.data.home.wie-wij-zijn}}</h2>
 
       <div class="team-fotos">
-        {% for member in site.team %}
+        {% for member in site.team %} {% unless member.title contains
+        "binnenkort" %}
         <div class="team-foto photo">
           <a href="/team/{{member.slug}}">
             <div class="photo-wrapper">
@@ -116,7 +117,25 @@ title: Human Connection
             <p class="member-function">{{member.function}}</p>
           </a>
         </div>
-        {% endfor %}
+        {% endunless %} {% endfor %} {% for member in site.team %} {% if
+        member.title contains "binnenkort" and
+        site.data.werken-bij-ons.vacature-open == true %}
+        <div class="team-foto photo">
+          <a href="/team/{{member.slug}}">
+            <div class="photo-wrapper">
+              <img
+                src="{{member.photo_url}}"
+                alt="{{member.photo_description}}"
+                class="photo"
+              />
+            </div>
+          </a>
+          <a href="/team/{{member.slug}}">
+            <p class="bold member-name">{{member.title}}</p>
+            <p class="member-function">{{member.function}}</p>
+          </a>
+        </div>
+        {% endif %} {% endfor %}
       </div>
     </div>
   </div>

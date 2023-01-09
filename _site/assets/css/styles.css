@@ -985,6 +985,4 @@ button.clr-black[type="submit"] { color: var(--clr-black); }
 
 @media (min-width: 2000px) { .fixed-menu { width: 70%; } }
 
-.submenu-mobile-toggle3.open .submenu-mobile { height: 1.9em; }
-
 /*# sourceMappingURL=styles.css.map */
