@@ -53,11 +53,11 @@
             <ul class="dropdown" aria-label="submenu">
               <li class="menu-filler menu-filler-contact"></li>
               <li><a href="{{site.data.nav.contact}}" class="dropdown-link">Contact</a></li>
-              <li>
-                {%if site.data.werken-bij-ons.vacature-open == true %}<a href="{{site.data.nav.werken-bij}}" class="dropdown-link"
+              
+                {%if site.data.werken-bij-ons.vacature-open == true %}<li><a href="{{site.data.nav.werken-bij}}" class="dropdown-link"
                   >Werken bij ons</a
-          >{%endif%}
-              </li>
+          ></li>{%endif%}
+              
             </ul>
           </li>
         </ul>
@@ -81,7 +81,7 @@
           </li>
           <li class="submenu-mobile-toggle3 li-outer">
             <a href="#">Contact</a>
-            <ul class="submenu-mobile">
+            <ul class="submenu-mobile">.submenu-mobile-toggle3.open .submenu-mobile
               <li><a href="{{site.data.nav.contact}}">Contact</a></li>
             {%if site.data.werken-bij-ons.vacature-open == true %}<li><a href="{{site.data.nav.werken-bij}}">Werken bij ons</a></li>{%endif%}
             </ul>
