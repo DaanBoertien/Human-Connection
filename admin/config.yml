@@ -381,6 +381,9 @@ collections:
           - label: "Pagina afbeelding"
             name: "pagina-afbeelding"
             widget: "image"
+          - label: "Landing tekst"
+            name: landing-tekst
+            widget: "markdown"
           - label: "aanmelding titel"
             name: "aanmelding-title"
             widget: "string"
