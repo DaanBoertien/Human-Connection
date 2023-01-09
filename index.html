@@ -118,8 +118,7 @@ title: Human Connection
           </a>
         </div>
         {% endunless %} {% endfor %} {% for member in site.team %} {% if
-        member.title contains "binnenkort" and
-        site.data.werken-bij-ons.vacature-open == true %}
+        member.title contains "binnenkort" %}
         <div class="team-foto photo">
           <a href="/team/{{member.slug}}">
             <div class="photo-wrapper">
