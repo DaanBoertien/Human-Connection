@@ -421,6 +421,3 @@ collections:
           - label: "reden"
             name: "reden"
             widget: "string"
-          - label: "meer informatie"
-            name: "meer-informatie"
-            widget: "text"
