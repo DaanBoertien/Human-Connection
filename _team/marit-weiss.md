@@ -6,12 +6,10 @@ email: marit@humanc.nl
 phonenumber: 06 12 34 56 78
 photo_url: /assets/images/upload/marit.jpg
 photo_description: "Marit "
-summary: >-
-  Waarom doen mensen zoals ze doen? Hoe ontwikkelen ze zich? Hoe wordt een
-  menselijk geheel meer dan de som der delen? – Deze vraagstukken blijven mij
-  fascineren.
-
-
+summary: Waarom doen mensen zoals ze doen? Hoe ontwikkelen ze zich? Hoe wordt
+  een menselijk geheel meer dan de som der delen? – Deze vraagstukken blijven
+  mij fascineren.
+uitleg: >-
   Ik ...
 
 
