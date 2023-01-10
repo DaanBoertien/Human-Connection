@@ -12,7 +12,9 @@ summary: >-
   aan het team en aan betere processen of structuren. ​
 
 
-  ​Bij elk vraagstuk kijk ik vanuit de samenhang tussen:​
+  ​
+uitleg: >-
+  Bij elk vraagstuk kijk ik vanuit de samenhang tussen:​
 
 
   * (organisatie) doelen​
@@ -25,8 +27,9 @@ summary: >-
 
 
   ​Als organisatiecoach, trainer en individuele coach begeleid ik teams en managers in vraagstukken zoals samenwerking, heldere doelstellingen en effectief communiceren. Belangrijk is te ontdekken: wat is hier echt aan de hand? En vanuit daar aan te sluiten bij wat nodig is. Door maatwerk en verbinding.​
-uitleg: In interimopdrachten zet ik mijn HR expertise in. Uitgangspunt is dat HR
-  ondersteunend is aan de organisatiedoelen, structuur en cultuur. ​
+
+
+  In interimopdrachten zet ik mijn HR expertise in. Uitgangspunt is dat HR ondersteunend is aan de organisatiedoelen, structuur en cultuur. ​
 bg_color: Donkerblauw
 card_title: Tijd voor actie?
 soundbites: "Werk je met mij? Dan krijg je: "
