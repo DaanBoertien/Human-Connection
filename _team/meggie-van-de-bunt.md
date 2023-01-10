@@ -6,13 +6,14 @@ email: meggie@humanc.nl
 phonenumber: 06 12 34 56 78
 photo_url: /assets/images/upload/meggie.jpg
 photo_description: Meggie
-summary: >-
-  "Een ervaren leider op gebied van Mens & Organisatie, met hart voor de zaak"
-  is een omschrijving die mij goed past. Ik heb een uitgebreide trackracord van
-  management/bestuursfuncties binnen zowel de overheid als de gezondheidszorg.​
-
-
-  Ik ben initiatiefrijk en zet graag een koers uit die in lijn ligt met het grotere geheel. Ik draag graag bij aan tevreden klanten, gezonde bedrijfsvoering én werkplezier. ​
+summary: '"Een ervaren leider op gebied van Mens & Organisatie, met hart voor de
+  zaak" is een omschrijving die mij goed past. Ik heb een uitgebreide
+  trackracord van management/bestuursfuncties binnen zowel de overheid als de
+  gezondheidszorg.​'
+uitleg: >-
+  Ik ben initiatiefrijk en zet graag een koers uit die in lijn ligt met het
+  grotere geheel. Ik draag graag bij aan tevreden klanten, gezonde
+  bedrijfsvoering én werkplezier. ​
 
 
   Als ‘mensen-mens’ krijg ik energie van het stellen van doelen en het bereiken van resultaten, samen met anderen. Ik kom doortastend tot de kern, zet een heldere koers uit en weet in samenwerking een organisatie (onderdeel) gestaag de goede kant op te ontwikkelen.​
