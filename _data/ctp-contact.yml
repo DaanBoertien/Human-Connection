@@ -1,11 +1,13 @@
 meer-informatie: "   DEZE VRAAG MAG WEG"
-landing-tekst: >-
-  Alles wat we doen is maatwerk, omdat elke verandering haar eigen dynamiek,
-  complexiteit en tempo heeft.  
-
-  We hebben veel kennis in huis en zijn doorgewinterd in een aantal methodieken. Waar nodig zetten we deze in. Theorie en modellen gebruiken we als collectief begrippenkader en gemeenschappelijk taal. Het accent ligt bij ons altijd op directe toepasbaarheid in het dagelijkse werk. ​
 title: Connect to perform
 pagina-afbeelding: /assets/images/upload/parachute.jpg
+landing-tekst: Als kennismaking organiseren we een aantal keer per jaar een open
+  spelavond, tegenwoordig veelal online, waarop onze relaties en
+  geïnteresseerden welkom zijn kennis te maken met deze methodiek. (deelname
+  geheel gratis en zonder verdere verplichtingen) Via een inlog in ons online
+  leerportaal krijg je toegang tot video’s met uitleg en achtergrondinformatie.
+  Bovendien leert de ervaring dat het erg interessant is van gedachten te
+  wisselen met mensen die je nog niet kende, werkzaam in diverse organisaties.
 aanmelding-title: Aanmeldformulier Spelavond
 aanmelding-zoom: " "
 aanmelding-tekst: Vul hier je gegevens in om je aan te melden voor de spelavond.
@@ -16,9 +18,9 @@ functie: Functie*
 telefoonnummer: Telefoonnummer*
 welke: Voor welke avond meld je je aan?*
 data:
-  - datum: 9 februari 2023
-  - datum: 13 juni 2023
-  - datum: 9 november 2023
+  - datum: 9 februari 2023 | 19.30 - 21.30
+  - datum: 13 juni 2023 | 19.30 - 21.30
+  - datum: 9 november 2023 | 19.30 - 21.30
 hoe: Via wie of hoe weet je van de Connect to Perform avond?
 reden: Wat is je reden van aanmelden?
 success: Dankjewel voor je bericht!
