@@ -3,7 +3,7 @@
     <div class="footer-flex">
  
       <div class="connect-to-perform">
-<h2>Doe je mee met onze Connect to Perform Spelavond? <br>Eerstvolgende datum: {% for datum in site.data.ctp-contact.data limit:1 %}{{datum.datum}}{% endfor %}</h2>
+<h2>Doe je mee met onze Connect to Perform Spelavond? <br>Eerstvolgende datum: <br>{% for datum in site.data.ctp-contact.data limit:1 %}{{datum.datum}}{% endfor %}</h2>
         <p class="btn btn-full Lichtblauw">
           <a href="{{site.data.nav.ctp-contact}}">Ik schrijf me in!</a>
         </p>
