@@ -6,12 +6,13 @@ email: zilla@humanc.nl
 phonenumber: 06 11 00 60 48
 photo_url: /assets/images/upload/zilla.jpg
 photo_description: Zilla Uiterwijk organisatie adviseur
-summary: >-
-  Organisaties en teams lekker laten werken in een fijne sfeer met een helder
-  plan, daar hou ik van!​
-
-
-  In mijn rol als organisatieadviseur los ik graag complexe strategische organisatievraagstukken op. Ik help ervoor te zorgen dat een strategie echt tot uitvoer komt. Hierbij let ik altijd op een goede samenhang tussen het organisatiegedrag, leiderschap, besturing en proces.​
+summary: Organisaties en teams lekker laten werken in een fijne sfeer met een
+  helder plan, daar hou ik van!​
+uitleg: >-
+  In mijn rol als organisatieadviseur los ik graag complexe strategische
+  organisatievraagstukken op. Ik help ervoor te zorgen dat een strategie echt
+  tot uitvoer komt. Hierbij let ik altijd op een goede samenhang tussen het
+  organisatiegedrag, leiderschap, besturing en proces.​
 
 
   Naast mijn rol als organisatieadviseur begeleid ik ook heel graag mensen individueel als coach of als begeleider van een team om zich verder te ontwikkelen in hun (persoonlijk) leiderschap. ​
