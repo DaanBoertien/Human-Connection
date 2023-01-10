@@ -1,7 +1,7 @@
 ---
 layout: teammembers
 title: Jojanneke van Goinga
-function: Organisatieadviseur | Trainer | (Voice Dialogue) Coach
+function: Organisatieadviseur | Interim-manager | (Voice Dialogue) Coach
 email: jojanneke@humanc.nl
 phonenumber: 06 10 89 14 26
 photo_url: /assets/images/upload/jojanneke.jpg
@@ -25,9 +25,8 @@ summary: >-
 
 
   ​Als organisatiecoach, trainer en individuele coach begeleid ik teams en managers in vraagstukken zoals samenwerking, heldere doelstellingen en effectief communiceren. Belangrijk is te ontdekken: wat is hier echt aan de hand? En vanuit daar aan te sluiten bij wat nodig is. Door maatwerk en verbinding.​
-
-
-  ​In interimopdrachten zet ik mijn HR expertise in. Uitgangspunt is dat HR ondersteunend is aan de organisatiedoelen, structuur en cultuur. ​
+uitleg: In interimopdrachten zet ik mijn HR expertise in. Uitgangspunt is dat HR
+  ondersteunend is aan de organisatiedoelen, structuur en cultuur. ​
 bg_color: Donkerblauw
 card_title: Tijd voor actie?
 soundbites: "Werk je met mij? Dan krijg je: "
