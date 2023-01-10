@@ -6,14 +6,14 @@ email: daan@humanc.nl
 phonenumber: 06 51 29 27 47
 photo_url: /assets/images/upload/daan.jpg
 photo_description: Daan
-summary: >-
+summary: |-
   Het maximale uit teams halen, dat is waar ik van ben. ​
 
-
   De Kern van de zaak is daarbij cruciaal: wat is er echt aan de hand?​
-
-
-  Iedere keer opnieuw ben ik weer zo benieuwd en tegelijk zo geraakt door de onderstromen in de samenwerking tussen al die mooie mensen op structuur, processen en gedrag.​
+uitleg: >-
+  Iedere keer opnieuw ben ik weer zo benieuwd en tegelijk zo geraakt door de
+  onderstromen in de samenwerking tussen al die mooie mensen op structuur,
+  processen en gedrag.​
 
   ​
 
