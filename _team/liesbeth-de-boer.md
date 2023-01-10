@@ -6,12 +6,11 @@ email: liesbeth@humanc.nl
 phonenumber: 06 12 31 65 69
 photo_url: /assets/images/upload/liesbeth.jpg
 photo_description: Liesbeth de boer procesbegeleider
-summary: >-
-  Ik ben een energiek, eigen- wijze, eminence -grise Friezin die met humor en
-  gezond relativeringsvermogen mensen in beweging brengt. ​
-
-
-  Ik heb een passie voor "wat er nog meer is". Ik onderzoek graag de verborgen mogelijkheden van mensen in teams en organisaties. ​
+summary: Ik ben een energiek, eigen- wijze, eminence -grise Friezin die met
+  humor en gezond relativeringsvermogen mensen in beweging brengt. ​
+uitleg: >-
+  Ik heb een passie voor "wat er nog meer is". Ik onderzoek graag de verborgen
+  mogelijkheden van mensen in teams en organisaties. ​
 
 
   Verbinden en samenwerken stimuleren door  vragenderwijs gezamenlijk tot oplossingen te komen.​
