@@ -3,7 +3,7 @@ layout: teammembers
 title: Meggie van de Bunt
 function: Organisatieadviseur | Interim-manager
 email: meggie@humanc.nl
-phonenumber: 06 12 34 56 78
+phonenumber: 06 50 83 56 58
 photo_url: /assets/images/upload/meggie.jpg
 photo_description: Meggie
 summary: '"Een ervaren leider op gebied van Mens & Organisatie, met hart voor de
