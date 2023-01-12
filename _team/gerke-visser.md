@@ -1,7 +1,7 @@
 ---
 layout: teammembers
 title: Gerke Visser
-function: Oprichter en Directeur | Organisatieadviseur
+function: Oprichter en directeur | Organisatieadviseur
 email: gerke@humanc.nl
 phonenumber: 06 12 34 56 78
 photo_url: /assets/images/upload/gerke.jpg
