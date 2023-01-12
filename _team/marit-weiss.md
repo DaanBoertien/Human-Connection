@@ -1,9 +1,9 @@
 ---
 layout: teammembers
 title: Marit Weiss
-function: Organisatieadviseur | Coach
+function: Organisatieadviseur | Coach | Talenontwikkelaar
 email: marit@humanc.nl
-phonenumber: 06 12 34 56 78
+phonenumber: 06 50 40 94 01
 photo_url: /assets/images/upload/marit.jpg
 photo_description: "Marit "
 summary: Waarom doen mensen zoals ze doen? Hoe ontwikkelen ze zich? Hoe wordt
@@ -27,5 +27,5 @@ bg_color: Groen
 card_title: Tijd voor actie?
 soundbites: Marit in soundbites
 soundbites_text: Enthousiast |  Hard lachen | Analyserend | Diepte | Strategisch
-  | Denken vs. voelen | Praktisch | Multitasker | Probeer eens wat anders.
+  | Denken én voelen | Praktisch | Multitasker | Probeer eens wat anders.
 ---
