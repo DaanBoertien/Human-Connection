@@ -21,6 +21,6 @@ uitleg: >-
 bg_color: Lichtblauw
 card_title: Tijd voor actie?
 soundbites: "Klanten noemen mij: "
-soundbites_text: Doortastend, integer en op samenwerking gercht. Sterk op
+soundbites_text: Doortastend, integer en op samenwerking gericht. Sterk op
   verbinding en processen. Resultaatgericht.
 ---
