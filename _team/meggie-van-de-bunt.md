@@ -8,7 +8,7 @@ photo_url: /assets/images/upload/meggie.jpg
 photo_description: Meggie
 summary: '"Een ervaren leider op gebied van Mens & Organisatie, met hart voor de
   zaak" is een omschrijving die mij goed past. Ik heb een uitgebreide
-  trackracord van management/bestuursfuncties binnen zowel de overheid als de
+  trackrecord van management/bestuursfuncties binnen zowel de overheid als de
   gezondheidszorg.​'
 uitleg: >-
   Ik ben initiatiefrijk en zet graag een koers uit die in lijn ligt met het
