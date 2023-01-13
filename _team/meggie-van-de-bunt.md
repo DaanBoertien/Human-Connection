@@ -22,7 +22,7 @@ uitleg: >-
   ​Ik zit net zo graag aan de bestuurstafel als in een teamoverleg en weet uit ervaring dat beiden wel degelijk met elkaar te maken hebben.  Wat mij betreft is een (verander)plan pas echt geslaagd als de dagelijkse praktijk daar in positieve zin iets van merkt. ​
 
 
-  Ik ben initiatiefvol, creatief en heb een frisse kijk op uitdagingen. Ik heb lef om te doen wat nodig is en ga ingewikkelde situaties niet uit de weg. Taaie vraagstukken zie ik als mijn specialiteit. Ik reflecteer en leer graag.​
+  Ik zit vol initiatieven, ben creatief en heb een frisse kijk op uitdagingen. Ik heb lef om te doen wat nodig is en ga ingewikkelde situaties niet uit de weg. Taaie vraagstukken zie ik als mijn specialiteit. Ik reflecteer en leer graag.​
 
 
   ​
