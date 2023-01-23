@@ -35,7 +35,7 @@ uitleg: >-
   * Interne en externe toezichtvraagstukken
 
   * Veilige werkcultuur
-bg_color: Donkerblauw
+bg_color: Groen
 card_title: Olivier Sueur
 soundbites: Olivier in het kort
 soundbites_text: Breedte en diepte in het vak | energiek | verbinder | buitenmens
