@@ -19,7 +19,7 @@ uitleg: >-
   externe eisen. Zij willen succesvol én verantwoordelijk zijn, een fijne en
   veilige plek om te werken én niet verstikt worden door regels en procedures. 
 
-  Ik zet graag mijn tanden in deze vraagstukken en zorg met mijn klanten dat zij gezonde en integere organisaties zijn en blijven. Dat doe ik vooral voor commerciële bedrijven, financiële instellingen, zakelijke dienstverleners en overheidsorganisaties.
+  Ik zet graag mijn tanden in deze vraagstukken en zorg met mijn klanten dat zij gezonde en integere organisaties zijn en blijven, om te doen wat nodig is. Dat doe ik vooral voor commerciële bedrijven, financiële instellingen, zakelijke dienstverleners en overheidsorganisaties.
 
 
   \
