@@ -41,5 +41,5 @@ uitleg: >-
 bg_color: Donkerblauw
 card_title: Olivier Sueur
 soundbites: Olivier in het kort
-soundbites_text: Breedte en diepte in het vak | energiek | verbinder | buitenmens
+soundbites_text: "energiek | verbinder | buitenmens | breedte en diepte in het vak "
 ---
