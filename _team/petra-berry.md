@@ -4,7 +4,7 @@ title: Petra Berry
 function: Cultuurveranderaar | Teamontwikkelaar | Coach
 email: petra@humanc.nl
 phonenumber: 06 19 64 04 01
-photo_url: /assets/images/upload/foto-petra-v3.jpg
+photo_url: /assets/images/upload/petra-23.jpg
 photo_description: Petra Berry
 summary: Ik houd van de dynamiek tussen mens en organisatie. Samen iets willen,
   ervoor gaan en het in vervulling zien komen… dat is waar ik energie van krijg.
