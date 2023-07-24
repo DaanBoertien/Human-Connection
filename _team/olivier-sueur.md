@@ -4,7 +4,7 @@ title: Olivier Sueur
 function: Organisatieadviseur | Compliance & Integriteitsexpert
 email: olivier@humanc.nl
 phonenumber: 06 10 58 02 64
-photo_url: /assets/images/upload/olivier-sueur2.jpg
+photo_url: /assets/images/upload/olivier-23.jpg
 photo_description: Olivier Sueur, missiegedreven organisatie, purpose driven &
   values led, kernwaarden, integere organisatie, effectieve compliance, ethics &
   compliance
