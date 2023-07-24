@@ -4,7 +4,7 @@ title: Zilla Uiterwijk
 function: Organisatieadviseur | Interim-manager | Coach
 email: zilla@humanc.nl
 phonenumber: 06 11 00 60 48
-photo_url: /assets/images/upload/zilla.jpg
+photo_url: /assets/images/upload/zilla-2-23.jpg
 photo_description: Zilla Uiterwijk organisatie adviseur
 summary: Organisaties en teams lekker laten werken in een fijne sfeer met een
   helder plan, daar hou ik van!​
