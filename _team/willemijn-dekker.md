@@ -4,7 +4,7 @@ title: Willemijn Dekker
 function: Organisatieadviseur | Interim-manager | Coach
 email: willemijndekker@humanc.nl
 phonenumber: 06 26 31 20 26
-photo_url: /assets/images/upload/willemijn.png
+photo_url: /assets/images/upload/willemijn-23.jpg
 photo_description: Willemijn Dekker
 summary: Mensen máken organisaties. Hoe dat precies werkt vind ik fascinerend.
   Vanuit een rol als adviseur of interim manager/directeur lever ik graag een
