@@ -4,7 +4,7 @@ title: Jojanneke van Goinga
 function: Organisatieadviseur | Interim-manager | (Voice Dialogue) Coach
 email: jojanneke@humanc.nl
 phonenumber: 06 10 89 14 26
-photo_url: /assets/images/upload/jojanneke.jpg
+photo_url: /assets/images/upload/jojanneke-23.jpg
 photo_description: Jojanneke
 summary: >-
   Mensen en organisaties een stap verder brengen, daar draait het om voor mij.
