@@ -4,7 +4,7 @@ title: Annet Weitering
 function: Organisatieontwikkelaar | Adviseur leren & ontwikkelen
 email: annet@humanc.nl
 phonenumber: 06 12 34 56 78
-photo_url: /assets/images/upload/foto-annet-1.jpg
+photo_url: /assets/images/upload/annet-23.jpg
 photo_description: Annet
 summary: Vanuit verschillende rollen (manager, adviseur, sparringpartner,
   facilitator, docent,) werk ik al meer dan 25 jaar op een waarderende én
