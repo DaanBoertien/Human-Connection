@@ -4,7 +4,7 @@ title: Anne Boertien
 function: Visueel organisatieadviseur | Ontwikkelaar | Coach
 email: anne@humanc.nl
 phonenumber: 06 36 25 62 32
-photo_url: /assets/images/upload/anne-mat.jpg
+photo_url: /assets/images/upload/anne-23.jpg
 photo_description: Anne tekent
 summary: Potentie maximaal benutten en mensen in beweging brengen, dat zijn de
   belangrijkste drijfveren in mijn werk.
