@@ -4,7 +4,7 @@ title: Willemijn Bos
 function: Organisatieadviseur
 email: willemijnbos@humanc.nl
 phonenumber: 06 43 77 35 74
-photo_url: /assets/images/upload/willemijn.jpg
+photo_url: /assets/images/upload/willemijn-bos-23.jpg
 photo_description: Willemijn Bos
 summary: Ik ben een enthousiaste organisatieontwikkelaar met een speciaal oog
   voor de mens. Door met een open blik kritische vragen te stellen, kijk ik
