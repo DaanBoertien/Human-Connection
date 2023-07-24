@@ -4,7 +4,7 @@ title: Daan van der Weele
 function: Samenwerkingsontwikkelaar | Organisatieadviseur
 email: daan@humanc.nl
 phonenumber: 06 51 29 27 47
-photo_url: /assets/images/upload/daan.jpg
+photo_url: /assets/images/upload/daan-23.jpg
 photo_description: Daan
 summary: |-
   Het maximale uit teams halen, dat is waar ik van ben. ​
