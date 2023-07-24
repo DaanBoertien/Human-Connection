@@ -4,7 +4,7 @@ title: Dorothé Wissink
 function: Consultant | Interim-manager
 email: dorothe@humanc.nl
 phonenumber: 06 52 39 36 80
-photo_url: /assets/images/upload/dorothe-mat.jpg
+photo_url: /assets/images/upload/dorothe-met-jasje-23.jpg
 photo_description: Dorothé Wissink consultant interim
 summary: Ik ben een doorgewinterde interim-manager en adviseur strategisch
   management in het publieke domein. ​
