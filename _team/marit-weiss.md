@@ -4,7 +4,7 @@ title: Marit Weiss
 function: Organisatieadviseur | Coach | Talenontwikkelaar
 email: marit@humanc.nl
 phonenumber: 06 50 40 94 01
-photo_url: /assets/images/upload/marit.jpg
+photo_url: /assets/images/upload/marit-23.jpg
 photo_description: "Marit "
 summary: Waarom doen mensen zoals ze doen? Hoe ontwikkelen ze zich? Hoe wordt
   een menselijk geheel meer dan de som der delen? – Deze vraagstukken blijven
