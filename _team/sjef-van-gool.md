@@ -4,7 +4,7 @@ title: Sjef van Gool
 function: Directeur | Organisatieadviseur
 email: sjef@humanc.nl
 phonenumber: 06 51 78 49 14
-photo_url: /assets/images/upload/sjef.jpg
+photo_url: /assets/images/upload/sjef-23.jpg
 photo_description: Sjef van Gool directeur
 summary: Online persoonlijk over willen komen, dat noem ik nou een uitdaging!
   Tijdens workshops over feedback geven en ontvangen benadruk ik altijd dat
