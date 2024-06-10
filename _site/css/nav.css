@@ -267,6 +267,11 @@ nav {
   position: relative;
 }
 
+li.submenu-mobile-toggle2.li-outer.open {
+  border: red solid 3px;
+  height: 7.5em;
+}
+
 .li-outer::after {
   content: "";
   position: absolute;

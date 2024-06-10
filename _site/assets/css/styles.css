@@ -193,7 +193,7 @@ nav { display: flex; justify-content: space-between; justify-items: center; just
 
 .submenu-mobile a { pointer-events: none; }
 
-.submenu-mobile-toggle2.open .submenu-mobile { height: 5.5em; opacity: 1; }
+.submenu-mobile-toggle2.open .submenu-mobile { height: 7.5em; opacity: 1; }
 
 .submenu-mobile-toggle1.open .submenu-mobile, .submenu-mobile-toggle3.open .submenu-mobile { height: 3.5em; opacity: 1; }
 
