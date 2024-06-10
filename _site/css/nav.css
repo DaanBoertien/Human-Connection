@@ -247,8 +247,10 @@ nav {
 }
 
 .submenu-mobile-toggle2.open .submenu-mobile {
-  height: 5.5em;
+  height: 7.5em;
+  
   opacity: 1;
+ 
 }
 
 .submenu-mobile-toggle1.open .submenu-mobile,
