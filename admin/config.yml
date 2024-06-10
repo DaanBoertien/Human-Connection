@@ -373,6 +373,27 @@ collections:
           - label: "button 2"
             name: "button2"
             widget: "string"
+      - name: "vertrouwenspersoon"
+        label: "Vertrouwenspersoon"
+        file: "_data/vertrouwenspersoon.yml"
+        editor:
+          preview: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Landing Text"
+            name: "landing-tekst"
+            widget: "markdown"
+          - label: "Page Image"
+            name: "pagina-afbeelding"
+            widget: "image"
+          - label: "Page Title"
+            name: "pagina-titel"
+            widget: "string"
+          - label: "Vertrouwenspersoon Text"
+            name: "vertrouwenspersoon-tekst"
+            widget: "markdown"
 
       - name: "ctp-contact"
         label: "Connect to perform contact"

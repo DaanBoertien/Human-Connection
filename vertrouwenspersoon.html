@@ -1,0 +1,34 @@
+---
+layout: default
+title: Vertrouwenspersoon
+---
+
+<main>
+  {% include button-omhoog.html %}
+  <div class="landing landing--lightblue bg-lightblue">
+    <div class="innercontainer innercontainer--werken-bij">
+      <div class="landing-content">
+        <h1>{{site.data.vertrouwenspersoon.title}}</h1>
+        {{site.data.vertrouwenspersoon.landing-tekst | markdownify}}
+      </div>
+    </div>
+
+    <div class="img-overlay-wrap">
+      <img
+        class="landing-image"
+        src="{{site.data.vertrouwenspersoon.pagina-afbeelding}}"
+        alt=""
+      />
+      {% include svg1-lightblue.html %} {% include svg1-desktop-lightblue.html
+      %}
+    </div>
+  </div>
+  <div class="connect">
+    <div class="innercontainer innercontainer--ctp margin-bottom-2">
+      <h2 class="margin-top-2">
+        {{site.data.vertrouwenspersoon.pagina-titel}}
+      </h2>
+      {{site.data.vertrouwenspersoon.vertrouwenspersoon-tekst | markdownify}}
+    </div>
+  </div>
+</main>
