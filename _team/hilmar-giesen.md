@@ -15,7 +15,7 @@ summary: Waarom doen we wat we doen én voor wie doen we het? Dat is een vraag
 uitleg: Mensen waar ik mee werk waarderen mijn openheid, betrokkenheid en
   zorgvuldigheid in het werk.
 bg_color: Groen
-card_title: Titel
+card_title: Tijd voor actie?
 soundbites: "Hilmar in het kort: "
 soundbites_text: Verbindend | Resultaatgericht | Lef | Betrokken
 ---
