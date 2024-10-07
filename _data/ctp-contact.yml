@@ -18,7 +18,7 @@ functie: Functie*
 telefoonnummer: Telefoonnummer*
 welke: Voor welke avond meld je je aan?*
 data:
-  - datum: 12 november 2024 (dinsdag)
+  - datum: 12 november 2024 (dinsdag) 19:30 - 22:00
 hoe: Via wie of hoe weet je van de Connect to Perform avond?
 reden: Wat is je reden van aanmelden?
 success: Dankjewel voor je bericht!
