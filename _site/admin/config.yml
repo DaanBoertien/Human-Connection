@@ -483,7 +483,7 @@ collections:
   - name: "ctp"
     label: "Connect To Perform Spelavond"
     files:
-      - name: "CTP-Welkom"
+      - name: "ctpwelkom"
         label: "CTP Welkom"
         file: "_data/ctp-welkom.yml"
         editor:
