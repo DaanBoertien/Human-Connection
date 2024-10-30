@@ -527,7 +527,7 @@ collections:
             widget: "markdown"
       - name: "CTP Ronde 3"
         label: "CTP Ronde 3"
-        file: "_data/ronde1.yml"
+        file: "_data/ronde3.yml"
         editor:
           preview: false
         fields:
