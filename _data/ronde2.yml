@@ -1,8 +1,11 @@
 title: Ronde 2
 landing-tekst: >-
-  Tekst
+  Info over ronde 2
 
 pagina-afbeelding: /assets/images/upload/sociale-veiligheid.webp
 pagina-titel: Ronde 2
 ronde2-tekst: >-
-  tekst
+  Meer info over ronde 2
+pdf:
+  - pdf-title: "First PDF Title"
+    pdf: /path/to/first-pdf.pdf
