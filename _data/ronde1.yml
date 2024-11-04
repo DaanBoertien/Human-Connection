@@ -4,5 +4,5 @@ pagina-afbeelding: /assets/images/upload/sociale-veiligheid.webp
 pagina-titel: Ronde 1
 ronde1-tekst: Meer info over ronde 1
 pdf:
-  - pdf-title: "First PDF Title"
-    pdf: /path/to/first-pdf.pdf
+  - pdf-title: Interventies ronde 1
+    pdf: /assets/images/upload/interventies-ronde-1.pdf
