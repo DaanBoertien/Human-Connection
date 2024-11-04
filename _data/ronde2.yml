@@ -1,11 +1,8 @@
 title: Ronde 2
-landing-tekst: >-
-  Info over ronde 2
-
+landing-tekst: Info over ronde 2
 pagina-afbeelding: /assets/images/upload/sociale-veiligheid.webp
 pagina-titel: Ronde 2
-ronde2-tekst: >-
-  Meer info over ronde 2
+ronde2-tekst: Meer info over ronde 2
 pdf:
-  - pdf-title: "First PDF Title"
-    pdf: /path/to/first-pdf.pdf
+  - pdf-title: Interventies ronde 2
+    pdf: /assets/images/upload/interventies-ronde-2.pdf
