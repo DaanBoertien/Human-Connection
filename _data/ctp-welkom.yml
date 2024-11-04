@@ -44,8 +44,8 @@ welkom-tekst: >-
 
   ## Video’s
 
-
-  ### Uitleg van de Avond \[Embed YouTube-video 1]   Korte beschrijving van de video en wat deelnemers kunnen verwachten.
-
-
-  ### Uitleg van het CTP Model \[Embed YouTube-video 2]   Korte beschrijving van de video en de belangrijkste punten van het CTP model.
+video:
+  - title: Connect to Perform gedachtegoed
+    youtube-id: tlnabPmMUx8
+  - title: Uitleg Connect to Perform spel
+    youtube-id: kYBpjeAZBOI

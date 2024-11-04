@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ronde 2
+title: Welkom
 ---
 
 <main>
@@ -27,6 +27,24 @@ title: Ronde 2
     <div class="innercontainer innercontainer--ctp margin-bottom-2">
       <h2 class="margin-top-2">{{site.data.ctp-welkom.pagina-titel}}</h2>
       {{site.data.ctp-welkom.welkom-tekst | markdownify}}
+      <div class="video-grid">
+        {% for video in site.data.ctp-welkom.video %}
+
+        <div class="margin-bottom-2">
+          <h3>{{video.title}}</h3>
+          <div class="video-container">
+            <iframe
+              class=""
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/{{video.youtube-id}}"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </main>
