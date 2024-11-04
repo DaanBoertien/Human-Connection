@@ -22,5 +22,12 @@ data:
 hoe: Via wie of hoe weet je van de Connect to Perform avond?
 reden: Wat is je reden van aanmelden?
 success: Dankjewel voor je bericht!
-success-text: We reageren zo snel mogelijk.
+success-text: >-
+  Bedankt voor je aanmelding, leuk dat je erbij bent! 
+
+  Voor nu hoef je niets te doen, behalve de datum in je agenda te zetten. 
+
+  Ongeveer een week van te voren ontvang je een voorbereidingsmail met meer informatie. 
+
+  Heb je voor die tijd vragen, neem dan contact op met jojanneke@humanc.nl
 button-terug: Terug naar de homepage
