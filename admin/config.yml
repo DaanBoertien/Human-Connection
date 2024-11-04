@@ -536,6 +536,7 @@ collections:
             name: "ronde1-tekst"
             widget: "markdown"
           - label: "PDFs"
+            label_singular: "PDF"
             name: "pdf"
             widget: "list"
             fields:
@@ -567,6 +568,7 @@ collections:
             name: "ronde2-tekst"
             widget: "markdown"
           - label: "PDFs"
+            label_singular: "PDF"
             name: "pdf"
             widget: "list"
             fields:
@@ -598,6 +600,7 @@ collections:
             name: "ronde3-tekst"
             widget: "markdown"
           - label: "PDFs"
+            label_singular: "PDF"
             name: "pdf"
             widget: "list"
             fields:
