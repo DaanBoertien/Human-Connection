@@ -1,11 +1,8 @@
 title: Ronde 3
-landing-tekst: >-
-  Info over ronde 3
-
+landing-tekst: Info over ronde 3
 pagina-afbeelding: /assets/images/upload/sociale-veiligheid.webp
 pagina-titel: Ronde 3
-ronde3-tekst: >-
-  Meer info over ronde 3
+ronde3-tekst: Meer info over ronde 3
 pdf:
-  - pdf-title: "First PDF Title"
-    pdf: /path/to/first-pdf.pdf
+  - pdf-title: Interventies ronde 3
+    pdf: /assets/images/upload/interventies-ronde-3.pdf
