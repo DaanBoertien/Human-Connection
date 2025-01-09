@@ -84,6 +84,7 @@ nav {
   padding-left: 0;
   display: none;
   cursor: pointer;
+  
 }
 
 .nav-desktop li {
@@ -97,6 +98,10 @@ nav {
   // transition-duration: 0.5s;
 }
 
+ul.dropdown {
+  overflow: hidden;
+
+}
 .dropdown {
   z-index: 2;
 }
@@ -260,7 +265,7 @@ nav {
 }
 
 .submenu-mobile-toggle2.open .submenu-mobile {
-  height: 7.5em;
+  height: 9em;
   opacity: 1;
 }
 

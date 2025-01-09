@@ -145,6 +145,8 @@ nav { display: flex; justify-content: space-between; justify-items: center; just
 
 .nav-desktop li { color: var(--clr-black); cursor: pointer; display: block; float: left; padding: 0.4rem 2rem; position: relative; text-decoration: none; }
 
+ul.dropdown { overflow: hidden; }
+
 .dropdown { z-index: 2; }
 
 .dropdown:last-child { border-bottom-left-radius: 24px; border-bottom-right-radius: 24px; padding-bottom: 1em; }
@@ -193,7 +195,7 @@ nav { display: flex; justify-content: space-between; justify-items: center; just
 
 .submenu-mobile a { pointer-events: none; }
 
-.submenu-mobile-toggle2.open .submenu-mobile { height: 7.5em; opacity: 1; }
+.submenu-mobile-toggle2.open .submenu-mobile { height: 9em; opacity: 1; }
 
 .submenu-mobile-toggle1.open .submenu-mobile, .submenu-mobile-toggle3.open .submenu-mobile { height: 3.5em; opacity: 1; }
 
