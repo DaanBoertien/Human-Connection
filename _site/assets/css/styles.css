@@ -113,6 +113,10 @@ body { font-family: 'Inter', sans-serif; }
 
 p { font-weight: 300; line-height: 1.6; color: var(--clr-black); margin-top: 0; }
 
+p a { color: var(--clr-darkblue); text-decoration: underline; transition: color 0.2s ease; }
+
+p a:hover { color: var(--clr-green); }
+
 h1 { margin-bottom: 0.5em; }
 
 h2 { color: var(--clr-black); margin-bottom: .5em; }
@@ -774,6 +778,8 @@ footer h2 { color: white; line-height: 1.4; }
 .footer-menu-items img { width: 20px; }
 
 .footer p { color: white; box-shadow: 0px 50px 0px 0px var(--clr-green), -70px 50px 0px 0px var(--clr-green); }
+
+.footer a:hover, .footer-desktop a:hover { color: var(--clr-darkblue); }
 
 main { position: relative; }
 

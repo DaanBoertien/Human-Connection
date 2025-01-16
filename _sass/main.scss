@@ -554,6 +554,10 @@ footer h2 {
     -70px 50px 0px 0px var(--clr-green);
 }
 
+.footer a:hover, .footer-desktop a:hover {
+  color: var(--clr-darkblue);
+}
+
 main {
   position: relative;
 }
