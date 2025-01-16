@@ -871,6 +871,8 @@ main .team-member { padding-top: 120px; }
 
 .btn:hover { cursor: pointer; }
 
+.btn-full a:hover { color: white; }
+
 .btn-ctp { border: 2px solid var(--clr-lightblue); }
 
 .btn-ctp:hover { background-color: var(--clr-grey); border: 2px solid var(--clr-grey); }

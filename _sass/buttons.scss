@@ -33,6 +33,7 @@
     &:hover {
       background-color: var(--clr-lightblue);
       border: 2px solid var(--clr-lightblue);
+      
     }
     .connect-to-perform & {
       border: 2px solid var(--clr-lightblue);
@@ -48,6 +49,10 @@
   &:hover {
     cursor: pointer;
   }
+}
+
+.btn-full a:hover {
+  color: white;
 }
 
 .btn-ctp {
