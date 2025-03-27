@@ -1,0 +1,25 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--clr-black);
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  color: var(--clr-black);
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  color: var(--clr-darkblue);
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}/*# sourceMappingURL=typography.css.map */

@@ -1,0 +1,189 @@
+---
+slogan: Veranderen is mensenwerk
+landing-tekt: >-
+  Human Connection is een organisatieadviesbureau dat zich richt op de
+  menselijke kant van organisaties. Vanuit verschillende rollen begeleiden we
+  leiders, teams en individuele professionals om zich te ontwikkelen en
+  proactiever (samen) te werken.
+
+
+  We werken altijd op maat, met een brede blik voor mensen in hun context, een gezonde bedrijfsvoering en de ontwikkeling van de organisatiecultuur.​ 
+
+
+  We zijn ervaren in een breed werkveld, houden van een complexe uitdaging en kijken met een optimistische blik naar de mogelijkheden.
+pagina-afbeelding: /assets/images/upload/parachute.jpg
+waar-wij-voor-staan: Waar wij voor staan
+waar-wijvoor-staan-tekst: "We doen wat we zeggen en zeggen wat we doen.  Zowel
+  hoe we onderling samenwerken in ons bedrijf, als hoe we samenwerken met onze
+  opdrachtgevers. Wij werken altijd:"
+waarde-1-titel: In verbinding
+waarde-1-tekst: >-
+  Synergie ontstaat daar waar mensen verbonden zijn met zichzelf, met elkaar en
+  met het doel van de organisatie. 
+
+
+  Zelfbewustzijn, eigenaarschap, betrokkenheid en verantwoordelijkheid nemen zijn hierbij de kern. Daar staan we zelf voor en het is ook precies waar we onze klanten bij helpen. We nemen daarbij onze eigen persoonlijkheden, ervaringen en 'menselijkheid' mee in alles wat we doen.
+waarde-1-afbeelding: /assets/images/upload/icoon3dun.png
+waarde-2-titel: In vertrouwen
+waarde-2-tekst: >-
+  Vertrouwen is voor ons de basis van waaruit we werken. Onderling als collega's
+  en in samenwerking met onze klanten. Het is onze tweede natuur om waar we
+  werken, te bouwen aan het vertrouwen tussen mensen onderling en in
+  organisaties als geheel. 
+
+
+  We benaderen mensen en hun vraagstukken positief: we koesteren uit principe veel vertrouwen in ieders goede intenties, mogelijkheden en veerkracht.
+waarde-2-afbeelding: /assets/images/upload/icoon2dun.png
+waarde-3-titel: In context
+waarde-3-tekst: >-
+  We bekijken iedere vraag, hoe groot of klein ook, met een brede blik. 'Wat is
+  hier nou echt aan de hand? Welke patronen spelen hier?' 
+
+
+  Juist het samenspel tussen allerlei factoren (zoals de organisatie-inrichting, de manier van werken, de cultuur, de veranderende buitenwereld) bepalen het succes. Daarom sluiten we nauw aan bij de context van een organisatie en mensen en is alles wat we doen maatwerk.
+waarde-3-afbeelding: /assets/images/upload/icoon1dun.png
+wat-wij-doen: Wat wij doen
+wat-wij-doen-tekst: "We benaderen ieder vraagstuk met een organisatiebrede blik.
+  Dit doen we vanuit een aantal expertises:"
+wat-wij-doen-1-titel: Organisatieontwikkeling & teamontwikkeling
+wat-wij-doen-1-tekst: >-
+  We adviseren en begeleiden teams en organisaties bij veranderingen. Via
+  langere trajecten (blijvende cultuurverandering of reorganisaties), kortere
+  interventies (teambuilding en proactief gedrag) en 'alles daartussenin'.
+
+
+  Voorbeelden hiervan zijn: 
+
+
+  * Transformatie naar meer zelfsturing
+
+  * Faciliteren verdiepende gesprekken en krachtige besluitvorming.
+
+  * Cultuurontwikkeling: betere prestaties en een (pro)actievere cultuur.
+
+  * Reorganisaties, fusies, samenwerkingsverbanden optimaliseren
+
+  * Compliance en integriteitsvraagstukken
+
+  * Invoeren en begeleiden van Agile/Scrum
+wat-wij-doen-1-contact: |-
+  **Meer weten?**\
+  Neem bijvoorbeeld contact op met Sjef of Zilla.
+wat-wij-doen-1-button: Contact met Sjef
+wat-wij-doen-1-link: /team/sjef-van-gool/
+wat-wij-doen-2-titel: Interim management
+wat-wij-doen-2-tekst: >-
+  Als interim-professional zijn we een tijdje onderdeel van de organisatie. Als
+  manager of directeur zetten we, samen met de in de organisatie aanwezige
+  strategische partners, initiatiefrijk een koers uit die in lijn ligt met het
+  grotere geheel. Dit doen we graag in combinatie met een veranderopgave. 
+
+
+  We doen dit bijvoorbeeld op het gebied van:
+
+
+  * Verandermanagement
+
+  * HR-management
+
+  * Strategie-implementatie
+
+  * ICT-management
+
+  * L&O Professional
+wat-wij-doen-2-contact: |-
+  **Meer weten?**\
+  Neem bijvoorbeeld contact op met Meggie of Dorothé.
+wat-wij-doen-2-button: Contact met Meggie
+wat-wij-doen-2-link: /team/meggie-van-de-bunt/
+wat-wij-doen-3-titel: Leren & ontwikkelen
+wat-wij-doen-3-tekst: >-
+  We begeleiden persoonlijke en professionele ontwikkeling voor bestuurders,
+  leidinggevenden en professionals. Persoonlijk leiderschap en persoonlijke
+  effectiviteit zijn hierbij belangrijke thema's.
+
+
+  We adviseren over de meest effectieve aanpak en ontwerpen en begeleiden workshops of trajecten zoals:
+
+
+  * Ontwikkeltrajecten en opleidingsprogramma's 
+
+  * Leiderschapsprogramma's
+
+  * Intervisie
+
+  * [Individuele coaching](https://www.humanc.nl/coaching/)
+
+  * Talentmanagement en traineeprogramma's 
+
+  * Inrichting van een effectieve leerinfrastructuur
+wat-wij-doen-3-contact: |-
+  **Meer weten?**\
+  Neem contact op met bijvoorbeeld Marit of Annet.
+wat-wij-doen-3-button: Contact met Marit
+hoe-wij-werken: Meer weten over hóe wij werken?
+wat-wij-doen-3-link: /team/marit-weiss/
+wie-wij-zijn: Wie wij zijn
+actievraag: Waar loop jij tegenaan in je organisatie?
+actievraag-subtitel: Ontdek hoe wij hierbij kunnen helpen.
+actievraag-button: Kom in contact met ons
+partners-titel: Samengewerkt met o.a.
+logos:
+  - naam-bedrijf: Accell Group
+    logo-bedrijf: /assets/images/upload/accell-group.png
+  - naam-bedrijf: Bloomia
+    logo-bedrijf: /assets/images/upload/bloomia.png
+  - logo-bedrijf: /assets/images/upload/gemeente-amsterdam.png
+    naam-bedrijf: Gemeente Amsterdam
+  - logo-bedrijf: /assets/images/upload/kpn.png
+    naam-bedrijf: KPN
+  - logo-bedrijf: /assets/images/upload/randstad.png
+    naam-bedrijf: Randstad
+  - logo-bedrijf: /assets/images/upload/sein.png
+    naam-bedrijf: SEIN
+  - logo-bedrijf: /assets/images/upload/gemeentebaarn.png
+    naam-bedrijf: GEMEENTEBAARN
+  - logo-bedrijf: /assets/images/upload/swarco.png
+    naam-bedrijf: Swarco
+  - logo-bedrijf: /assets/images/upload/topdesk.png
+    naam-bedrijf: TOPdesk
+  - logo-bedrijf: /assets/images/upload/alifa.png
+    naam-bedrijf: ALIFA
+  - logo-bedrijf: /assets/images/upload/gemeentedeventer.png
+    naam-bedrijf: GEMEENTEDEVENTER
+  - logo-bedrijf: /assets/images/upload/bindkracht.png
+    naam-bedrijf: BINDKRACHT10
+  - logo-bedrijf: /assets/images/upload/brink.png
+    naam-bedrijf: BRINK
+  - logo-bedrijf: /assets/images/upload/company.png
+    naam-bedrijf: COMPANYINFO
+  - logo-bedrijf: /assets/images/upload/erasmusmc.png
+    naam-bedrijf: ERASMUSMC
+  - logo-bedrijf: /assets/images/upload/mvr.png
+    naam-bedrijf: MVR
+  - logo-bedrijf: /assets/images/upload/gemeenterotterdam.png
+    naam-bedrijf: GEMEENTEROTTERDAM
+  - logo-bedrijf: /assets/images/upload/wonenlimburg.png
+    naam-bedrijf: WONENLIMBURG
+  - logo-bedrijf: /assets/images/upload/ogd.png
+    naam-bedrijf: OGD
+  - logo-bedrijf: /assets/images/upload/hilversum.png
+    naam-bedrijf: GEMEENTEHILVERSUM
+  - logo-bedrijf: /assets/images/upload/triplejump.png
+    naam-bedrijf: TRIPLE JUMP
+  - logo-bedrijf: /assets/images/upload/voort.png
+    naam-bedrijf: VOORT
+contact-titel: Contact
+contact-omschrijving: We komen graag met je in contact. Bel of mail direct een
+  van onze collega’s of vul onderstaand formulier in.
+contact-naam: Naam
+contact-email: E-mail
+contact-onderwerp: Onderwerp
+contact-bericht: Vraag/bericht
+uitnodiging: "Of kom langs in ons pittoreske Amsterdamse kantoor:"
+postcode: 1013 GA Amsterdam
+uitnodiging-adres: ""
+contact-button: Verzend bericht
+adres: Singel 2a
+afbeelding-kantoor: /assets/images/upload/kantoor.png
+---

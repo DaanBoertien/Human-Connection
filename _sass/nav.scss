@@ -38,6 +38,15 @@ nav {
   z-index: 100;
 }
 
+.lang-flag-inline {
+  /* Keep existing styles like vertical-align, display */
+  vertical-align: middle;
+  display: inline-block;
+
+  /* Add the border */
+  border: 2px solid white;
+}
+
 .nav-desktop {
   display: none;
   margin-bottom: 0.3em;
@@ -270,7 +279,8 @@ ul.dropdown {
 }
 
 .submenu-mobile-toggle1.open .submenu-mobile,
-.submenu-mobile-toggle3.open .submenu-mobile {
+.submenu-mobile-toggle3.open .submenu-mobile,
+.submenu-mobile-toggle4.open .submenu-mobile {
   height: 3.5em;
   opacity: 1;
 }

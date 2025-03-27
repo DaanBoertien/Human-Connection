@@ -1,106 +1,331 @@
+
+{% assign nav_lang_prefix = "" %}
+{% if site.lang == site.default_language %}
+{% assign nav_lang_prefix = "/" %}
+{% else %}
+{% assign nav_lang_prefix = "/" | append: site.lang | append: "/" %}
+{% endif %}
+
 <div class="fixed-wrapper">
   <div class="fixed-menu" id="top">
     <nav role="navigation" class="extracorner" id="nav">
-      <a class="mainlogolink" href="/">
-        <img
-          class="mainlogo"
-          src="/assets/images/upload/logo-human-connection.svg"
-          alt=""
-        />
+
+      {% comment %} --- Logo / Home Link --- {% endcomment %}
+      {% assign home_page = site.pages | where_exp: "item", "item.namespace == 'home'" | first %}
+      {% assign home_path = nav_lang_prefix | replace: '//', '/' %}
+      {% if home_page %}
+      {% if site.lang == site.default_language %}
+      {% assign base_home_path = home_page.permalink %}
+      {% else %}
+      {% assign permalink_key = "permalink_" | append: site.lang %}
+      {% assign base_home_path = home_page[permalink_key] | default: home_page.permalink %}
+      {% endif %}
+      {% assign raw_home_path = nav_lang_prefix | append: base_home_path %}
+      {% assign home_path = raw_home_path | replace: '//', '/' %}
+      {% endif %}
+      <a class="mainlogolink" href="{{ home_path | relative_url }}">
+        {% capture logo_alt %}{% t nav.logo_alt_text %}{% endcapture %}
+        <img class="mainlogo" src="{{ '/assets/images/upload/logo-human-connection.svg' | relative_url }}"
+          alt="{{ logo_alt | strip }}" />
       </a>
+
+      {% comment %} --- Hamburger Button --- {% endcomment %}
       <button class="hamburger hamburger--squeeze" type="button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
       </button>
+
+      {% comment %} --- Desktop Navigation --- {% endcomment %}
       <div class="nav-desktop">
         <ul class="main-menu">
+
+          {% comment %} --- Wie wij zijn / Team Dropdown (Item 1) --- {% endcomment %}
+          {% assign wie_wij_zijn_page = site.pages | where_exp: "item", "item.namespace == 'wie-wij-zijn'" | first %}
+          {% assign team_base_page_for_check = site.pages | where_exp: "item", "item.namespace == 'team'" | first %}
+          {% comment %} Used below to check if current page is a team member page {% endcomment %}
+          {% assign wie_wij_zijn_path = nav_lang_prefix | replace: '//', '/' %}
+          {% if wie_wij_zijn_page %}
+          {% if site.lang == site.default_language %}
+          {% assign base_wie_wij_zijn_path = wie_wij_zijn_page.permalink %}
+          {% else %}
+          {% assign permalink_key = "permalink_" | append: site.lang %}
+          {% assign base_wie_wij_zijn_path = wie_wij_zijn_page[permalink_key] | default: wie_wij_zijn_page.permalink %}
+          {% endif %}
+          {% assign raw_wie_wij_zijn_path = nav_lang_prefix | append: base_wie_wij_zijn_path %}
+          {% assign wie_wij_zijn_path = raw_wie_wij_zijn_path | replace: '//', '/' %}
+          {% endif %}
+
           <li class="main-menu-list">
-            <a
-              href="/wie-wij-zijn"
-              aria-haspopup="true"
-              class="main-menu-link {% if page.url contains 'team' %}current{% endif %}"
-              >Wie wij zijn</a
-            >
+            <a href="{{ wie_wij_zijn_path | relative_url }}" aria-haspopup="true"
+              class="main-menu-link {% if page.collection == 'team' %}current{% endif %}">{% comment %} Simplified
+              'current' check {% endcomment %}
+              {% t nav.wie_wij_zijn_text %}
+            </a>
             <ul class="dropdown" aria-label="submenu">
               <li class="menu-filler"></li>
-              {% assign members_by_name = site.team | sort: 'title' %} {% for
-              member in members_by_name %} {% if member.in_menu != false %}
+
+              {% assign default_lang_code_nav = site.default_language | default: "nl" %}
+
+              {% comment %} --- Get, Filter, and Sort Team Members for Nav --- {% endcomment %}
+              {% assign all_team_members = site.team %}
+              {% assign nav_team_members = all_team_members | where_exp: "item", "item.menu == 'menu-active'" %}
+              {% assign members_sorted_nav = nav_team_members | sort: 'title' %}
+
+              {% comment %} --- Loop through sorted members --- {% endcomment %}
+              {% for member_nav in members_sorted_nav %}
               <li>
-                <a class="dropdown-link" href="/team/{{member.slug}}"
-                  >{{member.title}}</a
-                >
+                {% assign member_nav_lang_data = member_nav[site.lang] | default: member_nav[default_lang_code_nav] %}
+                {% assign member_nav_display_title = member_nav_lang_data.title | default: member_nav.title %}
+
+                {% assign member_nav_slug = member_nav.slug | default: member_nav.name %}
+                {% assign member_nav_base_url = "/team/" | append: member_nav_slug | append: "/" %}
+                {% comment %} Ensure '/team/' is the correct base path {% endcomment %}
+
+                {% assign member_nav_lang_prefix = "/" %}
+                {% if site.lang != default_lang_code_nav %}
+                {% assign member_nav_lang_prefix = "/" | append: site.lang | append: "/" %}
+                {% endif %}
+                {% assign member_nav_final_url = member_nav_lang_prefix | append: member_nav_base_url | replace: "//",
+                "/" %}
+
+                <a class="dropdown-link" href="{{ member_nav_final_url | relative_url }}">{{ member_nav_display_title
+                  }}</a>
               </li>
-              {% endif %} {% endfor %}
+              {% endfor %}
             </ul>
           </li>
+          {% comment %} --- End Wie wij zijn / Team Dropdown --- {% endcomment %}
+
+          {% comment %} --- Wat wij doen / Hoe wij werken Dropdown (Item 2) --- {% endcomment %}
+          {% assign hoe_wij_werken_page = site.pages | where_exp: "item", "item.namespace == 'hoe-wij-werken'" | first
+          %}
+          {% assign wat_wij_doen_page = site.pages | where_exp: "item", "item.namespace == 'wat-wij-doen'" | first %}
+          {% assign ctp_page = site.pages | where_exp: "item", "item.namespace == 'connect-to-perform'" | first %}
+          {% assign vert_page = site.pages | where_exp: "item", "item.namespace == 'vertrouwenspersoon'" | first %}
+          {% assign coaching_page = site.pages | where_exp: "item", "item.namespace == 'coaching'" | first %}
+
+          {% comment %} Path calculation for dropdown items {% endcomment %}
+          {% assign hoe_wij_werken_path = nav_lang_prefix | replace: '//', '/' %}
+          {% if hoe_wij_werken_page %}{% if site.lang == site.default_language %}{% assign hww_base =
+          hoe_wij_werken_page.permalink %}{% else %}{% assign plk = "permalink_" | append: site.lang %}{% assign
+          hww_base = hoe_wij_werken_page[plk] | default: hoe_wij_werken_page.permalink %}{% endif %}{% assign
+          hoe_wij_werken_path = nav_lang_prefix | append: hww_base | replace: '//', '/' %}{% endif %}
+          {% assign wat_wij_doen_path = nav_lang_prefix | replace: '//', '/' %}
+          {% if wat_wij_doen_page %}{% if site.lang == site.default_language %}{% assign wwd_base =
+          wat_wij_doen_page.permalink %}{% else %}{% assign plk = "permalink_" | append: site.lang %}{% assign wwd_base
+          = wat_wij_doen_page[plk] | default: wat_wij_doen_page.permalink %}{% endif %}{% assign wat_wij_doen_path =
+          nav_lang_prefix | append: wwd_base | replace: '//', '/' %}{% endif %}
+          {% assign ctp_path = nav_lang_prefix | replace: '//', '/' %}
+          {% if ctp_page %}{% if site.lang == site.default_language %}{% assign ctp_base = ctp_page.permalink %}{% else
+          %}{% assign plk = "permalink_" | append: site.lang %}{% assign ctp_base = ctp_page[plk] | default:
+          ctp_page.permalink %}{% endif %}{% assign ctp_path = nav_lang_prefix | append: ctp_base | replace: '//', '/'
+          %}{% endif %}
+          {% assign vert_path = nav_lang_prefix | replace: '//', '/' %}
+          {% if vert_page %}{% if site.lang == site.default_language %}{% assign vert_base = vert_page.permalink %}{%
+          else %}{% assign plk = "permalink_" | append: site.lang %}{% assign vert_base = vert_page[plk] | default:
+          vert_page.permalink %}{% endif %}{% assign vert_path = nav_lang_prefix | append: vert_base | replace: '//',
+          '/' %}{% endif %}
+          {% assign coaching_path = nav_lang_prefix | replace: '//', '/' %}
+          {% if coaching_page %}{% if site.lang == site.default_language %}{% assign coach_base =
+          coaching_page.permalink %}{% else %}{% assign plk = "permalink_" | append: site.lang %}{% assign coach_base =
+          coaching_page[plk] | default: coaching_page.permalink %}{% endif %}{% assign coaching_path = nav_lang_prefix |
+          append: coach_base | replace: '//', '/' %}{% endif %}
+
           <li class="main-menu-list">
-            <a
-              href="#"
-              aria-haspopup="true"
-              class="main-menu-link {% if page.url contains 'hoe-wij-werken' or page.url contains 'wat-wij-doen' or page.url contains 'connect' %}current{% endif %}"
-              >Wat wij doen</a
-            >
+            <a href="{{ wat_wij_doen_path | relative_url }}" aria-haspopup="true"
+              class="main-menu-link {% if page.url == hoe_wij_werken_path or page.url == wat_wij_doen_path or page.url == ctp_path or page.url == vert_path or page.url == coaching_path %}current{% endif %}">{%
+              t nav.wat_wij_doen_text %}</a>
             <ul class="dropdown" aria-label="submenu">
               <li class="menu-filler"></li>
-              <li><a href="{{site.data.nav.hoe-wij-werken}}" class="dropdown-link">Hoe wij werken</a></li>
-              <li style="
-                  border-bottom: 1px solid white;
-              "><a href="{{site.data.nav.wat-wij-doen}}" class="dropdown-link">Wat wij doen</a></li>
-              <li><a href="{{site.data.nav.connect-to-perform}}" class="dropdown-link">Connect to Perform</a></li>
-              <li><a href="{{site.data.nav.vertrouwenspersoon}}" class="dropdown-link">Vertrouwenspersoon</a></li>
-              <li><a href="{{site.data.nav.coaching}}" class="dropdown-link">Coaching</a></li>
+              <li><a href="{{ hoe_wij_werken_path | relative_url }}" class="dropdown-link">{% t nav.hoe_wij_werken_text
+                  %}</a></li>
+              <li style="border-bottom: 1px solid white;"><a href="{{ wat_wij_doen_path | relative_url }}"
+                  class="dropdown-link">{% t nav.wat_wij_doen_text %}</a></li>
+              <li><a href="{{ ctp_path | relative_url }}" class="dropdown-link">{% t nav.connect_to_perform_text %}</a>
+              </li>
+              <li><a href="{{ vert_path | relative_url }}" class="dropdown-link">{% t nav.vertrouwenspersoon_text %}</a>
+              </li>
+              <li><a href="{{ coaching_path | relative_url }}" class="dropdown-link">{% t nav.coaching_text %}</a></li>
             </ul>
           </li>
+          {% comment %} --- End Wat wij doen Dropdown --- {% endcomment %}
+
+          {% comment %} --- Contact / Werken bij Dropdown (Item 3) --- {% endcomment %}
+          {% assign contact_page = site.pages | where_exp: "item", "item.namespace == 'contact'" | first %}
+          {% assign werken_page = site.pages | where_exp: "item", "item.namespace == 'werken-bij'" | first %}
+          {% assign contact_path = nav_lang_prefix | replace: '//', '/' %}
+          {% if contact_page %}{% if site.lang == site.default_language %}{% assign cont_base = contact_page.permalink
+          %}{% else %}{% assign plk = "permalink_" | append: site.lang %}{% assign cont_base = contact_page[plk] |
+          default: contact_page.permalink %}{% endif %}{% assign contact_path = nav_lang_prefix | append: cont_base |
+          replace: '//', '/' %}{% endif %}
+          {% assign werken_path = nav_lang_prefix | replace: '//', '/' %}
+          {% if werken_page %}{% if site.lang == site.default_language %}{% assign werk_base = werken_page.permalink
+          %}{% else %}{% assign plk = "permalink_" | append: site.lang %}{% assign werk_base = werken_page[plk] |
+          default: werken_page.permalink %}{% endif %}{% assign werken_path = nav_lang_prefix | append: werk_base |
+          replace: '//', '/' %}{% endif %}
+
           <li class="main-menu-list">
-            <a href="#" class="main-menu-link {% if page.url contains 'contact' or page.url contains 'werken-bij' %}current{% endif %}">Contact</a>
+            <a href="{{ contact_path | relative_url }}"
+              class="main-menu-link {% if page.url == contact_path or page.url == werken_path %}current{% endif %}">{% t
+              nav.contact_text %}</a>
             <ul class="dropdown" aria-label="submenu">
               <li class="menu-filler menu-filler-contact"></li>
-              <li><a href="{{site.data.nav.contact}}" class="dropdown-link">Contact</a></li>
-              
-                {%if site.data.werken-bij-ons.vacature-open == true %}<li><a href="{{site.data.nav.werken-bij}}" class="dropdown-link"
-                  >Werken bij ons
-                  </a></li>{%endif%}
-              
+              <li><a href="{{ contact_path | relative_url }}" class="dropdown-link">{% t nav.contact_text %}</a></li>
+              {% comment %} Conditionally show Werken Bij link {% endcomment %}
+              {% if site.data.werken-bij-ons.vacature-open == true %}
+              <li><a href="{{ werken_path | relative_url }}" class="dropdown-link">{% t nav.werken_bij_text %}</a></li>
+              {% endif %}
             </ul>
           </li>
+          {% comment %} --- End Contact Dropdown --- {% endcomment %}
+
+        {% comment %} --- Language Switcher Dropdown (Item 4) --- {% endcomment %}
+        <li class="main-menu-list language-menu">
+          <a href="#" aria-haspopup="true" class="main-menu-link">
+            {% if site.lang == "nl" %}{% t nav.lang_nl %}{% elsif site.lang == "en" %}{% t nav.lang_en %}{% endif %}
+          </a>
+          <ul class="dropdown" aria-label="submenu">
+            <li class="menu-filler"></li>
+            {% assign default_lang_code_ls = site.default_language | default: "nl" %}
+            {% for lang_code_switch_ls in site.languages %}
+            {% if lang_code_switch_ls != site.lang %}
+            {% comment %} --- Language switching logic --- {% endcomment %}
+            {% assign target_page_url_ls = "/" %}
+            {% assign target_lang_prefix_ls = "/" %}
+            {% if lang_code_switch_ls != default_lang_code_ls %}
+            {% assign target_lang_prefix_ls = "/" | append: lang_code_switch_ls | append: "/" %}
+            {% endif %}
+        
+            {% if page.collection == 'team' %}
+            {% assign member_slug_ls = page.slug | default: page.name %}
+            {% assign member_base_url_ls = "/team/" | append: member_slug_ls | append: "/" %}
+            {% assign target_page_url_ls = target_lang_prefix_ls | append: member_base_url_ls | replace: "//", "/" %}
+            {% elsif page.namespace %}
+            {% assign source_page_ls = site.pages | where_exp:"item", "item.namespace == page.namespace" | first %}
+            {% if source_page_ls %}
+            {% assign target_base_slug_ls = source_page_ls.permalink %}
+            {% if lang_code_switch_ls != default_lang_code_ls %}
+            {% assign target_permalink_key_ls = "permalink_" | append: lang_code_switch_ls %}
+            {% assign target_base_slug_ls = source_page_ls[target_permalink_key_ls] | default: source_page_ls.permalink %}
+            {% endif %}
+            {% assign raw_final_path_ls = target_lang_prefix_ls | append: target_base_slug_ls %}
+            {% assign target_page_url_ls = raw_final_path_ls | replace: '//', '/' | replace: '//', '/' %}
+            {% else %}
+            {% assign target_page_url_ls = target_lang_prefix_ls | replace: '//', '/' %}
+            {% endif %}
+            {% else %}
+            {% assign target_page_url_ls = target_lang_prefix_ls | replace: '//', '/' %}
+            {% endif %}
+        
+            {% capture target_lang_name_ls %}{% if lang_code_switch_ls == "nl" %}{% t nav.lang_nl %}{% elsif lang_code_switch_ls
+            == "en" %}{% t nav.lang_en %}{% endif %}{% endcapture %}
+            <li><a href="{{ target_page_url_ls | relative_url }}" class="dropdown-link">{{ target_lang_name_ls | strip }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
+        {% comment %} --- End Language Switcher --- {% endcomment %}
         </ul>
-      </div>
+      </div> {% comment %} --- End Desktop Navigation --- {% endcomment %}
+
+      {% comment %} --- Mobile Navigation (Off-canvas) --- {% endcomment %}
       <div class="nav-menu">
         <ul class="menu-ul">
-          <li class="submenu-mobile-toggle1 li-outer">
-            <a href="#">Wie wij zijn</a>
-            <ul class="submenu-mobile">
-              <li><a href="{{site.data.nav.wie-wij-zijn}}" class="{% if page.url contains 'team' %}current{% endif %}">Wie wij zijn</a></li>
-              <li><a href="{{site.data.nav.hoe-wij-werken}}" class="{% if page.url contains 'hoe-wij-werken' %}current{% endif %}">Hoe wij werken</a></li>
-            </ul>
-          </li>
-          <li class="submenu-mobile-toggle2 li-outer">
-            <a href="#">Wat we doen</a>
-            <ul class="submenu-mobile">
-              <li><a href="{{site.data.nav.hoe-wij-werken}}">Hoe wij werken</a></li>
-              <li><a href="{{site.data.nav.wat-wij-doen}}">Wat wij doen</a></li>
-              <li><a href="{{site.data.nav.connect-to-perform}}">Connect to Perform</a></li>
-              <li><a href="{{site.data.nav.vertrouwenspersoon}}">Vertrouwenspersoon</a></li>
-              <li><a href="{{site.data.nav.coaching}}">Coaching</a></li>
 
-            </ul>
-          </li>
-          <li class="submenu-mobile-toggle3 li-outer">
-            <a href="#">Contact</a>
+          {% comment %} Mobile Wie wij zijn {% endcomment %}
+          <li class="submenu-mobile-toggle1 li-outer">
+            <a href="#">{% t nav.wie_wij_zijn_text %}</a>
             <ul class="submenu-mobile">
-              <li><a href="{{site.data.nav.contact}}">Contact</a></li>
-            {%if site.data.werken-bij-ons.vacature-open == true %}<li><a href="{{site.data.nav.werken-bij}}">Werken bij ons</a></li>{%endif%}
+              {% assign team_base_page_url = "" %}
+              {% if team_base_page_for_check %}{% assign team_base_page_url = team_base_page_for_check.url %}{% endif %}
+              <li><a href="{{ wie_wij_zijn_path | relative_url }}"
+                  class="{% if page.collection == 'team' %}current{% endif %}">{% t nav.wie_wij_zijn_text %}</a></li>
+              {% comment %} Note: Team members are usually not listed again in mobile main nav, kept under dropdown on
+              desktop {% endcomment %}
             </ul>
           </li>
+
+          {% comment %} Mobile Wat wij doen {% endcomment %}
+          <li class="submenu-mobile-toggle2 li-outer">
+            <a href="#">{% t nav.wat_wij_doen_text %}</a>
+            <ul class="submenu-mobile">
+              <li><a href="{{ hoe_wij_werken_path | relative_url }}">{% t nav.hoe_wij_werken_text %}</a></li>
+              <li><a href="{{ wat_wij_doen_path | relative_url }}">{% t nav.wat_wij_doen_text %}</a></li>
+              <li><a href="{{ ctp_path | relative_url }}">{% t nav.connect_to_perform_text %}</a></li>
+              <li><a href="{{ vert_path | relative_url }}">{% t nav.vertrouwenspersoon_text %}</a></li>
+              <li><a href="{{ coaching_path | relative_url }}">{% t nav.coaching_text %}</a></li>
+            </ul>
+          </li>
+
+          {% comment %} Mobile Contact {% endcomment %}
+          <li class="submenu-mobile-toggle3 li-outer">
+            <a href="#">{% t nav.contact_text %}</a>
+            <ul class="submenu-mobile">
+              <li><a href="{{ contact_path | relative_url }}">{% t nav.contact_text %}</a></li>
+              {% if site.data.werken-bij-ons.vacature-open == true %}
+              <li><a href="{{ werken_path | relative_url }}">{% t nav.werken_bij_text %}</a></li>
+              {% endif %}
+            </ul>
+          </li>
+
+          {% comment %} Mobile Language Switcher {% endcomment %}
+          <li class="li-outer language-menu submenu-mobile-toggle4">
+            <a href="#" aria-haspopup="true">
+              {% if site.lang == "nl" %}{% t nav.lang_nl %}{% elsif site.lang == "en" %}{% t nav.lang_en %}{% endif %}
+            </a>
+            <ul class="submenu-mobile" aria-label="submenu">
+              {% assign default_lang_code_mob = site.default_language | default: "nl" %}
+              {% for lang_code_switch_mob in site.languages %}
+              {% if lang_code_switch_mob != site.lang %}
+              {% assign target_page_url_mob = "/" %}
+              {% assign target_lang_prefix_mob = "/" %}
+              {% if lang_code_switch_mob != default_lang_code_mob %}
+              {% assign target_lang_prefix_mob = "/" | append: lang_code_switch_mob | append: "/" %}
+              {% endif %}
+
+              {% if page.collection == 'team' %}
+              {% assign member_slug_mob = page.slug | default: page.name %}
+              {% assign member_base_url_mob = "/team/" | append: member_slug_mob | append: "/" %}
+              {% assign target_page_url_mob = target_lang_prefix_mob | append: member_base_url_mob | replace: "//", "/"
+              %}
+              {% elsif page.namespace %}
+              {% assign source_page_mob = site.pages | where_exp:"item", "item.namespace == page.namespace" | first %}
+              {% if source_page_mob %}
+              {% assign target_base_slug_mob = source_page_mob.permalink %}
+              {% if lang_code_switch_mob != default_lang_code_mob %}
+              {% assign target_permalink_key_mob = "permalink_" | append: lang_code_switch_mob %}
+              {% assign target_base_slug_mob = source_page_mob[target_permalink_key_mob] | default:
+              source_page_mob.permalink %}
+              {% endif %}
+              {% assign raw_final_path_mob = target_lang_prefix_mob | append: target_base_slug_mob %}
+              {% assign target_page_url_mob = raw_final_path_mob | replace: '//', '/' | replace: '//', '/' %}
+              {% else %}
+              {% assign target_page_url_mob = target_lang_prefix_mob | replace: '//', '/' %}
+              {% endif %}
+              {% else %}
+              {% assign target_page_url_mob = target_lang_prefix_mob | replace: '//', '/' %}
+              {% endif %}
+
+              {% capture target_lang_name_mob %}{% if lang_code_switch_mob == "nl" %}{% t nav.lang_nl %}{% elsif
+              lang_code_switch_mob == "en" %}{% t nav.lang_en %}{% endif %}{% endcapture %}
+              <li><a href="{{ target_page_url_mob | relative_url }}">{{ target_lang_name_mob | strip }}</a></li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </li>
+
         </ul>
+
+        {% comment %} Mobile Action Buttons {% endcomment %}
         <p class="btn btn-full btn-menu margin-top-2">
-          <a href="tel:+31650835658"><i class="fa-solid fa-phone"></i> Bel ons</a>
+          <a href="tel:+31650835658"><i class="fa-solid fa-phone"></i> {% t nav.call_us %}</a>
         </p>
         <p class="btn btn-full btn-menu">
-          <a href="mailto: info@humanc.nl"><i class="fa-solid fa-envelope"></i> Mail ons</a>
+          <a href="mailto:info@humanc.nl"><i class="fa-solid fa-envelope"></i> {% t nav.email_us %}</a>
         </p>
-      </div>
+      </div> {% comment %} --- End Mobile Navigation --- {% endcomment %}
     </nav>
   </div>
 </div>

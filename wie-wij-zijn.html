@@ -1,49 +1,90 @@
 ---
 layout: default
-title: Werken bij
+title: Wie wij zijn
+permalink: /wie-wij-zijn/
+permalink_en: /who-we-are/
+namespace: wie-wij-zijn
 ---
 
 {% include button-omhoog.html %}
+
 <div class="wiewijzijn margin-top-6">
   <div class="innercontainer">
-    <h2 class="wiewijzijntitle">{{site.data.home.wie-wij-zijn}}</h2>
+
+    <h2 class="wiewijzijntitle">{% if site.lang == 'en' %}Who we are{% else %}Wie wij zijn{% endif %}</h2>
 
     <div class="team-fotos">
-      {% for member in site.team %} {% unless member.title contains "binnenkort"
-      %}
+
+      {% assign default_lang_code = site.default_language | default: "nl" %}
+
+      {% for member in site.team %}
+      {% assign default_lang_data = member[default_lang_code] %}
+      {% assign current_lang_data = member[site.lang] | default: default_lang_data %}
+
+      {% assign is_binnenkort = false %}
+      {% if default_lang_data.title contains "binnenkort" %}
+      {% assign is_binnenkort = true %}
+      {% endif %}
+
+      {% unless is_binnenkort %}
+      {% assign member_slug = member.slug | default: member.name %}
+      {% assign member_base_url = "/team/" | append: member_slug | append: "/" %}
+      {% assign member_lang_prefix = "/" %}
+      {% if site.lang != default_lang_code %}
+      {% assign member_lang_prefix = "/" | append: site.lang | append: "/" %}
+      {% endif %}
+      {% assign member_final_url = member_lang_prefix | append: member_base_url | replace: "//", "/" %}
+
       <div class="team-foto photo">
-        <a href="/team/{{member.slug}}">
+        <a href="{{ member_final_url }}">
           <div class="photo-wrapper">
-            <img
-              src="{{member.photo_url}}"
-              alt="{{member.photo_description}}"
-              class="photo"
-            />
+            <img src="{{ member.photo_url | relative_url }}"
+              alt="{{ current_lang_data.photo_description | default: current_lang_data.title | escape }}"
+              class="photo" />
           </div>
         </a>
-        <a href="/team/{{member.slug}}">
-          <p class="bold member-name">{{member.title}}</p>
-          <p class="member-function">{{member.function}}</p>
+        <a href="{{ member_final_url }}"> 
+          <p class="bold member-name">{{ current_lang_data.title | default: "Name Missing" }}</p>
+          <p class="member-function">{{ current_lang_data.function | default: "Function Missing" }}</p>
         </a>
       </div>
-      {% endunless %} {% endfor %} {% for member in site.team %} {% if
-      member.title contains "binnenkort" %}
+      {% endunless %}
+      {% endfor %}
+
+      {% for member in site.team %}
+      {% assign default_lang_data = member[default_lang_code] %}
+      {% assign current_lang_data = member[site.lang] | default: default_lang_data %}
+
+      {% assign is_binnenkort = false %}
+      {% if default_lang_data.title contains "binnenkort" %}
+      {% assign is_binnenkort = true %}
+      {% endif %}
+
+      {% if is_binnenkort %}
+      {% assign member_slug = member.slug | default: member.name %}
+      {% assign member_base_url = "/team/" | append: member_slug | append: "/" %}
+      {% assign member_lang_prefix = "/" %}
+      {% if site.lang != default_lang_code %}
+      {% assign member_lang_prefix = "/" | append: site.lang | append: "/" %}
+      {% endif %}
+      {% assign member_final_url = member_lang_prefix | append: member_base_url | replace: "//", "/" %}
+
       <div class="team-foto photo">
-        <a href="/team/{{member.slug}}">
+        <a href="{{ member_final_url }}">
           <div class="photo-wrapper">
-            <img
-              src="{{member.photo_url}}"
-              alt="{{member.photo_description}}"
-              class="photo"
-            />
+            <img src="{{ member.photo_url | relative_url }}"
+              alt="{{ current_lang_data.photo_description | default: current_lang_data.title | escape }}"
+              class="photo" />
           </div>
         </a>
-        <a href="/team/{{member.slug}}">
-          <p class="bold member-name">{{member.title}}</p>
-          <p class="member-function">{{member.function}}</p>
+        <a href="{{ member_final_url }}">
+          <p class="bold member-name">{{ current_lang_data.title | default: "Name Missing" }}</p>
+          <p class="member-function">{{ current_lang_data.function | default: "Function Missing" }}</p>
         </a>
       </div>
-      {% endif %} {% endfor %}
+      {% endif %}
+      {% endfor %}
+
     </div>
   </div>
 </div>

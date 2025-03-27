@@ -7,6 +7,8 @@ const navMenu = document.querySelector(".nav-menu")
 const navUl1 = document.querySelector(".submenu-mobile-toggle1 ")
 const navUl2 = document.querySelector(".submenu-mobile-toggle2 ")
 const navUl3 = document.querySelector(".submenu-mobile-toggle3 ")
+const navUl4 = document.querySelector(".submenu-mobile-toggle4 ")
+
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("is-active");  
@@ -43,18 +45,33 @@ navUl1.addEventListener("click", () => {
   navUl1.classList.toggle("open");
   navUl2.classList.remove("open");
   navUl3.classList.remove("open");
+  navUl4.classList.remove("open");
+
+
 } )
 
 navUl2.addEventListener("click", () => {
   navUl2.classList.toggle("open");
   navUl1.classList.remove("open");
   navUl3.classList.remove("open");
+  navUl4.classList.remove("open");
+
 } )
 
 navUl3.addEventListener("click", () => {
   navUl3.classList.toggle("open");
   navUl1.classList.remove("open");
   navUl2.classList.remove("open");
+  navUl4.classList.remove("open");
+
+} )
+
+navUl4.addEventListener("click", () => {
+  navUl4.classList.toggle("open");
+  navUl1.classList.remove("open");
+  navUl2.classList.remove("open");
+  navUl3.classList.remove("open");
+
 } )
 
 

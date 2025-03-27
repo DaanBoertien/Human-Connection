@@ -5,19 +5,13 @@ permalink: pretty
 collections:
   team:
     output: true
-# timezone: Europe/Amsterdam
 
-# kramdown:
-#   input: Kramdown
-# plugins:
-#   - jekyll-compress-images
+# Language settings
+languages: [ "nl", "en" ]
+default_language: "nl"
+exclude_from_localization: [ "assets", "admin", "js", "css", "images", "fonts" ]
+parallel_localization: true
 
-# compress_images:
-#   images_path: "assets/images/**/*.{gif,png,jpg,jpeg,svg}"
-
-# imageoptim:
-#   pngout: false
-#   svgo: false
-#   verbose: false
-#   oxypng: false
-#   pngcrush: false
+# Add to your plugins list if you have one already
+plugins:
+- jekyll-multiple-languages-plugin

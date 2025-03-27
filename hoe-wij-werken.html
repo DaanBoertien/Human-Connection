@@ -1,6 +1,9 @@
 ---
 layout: default
-title: Hoe wij werken
+title: Hoe wij werken 
+namespace: hoe-wij-werken
+permalink: /hoe-wij-werken/ # Permalink for the default language (nl)
+permalink_en: /how-we-work/ # Permalink for English (en)
 ---
 
 <main>
@@ -8,54 +11,56 @@ title: Hoe wij werken
   <div class="landing landing--werken-bij Lichtblauw">
     <div class="innercontainer innercontainer--werken-bij">
       <div class="landing-content">
-        <h1>{{site.data.hoe-wij-werken.title}}</h1>
-        {{site.data.hoe-wij-werken.landing-tekst | markdownify}}
+        <h1>{% t hoe-wij-werken.title %}</h1>
+        {% capture landing_text %}{% t hoe-wij-werken.landing-tekst %}{% endcapture %}
+        {{ landing_text | markdownify }}
       </div>
     </div>
 
     <div class="img-overlay-wrap">
-      <img
-        class="landing-image"
-        src="{{site.data.werken-bij-ons.pagina-afbeelding}}"
-        alt=""
-      />
-      {% include svg1-lightblue.html %} {% include svg1-desktop-lightblue.html
-      %}
+      <img class="landing-image" src="{% t hoe-wij-werken.pagina-afbeelding %}" alt="" />
+      {% include svg1-lightblue.html %} {% include svg1-desktop-lightblue.html %}
     </div>
   </div>
   <div class="vision p-breed">
-    <h2>{{site.data.hoe-wij-werken.waar-wij-voor-staan}}</h2>
-    {{site.data.hoe-wij-werken.waar-wijvoor-staan-tekst | markdownify}}
+    <h2>{% t hoe-wij-werken.waar-wij-voor-staan %}</h2>
+    {% capture waar_text %}{% t hoe-wij-werken.waar-wijvoor-staan-tekst %}{% endcapture %}
+    {{ waar_text | markdownify }}
   </div>
   <div class="wijzijn">
     <div class="innercontainer">
       <div class="wijzijn-flex">
         <div class="waardes">
-          <img src="{{site.data.hoe-wij-werken.waarde-1-afbeelding}}" alt="" />
-          <h3>{{site.data.hoe-wij-werken.waarde-1-titel}}</h3>
-          {{site.data.hoe-wij-werken.waarde-1-tekst | markdownify}}
+          <img src="{% t hoe-wij-werken.waarde-1-afbeelding %}" alt="" />
+          <h3>{% t hoe-wij-werken.waarde-1-titel %}</h3>
+          {% capture w1_text %}{% t hoe-wij-werken.waarde-1-tekst %}{% endcapture %}
+          {{ w1_text | markdownify }}
         </div>
         <div class="waardes">
-          <img src="{{site.data.hoe-wij-werken.waarde-2-afbeelding}}" alt="" />
-          <h3>{{site.data.hoe-wij-werken.waarde-2-titel}}</h3>
-          {{site.data.hoe-wij-werken.waarde-2-tekst | markdownify}}
+          <img src="{% t hoe-wij-werken.waarde-2-afbeelding %}" alt="" />
+          <h3>{% t hoe-wij-werken.waarde-2-titel %}</h3>
+          {% capture w2_text %}{% t hoe-wij-werken.waarde-2-tekst %}{% endcapture %}
+          {{ w2_text | markdownify }}
         </div>
         <div class="waardes">
-          <img src="{{site.data.hoe-wij-werken.waarde-3-afbeelding}}" alt="" />
-          <h3>{{site.data.hoe-wij-werken.waarde-3-titel}}</h3>
-          {{site.data.hoe-wij-werken.waarde-3-tekst | markdownify}}
+          <img src="{% t hoe-wij-werken.waarde-3-afbeelding %}" alt="" />
+          <h3>{% t hoe-wij-werken.waarde-3-titel %}</h3>
+          {% capture w3_text %}{% t hoe-wij-werken.waarde-3-tekst %}{% endcapture %}
+          {{ w3_text | markdownify }}
         </div>
       </div>
       <div class="wijzijn-flex wijzijn-flex-2">
         <div class="waardes waarde-4">
-          <img src="{{site.data.hoe-wij-werken.waarde-4-afbeelding}}" alt="" />
-          <h3>{{site.data.hoe-wij-werken.waarde-4-titel}}</h3>
-          {{site.data.hoe-wij-werken.waarde-4-tekst | markdownify}}
+          <img src="{% t hoe-wij-werken.waarde-4-afbeelding %}" alt="" />
+          <h3>{% t hoe-wij-werken.waarde-4-titel %}</h3>
+          {% capture w4_text %}{% t hoe-wij-werken.waarde-4-tekst %}{% endcapture %}
+          {{ w4_text | markdownify }}
         </div>
         <div class="waardes">
-          <img src="{{site.data.hoe-wij-werken.waarde-5-afbeelding}}" alt="" />
-          <h3>{{site.data.hoe-wij-werken.waarde-5-titel}}</h3>
-          {{site.data.hoe-wij-werken.waarde-5-tekst | markdownify}}
+          <img src="{% t hoe-wij-werken.waarde-5-afbeelding %}" alt="" />
+          <h3>{% t hoe-wij-werken.waarde-5-titel %}</h3>
+          {% capture w5_text %}{% t hoe-wij-werken.waarde-5-tekst %}{% endcapture %}
+          {{ w5_text | markdownify }}
         </div>
       </div>
     </div>
