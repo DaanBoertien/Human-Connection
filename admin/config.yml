@@ -1,217 +1,128 @@
-# --- Start: Keep backend, top-level i18n, media_folder, public_folder as before ---
 backend:
   name: git-gateway
   branch: dev
 
-i18n:
-  locales: [ nl, en ]
-  default_locale: nl
-  structure: multiple_files
-
 media_folder: assets/images/upload/
-public_folder: /assets/images/upload/
-# --- End: Keep backend, top-level i18n, media_folder, public_folder as before ---
 
 collections:
-# --- Team Collection (Keep as before) ---
 - name: "team"
-  label: "Team Members"
-  label_singular: "Team Member"
-  folder: "_team/{{locale}}/"
+  label: "Teamleden"
+  label_singular: "Teamlid"
+  folder: "_team/"
   create: true
-  i18n: true
-  structure: folder
   summary: "{{title}}"
   slug: "{{title}}"
   editor:
     preview: false
   fields:
-  # ... (team fields remain the same) ...
   - { label: "Layout", name: "layout", widget: "hidden", default: "teammembers" }
-  - { label: "Name", name: "title", widget: "string", i18n: true }
-  - { label: "Function", name: "function", widget: "string", i18n: true }
-  - { label: "Email Address", name: "email", widget: "string" }
-  - { label: "Phone Number", name: "phonenumber", widget: "string" }
-  - { label: "Photo", name: "photo_url", widget: "image" }
-  - { label: "Photo Description", name: "photo_description", widget: "string", i18n: true }
-  - { label: "Summary", name: "summary", widget: "markdown", i18n: true }
-  - { label: "Explanation", name: "uitleg", widget: "markdown", i18n: true }
-  - label: "Background Color"
+  - { label: "Naam", name: "title", widget: "string" }
+  - { label: "Functie", name: "function", widget: "string" }
+  - { label: "Emailadres", name: "email", widget: "string" }
+  - { label: "Telefoonnummer", name: "phonenumber", widget: "string" }
+  - { label: "Foto", name: "photo_url", widget: "image" }
+  - { label: "Omschrijving foto", name: "photo_description", widget: "string" }
+  - { label: "Omschrijving", name: "summary", widget: "markdown" }
+  - { label: "Uitleg", name: "uitleg", widget: "markdown" }
+  - label: "Achtergrondkleur"
     name: "bg_color"
     widget: "select"
     options: [ "Donkerblauw", "Lichtblauw", "Groen", "Grijs", "Geel", "Rood" ]
-    i18n: false
-  - { label: "Card Title", name: "card_title", widget: "string", i18n: true }
-  - { label: "Soundbites", name: "soundbites", widget: "string", i18n: true }
-  - { label: "Soundbites Text", name: "soundbites_text", widget: "text", i18n: true }
+  - { label: "Titel", name: "card_title", widget: "string" }
+  - { label: "Soundbites", name: "soundbites", widget: "string" }
+  - { label: "Soundbites Tekst", name: "soundbites_text", widget: "text" }
 
-# --- Site Content (Files Collection - Reverted i18n location) ---
-- name: "site_content"
-  label: "Site Content"
-  # i18n: true <-- REMOVED from collection level
-  # Keep identifier_field to help UI differentiate items
-  identifier_field: section_key
+- name: "i18n"
+  label: "Translations"
   files:
-  # --- Navigation ---
-  - name: "navigation"
-    label: "Navigation"
-    file: "_i18n/{{locale}}.yml"
-    # Add i18n: true back to EACH file entry
-    i18n: true
+  - name: "dutch"
+    label: "Dutch (Nederlands)"
+    file: "_i18n/nl.yml"
     editor:
       preview: false
     fields:
-    - { label: "Section Key", name: "section_key", widget: "hidden", default: "nav" }
-    # ... (navigation fields remain the same) ...
-    - { label: "Home URL", name: "home_url", widget: "string", i18n: "duplicate" }
-    - { label: "Logo Alt Text", name: "logo_alt_text", widget: "string", i18n: true }
-    - { label: "Who We Are URL", name: "wie_wij_zijn_url", widget: "string", i18n: "duplicate" }
-    - { label: "Who We Are Text", name: "wie_wij_zijn_text", widget: "string", i18n: true }
-    - { label: "Team Base URL", name: "team_base_url", widget: "string", i18n: "duplicate" }
-    - { label: "What We Do Text", name: "wat_wij_doen_text", widget: "string", i18n: true }
-    - { label: "How We Work URL", name: "hoe_wij_werken_url", widget: "string", i18n: "duplicate" }
-    - { label: "How We Work Text", name: "hoe_wij_werken_text", widget: "string", i18n: true }
-    - { label: "What We Do URL", name: "wat_wij_doen_url", widget: "string", i18n: "duplicate" }
-    - { label: "CTP Contact URL", name: "ctp-contact", widget: "string", i18n: "duplicate" }
-    - { label: "Connect to Perform URL", name: "connect_to_perform_url", widget: "string", i18n: "duplicate" }
-    - { label: "Connect to Perform Text", name: "connect_to_perform_text", widget: "string", i18n: true }
-    - { label: "Confidential Advisor URL", name: "vertrouwenspersoon_url", widget: "string", i18n: "duplicate" }
-    - { label: "Confidential Advisor Text", name: "vertrouwenspersoon_text", widget: "string", i18n: true }
-    - { label: "Coaching URL", name: "coaching_url", widget: "string", i18n: "duplicate" }
-    - { label: "Coaching Text", name: "coaching_text", widget: "string", i18n: true }
-    - { label: "Contact Text", name: "contact_text", widget: "string", i18n: true }
-    - { label: "Contact URL", name: "contact_url", widget: "string", i18n: "duplicate" }
-    - { label: "Work With Us URL", name: "werken_bij_url", widget: "string", i18n: "duplicate" }
-    - { label: "Work With Us Text", name: "werken_bij_text", widget: "string", i18n: true }
-    - { label: "Language NL Text", name: "lang_nl", widget: "string", i18n: true }
-    - { label: "Language EN Text", name: "lang_en", widget: "string", i18n: true }
-    - { label: "Call Us Text", name: "call_us", widget: "string", i18n: true }
-    - { label: "Email Us Text", name: "email_us", widget: "string", i18n: true }
-
-  # --- Home Page ---
-  - name: "home"
-    label: "Home Page"
-    file: "_i18n/{{locale}}.yml"
-    # Add i18n: true back
-    i18n: true
-    editor:
-      preview: false
-    fields:
-    - { label: "Section Key", name: "section_key", widget: "hidden", default: "home" }
-    # ... (home fields remain the same) ...
-    - { label: "Slogan", name: "slogan", widget: "string", i18n: true }
-    - { label: "Landing Text", name: "landing-tekt", widget: "markdown", i18n: true }
-    - { label: "Page Image", name: "pagina-afbeelding", widget: "image", i18n: "duplicate" } # Assumes same image
-    - { label: "Mission Title", name: "waar-wij-voor-staan", widget: "string", i18n: true }
-    - { label: "Mission Text", name: "waar-wijvoor-staan-tekst", widget: "markdown", i18n: true }
-    - { label: "Value 1 Title", name: "waarde-1-titel", widget: "string", i18n: true }
-    - { label: "Value 1 Text", name: "waarde-1-tekst", widget: "markdown", i18n: true }
-    - { label: "Value 1 Image", name: "waarde-1-afbeelding", widget: "image", i18n: "duplicate" }
-    - { label: "Value 2 Title", name: "waarde-2-titel", widget: "string", i18n: true }
-    - { label: "Value 2 Text", name: "waarde-2-tekst", widget: "markdown", i18n: true }
-    - { label: "Value 2 Image", name: "waarde-2-afbeelding", widget: "image", i18n: "duplicate" }
-    - { label: "Value 3 Title", name: "waarde-3-titel", widget: "string", i18n: true }
-    - { label: "Value 3 Text", name: "waarde-3-tekst", widget: "markdown", i18n: true }
-    - { label: "Value 3 Image", name: "waarde-3-afbeelding", widget: "image", i18n: "duplicate" }
-    - { label: "What We Do Title", name: "wat-wij-doen", widget: "string", i18n: true }
-    - { label: "What We Do Text", name: "wat-wij-doen-tekst", widget: "markdown", i18n: true }
-    - { label: "Service 1 Title", name: "wat-wij-doen-1-titel", widget: "string", i18n: true }
-    - { label: "Service 1 Text", name: "wat-wij-doen-1-tekst", widget: "markdown", i18n: true }
-    - { label: "Service 1 Contact", name: "wat-wij-doen-1-contact", widget: "markdown", i18n: true } # Check if Markdown needed, might be simple string per contact
-    - { label: "Service 1 Button", name: "wat-wij-doen-1-button", widget: "string", i18n: true }
-    - { label: "Service 1 Link", name: "wat-wij-doen-1-link", widget: "string", i18n: "duplicate" } # Assumes link is same relative path
-    - { label: "Service 2 Title", name: "wat-wij-doen-2-titel", widget: "string", i18n: true }
-    - { label: "Service 2 Text", name: "wat-wij-doen-2-tekst", widget: "markdown", i18n: true }
-    - { label: "Service 2 Contact", name: "wat-wij-doen-2-contact", widget: "markdown", i18n: true }
-    - { label: "Service 2 Button", name: "wat-wij-doen-2-button", widget: "string", i18n: true }
-    - { label: "Service 2 Link", name: "wat-wij-doen-2-link", widget: "string", i18n: "duplicate" }
-    - { label: "Service 3 Title", name: "wat-wij-doen-3-titel", widget: "string", i18n: true }
-    - { label: "Service 3 Text", name: "wat-wij-doen-3-tekst", widget: "markdown", i18n: true }
-    - { label: "Service 3 Contact", name: "wat-wij-doen-3-contact", widget: "markdown", i18n: true }
-    - { label: "Service 3 Button", name: "wat-wij-doen-3-button", widget: "string", i18n: true }
-    - { label: "Service 3 Link", name: "wat-wij-doen-3-link", widget: "string", i18n: "duplicate" }
-    - { label: "How We Work Button (on Home)", name: "hoe-wij-werken", widget: "string", i18n: true } # Different from 'How We Work' page title
-    - { label: "Who We Are Title (on Home)", name: "wie-wij-zijn", widget: "string", i18n: true }
-    - { label: "Call To Action Question", name: "actievraag", widget: "string", i18n: true }
-    - { label: "Call To Action Subtitle", name: "actievraag-subtitel", widget: "string", i18n: true }
-    - { label: "Call To Action Button", name: "actievraag-button", widget: "string", i18n: true }
-    - { label: "Partners Title", name: "partners-titel", widget: "string", i18n: true }
-    - label: "Partner Logos"
-      name: "logos"
-      widget: "list"
-      i18n: true # The list itself might differ per language, or just the names
+    - label: "Global Settings"
+      name: "global"
+      widget: "object"
       fields:
-      - { label: "Company Name", name: "naam-bedrijf", widget: "string", i18n: true } # Allow name translation
-      - { label: "Company Logo", name: "logo-bedrijf", widget: "image", i18n: "duplicate" } # Assume same logo
-    - { label: "Contact Title", name: "contact-titel", widget: "string", i18n: true }
-    - { label: "Contact Description", name: "contact-omschrijving", widget: "markdown", i18n: true }
-    - { label: "Contact Form Label Name", name: "contact-naam", widget: "string", i18n: true }
-    - { label: "Contact Form Label Email", name: "contact-email", widget: "string", i18n: true }
-    - { label: "Contact Form Label Subject", name: "contact-onderwerp", widget: "string", i18n: true }
-    - { label: "Contact Form Label Message", name: "contact-bericht", widget: "string", i18n: true }
-    - { label: "Contact Form Button Text", name: "contact-button", widget: "string", i18n: true }
-    # Adding missing contact form fields from nl.yml
-    - { label: "Contact Form Placeholder", name: "contact_placeholder", widget: "string", i18n: true }
-    - { label: "Contact Form Label Name (Required)", name: "contact_label_naam", widget: "string", i18n: true }
-    - { label: "Contact Form Label Subject (Required)", name: "contact_label_onderwerp", widget: "string", i18n: true }
-    - { label: "Contact Form Label Email (Required)", name: "contact_label_email", widget: "string", i18n: true }
-    - { label: "Contact Form Label Message (Required)", name: "contact_label_bericht", widget: "string", i18n: true }
-    - { label: "Contact Form Submit Button (duplicate)", name: "contact_submit_button", widget: "string", i18n: true } # Duplicates contact-button? Choose one.
-    - { label: "Contact Org Name", name: "contact_org_name", widget: "string", i18n: "duplicate" } # Company name
-    - { label: "Visit Us Invitation", name: "uitnodiging", widget: "string", i18n: true }
-    - { label: "Address", name: "adres", widget: "string", i18n: "duplicate" }
-    - { label: "Postal Code", name: "postcode", widget: "string", i18n: "duplicate" }
-    - { label: "Office Image", name: "afbeelding-kantoor", widget: "image", i18n: "duplicate" }
+      - { label: "Nederlands Label", name: "nederlands", widget: "string" }
+      - { label: "English Label", name: "english", widget: "string" }
+      - { label: "Site Title", name: "site_title", widget: "string" }
 
-  # --- How We Work Page ---
-  - name: "how-we-work"
-    label: "How We Work Page"
-    file: "_i18n/{{locale}}.yml"
-    # Add i18n: true back
-    i18n: true
+    - label: "Navigation"
+      name: "nav"
+      widget: "object"
+      fields:
+      - { label: "Home URL", name: "home_url", widget: "string" }
+      - { label: "Logo Alt Text", name: "logo_alt_text", widget: "string" }
+      - { label: "Who We Are URL", name: "wie_wij_zijn_url", widget: "string" }
+      - { label: "Who We Are Text", name: "wie_wij_zijn_text", widget: "string" }
+      - { label: "Team Base URL", name: "team_base_url", widget: "string" }
+      - { label: "What We Do Text", name: "wat_wij_doen_text", widget: "string" }
+      - { label: "How We Work URL", name: "hoe_wij_werken_url", widget: "string" }
+      - { label: "How We Work Text", name: "hoe_wij_werken_text", widget: "string" }
+      - { label: "What We Do URL", name: "wat_wij_doen_url", widget: "string" }
+      - { label: "CTP Contact URL", name: "ctp-contact", widget: "string" }
+      - { label: "Connect to Perform URL", name: "connect_to_perform_url", widget: "string" }
+      - { label: "Connect to Perform Text", name: "connect_to_perform_text", widget: "string" }
+      - { label: "Confidential Advisor URL", name: "vertrouwenspersoon_url", widget: "string" }
+      - { label: "Confidential Advisor Text", name: "vertrouwenspersoon_text", widget: "string" }
+      - { label: "Coaching URL", name: "coaching_url", widget: "string" }
+      - { label: "Coaching Text", name: "coaching_text", widget: "string" }
+      - { label: "Contact Text", name: "contact_text", widget: "string" }
+      - { label: "Contact URL", name: "contact_url", widget: "string" }
+      - { label: "Work With Us URL", name: "werken_bij_url", widget: "string" }
+      - { label: "Work With Us Text", name: "werken_bij_text", widget: "string" }
+      - { label: "Dutch Language", name: "lang_nl", widget: "string" }
+      - { label: "English Language", name: "lang_en", widget: "string" }
+      - { label: "Call Us", name: "call_us", widget: "string" }
+      - { label: "Email Us", name: "email_us", widget: "string" }
+
+    - label: "Home Page"
+      name: "home"
+      widget: "object"
+      fields:
+      - { label: "Slogan", name: "slogan", widget: "string" }
+      - { label: "Landing Text", name: "landing-tekt", widget: "markdown" }
+      - { label: "Page Image", name: "pagina-afbeelding", widget: "string" }
+      # Add all the other home page fields here
+
+    - label: "Coaching Page"
+      name: "coaching"
+      widget: "object"
+      fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
+      - { label: "Page Image", name: "pagina-afbeelding", widget: "string" }
+      - { label: "Page Title", name: "pagina-titel", widget: "string" }
+      - { label: "Coaching Text", name: "coaching-tekst", widget: "markdown" }
+    # Add similar blocks for each of your pages
+    # - label: "How We Work Page"
+    #   name: "hoe-wij-werken"
+    #   ...
+
+  - name: "english"
+    label: "English"
+    file: "_i18n/en.yml"
     editor:
       preview: false
     fields:
-    - { label: "Section Key", name: "section_key", widget: "hidden", default: "hoe-wij-werken" }
-    # ... (how-we-work fields remain the same) ...
-    - { label: "Page Title", name: "title", widget: "string", i18n: true }
-    - { label: "Landing Text", name: "landing-tekst", widget: "markdown", i18n: true }
-    - { label: "Page Image", name: "pagina-afbeelding", widget: "image", i18n: "duplicate" }
-    - { label: "Methods Title", name: "waar-wij-voor-staan", widget: "string", i18n: true } # Reusing key, label accordingly
-    - { label: "Methods Text", name: "waar-wijvoor-staan-tekst", widget: "markdown", i18n: true } # Reusing key
-    - { label: "Step 1 Title", name: "waarde-1-titel", widget: "string", i18n: true } # Reusing key
-    - { label: "Step 1 Text", name: "waarde-1-tekst", widget: "markdown", i18n: true } # Reusing key
-    - { label: "Step 1 Image", name: "waarde-1-afbeelding", widget: "image", required: false, i18n: "duplicate" } # Reusing key
-    - { label: "Step 2 Title", name: "waarde-2-titel", widget: "string", i18n: true } # Reusing key
-    - { label: "Step 2 Text", name: "waarde-2-tekst", widget: "markdown", i18n: true } # Reusing key
-    - { label: "Step 2 Image", name: "waarde-2-afbeelding", widget: "image", required: false, i18n: "duplicate" } # Reusing key
-    - { label: "Step 3 Title", name: "waarde-3-titel", widget: "string", i18n: true } # Reusing key
-    - { label: "Step 3 Text", name: "waarde-3-tekst", widget: "markdown", i18n: true } # Reusing key
-    - { label: "Step 3 Image", name: "waarde-3-afbeelding", widget: "image", required: false, i18n: "duplicate" } # Reusing key
-    - { label: "Step 4 Title", name: "waarde-4-titel", widget: "string", i18n: true }
-    - { label: "Step 4 Text", name: "waarde-4-tekst", widget: "markdown", i18n: true }
-    - { label: "Step 4 Image", name: "waarde-4-afbeelding", widget: "image", required: false, i18n: "duplicate" }
-    - { label: "Step 5 Title", name: "waarde-5-titel", widget: "string", i18n: true }
-    - { label: "Step 5 Text", name: "waarde-5-tekst", widget: "markdown", i18n: true }
-    - { label: "Step 5 Image", name: "waarde-5-afbeelding", widget: "image", required: false, i18n: "duplicate" }
+    - label: "Global Settings"
+      name: "global"
+      widget: "object"
+      fields:
+      - { label: "Dutch Label", name: "nederlands", widget: "string" }
+      - { label: "English Label", name: "english", widget: "string" }
+      - { label: "Site Title", name: "site_title", widget: "string" }
 
-  # --- Repeat for other file entries (Work With Us, Connect to Perform, etc.) ---
-  # Ensure i18n: true is added back to each entry and removed from the collection level.
-  # Example for Coaching:
-  - name: "coaching"
-    label: "Coaching Page"
-    file: "_i18n/{{locale}}.yml"
-    # Add i18n: true back
-    i18n: true
-    editor:
-      preview: false
-    fields:
-    - { label: "Section Key", name: "section_key", widget: "hidden", default: "coaching" }
-    # ... (coaching fields) ...
-    - { label: "Page Title (Meta)", name: "title", widget: "string", i18n: true }
-    - { label: "Landing Text", name: "landing-tekst", widget: "markdown", i18n: true }
-    - { label: "Page Image", name: "pagina-afbeelding", widget: "image", i18n: "duplicate" }
-    - { label: "Page Title (Header)", name: "pagina-titel", widget: "string", i18n: true }
-    - { label: "Main Text", name: "coaching-tekst", widget: "markdown", i18n: true }
-  # --- Add other entries like 'werken-bij', 'connect-to-perform', etc. following the same pattern ---
-  # Remember to add i18n: true to each and include the section_key field
+    # Copy the same structure from the Dutch translation,
+    # but adjust field labels to indicate these are English translations
+
+    # For example:
+    - label: "Navigation (English)"
+      name: "nav"
+      widget: "object"
+      fields:
+      - { label: "Home URL", name: "home_url", widget: "string" }
+      - { label: "Logo Alt Text", name: "logo_alt_text", widget: "string" }
+      # ...etc
