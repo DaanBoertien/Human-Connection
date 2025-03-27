@@ -35,9 +35,6 @@ collections:
 - name: "translations"
   label: "Translations"
   files:
-- name: "translations"
-  label: "Translations"
-  files:
   - name: "dutch"
     label: "Nederlands"
     file: "_i18n/nl.yml"
