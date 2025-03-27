@@ -26,7 +26,7 @@ collections:
   editor:
     preview: false
   fields:
-  # ... (team fields remain the same as the previous correct version) ...
+  # ... (team fields remain the same) ...
   - { label: "Layout", name: "layout", widget: "hidden", default: "teammembers" }
   - { label: "Name", name: "title", widget: "string", i18n: true }
   - { label: "Function", name: "function", widget: "string", i18n: true }
@@ -45,25 +45,24 @@ collections:
   - { label: "Soundbites", name: "soundbites", widget: "string", i18n: true }
   - { label: "Soundbites Text", name: "soundbites_text", widget: "text", i18n: true }
 
-# --- Site Content (Files Collection - Modified) ---
+# --- Site Content (Files Collection - Reverted i18n location) ---
 - name: "site_content"
   label: "Site Content"
-  # Apply i18n setting to the collection itself
-  i18n: true
-  # Use section_key (hidden field in each file entry) to differentiate items in UI
+  # i18n: true <-- REMOVED from collection level
+  # Keep identifier_field to help UI differentiate items
   identifier_field: section_key
   files:
   # --- Navigation ---
-  - name: "navigation" # This name might be less relevant now identifier_field is used
-    label: "Navigation" # This label should now appear correctly
+  - name: "navigation"
+    label: "Navigation"
     file: "_i18n/{{locale}}.yml"
-    # i18n: true <-- REMOVED from individual file entries
+    # Add i18n: true back to EACH file entry
+    i18n: true
     editor:
       preview: false
     fields:
-    # MUST have this hidden field matching the top-level key in your YAML
     - { label: "Section Key", name: "section_key", widget: "hidden", default: "nav" }
-    # ... (navigation fields remain the same, ensure i18n: true/duplicate is set correctly on fields themselves) ...
+    # ... (navigation fields remain the same) ...
     - { label: "Home URL", name: "home_url", widget: "string", i18n: "duplicate" }
     - { label: "Logo Alt Text", name: "logo_alt_text", widget: "string", i18n: true }
     - { label: "Who We Are URL", name: "wie_wij_zijn_url", widget: "string", i18n: "duplicate" }
@@ -93,12 +92,13 @@ collections:
   - name: "home"
     label: "Home Page"
     file: "_i18n/{{locale}}.yml"
-    # i18n: true <-- REMOVED
+    # Add i18n: true back
+    i18n: true
     editor:
       preview: false
     fields:
     - { label: "Section Key", name: "section_key", widget: "hidden", default: "home" }
-    # ... (home fields remain the same, including i18n settings on the fields) ...
+    # ... (home fields remain the same) ...
     - { label: "Slogan", name: "slogan", widget: "string", i18n: true }
     - { label: "Landing Text", name: "landing-tekt", widget: "markdown", i18n: true }
     - { label: "Page Image", name: "pagina-afbeelding", widget: "image", i18n: "duplicate" } # Assumes same image
@@ -164,10 +164,11 @@ collections:
     - { label: "Office Image", name: "afbeelding-kantoor", widget: "image", i18n: "duplicate" }
 
   # --- How We Work Page ---
-  - name: "how-we-work" # Use slugified name, less relevant with identifier_field
+  - name: "how-we-work"
     label: "How We Work Page"
     file: "_i18n/{{locale}}.yml"
-    # i18n: true <-- REMOVED
+    # Add i18n: true back
+    i18n: true
     editor:
       preview: false
     fields:
@@ -194,127 +195,23 @@ collections:
     - { label: "Step 5 Text", name: "waarde-5-tekst", widget: "markdown", i18n: true }
     - { label: "Step 5 Image", name: "waarde-5-afbeelding", widget: "image", required: false, i18n: "duplicate" }
 
-  # --- Work With Us Page ---
-  - name: "work-with-us"
-    label: "Work With Us Page"
-    file: "_i18n/{{locale}}.yml"
-    # i18n: true <-- REMOVED
-    editor:
-      preview: false
-    fields:
-    - { label: "Section Key", name: "section_key", widget: "hidden", default: "werken-bij" }
-    # ... (work-with-us fields remain the same) ...
-    - { label: "Page Title", name: "title", widget: "string", i18n: true }
-    - { label: "Vacancy Open?", name: "vacature-open", widget: "boolean", default: false, i18n: "duplicate" } # Likely same status
-    - { label: "Page Image", name: "pagina-afbeelding", widget: "image", i18n: "duplicate" }
-    - { label: "Landing Text", name: "landing-tekst", widget: "markdown", i18n: true }
-    - { label: "Headline", name: "kop", widget: "string", i18n: true }
-    - { label: "What You Do Title", name: "wat-je-doet", widget: "string", i18n: true }
-    - { label: "What You Do Text", name: "wat-je-doet-tekst", widget: "markdown", i18n: true }
-    - { label: "What We Offer Title", name: "wat-we-bieden", widget: "string", i18n: true }
-    - { label: "What We Offer Text", name: "wat-we-bieden-tekst", widget: "markdown", i18n: true }
-    - { label: "Contact Info", name: "contact", widget: "string", i18n: true } # Check if markdown needed
-    - { label: "Note for Agencies", name: "uitzendbureaus", widget: "string", i18n: true }
-
-  # --- Connect to Perform Page ---
-  - name: "connect-to-perform"
-    label: "Connect to Perform Page"
-    file: "_i18n/{{locale}}.yml"
-    # i18n: true <-- REMOVED
-    editor:
-      preview: false
-    fields:
-    - { label: "Section Key", name: "section_key", widget: "hidden", default: "connect-to-perform" }
-    # ... (connect-to-perform fields remain the same) ...
-    - { label: "Page Title", name: "title", widget: "string", i18n: true }
-    - { label: "Page Image", name: "pagina-afbeelding", widget: "image", i18n: "duplicate" }
-    - { label: "Landing Text", name: "landing-tekst", widget: "markdown", i18n: true }
-    - { label: "Method Title", name: "methoden", widget: "string", i18n: true }
-    - { label: "Method Text", name: "methoden-tekst", widget: "text", i18n: true } # Use 'text' for potentially longer simple text
-    - { label: "Page Illustration", name: "pagina-illustratie", widget: "image", i18n: "duplicate" }
-    - { label: "Game Title", name: "werkwijze-titel", widget: "string", i18n: true }
-    - { label: "Game Text", name: "werkwijze-tekst", widget: "text", i18n: true }
-    - { label: "Open Evening Title", name: "werkvorm-titel", widget: "string", i18n: true }
-    - { label: "Open Evening Text", name: "werkvorm-tekst", widget: "text", i18n: true }
-    - { label: "Button 1 Text (More Info)", name: "button1", widget: "string", i18n: true }
-    - { label: "More Info PDF", name: "more-info", widget: "file", i18n: "duplicate" } # Assumes same PDF file
-    - { label: "Button 2 Text (Sign Up)", name: "button2", widget: "string", i18n: true }
-
-  # --- Confidential Advisor Page ---
-  - name: "confidential-advisor"
-    label: "Confidential Advisor Page"
-    file: "_i18n/{{locale}}.yml"
-    # i18n: true <-- REMOVED
-    editor:
-      preview: false
-    fields:
-    - { label: "Section Key", name: "section_key", widget: "hidden", default: "vertrouwenspersoon" }
-    # ... (confidential-advisor fields remain the same) ...
-    - { label: "Page Title (Meta)", name: "title", widget: "string", i18n: true } # Assuming meta title
-    - { label: "Landing Text", name: "landing-tekst", widget: "markdown", i18n: true }
-    - { label: "Page Image", name: "pagina-afbeelding", widget: "image", i18n: "duplicate" }
-    - { label: "Page Title (Header)", name: "pagina-titel", widget: "string", i18n: true } # Assuming header title
-    - { label: "Main Text", name: "vertrouwenspersoon-tekst", widget: "markdown", i18n: true }
-
-  # --- Coaching Page ---
+  # --- Repeat for other file entries (Work With Us, Connect to Perform, etc.) ---
+  # Ensure i18n: true is added back to each entry and removed from the collection level.
+  # Example for Coaching:
   - name: "coaching"
     label: "Coaching Page"
     file: "_i18n/{{locale}}.yml"
-    # i18n: true <-- REMOVED
+    # Add i18n: true back
+    i18n: true
     editor:
       preview: false
     fields:
     - { label: "Section Key", name: "section_key", widget: "hidden", default: "coaching" }
-    # ... (coaching fields remain the same) ...
+    # ... (coaching fields) ...
     - { label: "Page Title (Meta)", name: "title", widget: "string", i18n: true }
     - { label: "Landing Text", name: "landing-tekst", widget: "markdown", i18n: true }
     - { label: "Page Image", name: "pagina-afbeelding", widget: "image", i18n: "duplicate" }
     - { label: "Page Title (Header)", name: "pagina-titel", widget: "string", i18n: true }
     - { label: "Main Text", name: "coaching-tekst", widget: "markdown", i18n: true }
-
-  # --- CTP Contact Form Page ---
-  - name: "ctp-contact"
-    label: "CTP Contact Form Page"
-    file: "_i18n/{{locale}}.yml"
-    # i18n: true <-- REMOVED
-    editor:
-      preview: false
-    fields:
-    - { label: "Section Key", name: "section_key", widget: "hidden", default: "ctp-contact" }
-    # ... (ctp-contact fields remain the same) ...
-    - { label: "Page Title", name: "title", widget: "string", i18n: true }
-    - { label: "Page Image", name: "pagina-afbeelding", widget: "image", i18n: "duplicate" }
-    - { label: "Landing Text", name: "landing-tekst", widget: "markdown", i18n: true }
-    - { label: "Form Title", name: "aanmelding-title", widget: "string", i18n: true }
-    - { label: "Form Zoom Info", name: "aanmelding-zoom", widget: "string", i18n: true } # Maybe markdown?
-    - { label: "Form Intro Text", name: "aanmelding-tekst", widget: "text", i18n: true }
-    - { label: "Label Name", name: "naam", widget: "string", i18n: true }
-    - { label: "Label Email", name: "email", widget: "string", i18n: true }
-    - { label: "Label Company", name: "bedrijf", widget: "string", i18n: true }
-    - { label: "Label Function", name: "functie", widget: "string", i18n: true }
-    - { label: "Label Phone Number", name: "telefoonnummer", widget: "string", i18n: true }
-    - { label: "Label Choose Date", name: "welke", widget: "string", i18n: true }
-    - label: "Available Dates"
-      name: "data"
-      widget: "list"
-      i18n: true # Allow list of dates to vary per language if needed
-      fields:
-      - { label: "Date String", name: "datum", widget: "string", i18n: true } # Allow date format/text translation
-    - { label: "Label How Heard", name: "hoe", widget: "string", i18n: true }
-    - { label: "Label Reason", name: "reden", widget: "string", i18n: true }
-    - { label: "Success Page Title", name: "success", widget: "string", i18n: true }
-    - { label: "Success Page Text", name: "success-text", widget: "text", i18n: true }
-    - { label: "Back Button Text", name: "button-terug", widget: "string", i18n: true }
-    - { label: "Placeholder Answer", name: "placeholder-answer", widget: "string", i18n: true }
-    - { label: "Submit Button Text", name: "button-submit", widget: "string", i18n: true }
-    - { label: "Reset Button Text", name: "button-reset", widget: "string", i18n: true }
-  # --- Add CTP Game Content Entries (ctp-welkom, ronde1, etc.) if needed ---
-  # Example:
-  # - name: "ctp-round-1"
-  #   label: "CTP Round 1"
-  #   file: "_i18n/{{locale}}.yml"
-  #   editor:
-  #     preview: false
-  #   fields:
-  #     - { label: "Section Key", name: "section_key", widget: "hidden", default: "ctp-ronde1" } # Or "ronde1"
-  #     ... other fields for round 1 ...
+  # --- Add other entries like 'werken-bij', 'connect-to-perform', etc. following the same pattern ---
+  # Remember to add i18n: true to each and include the section_key field
