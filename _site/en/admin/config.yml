@@ -55,7 +55,7 @@ collections:
       fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "string" }
+      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
       - { label: "Page Title", name: "pagina-titel", widget: "string" }
       - { label: "Coaching Text", name: "coaching-tekst", widget: "markdown" }
 
@@ -94,18 +94,18 @@ collections:
       fields:
       - { label: "Slogan", name: "slogan", widget: "string" }
       - { label: "Landing Text", name: "landing-tekt", widget: "markdown" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "string" }
+      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
       - { label: "Where We Stand For", name: "waar-wij-voor-staan", widget: "string" }
       - { label: "Where We Stand For Text", name: "waar-wijvoor-staan-tekst", widget: "markdown" }
       - { label: "Value 1 Title", name: "waarde-1-titel", widget: "string" }
       - { label: "Value 1 Text", name: "waarde-1-tekst", widget: "markdown" }
-      - { label: "Value 1 Image", name: "waarde-1-afbeelding", widget: "string" }
+      - { label: "Value 1 Image", name: "waarde-1-afbeelding", widget: "image" }
       - { label: "Value 2 Title", name: "waarde-2-titel", widget: "string" }
       - { label: "Value 2 Text", name: "waarde-2-tekst", widget: "markdown" }
-      - { label: "Value 2 Image", name: "waarde-2-afbeelding", widget: "string" }
+      - { label: "Value 2 Image", name: "waarde-2-afbeelding", widget: "image" }
       - { label: "Value 3 Title", name: "waarde-3-titel", widget: "string" }
       - { label: "Value 3 Text", name: "waarde-3-tekst", widget: "markdown" }
-      - { label: "Value 3 Image", name: "waarde-3-afbeelding", widget: "string" }
+      - { label: "Value 3 Image", name: "waarde-3-afbeelding", widget: "image" }
       - { label: "What We Do", name: "wat-wij-doen", widget: "string" }
       - { label: "What We Do Text", name: "wat-wij-doen-tekst", widget: "string" }
       - { label: "What We Do 1 Title", name: "wat-wij-doen-1-titel", widget: "string" }
@@ -147,7 +147,7 @@ collections:
       - { label: "Postal Code", name: "postcode", widget: "string" }
       - { label: "Contact Button", name: "contact-button", widget: "string" }
       - { label: "Address", name: "adres", widget: "string" }
-      - { label: "Office Image", name: "afbeelding-kantoor", widget: "string" }
+      - { label: "Office Image", name: "afbeelding-kantoor", widget: "image" }
 
     - label: "How We Work"
       name: "hoe-wij-werken"
@@ -155,31 +155,31 @@ collections:
       fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "string" }
+      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
       - { label: "Where We Stand For", name: "waar-wij-voor-staan", widget: "string" }
       - { label: "Where We Stand For Text", name: "waar-wijvoor-staan-tekst", widget: "markdown" }
       - { label: "Value 1 Title", name: "waarde-1-titel", widget: "string" }
       - { label: "Value 1 Text", name: "waarde-1-tekst", widget: "string" }
-      - { label: "Value 1 Image", name: "waarde-1-afbeelding", widget: "string" }
+      - { label: "Value 1 Image", name: "waarde-1-afbeelding", widget: "image" }
       - { label: "Value 2 Title", name: "waarde-2-titel", widget: "string" }
       - { label: "Value 2 Text", name: "waarde-2-tekst", widget: "string" }
-      - { label: "Value 2 Image", name: "waarde-2-afbeelding", widget: "string" }
+      - { label: "Value 2 Image", name: "waarde-2-afbeelding", widget: "image" }
       - { label: "Value 3 Title", name: "waarde-3-titel", widget: "string" }
       - { label: "Value 3 Text", name: "waarde-3-tekst", widget: "string" }
-      - { label: "Value 3 Image", name: "waarde-3-afbeelding", widget: "string" }
+      - { label: "Value 3 Image", name: "waarde-3-afbeelding", widget: "image" }
       - { label: "Value 4 Title", name: "waarde-4-titel", widget: "string" }
       - { label: "Value 4 Text", name: "waarde-4-tekst", widget: "string" }
-      - { label: "Value 4 Image", name: "waarde-4-afbeelding", widget: "string" }
+      - { label: "Value 4 Image", name: "waarde-4-afbeelding", widget: "image" }
       - { label: "Value 5 Title", name: "waarde-5-titel", widget: "string" }
       - { label: "Value 5 Text", name: "waarde-5-tekst", widget: "string" }
-      - { label: "Value 5 Image", name: "waarde-5-afbeelding", widget: "string" }
+      - { label: "Value 5 Image", name: "waarde-5-afbeelding", widget: "image" }
 
     - label: "Connect to Perform"
       name: "connect-to-perform"
       widget: "object"
       fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "string" }
+      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
       - { label: "Landing Text", name: "landing-tekst", widget: "string" }
       - { label: "Methods", name: "methoden", widget: "string" }
       - { label: "Methods Text", name: "methoden-tekst", widget: "string" }
@@ -198,7 +198,7 @@ collections:
       fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Vacancy Open", name: "vacature-open", widget: "boolean" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "string" }
+      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
       - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
       - { label: "Heading", name: "kop", widget: "string" }
       - { label: "What You Do", name: "wat-je-doet", widget: "string" }
@@ -214,7 +214,7 @@ collections:
       fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "string" }
+      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
       - { label: "Page Title", name: "pagina-titel", widget: "string" }
       - { label: "Advisor Text", name: "vertrouwenspersoon-tekst", widget: "markdown" }
 
@@ -223,7 +223,7 @@ collections:
       widget: "object"
       fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "string" }
+      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
       - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
       - { label: "Registration Title", name: "aanmelding-title", widget: "string" }
       - { label: "Registration Zoom", name: "aanmelding-zoom", widget: "string" }
@@ -238,7 +238,7 @@ collections:
         name: "data"
         widget: "list"
         fields:
-        - { label: "Date", name: "datum", widget: "string" }
+        - { label: "Date", name: "datum", widget: "datetime" }
       - { label: "How Did You Hear", name: "hoe", widget: "string" }
       - { label: "Reason", name: "reden", widget: "string" }
       - { label: "Success", name: "success", widget: "string" }
