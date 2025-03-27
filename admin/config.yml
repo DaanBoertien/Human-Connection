@@ -1,624 +1,352 @@
-# backend:
-#   name: github
-#   repo: DaanBoertien/First-Jekkyl-website
-
 backend:
   name: git-gateway
-  branch: master
-# backend:
-#   name: git-gateway
-#   branch: master
+  branch: dev # Or your main branch, e.g., main
+
+# I18n Configuration
+i18n:
+  # Specify the languages you want to support
+  locales: [ nl, en ]
+  # Set the default language
+  default_locale: nl
+  # Define how i18n files are structured. 'multiple_files' suits your _i18n/nl.yml setup.
+  # For folder collections like 'team', the structure can be overridden per collection.
+  structure: multiple_files
 
 media_folder: assets/images/upload/
+public_folder: /assets/images/upload/ # Optional: path where media assets are served from
 
 collections:
+# --- Team Collection (Folder Collection - Separate file per language) ---
 - name: "team"
-  label: "Teamleden"
-  label_singular: "Teamlid"
-  folder: "_team/"
+  label: "Team Members" # Changed to English for UI consistency
+  label_singular: "Team Member" # Changed to English
+  # Store language versions in subfolders nl/ en/
+  folder: "_team/{{locale}}/"
   create: true
+  # Enable i18n for this collection
+  i18n: true
+  # Define the structure for this specific collection (overrides global)
+  # 'folder' structure means files go into locale subdirectories
+  structure: folder
+  # Optional: Specify field used in the filename, default is 'title' if not set
+  # identifier_field: slug # If you add a dedicated 'slug' field
+  # Define which field is used for the preview summary
   summary: "{{title}}"
+  # The slug can use the title. Ensure titles are unique or use a dedicated slug field.
   slug: "{{title}}"
   editor:
     preview: false
   fields:
+  # Standard fields remain, labels updated to English for CMS UI
   - { label: "Layout", name: "layout", widget: "hidden", default: "teammembers" }
-  - { label: "Naam", name: "title", widget: "string" }
-  - { label: "Functie", name: "function", widget: "string" }
-  - { label: "Emailadres", name: "email", widget: "string" }
-  - { label: "Telefoonnummer", name: "phonenumber", widget: "string" }
-  - { label: "Foto", name: "photo_url", widget: "image" }
-  - { label: "Omschrijving foto", name: "photo_description", widget: "string" }
-  - { label: "Omschrijving", name: "summary", widget: "markdown" }
-  - { label: "Uitleg", name: "uitleg", widget: "markdown" }
-  - label: "Achtergrondkleur"
+  - { label: "Name", name: "title", widget: "string", i18n: true } # Translatable
+  - { label: "Function", name: "function", widget: "string", i18n: true } # Translatable
+  - { label: "Email Address", name: "email", widget: "string" } # Usually not translated
+  - { label: "Phone Number", name: "phonenumber", widget: "string" } # Usually not translated
+  - { label: "Photo", name: "photo_url", widget: "image" } # Usually same image
+  - { label: "Photo Description", name: "photo_description", widget: "string", i18n: true } # Translatable
+  - { label: "Summary", name: "summary", widget: "markdown", i18n: true } # Translatable
+  - { label: "Explanation", name: "uitleg", widget: "markdown", i18n: true } # Translatable
+  - label: "Background Color"
     name: "bg_color"
     widget: "select"
-    options: [ "Donkerblauw", "Lichtblauw", "Groen", "Grijs", "Geel", "Rood" ]
-  - { label: "Titel", name: "card_title", widget: "string" }
-  - { label: "Soundbites", name: "soundbites", widget: "string" }
-  - { label: "Soundbites Tekst", name: "soundbites_text", widget: "text" }
-- name: "content"
-  label: "Teksten"
+    options: [ "Donkerblauw", "Lichtblauw", "Groen", "Grijs", "Geel", "Rood" ] # Values remain Dutch if CSS classes use them
+    i18n: false # Assuming color is not language-dependent
+  - { label: "Card Title", name: "card_title", widget: "string", i18n: true } # Translatable
+  - { label: "Soundbites", name: "soundbites", widget: "string", i18n: true } # Translatable
+  - { label: "Soundbites Text", name: "soundbites_text", widget: "text", i18n: true } # Translatable
+
+# --- Site Content (Files Collection - Edits sections of _i18n/{{locale}}.yml) ---
+- name: "site_content"
+  label: "Site Content"
+  # This collection manages multiple "virtual" files within the main i18n YAML files
   files:
-  - name: "home"
-    label: "Home"
-    file: "_data/home.yml"
+  # --- Navigation ---
+  - name: "navigation"
+    label: "Navigation"
+    # Point to the main i18n file structure
+    file: "_i18n/{{locale}}.yml"
+    # Enable i18n for this entry
+    i18n: true
     editor:
       preview: false
+    # Fields correspond to the 'nav' section in your YAML
     fields:
-    - label: "Landing Slogan"
-      name: "slogan"
-      widget: "string"
-    - label: "Landing Tekst"
-      name: "landing-tekt"
-      widget: "markdown"
-    - label: "Pagina afbeelding"
-      name: "pagina-afbeelding"
-      widget: "image"
-    - label: "Missie titel"
-      name: "waar-wij-voor-staan"
-      widget: "string"
-    - label: "Missie tekst"
-      name: "waar-wijvoor-staan-tekst"
-      widget: "markdown"
-    - label: "Waarde 1 titel"
-      name: "waarde-1-titel"
-      widget: "string"
-    - label: "Waarde 1 tekst"
-      name: "waarde-1-tekst"
-      widget: "markdown"
-    - label: "Waarde 1 afbeelding"
-      name: "waarde-1-afbeelding"
-      widget: "image"
-    - label: "Waarde 2 titel"
-      name: "waarde-2-titel"
-      widget: "string"
-    - label: "Waarde 2 tekst"
-      name: "waarde-2-tekst"
-      widget: "markdown"
-    - label: "Waarde 2 afbeelding"
-      name: "waarde-2-afbeelding"
-      widget: "image"
-    - label: "Waarde 3 titel"
-      name: "waarde-3-titel"
-      widget: "string"
-    - label: "Waarde 3 tekst"
-      name: "waarde-3-tekst"
-      widget: "markdown"
-    - label: "Waarde 3 afbeelding"
-      name: "waarde-3-afbeelding"
-      widget: "image"
+    - { label: "Section Key", name: "section_key", widget: "hidden", default: "nav" } # Helper
+    - { label: "Home URL", name: "home_url", widget: "string", i18n: "duplicate" } # Use 'duplicate' if URL is same for all langs
+    - { label: "Logo Alt Text", name: "logo_alt_text", widget: "string", i18n: true }
+    - { label: "Who We Are URL", name: "wie_wij_zijn_url", widget: "string", i18n: "duplicate" }
+    - { label: "Who We Are Text", name: "wie_wij_zijn_text", widget: "string", i18n: true }
+    - { label: "Team Base URL", name: "team_base_url", widget: "string", i18n: "duplicate" }
+    - { label: "What We Do Text", name: "wat_wij_doen_text", widget: "string", i18n: true }
+    - { label: "How We Work URL", name: "hoe_wij_werken_url", widget: "string", i18n: "duplicate" }
+    - { label: "How We Work Text", name: "hoe_wij_werken_text", widget: "string", i18n: true }
+    - { label: "What We Do URL", name: "wat_wij_doen_url", widget: "string", i18n: "duplicate" }
+    - { label: "CTP Contact URL", name: "ctp-contact", widget: "string", i18n: "duplicate" }
+    - { label: "Connect to Perform URL", name: "connect_to_perform_url", widget: "string", i18n: "duplicate" }
+    - { label: "Connect to Perform Text", name: "connect_to_perform_text", widget: "string", i18n: true }
+    - { label: "Confidential Advisor URL", name: "vertrouwenspersoon_url", widget: "string", i18n: "duplicate" }
+    - { label: "Confidential Advisor Text", name: "vertrouwenspersoon_text", widget: "string", i18n: true }
+    - { label: "Coaching URL", name: "coaching_url", widget: "string", i18n: "duplicate" }
+    - { label: "Coaching Text", name: "coaching_text", widget: "string", i18n: true }
+    - { label: "Contact Text", name: "contact_text", widget: "string", i18n: true }
+    - { label: "Contact URL", name: "contact_url", widget: "string", i18n: "duplicate" }
+    - { label: "Work With Us URL", name: "werken_bij_url", widget: "string", i18n: "duplicate" }
+    - { label: "Work With Us Text", name: "werken_bij_text", widget: "string", i18n: true }
+    - { label: "Language NL Text", name: "lang_nl", widget: "string", i18n: true }
+    - { label: "Language EN Text", name: "lang_en", widget: "string", i18n: true }
+    - { label: "Call Us Text", name: "call_us", widget: "string", i18n: true }
+    - { label: "Email Us Text", name: "email_us", widget: "string", i18n: true }
+    # Add succes_url if needed, example:
+    # - { label: "Success URL", name: "succes_url", widget: "string", i18n: "duplicate" }
 
-    - label: "Wat wij doen"
-      name: "wat-wij-doen"
-      widget: "string"
-    - label: "Wat wij doen uitleg"
-      name: "wat-wij-doen-tekst"
-      widget: "markdown"
-
-    - label: "Wat wij doen 1"
-      name: "wat-wij-doen-1-titel"
-      widget: "string"
-    - label: "Wat wij doen 1 tekst"
-      name: "wat-wij-doen-1-tekst"
-      widget: "markdown"
-    - label: "Wat wij doen 1 contact"
-      name: "wat-wij-doen-1-contact"
-      widget: "markdown"
-    - label: "Wat wij doen 1 button"
-      name: "wat-wij-doen-1-button"
-      widget: "string"
-    - label: "Wat wij doen 1 link"
-      name: "wat-wij-doen-1-link"
-      widget: "string"
-
-    - label: "Wat wij doen 2"
-      name: "wat-wij-doen-2-titel"
-      widget: "string"
-    - label: "Wat wij doen 2 tekst"
-      name: "wat-wij-doen-2-tekst"
-      widget: "markdown"
-    - label: "Wat wij doen 2 contact"
-      name: "wat-wij-doen-2-contact"
-      widget: "markdown"
-    - label: "Wat wij doen 2 button"
-      name: "wat-wij-doen-2-button"
-      widget: "string"
-    - label: "Wat wij doen 2 link"
-      name: "wat-wij-doen-2-link"
-      widget: "string"
-    - label: "Wat wij doen 3"
-      name: "wat-wij-doen-3-titel"
-      widget: "string"
-    - label: "Wat wij doen 3 tekst"
-      name: "wat-wij-doen-3-tekst"
-      widget: "markdown"
-    - label: "Wat wij doen 3 contact"
-      name: "wat-wij-doen-3-contact"
-      widget: "markdown"
-    - label: "Wat wij doen 3 button"
-      name: "wat-wij-doen-3-button"
-      widget: "string"
-    - label: "Hoe wij werken button"
-      name: "hoe-wij-werken"
-      widget: "string"
-    - label: "Wat wij doen 3 link"
-      name: "wat-wij-doen-3-link"
-      widget: "string"
-
-    - label: "Wie wij zijn titel"
-      name: "wie-wij-zijn"
-      widget: "string"
-
-    - label: "Actievraag"
-      name: "actievraag"
-      widget: "string"
-    - label: "Actievraag omschrijving"
-      name: "actievraag-subtitel"
-      widget: "string"
-    - label: "Actievraag Button"
-      name: "actievraag-button"
-      widget: "string"
-
-    - label: "Partners Titel"
-      name: "partners-titel"
-      widget: "string"
-    - label: "Logo's Bedrijven"
+    # --- Home Page ---
+  - name: "home"
+    label: "Home Page"
+    file: "_i18n/{{locale}}.yml"
+    i18n: true
+    editor:
+      preview: false
+    # Fields correspond to the 'home' section in your YAML
+    fields:
+    - { label: "Section Key", name: "section_key", widget: "hidden", default: "home" }
+    - { label: "Slogan", name: "slogan", widget: "string", i18n: true }
+    - { label: "Landing Text", name: "landing-tekt", widget: "markdown", i18n: true }
+    - { label: "Page Image", name: "pagina-afbeelding", widget: "image", i18n: "duplicate" } # Assumes same image
+    - { label: "Mission Title", name: "waar-wij-voor-staan", widget: "string", i18n: true }
+    - { label: "Mission Text", name: "waar-wijvoor-staan-tekst", widget: "markdown", i18n: true }
+    - { label: "Value 1 Title", name: "waarde-1-titel", widget: "string", i18n: true }
+    - { label: "Value 1 Text", name: "waarde-1-tekst", widget: "markdown", i18n: true }
+    - { label: "Value 1 Image", name: "waarde-1-afbeelding", widget: "image", i18n: "duplicate" }
+    - { label: "Value 2 Title", name: "waarde-2-titel", widget: "string", i18n: true }
+    - { label: "Value 2 Text", name: "waarde-2-tekst", widget: "markdown", i18n: true }
+    - { label: "Value 2 Image", name: "waarde-2-afbeelding", widget: "image", i18n: "duplicate" }
+    - { label: "Value 3 Title", name: "waarde-3-titel", widget: "string", i18n: true }
+    - { label: "Value 3 Text", name: "waarde-3-tekst", widget: "markdown", i18n: true }
+    - { label: "Value 3 Image", name: "waarde-3-afbeelding", widget: "image", i18n: "duplicate" }
+    - { label: "What We Do Title", name: "wat-wij-doen", widget: "string", i18n: true }
+    - { label: "What We Do Text", name: "wat-wij-doen-tekst", widget: "markdown", i18n: true }
+    - { label: "Service 1 Title", name: "wat-wij-doen-1-titel", widget: "string", i18n: true }
+    - { label: "Service 1 Text", name: "wat-wij-doen-1-tekst", widget: "markdown", i18n: true }
+    - { label: "Service 1 Contact", name: "wat-wij-doen-1-contact", widget: "markdown", i18n: true } # Check if Markdown needed, might be simple string per contact
+    - { label: "Service 1 Button", name: "wat-wij-doen-1-button", widget: "string", i18n: true }
+    - { label: "Service 1 Link", name: "wat-wij-doen-1-link", widget: "string", i18n: "duplicate" } # Assumes link is same relative path
+    - { label: "Service 2 Title", name: "wat-wij-doen-2-titel", widget: "string", i18n: true }
+    - { label: "Service 2 Text", name: "wat-wij-doen-2-tekst", widget: "markdown", i18n: true }
+    - { label: "Service 2 Contact", name: "wat-wij-doen-2-contact", widget: "markdown", i18n: true }
+    - { label: "Service 2 Button", name: "wat-wij-doen-2-button", widget: "string", i18n: true }
+    - { label: "Service 2 Link", name: "wat-wij-doen-2-link", widget: "string", i18n: "duplicate" }
+    - { label: "Service 3 Title", name: "wat-wij-doen-3-titel", widget: "string", i18n: true }
+    - { label: "Service 3 Text", name: "wat-wij-doen-3-tekst", widget: "markdown", i18n: true }
+    - { label: "Service 3 Contact", name: "wat-wij-doen-3-contact", widget: "markdown", i18n: true }
+    - { label: "Service 3 Button", name: "wat-wij-doen-3-button", widget: "string", i18n: true }
+    - { label: "Service 3 Link", name: "wat-wij-doen-3-link", widget: "string", i18n: "duplicate" }
+    - { label: "How We Work Button (on Home)", name: "hoe-wij-werken", widget: "string", i18n: true } # Different from 'How We Work' page title
+    - { label: "Who We Are Title (on Home)", name: "wie-wij-zijn", widget: "string", i18n: true }
+    - { label: "Call To Action Question", name: "actievraag", widget: "string", i18n: true }
+    - { label: "Call To Action Subtitle", name: "actievraag-subtitel", widget: "string", i18n: true }
+    - { label: "Call To Action Button", name: "actievraag-button", widget: "string", i18n: true }
+    - { label: "Partners Title", name: "partners-titel", widget: "string", i18n: true }
+    - label: "Partner Logos"
       name: "logos"
       widget: "list"
+      i18n: true # The list itself might differ per language, or just the names
       fields:
-      - label: "Naam Bedrijf"
-        name: "naam-bedrijf"
-        widget: "string"
-      - label: "Logo Bedrijf"
-        name: "logo-bedrijf"
-        widget: "image"
+      - { label: "Company Name", name: "naam-bedrijf", widget: "string", i18n: true } # Allow name translation
+      - { label: "Company Logo", name: "logo-bedrijf", widget: "image", i18n: "duplicate" } # Assume same logo
+    - { label: "Contact Title", name: "contact-titel", widget: "string", i18n: true }
+    - { label: "Contact Description", name: "contact-omschrijving", widget: "markdown", i18n: true }
+    - { label: "Contact Form Label Name", name: "contact-naam", widget: "string", i18n: true }
+    - { label: "Contact Form Label Email", name: "contact-email", widget: "string", i18n: true }
+    - { label: "Contact Form Label Subject", name: "contact-onderwerp", widget: "string", i18n: true }
+    - { label: "Contact Form Label Message", name: "contact-bericht", widget: "string", i18n: true }
+    - { label: "Contact Form Button Text", name: "contact-button", widget: "string", i18n: true }
+    # Adding missing contact form fields from nl.yml
+    - { label: "Contact Form Placeholder", name: "contact_placeholder", widget: "string", i18n: true }
+    - { label: "Contact Form Label Name (Required)", name: "contact_label_naam", widget: "string", i18n: true }
+    - { label: "Contact Form Label Subject (Required)", name: "contact_label_onderwerp", widget: "string", i18n: true }
+    - { label: "Contact Form Label Email (Required)", name: "contact_label_email", widget: "string", i18n: true }
+    - { label: "Contact Form Label Message (Required)", name: "contact_label_bericht", widget: "string", i18n: true }
+    - { label: "Contact Form Submit Button (duplicate)", name: "contact_submit_button", widget: "string", i18n: true } # Duplicates contact-button? Choose one.
+    - { label: "Contact Org Name", name: "contact_org_name", widget: "string", i18n: "duplicate" } # Company name
+    - { label: "Visit Us Invitation", name: "uitnodiging", widget: "string", i18n: true }
+    - { label: "Address", name: "adres", widget: "string", i18n: "duplicate" }
+    - { label: "Postal Code", name: "postcode", widget: "string", i18n: "duplicate" }
+    - { label: "Office Image", name: "afbeelding-kantoor", widget: "image", i18n: "duplicate" }
 
-    - label: "Contact Titel"
-      name: "contact-titel"
-      widget: "string"
-    - label: "Contact Omschrijving"
-      name: "contact-omschrijving"
-      widget: "markdown"
-    - label: "Label Contactformulier Naam"
-      name: "contact-naam"
-      widget: "string"
-    - label: "Label Contactformulier E-mail"
-      name: "contact-email"
-      widget: "string"
-    - label: "Label Contactformulier Onderwerp"
-      name: "contact-onderwerp"
-      widget: "string"
-    - label: "Label Contactformulier Bericht"
-      name: "contact-bericht"
-      widget: "string"
-    - label: "Contactformulier Button"
-      name: "contact-button"
-      widget: "string"
-
-    - label: "Uitnodiging"
-      name: "uitnodiging"
-      widget: "string"
-    - label: "Adres"
-      name: "adres"
-      widget: "string"
-    - label: "Postcode"
-      name: "postcode"
-      widget: "string"
-    - label: "Afbeelding Kantoor"
-      name: "afbeelding-kantoor"
-      widget: "image"
+  # --- How We Work Page ---
   - name: "hoe-wij-werken"
-    label: "Hoe wij werken"
-    file: "_data/hoe-wij-werken.yml"
+    label: "How We Work Page"
+    file: "_i18n/{{locale}}.yml"
+    i18n: true
     editor:
       preview: false
+    # Fields correspond to the 'hoe-wij-werken' section in your YAML
     fields:
-    - label: "Pagina titel"
-      name: "title"
-      widget: "string"
-    - label: "Uitleg"
-      name: "landing-tekst"
-      widget: "markdown"
-    - label: "Pagina afbeelding"
-      name: "pagina-afbeelding"
-      widget: "image"
-    - label: "Missie titel"
-      name: "waar-wij-voor-staan"
-      widget: "string"
-    - label: "Missie tekst"
-      name: "waar-wijvoor-staan-tekst"
-      widget: "markdown"
-    - label: "Hoe wij werken 1 titel"
-      name: "waarde-1-titel"
-      widget: "string"
-    - label: "Hoe wij werken 1 tekst"
-      name: "waarde-1-tekst"
-      widget: "markdown"
-    - label: "Hoe wij werken 1 afbeelding"
-      name: "waarde-1-afbeelding"
-      widget: "image"
-      required: false
-    - label: "Hoe wij werken 2 titel"
-      name: "waarde-2-titel"
-      widget: "string"
-    - label: "Hoe wij werken 2 tekst"
-      name: "waarde-2-tekst"
-      widget: "markdown"
-    - label: "Hoe wij werken 2 afbeelding"
-      name: "waarde-2-afbeelding"
-      widget: "image"
-      required: false
-    - label: "Hoe wij werken 3 titel"
-      name: "waarde-3-titel"
-      widget: "string"
-    - label: "Hoe wij werken 3 tekst"
-      name: "waarde-3-tekst"
-      widget: "markdown"
-    - label: "Hoe wij werken 3 afbeelding"
-      name: "waarde-3-afbeelding"
-      required: false
-      widget: "image"
-    - label: "Hoe wij werken 4 titel"
-      name: "waarde-4-titel"
-      widget: "string"
-    - label: "Hoe wij werken 4 tekst"
-      name: "waarde-4-tekst"
-      widget: "markdown"
-    - label: "Hoe wij werken 4 afbeelding"
-      name: "waarde-4-afbeelding"
-      required: false
-      widget: "image"
-    - label: "Hoe wij werken 5 titel"
-      name: "waarde-5-titel"
-      widget: "string"
-    - label: "Hoe wij werken 5 tekst"
-      name: "waarde-5-tekst"
-      widget: "markdown"
-    - label: "Hoe wij werken 5 afbeelding"
-      name: "waarde-5-afbeelding"
-      required: false
-      widget: "image"
-  - name: "werken-bij-ons"
-    label: "Werken bij ons"
-    file: "_data/werken-bij-ons.yml"
-    editor:
-      preview: false
-    fields:
-    - label: "Pagina titel"
-      name: "title"
-      widget: "string"
-    - label: "Vacature open"
-      name: "vacature-open"
-      widget: "boolean"
-    - label: "Pagina afbeelding"
-      name: "pagina-afbeelding"
-      widget: "image"
-    - label: "Uitleg"
-      name: "landing-tekst"
-      widget: "markdown"
-    - label: "Kop"
-      name: "kop"
-      widget: "string"
-    - label: "Wat je doet"
-      name: "wat-je-doet"
-      widget: "string"
-    - label: "Wat je doet tekst"
-      name: "wat-je-doet-tekst"
-      widget: "markdown"
-    - label: "Wat we bieden"
-      name: "wat-we-bieden"
-      widget: "string"
-    - label: "Wat we bieden tekst"
-      name: "wat-we-bieden-tekst"
-      widget: "markdown"
-    - label: "Contact"
-      name: "contact"
-      widget: "string"
-    - label: "Uitzendbureaus"
-      name: "uitzendbureaus"
-      widget: "string"
-  - name: "connect-to-perform"
-    label: "Connect to perform"
-    file: "_data/connect-to-perform.yml"
-    editor:
-      preview: false
-    fields:
-    - label: "Pagina titel"
-      name: "title"
-      widget: "string"
-    - label: "Pagina afbeelding"
-      name: "pagina-afbeelding"
-      widget: "image"
-    - label: "Uitleg"
-      name: "landing-tekst"
-      widget: "markdown"
-    - label: "methoden"
-      name: "methoden"
-      widget: "string"
-    - label: "methodentekst"
-      name: "methoden-tekst"
-      widget: "text"
-    - label: "Pagina illustratie"
-      name: "pagina-illustratie"
-      widget: "image"
-    - label: "werkwijze titel"
-      name: "werkwijze-titel"
-      widget: "string"
-    - label: "werkwijze tekst"
-      name: "werkwijze-tekst"
-      widget: "text"
-    - label: "werkvorm titel"
-      name: "werkvorm-titel"
-      widget: "string"
-    - label: "werkvorm tekst"
-      name: "werkvorm-tekst"
-      widget: "text"
-    - label: "button 1"
-      name: "button1"
-      widget: "string"
-    - label: "Meer informatie PDF"
-      name: "more-info"
-      widget: "file"
-    - label: "button 2"
-      name: "button2"
-      widget: "string"
-  - name: "vertrouwenspersoon"
-    label: "Vertrouwenspersoon"
-    file: "_data/vertrouwenspersoon.yml"
-    editor:
-      preview: false
-    fields:
-    - label: "Title"
-      name: "title"
-      widget: "string"
-    - label: "Landing Tekt"
-      name: "landing-tekst"
-      widget: "markdown"
-    - label: "Page Image"
-      name: "pagina-afbeelding"
-      widget: "image"
-    - label: "Page Title"
-      name: "pagina-titel"
-      widget: "string"
-    - label: "Vertrouwenspersoon Tekt"
-      name: "vertrouwenspersoon-tekst"
-      widget: "markdown"
-  - name: "coaching"
-    label: "Coaching"
-    file: "_data/coaching.yml"
-    editor:
-      preview: false
-    fields:
-    - label: "Title"
-      name: "title"
-      widget: "string"
-    - label: "Landing Text"
-      name: "landing-tekst"
-      widget: "markdown"
-    - label: "Page Image"
-      name: "pagina-afbeelding"
-      widget: "image"
-    - label: "Page Title"
-      name: "pagina-titel"
-      widget: "string"
-    - label: "Coaching Tekst"
-      name: "coaching-tekst"
-      widget: "markdown"
-  - name: "CTP Ronde 1"
-    label: "CTP Ronde 1"
-    file: "_data/ronde1.yml"
-    editor:
-      preview: false
-    fields:
-    - label: "Title"
-      name: "title"
-      widget: "string"
-    - label: "Landing Text"
-      name: "landing-tekst"
-      widget: "markdown"
-    - label: "Page Image"
-      name: "pagina-afbeelding"
-      widget: "image"
-    - label: "Page Title"
-      name: "pagina-titel"
-      widget: "string"
-    - label: "Ronde 1 Text"
-      name: "ronde1-tekst"
-      widget: "markdown"
+    - { label: "Section Key", name: "section_key", widget: "hidden", default: "hoe-wij-werken" }
+    - { label: "Page Title", name: "title", widget: "string", i18n: true }
+    - { label: "Landing Text", name: "landing-tekst", widget: "markdown", i18n: true }
+    - { label: "Page Image", name: "pagina-afbeelding", widget: "image", i18n: "duplicate" }
+    - { label: "Methods Title", name: "waar-wij-voor-staan", widget: "string", i18n: true } # Reusing key, label accordingly
+    - { label: "Methods Text", name: "waar-wijvoor-staan-tekst", widget: "markdown", i18n: true } # Reusing key
+    - { label: "Step 1 Title", name: "waarde-1-titel", widget: "string", i18n: true } # Reusing key
+    - { label: "Step 1 Text", name: "waarde-1-tekst", widget: "markdown", i18n: true } # Reusing key
+    - { label: "Step 1 Image", name: "waarde-1-afbeelding", widget: "image", required: false, i18n: "duplicate" } # Reusing key
+    - { label: "Step 2 Title", name: "waarde-2-titel", widget: "string", i18n: true } # Reusing key
+    - { label: "Step 2 Text", name: "waarde-2-tekst", widget: "markdown", i18n: true } # Reusing key
+    - { label: "Step 2 Image", name: "waarde-2-afbeelding", widget: "image", required: false, i18n: "duplicate" } # Reusing key
+    - { label: "Step 3 Title", name: "waarde-3-titel", widget: "string", i18n: true } # Reusing key
+    - { label: "Step 3 Text", name: "waarde-3-tekst", widget: "markdown", i18n: true } # Reusing key
+    - { label: "Step 3 Image", name: "waarde-3-afbeelding", widget: "image", required: false, i18n: "duplicate" } # Reusing key
+    - { label: "Step 4 Title", name: "waarde-4-titel", widget: "string", i18n: true }
+    - { label: "Step 4 Text", name: "waarde-4-tekst", widget: "markdown", i18n: true }
+    - { label: "Step 4 Image", name: "waarde-4-afbeelding", widget: "image", required: false, i18n: "duplicate" }
+    - { label: "Step 5 Title", name: "waarde-5-titel", widget: "string", i18n: true }
+    - { label: "Step 5 Text", name: "waarde-5-tekst", widget: "markdown", i18n: true }
+    - { label: "Step 5 Image", name: "waarde-5-afbeelding", widget: "image", required: false, i18n: "duplicate" }
 
-  - name: "ctp-contact"
-    label: "Connect to perform contact"
-    file: "_data/ctp-contact.yml"
+  # --- Work With Us Page ---
+  - name: "werken-bij"
+    label: "Work With Us Page"
+    file: "_i18n/{{locale}}.yml"
+    i18n: true
     editor:
       preview: false
+    # Fields correspond to the 'werken-bij' section
     fields:
-    - label: "Pagina titel"
-      name: "title"
-      widget: "string"
-    - label: "Pagina afbeelding"
-      name: "pagina-afbeelding"
-      widget: "image"
-    - label: "Landing tekst"
-      name: "landing-tekst"
-      widget: "markdown"
-    - label: "aanmelding titel"
-      name: "aanmelding-title"
-      widget: "string"
-    - label: "aanmelding zoom"
-      name: "aanmelding-zoom"
-      widget: "string"
-    - label: "aanmelding tekst"
-      name: "aanmelding-tekst"
-      widget: "text"
-    - label: "Naam"
-      name: "naam"
-      widget: "string"
-    - label: "email"
-      name: "email"
-      widget: "string"
-    - label: "bedrijf"
-      name: "bedrijf"
-      widget: "string"
-    - label: "functie"
-      name: "functie"
-      widget: "string"
-    - label: "telefoonnummer"
-      name: "telefoonnummer"
-      widget: "string"
-    - label: "kies datum"
-      name: "welke"
-      widget: "string"
-    - label: "data"
+    - { label: "Section Key", name: "section_key", widget: "hidden", default: "werken-bij" }
+    - { label: "Page Title", name: "title", widget: "string", i18n: true }
+    - { label: "Vacancy Open?", name: "vacature-open", widget: "boolean", default: false, i18n: "duplicate" } # Likely same status
+    - { label: "Page Image", name: "pagina-afbeelding", widget: "image", i18n: "duplicate" }
+    - { label: "Landing Text", name: "landing-tekst", widget: "markdown", i18n: true }
+    - { label: "Headline", name: "kop", widget: "string", i18n: true }
+    - { label: "What You Do Title", name: "wat-je-doet", widget: "string", i18n: true }
+    - { label: "What You Do Text", name: "wat-je-doet-tekst", widget: "markdown", i18n: true }
+    - { label: "What We Offer Title", name: "wat-we-bieden", widget: "string", i18n: true }
+    - { label: "What We Offer Text", name: "wat-we-bieden-tekst", widget: "markdown", i18n: true }
+    - { label: "Contact Info", name: "contact", widget: "string", i18n: true } # Check if markdown needed
+    - { label: "Note for Agencies", name: "uitzendbureaus", widget: "string", i18n: true }
+
+  # --- Connect to Perform Page ---
+  - name: "connect-to-perform"
+    label: "Connect to Perform Page"
+    file: "_i18n/{{locale}}.yml"
+    i18n: true
+    editor:
+      preview: false
+    # Fields correspond to the 'connect-to-perform' section
+    fields:
+    - { label: "Section Key", name: "section_key", widget: "hidden", default: "connect-to-perform" }
+    - { label: "Page Title", name: "title", widget: "string", i18n: true }
+    - { label: "Page Image", name: "pagina-afbeelding", widget: "image", i18n: "duplicate" }
+    - { label: "Landing Text", name: "landing-tekst", widget: "markdown", i18n: true }
+    - { label: "Method Title", name: "methoden", widget: "string", i18n: true }
+    - { label: "Method Text", name: "methoden-tekst", widget: "text", i18n: true } # Use 'text' for potentially longer simple text
+    - { label: "Page Illustration", name: "pagina-illustratie", widget: "image", i18n: "duplicate" }
+    - { label: "Game Title", name: "werkwijze-titel", widget: "string", i18n: true }
+    - { label: "Game Text", name: "werkwijze-tekst", widget: "text", i18n: true }
+    - { label: "Open Evening Title", name: "werkvorm-titel", widget: "string", i18n: true }
+    - { label: "Open Evening Text", name: "werkvorm-tekst", widget: "text", i18n: true }
+    - { label: "Button 1 Text (More Info)", name: "button1", widget: "string", i18n: true }
+    - { label: "More Info PDF", name: "more-info", widget: "file", i18n: "duplicate" } # Assumes same PDF file
+    - { label: "Button 2 Text (Sign Up)", name: "button2", widget: "string", i18n: true }
+
+  # --- Confidential Advisor Page ---
+  - name: "vertrouwenspersoon"
+    label: "Confidential Advisor Page"
+    file: "_i18n/{{locale}}.yml"
+    i18n: true
+    editor:
+      preview: false
+    # Fields correspond to the 'vertrouwenspersoon' section
+    fields:
+    - { label: "Section Key", name: "section_key", widget: "hidden", default: "vertrouwenspersoon" }
+    - { label: "Page Title (Meta)", name: "title", widget: "string", i18n: true } # Assuming meta title
+    - { label: "Landing Text", name: "landing-tekst", widget: "markdown", i18n: true }
+    - { label: "Page Image", name: "pagina-afbeelding", widget: "image", i18n: "duplicate" }
+    - { label: "Page Title (Header)", name: "pagina-titel", widget: "string", i18n: true } # Assuming header title
+    - { label: "Main Text", name: "vertrouwenspersoon-tekst", widget: "markdown", i18n: true }
+
+  # --- Coaching Page ---
+  - name: "coaching"
+    label: "Coaching Page"
+    file: "_i18n/{{locale}}.yml"
+    i18n: true
+    editor:
+      preview: false
+    # Fields correspond to the 'coaching' section
+    fields:
+    - { label: "Section Key", name: "section_key", widget: "hidden", default: "coaching" }
+    - { label: "Page Title (Meta)", name: "title", widget: "string", i18n: true }
+    - { label: "Landing Text", name: "landing-tekst", widget: "markdown", i18n: true }
+    - { label: "Page Image", name: "pagina-afbeelding", widget: "image", i18n: "duplicate" }
+    - { label: "Page Title (Header)", name: "pagina-titel", widget: "string", i18n: true }
+    - { label: "Main Text", name: "coaching-tekst", widget: "markdown", i18n: true }
+
+  # --- CTP Contact Form Page ---
+  - name: "ctp-contact"
+    label: "CTP Contact Form Page"
+    file: "_i18n/{{locale}}.yml"
+    i18n: true
+    editor:
+      preview: false
+    # Fields correspond to the 'ctp-contact' section
+    fields:
+    - { label: "Section Key", name: "section_key", widget: "hidden", default: "ctp-contact" }
+    - { label: "Page Title", name: "title", widget: "string", i18n: true }
+    - { label: "Page Image", name: "pagina-afbeelding", widget: "image", i18n: "duplicate" }
+    - { label: "Landing Text", name: "landing-tekst", widget: "markdown", i18n: true }
+    - { label: "Form Title", name: "aanmelding-title", widget: "string", i18n: true }
+    - { label: "Form Zoom Info", name: "aanmelding-zoom", widget: "string", i18n: true } # Maybe markdown?
+    - { label: "Form Intro Text", name: "aanmelding-tekst", widget: "text", i18n: true }
+    - { label: "Label Name", name: "naam", widget: "string", i18n: true }
+    - { label: "Label Email", name: "email", widget: "string", i18n: true }
+    - { label: "Label Company", name: "bedrijf", widget: "string", i18n: true }
+    - { label: "Label Function", name: "functie", widget: "string", i18n: true }
+    - { label: "Label Phone Number", name: "telefoonnummer", widget: "string", i18n: true }
+    - { label: "Label Choose Date", name: "welke", widget: "string", i18n: true }
+    - label: "Available Dates"
       name: "data"
       widget: "list"
+      i18n: true # Allow list of dates to vary per language if needed
       fields:
-      - label: "datum"
-        name: "datum"
-        widget: "string"
-    - label: "hoe"
-      name: "hoe"
-      widget: "string"
-    - label: "reden"
-      name: "reden"
-      widget: "string"
-    - label: "Succespagina titel"
-      name: "success"
-      widget: "string"
-    - label: "Succespagina tekst"
-      name: "success-text"
-      widget: "text"
-    - label: "button terug"
-      name: "button-terug"
-      widget: "string"
-- name: "ctp"
-  label: "Connect To Perform Spelavond"
-  files:
-  - name: "ctpwelkom"
-    label: "CTP Welkom"
-    file: "_data/ctp-welkom.yml"
-    editor:
-      preview: false
-    fields:
-    - label: "Title"
-      name: "title"
-      widget: "string"
-    - label: "Landing Tekt"
-      name: "landing-tekst"
-      widget: "markdown"
-    - label: "Page Image"
-      name: "pagina-afbeelding"
-      widget: "image"
-    - label: "Page Title"
-      name: "pagina-titel"
-      widget: "string"
-    - label: "Welkom Tekst"
-      name: "welkom-tekst"
-      widget: "markdown"
-    - label: "Videos"
-      name: "video"
-      widget: "list"
-      fields:
-      - label: "Video Titel"
-        name: "title"
-        widget: "string"
-      - label: "YouTube ID"
-        name: "youtube-id"
-        widget: "string"
-  - name: "CTP Ronde 1"
-    label: "CTP Ronde 1"
-    file: "_data/ronde1.yml"
-    editor:
-      preview: false
-    fields:
-    - label: "Title"
-      name: "title"
-      widget: "string"
-    - label: "Landing tekst"
-      name: "landing-tekst"
-      widget: "markdown"
-    - label: "Page Image"
-      name: "pagina-afbeelding"
-      widget: "image"
-    - label: "Page Title"
-      name: "pagina-titel"
-      widget: "string"
-    - label: "Ronde 1 tekst"
-      name: "ronde1-tekst"
-      widget: "markdown"
-    - label: "PDFs"
-      label_singular: "PDF"
-      name: "pdf"
-      widget: "list"
-      fields:
-      - label: "PDF Title"
-        name: "pdf-title"
-        widget: "string"
-      - label: "PDF File"
-        name: "pdf"
-        widget: "file"
-  - name: "CTP Ronde 2"
-    label: "CTP Ronde 2"
-    file: "_data/ronde2.yml"
-    editor:
-      preview: false
-    fields:
-    - label: "Title"
-      name: "title"
-      widget: "string"
-    - label: "Landing tekst"
-      name: "landing-tekst"
-      widget: "markdown"
-    - label: "Page Image"
-      name: "pagina-afbeelding"
-      widget: "image"
-    - label: "Page Title"
-      name: "pagina-titel"
-      widget: "string"
-    - label: "Ronde 2 tekst"
-      name: "ronde2-tekst"
-      widget: "markdown"
-    - label: "PDFs"
-      label_singular: "PDF"
-      name: "pdf"
-      widget: "list"
-      fields:
-      - label: "PDF Title"
-        name: "pdf-title"
-        widget: "string"
-      - label: "PDF File"
-        name: "pdf"
-        widget: "file"
-  - name: "CTP Ronde 3"
-    label: "CTP Ronde 3"
-    file: "_data/ronde3.yml"
-    editor:
-      preview: false
-    fields:
-    - label: "Title"
-      name: "title"
-      widget: "string"
-    - label: "Landing tekst"
-      name: "landing-tekst"
-      widget: "markdown"
-    - label: "Page Image"
-      name: "pagina-afbeelding"
-      widget: "image"
-    - label: "Page Title"
-      name: "pagina-titel"
-      widget: "string"
-    - label: "Ronde 3 tekst"
-      name: "ronde3-tekst"
-      widget: "markdown"
-    - label: "PDFs"
-      label_singular: "PDF"
-      name: "pdf"
-      widget: "list"
-      fields:
-      - label: "PDF Title"
-        name: "pdf-title"
-        widget: "string"
-      - label: "PDF File"
-        name: "pdf"
-        widget: "file"
+      - { label: "Date String", name: "datum", widget: "string", i18n: true } # Allow date format/text translation
+    - { label: "Label How Heard", name: "hoe", widget: "string", i18n: true }
+    - { label: "Label Reason", name: "reden", widget: "string", i18n: true }
+    - { label: "Success Page Title", name: "success", widget: "string", i18n: true }
+    - { label: "Success Page Text", name: "success-text", widget: "text", i18n: true }
+    - { label: "Back Button Text", name: "button-terug", widget: "string", i18n: true }
+    - { label: "Placeholder Answer", name: "placeholder-answer", widget: "string", i18n: true }
+    - { label: "Submit Button Text", name: "button-submit", widget: "string", i18n: true }
+    - { label: "Reset Button Text", name: "button-reset", widget: "string", i18n: true }
+  # --- CTP Game Content (Assuming this was separate, integrate if needed) ---
+  # If ctp-welkom, ronde1, ronde2, ronde3 are needed, add file entries for them similar to above.
+  # Example for CTP Welcome:
+  # - name: "ctp-welkom"
+  #   label: "CTP Welcome Content"
+  #   file: "_i18n/{{locale}}.yml"
+  #   i18n: true
+  #   fields:
+  #     - { label: "Section Key", name: "section_key", widget: "hidden", default: "ctp-welkom" }
+  #     - { label: "Title", name: "title", widget: "string", i18n: true }
+  #     ... etc based on _data/ctp-welkom.yml fields ...
+
+  # Example for CTP Round 1 (Note: you had duplicates):
+  # - name: "ctp-ronde1"
+  #   label: "CTP Round 1 Content"
+  #   file: "_i18n/{{locale}}.yml"
+  #   i18n: true
+  #   fields:
+  #     - { label: "Section Key", name: "section_key", widget: "hidden", default: "ctp-ronde1" } # Or just "ronde1" if that's the key
+  #     - { label: "Title", name: "title", widget: "string", i18n: true }
+  #     - { label: "Landing Text", name: "landing-tekst", widget: "markdown", i18n: true }
+  #     - { label: "Page Image", name: "pagina-afbeelding", widget: "image", i18n: "duplicate" }
+  #     - { label: "Page Title (Header)", name: "pagina-titel", widget: "string", i18n: true }
+  #     - { label: "Round 1 Text", name: "ronde1-tekst", widget: "markdown", i18n: true }
+  #     - label: "PDFs"
+  #       name: "pdf" # Assuming key is 'pdf'
+  #       widget: "list"
+  #       i18n: true
+  #       fields:
+  #         - { label: "PDF Title", name: "pdf-title", widget: "string", i18n: true }
+  #         - { label: "PDF File", name: "pdf", widget: "file", i18n: "duplicate" }
