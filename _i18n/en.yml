@@ -2,7 +2,6 @@ global:
   nederlands: "Dutch"
   english: "English"
   site_title: "Human Connection"
-coaching: {}
 
 nav:
   home_url: "/" # Root path stays the same
