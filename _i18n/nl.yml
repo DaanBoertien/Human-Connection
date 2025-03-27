@@ -9,30 +9,30 @@ coaching:
   pagina-titel: sadf
   coaching-tekst: asfd
 nav:
-  wat_wij_doen_url: fsad
-  email_us: fasd
-  connect_to_perform_url: fasd
-  team_base_url: fsd
-  coaching_text: fads
-  werken_bij_url: afsd
-  wie_wij_zijn_text: sfd
-  hoe_wij_werken_url: dsf
-  contact_text: sfad
-  vertrouwenspersoon_text: afsd
-  vertrouwenspersoon_url: fsda
-  lang_nl: fasd
-  home_url: adsf
-  contact_url: fsad
-  ctp-contact: fads
-  hoe_wij_werken_text: asfd
-  wie_wij_zijn_url: safd
-  logo_alt_text: fads
-  coaching_url: fads
-  werken_bij_text: afsd
-  lang_en: fasd
-  connect_to_perform_text: fads
-  wat_wij_doen_text: fsd
-  call_us: fsda
+  home_url: "/"
+  logo_alt_text: "Logo Human Connection"
+  wie_wij_zijn_url: "/wie-wij-zijn/"
+  wie_wij_zijn_text: "Wie wij zijn"
+  team_base_url: "/team/"
+  wat_wij_doen_text: "Wat wij doen"
+  hoe_wij_werken_url: "/hoe-wij-werken/"
+  hoe_wij_werken_text: "Hoe wij werken"
+  wat_wij_doen_url: "/wat-wij-doen/"
+  ctp-contact: "/ctp-contact/"
+  connect_to_perform_url: "/connect-to-perform/"
+  connect_to_perform_text: "Connect to Perform"
+  vertrouwenspersoon_url: "/vertrouwenspersoon/"
+  vertrouwenspersoon_text: "Vertrouwenspersoon"
+  coaching_url: "/coaching/"
+  coaching_text: "Coaching"
+  contact_text: "Contact"
+  contact_url: "/contact/"
+  werken_bij_url: "/werken-bij/"
+  werken_bij_text: "Werken bij ons"
+  lang_nl: "Nederlands"
+  lang_en: "English"
+  call_us: "Bel ons"
+  email_us: "Mail ons"
 home:
   wat-wij-doen-3-tekst: sadf
   uitnodiging: jk
@@ -148,7 +148,7 @@ ctp-contact:
   landing-tekst: asdf
   telefoonnummer: jkl
   data:
-    - datum: adsf
+  - datum: adsf
   functie: jkl
   aanmelding-title: asdf
   aanmelding-tekst: jkl
