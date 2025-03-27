@@ -45,9 +45,9 @@ collections:
       name: "global"
       widget: "object"
       fields:
-      - { label: "Nederlands Label", name: "nederlands", widget: "string" }
-      - { label: "English Label", name: "english", widget: "string" }
-      - { label: "Site Title", name: "site_title", widget: "string" }
+      - { label: "Nederlands Label", name: "global.nederlands", widget: "string" }
+      - { label: "English Label", name: "global.english", widget: "string" }
+      - { label: "Site Title", name: "global.site_title", widget: "string" }
 
     - label: "Coaching"
       name: "coaching"
