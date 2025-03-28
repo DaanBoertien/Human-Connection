@@ -222,58 +222,139 @@ home:
   adres: "Singel 2a"
   afbeelding-kantoor: "/assets/images/upload/kantoor.png"
 hoe-wij-werken:
-  waar-wij-voor-staan: jk
-  landing-tekst: jk
-  waarde-1-tekst: jk
-  waarde-2-tekst: jk
-  waar-wijvoor-staan-tekst: jkjkj
-  waarde-3-tekst: jk
-  waarde-4-tekst: jk
-  waarde-5-tekst: jk
-  pagina-afbeelding: jk
-  waarde-5-afbeelding: jk
-  waarde-4-afbeelding: jk
-  waarde-3-afbeelding: jk
-  title: jk
-  waarde-1-titel: jk
-  waarde-2-afbeelding: jk
-  waarde-2-titel: jk
-  waarde-1-afbeelding: jk
-  waarde-3-titel: jk
-  waarde-4-titel: jk
-  waarde-5-titel: jk
+  title: Hoe wij werken
+  landing-tekst: >-
+    Alles wat we doen is maatwerk, omdat elke verandering haar eigen dynamiek, complexiteit en tempo heeft.  
+
+    We hebben veel kennis in huis en zijn doorgewinterd in een aantal methodieken. Waar nodig zetten we deze in. Theorie en modellen gebruiken we als collectief begrippenkader en gemeenschappelijk taal. Het accent ligt bij ons altijd op directe toepasbaarheid in het dagelijkse werk.
+  pagina-afbeelding: /assets/images/upload/impact.jpg
+  waar-wij-voor-staan: Methoden en werkvormen
+  waar-wijvoor-staan-tekst: >-
+    Voorbeelden van methoden en werkvormen zijn: Connect to Perform-cultuurontwikkeling, agile/scrum, deep democracy, zakelijk tekenen, Discovery Insights, Voice Dialogue, onomkeerbaar veranderen, ontwerpen met de leerinfrastructuur, diverse creatieve werkvormen 
+
+
+    Ontwikkelingsgericht als we zijn, blijven we up to date met de nieuwste inzichten op het gebied van theorie en praktijk.
+  waarde-1-titel: 1. Contact en context
+  waarde-1-tekst: "Het begint bij persoonlijk contact. We bekijken samen met een opdrachtgever wat de context van de organisatie en de mensen op de werkvloer is. We kijken met een brede blik op het geheel: 'wat is hier nou echt aan de hand?'"
+  waarde-1-afbeelding: ""
+  waarde-2-titel: 2. Pragmatisch ontwerp en advies
+  waarde-2-tekst: Op basis daarvan geven we advies over een effectieve aanpak. Hierbij laten we de organisatie zoveel mogelijk zelf aan het stuur staan. We ontwerpen vooruit, het liefst samen met de mensen om wie het gaat. We scheppen realistische verwachtingen en kaders.
+  waarde-2-afbeelding: ""
+  waarde-3-titel: 3.  Begeleiding
+  waarde-3-tekst: We begeleiden de uitvoering stap voor stap, zodat bijstelling altijd mogelijk is. We werken methodisch waar nodig. We begrijpen de dynamiek en complexiteit van organisaties en hebben ook altijd oog voor de individuele mens en zijn werk en privé context.
+  waarde-3-afbeelding: ""
+  waarde-4-titel: 4. Doorpakken tot het echt werkt​
+  waarde-4-tekst: Juist op lastige momenten, of op het punt dat het juist te stil lijkt, helpen we om door te pakken.  We helpen de bewustwording om te zetten in actie op de werkvloer. Niet krampachtig vasthoudend aan het 'plan van een half jaar geleden', maar opnieuw in relatie tot de huidige koers en omstandigheden van de organisatie. Met de blik op lange termijn resultaat.​
+  waarde-4-afbeelding: ""
+  waarde-5-titel: 5. Evalueren
+  waarde-5-tekst: Ontwikkeling is nooit 'af'. Wel vinden we het belangrijk dat onze klanten na onze begeleiding ook weer een tijd zelfstandig verder weten gaan. We helpen scherp te evalueren en te anticiperen op volgende ontwikkelingen. En we houden de lijn voor een even sparren of bijpraten altijd open.
+  waarde-5-afbeelding: ""
 connect-to-perform:
-  button2: jkl
-  landing-tekst: jkkj
-  more-info: jkl
-  werkvorm-tekst: jkl
-  methoden: jk
-  werkwijze-tekst: jk
-  pagina-illustratie: jkjk
-  werkvorm-titel: jk
-  pagina-afbeelding: jk
-  werkwijze-titel: jk
-  methoden-tekst: jkjk
-  title: jk
-  button1: jk
+  title: Connect to Perform
+  pagina-afbeelding: /assets/images/upload/verandering-transitie.jpg
+  landing-tekst: ‘Connect to Perform’ is het gedachtegoed dat de basis vormt voor Human Connection’s advieswerk. Het demonstreert hoe teams en organisaties naar een meer effectieve én prettige werkwijze te bewegen zijn door (onderlinge) verbinding te maken. Om de brug te slaan tussen ’theorie’ en ‘zelf toepassen’, hebben we een spel ontworpen wat met groot succes in organisaties en op onze open avonden gespeeld wordt.
+  methoden: Connect to Perform Cultuurontwikkeling
+  methoden-tekst: " "
+  pagina-illustratie: /assets/images/upload/connect-to-perform-ingevuld.jpg
+  werkwijze-titel: "Connect to Perform: het spel "
+  werkwijze-tekst: >-
+    Tijdens het spel krijg je aan de hand van een fictieve situatie inzicht in de methodiek en mogelijke interventies om de organisatiecultuur en prestaties te ontwikkelen. Er wordt helder hoe je kunt signaleren in welke ontwikkelfase een organisatie (of team)cultuur zich bevindt. Op basis van voorbeelden uit de praktijk zie je spelenderwijs in wat er nodig is om de volgende ontwikkelstap te maken en wat juist zaken zijn die averechts uitpakken.
+
+
+    Je krijgt zicht op zo’n vijftig verschillende interventies die toepasbaar zijn in de werkpraktijk, om het gedrag en de cultuur van een team en organisatie te beïnvloeden. Kortom, in een paar uur wordt je op interactieve wijze ondergedompeld in onze succesvolle aanpak hoe je meer impact met je team maakt.
+  werkvorm-titel: Open spelavond
+  werkvorm-tekst: >
+    Als kennismaking organiseren we een aantal keer per jaar een open spelavond, tegenwoordig veelal online, waarop onze relaties en geïnteresseerden welkom zijn kennis te maken met deze methodiek. (deelname geheel gratis en zonder verdere verplichtingen) Via een inlog in ons online leerportaal krijg je toegang tot video’s met uitleg en achtergrondinformatie. Bovendien leert de ervaring dat het erg interessant is van gedachten te wisselen met mensen die je nog niet kende, werkzaam in diverse organisaties.
+
+
+    In organisaties spelen we het spel (online of offline) in MT-trajecten of leiderschapsprogramma’s. We hebben verschillende werkvormen, afhankelijk van tijd en interesse van de doelgroep en passen het spel ook inhoudelijk op maat aan waar nodig. De vertaling naar de werkcontext, in het licht van de strategie van de organisatie en tevens de concretisering ‘wat ga ik er morgen mee doen’ zijn belangrijke onderdelen in de nabespreking en eventuele follow-up.
+
+
+    Ook is het spel aan te vragen als losse workshop. Denk daarbij aan een halve of hele dag, online of offline voor een groep van 4 tot 80 deelnemers. Stuur voor meer informatie svp een mail naar Jojanneke van Goïnga.
+  button1: Meer weten over Connect to Perform
+  more-info: /assets/images/upload/connect_to_perform.pdf
+  button2: Meld je hier aan voor de open spelavond
 werken-bij:
-  contact: asdf
-  landing-tekst: asdf
-  wat-je-doet: asdf
-  wat-we-bieden: asdf
-  kop: asdf
-  pagina-afbeelding: asdf
-  wat-je-doet-tekst: asdf
-  uitzendbureaus: asdf
-  title: sadf
-  wat-we-bieden-tekst: asdf
-  vacature-open: true
+  title: Werken bij
+  vacature-open: false
+  pagina-afbeelding: /assets/images/upload/parachute.jpg
+  landing-tekst: We zoeken iemand die met zelfvertrouwen en een frisse blik voor de groep kan staan en ook in staat is individuele coachgesprekken te voeren. Je frisse blik en creativiteit zijn van harte welkom, evenals je vermogen om, ongeacht de omstandigheden, op een constructieve manier om te gaan met groepsdynamiek. Je blik is breder dan persoonlijke ontwikkeling alleen, je hebt interesse in organisatie ontwikkeling, van strategie tot uitvoering en bent eager om daar meer over te leren.
+  kop: Als coach/begeleider van ontwikkelprogramma’s
+  wat-je-doet: Wat doe je als?
+  wat-je-doet-tekst: >-
+    Je maakt op maat programma’s waarin medewerkers en managers van organisaties zich kunnen ontwikkelen. Denk hierbij als een jaartraject ‘Persoonlijk Leiderschap’, een ‘Masterclass-traject voor talent’ of andere vormen van trainee- of leiderschapsprogramma’s.
+
+
+    We zoeken iemand die met zelfvertrouwen en een frisse blik voor de groep kan staan en ook in staat is individuele coachgesprekken te voeren. Je frisse blik en creativiteit zijn van harte welkom, evenals je vermogen om, ongeacht de omstandigheden, op een constructieve manier om te gaan met groepsdynamiek. Je blik is breder dan persoonlijke ontwikkeling alleen, je hebt interesse in organisatie ontwikkeling, van strategie tot uitvoering en bent eager om daar meer over te leren. Je kunt goed samenwerken en bent tegelijkertijd autonoom genoeg om in onze kleinschalige, platte organisatie je eigen weg te vinden. Het spiegelen van klanten, collega’s en ook de spotlight op jezelf richten, vind je een mooie uitdaging.
+  wat-we-bieden: Dit bieden we je ook
+  wat-we-bieden-tekst: >-
+    * Een salaris dat past bij jouw kennis en ervaring. 
+
+    * Een eindejaarsbonus op basis van de gezamenlijk gemaakte winst. 
+
+    * Een laptop, telefoon, 1e klas OV kaart, alles wat je nodig hebt om goed hybride te werken en goede secundaire voorwaarden. 
+
+    * Een kantoor in hartje Amsterdam, 2 minuten lopen vanaf CS (waar je alleen hoeft te zijn als je samen met collega’s aan opdrachten werkt).
+  contact: Neem contact op met Meggie via [meggie@humanc.nl](#) of 06 50 83 56 58.
+  uitzendbureaus: Uitzend- of wervingsbureaus hoeven niet op deze vacature te reageren.
 vertrouwenspersoon:
-  title: asdf
-  landing-tekst: asdf
-  pagina-afbeelding: asdf
-  pagina-titel: asdf
-  vertrouwenspersoon-tekst: asdf
+  title: Vertrouwenspersoon
+  landing-tekst: >-
+    **Vertrouwenspersoon en preventie als prioriteit voor een sociaal veilige werkplek**
+
+
+    In een tijd waarin de nadruk steeds meer komt te liggen op het **creëren van een gezond en plezierig werkklimaat**, rijst de vraag: hoe kunnen organisaties **een veilige omgeving waarborgen voor hun medewerkers?** Het benoemen van een (interne) vertrouwenspersoon is voor bedrijven een veel gekozen **eerste stap.** Om daadwerkelijk een veilige werkomgeving te creëren en houden, zijn daarnaast **bredere maatregelen en soms zelfs een cultuurverandering nodig.** 
+
+
+    Het **integreren van sociale veiligheid op de werkplek** blijkt namelijk een cruciale factor te zijn in het streven naar **een duurzaam gezonde organisatie.** 
+
+
+    Als er een **prettig leer- en werkklimaat is, zijn de resultaten beter, wordt er effectiever gewerkt en is er meer innovatie** mogelijk is. Maar wat houdt dit precies in, en hoe kunnen organisaties dit realiseren?
+  pagina-afbeelding: /assets/images/upload/sociale-veiligheid.webp
+  pagina-titel: Vertrouwenspersoon
+  vertrouwenspersoon-tekst: >-
+    ### Wat is een sociaal veilige werkplek?
+
+
+    Iedere werkplek is anders, iedere bedrijfscultuur is anders. Toch is er een aantal elementen waaraan je herkent dat er sprake is van een sociaal veilige werkplek:
+
+
+    * Medewerkers uiten zich makkelijk. 
+
+    * Ze praten óok over knelpunten in de uitvoering van hun werk.
+
+    * Ze praten open en vrij.
+
+    * Ze spreken zich uit zonder angst voor de gevolgen.
+
+
+    ### Brede, systemische benadering 
+
+
+    Human Connection onderscheidt zich door een bredere benadering van het creëren van een sociale veilige werkplek, waarbij een vertrouwenspersoon een essentieel onderdeel vormt. 
+
+
+    De focus ligt op preventieve maatregelen, naast het bieden van hulp bij contextanalyse, interventies en begeleiding, mocht het toch tot escalatie komen. We doen dit met een doordachte en systemische aanpak die we al sinds 1998 gebruiken en doorontwikkelen. Kijk voor meer informatie [hier](https://www.humanc.nl/hoe-wij-werken/).
+
+
+    ### Human Connection biedt:
+
+
+    * Gecertificeerde vertrouwenspersonen
+
+    * Ieder vertrouwenspersoon brengt minimaal een extra expertise mee
+
+    * Vervanging bij ziekte of vakantie
+
+    * Onderlinge intervisie, ontsluit een nog breder perspectief op kwesties
+
+    * Ervaring met het betrekken van de hele organisatie bij start, vervolg en executie van (verander)traject.  
+
+
+    ### Meer weten?
+
+
+    Wil je meer weten over hoe Human Connection kijkt naar de rol van vertrouwenspersoon en preventie als prioriteit binnen een gezonde werkplek? Download hier ons whitepaper met sleutelfactoren van een sociaal veilige werkomgeving.
 ctp-contact:
   success: jkl
   landing-tekst: asdf
