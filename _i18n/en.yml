@@ -399,7 +399,7 @@ ctp-contact:
   landing-tekst: >- # Multiline string
     As an introduction, we organize an open game evening several times a year,  often online these days, where our contacts and interested parties are welcome  to become familiar with this methodology. (Participation is completely free  and without further obligation). Through a login to our online learning portal,  you gain access to videos with explanations and background information.  Furthermore, experience shows it's very interesting to exchange thoughts  with people you haven't met before, working in various organizations.
   aanmelding-title: Game Evening Registration Form
-  aanmelding-zoom: " " # Empty string, not translated
+  aanmelding-zoom: "" # Empty string, not translated
   aanmelding-tekst: Fill in your details here to register for the game evening.
   naam: Name*
   email: Email*
