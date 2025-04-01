@@ -86,8 +86,8 @@ nav:
   contact_url: "/contact/"
   werken_bij_url: "/werken-bij/"
   werken_bij_text: "Werken bij ons"
-  lang_nl: "Nederlands"
-  lang_en: "English"
+  lang_nl: "NL"
+  lang_en: "EN"
   call_us: "Bel ons"
   email_us: "Mail ons"
 home:
