@@ -70,13 +70,12 @@ nav:
   logo_alt_text: "Logo Human Connection"
   wie_wij_zijn_url: "/wie-wij-zijn/"
   wie_wij_zijn_text: "Wie wij zijn"
-  team_base_url: "/team/" # Base path used for team links and checking current status
+  team_base_url: "/team/"
   wat_wij_doen_text: "Wat wij doen"
   hoe_wij_werken_url: "/hoe-wij-werken/"
   hoe_wij_werken_text: "Hoe wij werken"
   wat_wij_doen_url: "/wat-wij-doen/"
   ctp-contact: "/ctp-contact/"
-  # wat_wij_doen_text key is already defined above
   connect_to_perform_url: "/connect-to-perform/"
   connect_to_perform_text: "Connect to Perform"
   vertrouwenspersoon_url: "/vertrouwenspersoon/"

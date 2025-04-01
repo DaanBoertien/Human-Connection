@@ -28,7 +28,7 @@ nav:
   lang_en: "English"
   call_us: "Call us"
   email_us: "Email us"
-  # Ensure you also have nav.succes_url defined if used in index.html form action
+
   succes_url: "/success/" # Changed from /succes/
 home:
   slogan: "Change is human work"
