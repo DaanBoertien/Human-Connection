@@ -44,6 +44,7 @@ collections:
     - label: "Global Settings"
       name: "global"
       widget: "object"
+      collapsed: true
       fields:
       - { label: "Nederlands Label", name: "global.nederlands", widget: "string" }
       - { label: "English Label", name: "global.english", widget: "string" }
@@ -52,6 +53,7 @@ collections:
     - label: "Coaching"
       name: "coaching"
       widget: "object"
+      collapsed: true
       fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
@@ -59,9 +61,10 @@ collections:
       - { label: "Page Title", name: "pagina-titel", widget: "string" }
       - { label: "Coaching Text", name: "coaching-tekst", widget: "markdown" }
 
-    - label: "Navigation"
+    - label: "Navigatie"
       name: "nav"
       widget: "object"
+      collapsed: true
       fields:
       - { label: "Home URL", name: "home_url", widget: "string" }
       - { label: "Logo Alt Text", name: "logo_alt_text", widget: "string" }
@@ -91,6 +94,7 @@ collections:
     - label: "Home"
       name: "home"
       widget: "object"
+      collapsed: true
       fields:
       - { label: "Slogan", name: "slogan", widget: "string" }
       - { label: "Landing Text", name: "landing-tekt", widget: "markdown" }
@@ -149,9 +153,10 @@ collections:
       - { label: "Address", name: "adres", widget: "string" }
       - { label: "Office Image", name: "afbeelding-kantoor", widget: "image" }
 
-    - label: "How We Work"
+    - label: "Hoe wij werken"
       name: "hoe-wij-werken"
       widget: "object"
+      collapsed: true
       fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
@@ -160,22 +165,23 @@ collections:
       - { label: "Where We Stand For Text", name: "waar-wijvoor-staan-tekst", widget: "markdown" }
       - { label: "Value 1 Title", name: "waarde-1-titel", widget: "string" }
       - { label: "Value 1 Text", name: "waarde-1-tekst", widget: "string" }
-      - { label: "Value 1 Image", name: "waarde-1-afbeelding", widget: "image" }
+      - { label: "Value 1 Image", name: "waarde-1-afbeelding", widget: "image", required: false }
       - { label: "Value 2 Title", name: "waarde-2-titel", widget: "string" }
       - { label: "Value 2 Text", name: "waarde-2-tekst", widget: "string" }
-      - { label: "Value 2 Image", name: "waarde-2-afbeelding", widget: "image" }
+      - { label: "Value 2 Image", name: "waarde-2-afbeelding", widget: "image", required: false }
       - { label: "Value 3 Title", name: "waarde-3-titel", widget: "string" }
       - { label: "Value 3 Text", name: "waarde-3-tekst", widget: "string" }
-      - { label: "Value 3 Image", name: "waarde-3-afbeelding", widget: "image" }
+      - { label: "Value 3 Image", name: "waarde-3-afbeelding", widget: "image", required: false }
       - { label: "Value 4 Title", name: "waarde-4-titel", widget: "string" }
       - { label: "Value 4 Text", name: "waarde-4-tekst", widget: "string" }
-      - { label: "Value 4 Image", name: "waarde-4-afbeelding", widget: "image" }
+      - { label: "Value 4 Image", name: "waarde-4-afbeelding", widget: "image", required: false }
       - { label: "Value 5 Title", name: "waarde-5-titel", widget: "string" }
       - { label: "Value 5 Text", name: "waarde-5-tekst", widget: "string" }
-      - { label: "Value 5 Image", name: "waarde-5-afbeelding", widget: "image" }
+      - { label: "Value 5 Image", name: "waarde-5-afbeelding", widget: "image", required: false }
 
     - label: "Connect to Perform"
       name: "connect-to-perform"
+      collapsed: true
       widget: "object"
       fields:
       - { label: "Title", name: "title", widget: "string" }
@@ -192,8 +198,9 @@ collections:
       - { label: "More Info", name: "more-info", widget: "string" }
       - { label: "Button 2", name: "button2", widget: "string" }
 
-    - label: "Work With Us"
+    - label: "Work Bij"
       name: "werken-bij"
+      collapsed: true
       widget: "object"
       fields:
       - { label: "Title", name: "title", widget: "string" }
@@ -208,8 +215,10 @@ collections:
       - { label: "Contact", name: "contact", widget: "string" }
       - { label: "Recruitment Agencies", name: "uitzendbureaus", widget: "string" }
 
-    - label: "Confidential Advisor"
+    - label: "Vertrouwenspersoon"
+      collapsed: true
       name: "vertrouwenspersoon"
+      collapsed: true
       widget: "object"
       fields:
       - { label: "Title", name: "title", widget: "string" }
@@ -220,6 +229,7 @@ collections:
 
     - label: "CTP Contact"
       name: "ctp-contact"
+      collapsed: true
       widget: "object"
       fields:
       - { label: "Title", name: "title", widget: "string" }
@@ -234,7 +244,7 @@ collections:
       - { label: "Position", name: "functie", widget: "string" }
       - { label: "Phone Number", name: "telefoonnummer", widget: "string" }
       - { label: "Which Evening", name: "welke", widget: "string" }
-      - label: "Dates"
+      - label: "Data"
         name: "data"
         widget: "list"
         fields:
