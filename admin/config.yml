@@ -218,7 +218,6 @@ collections:
     - label: "Vertrouwenspersoon"
       collapsed: true
       name: "vertrouwenspersoon"
-      collapsed: true
       widget: "object"
       fields:
       - { label: "Title", name: "title", widget: "string" }
