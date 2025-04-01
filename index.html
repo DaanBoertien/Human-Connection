@@ -65,63 +65,53 @@ namespace: home
     <div class="innercontainer">
       <div class="wwd-grid">
         <div>
-          {% comment %} Wat wij doen 1 Link {% endcomment %}
-          {% assign wwd1_base_path = 'home.wat-wij-doen-1_url' | t %} {% comment %} Corrected: Use 't' filter {%
-          endcomment %}
-          {% assign wwd1_raw_path = index_lang_prefix | append: wwd1_base_path %}
-          {% assign wwd1_final_path = wwd1_raw_path | replace: '//', '/' %}
           <h3 class="wwdfirstitem">{% t home.wat-wij-doen-1-titel %}</h3>
           {% capture wat_wij_doen_1_text %}{% t home.wat-wij-doen-1-tekst %}{% endcapture %}
           {{ wat_wij_doen_1_text | markdownify }}
           {% capture wat_wij_doen_1_contact %}{% t home.wat-wij-doen-1-contact %}{% endcapture %}
           {{ wat_wij_doen_1_contact | markdownify }}
           <p class="btn btn-outline">
-            <a href="{{ wwd1_final_path }}">{% t home.wat-wij-doen-1-button %}</a>
+            {% capture link_path %}{% t home.wat-wij-doen-1-link %}{% endcapture %}
+            <a href="{{ link_path | prepend: index_lang_prefix | replace: '//', '/' }}">{% t home.wat-wij-doen-1-button
+              %}</a>
           </p>
         </div>
         <div>
-          {% comment %} Wat wij doen 2 Link {% endcomment %}
-          {% assign wwd2_base_path = 'home.wat-wij-doen-2_url' | t %} {% comment %} Corrected: Use 't' filter {%
-          endcomment %}
-          {% assign wwd2_raw_path = index_lang_prefix | append: wwd2_base_path %}
-          {% assign wwd2_final_path = wwd2_raw_path | replace: '//', '/' %}
           <h3>{% t home.wat-wij-doen-2-titel %}</h3>
           {% capture wat_wij_doen_2_text %}{% t home.wat-wij-doen-2-tekst %}{% endcapture %}
           {{ wat_wij_doen_2_text | markdownify }}
           {% capture wat_wij_doen_2_contact %}{% t home.wat-wij-doen-2-contact %}{% endcapture %}
           {{ wat_wij_doen_2_contact | markdownify }}
           <p class="btn btn-outline">
-            <a href="{{ wwd2_final_path }}">{% t home.wat-wij-doen-2-button %}</a>
+            {% capture link_path %}{% t home.wat-wij-doen-2-link %}{% endcapture %}
+            <a href="{{ link_path | prepend: index_lang_prefix | replace: '//', '/' }}">{% t home.wat-wij-doen-2-button
+              %}</a>
           </p>
         </div>
         <div>
-          {% comment %} Wat wij doen 3 Link {% endcomment %}
-          {% assign wwd3_base_path = 'home.wat-wij-doen-3_url' | t %} {% comment %} Corrected: Use 't' filter {%
-          endcomment %}
-          {% assign wwd3_raw_path = index_lang_prefix | append: wwd3_base_path %}
-          {% assign wwd3_final_path = wwd3_raw_path | replace: '//', '/' %}
           <h3>{% t home.wat-wij-doen-3-titel %}</h3>
           {% capture wat_wij_doen_3_text %}{% t home.wat-wij-doen-3-tekst %}{% endcapture %}
           {{ wat_wij_doen_3_text | markdownify }}
           {% capture wat_wij_doen_3_contact %}{% t home.wat-wij-doen-3-contact %}{% endcapture %}
           {{ wat_wij_doen_3_contact | markdownify }}
           <p class="btn btn-outline">
-            <a href="{{ wwd3_final_path }}">{% t home.wat-wij-doen-3-button %}</a>
+            {% capture link_path %}{% t home.wat-wij-doen-3-link %}{% endcapture %}
+            <a href="{{ link_path | prepend: index_lang_prefix | replace: '//', '/' }}">{% t home.wat-wij-doen-3-button
+              %}</a>
           </p>
         </div>
       </div>
       <div class="centered">
-        {% comment %} Hoe wij werken Link - Using Page Lookup + Manual Prefix {% endcomment %}
         {% assign hww_page = site.pages | where_exp:"item", "item.namespace == 'hoe-wij-werken'" | first %}
         {% assign hww_final_url = "/" %} {% comment %} Fallback URL {% endcomment %}
         {% if hww_page %}
-        {% assign url_from_page = hww_page.url %} {% comment %} URL from page object (e.g., /how-we-work/) {% endcomment %}
-        {% comment %} Combine the CORRECT language prefix for this file (index_lang_prefix) with the page URL {% endcomment %}
-        {% assign raw_path = index_lang_prefix | append: url_from_page %}  {% assign
-          hww_final_url=raw_path | replace: '//' , '/' %} {% comment %} Clean potential double slashes {% endcomment %} {%
-          endif %} <p class="btn btn-full">
+        {% assign url_from_page = hww_page.url %}
+        {% assign raw_path = index_lang_prefix | append: url_from_page %}
+        {% assign hww_final_url = raw_path | replace: '//', '/' %}
+        {% endif %}
+        <p class="btn btn-full">
           <a href="{{ hww_final_url }}">{% t home.hoe-wij-werken %}</a>
-          </p>
+        </p>
       </div>
     </div>
   </div>
