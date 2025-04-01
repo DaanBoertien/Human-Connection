@@ -10,28 +10,52 @@ collections:
   label_singular: "Teamlid"
   folder: "_team/"
   create: true
-  summary: "{{title}}"
-  slug: "{{title}}"
+  summary: "{{nl.title}}"
+  slug: "{{nl.title | slugify}}"
   editor:
     preview: false
   fields:
   - { label: "Layout", name: "layout", widget: "hidden", default: "teammembers" }
-  - { label: "Naam", name: "title", widget: "string" }
-  - { label: "Functie", name: "function", widget: "string" }
-  - { label: "Emailadres", name: "email", widget: "string" }
-  - { label: "Telefoonnummer", name: "phonenumber", widget: "string" }
-  - { label: "Foto", name: "photo_url", widget: "image" }
-  - { label: "Omschrijving foto", name: "photo_description", widget: "string" }
-  - { label: "Omschrijving", name: "summary", widget: "markdown" }
-  - { label: "Uitleg", name: "uitleg", widget: "markdown" }
-  - label: "Achtergrondkleur"
+
+  # Shared non-translatable fields
+  - { label: "Email", name: "email", widget: "string" }
+  - { label: "Phone", name: "phonenumber", widget: "string" }
+  - { label: "Photo", name: "photo_url", widget: "image" }
+  - label: "Background Color"
     name: "bg_color"
     widget: "select"
     options: [ "Donkerblauw", "Lichtblauw", "Groen", "Grijs", "Geel", "Rood" ]
-  - { label: "Titel", name: "card_title", widget: "string" }
-  - { label: "Soundbites", name: "soundbites", widget: "string" }
-  - { label: "Soundbites Tekst", name: "soundbites_text", widget: "text" }
+  - { label: "Menu", name: "menu", widget: "string", required: false, default: "menu-active" }
 
+  # Dutch content as an object
+  - label: "Dutch Content"
+    name: "nl"
+    widget: "object"
+    collapsed: false
+    fields:
+    - { label: "Name", name: "title", widget: "string" }
+    - { label: "Function", name: "function", widget: "string" }
+    - { label: "Photo Description", name: "photo_description", widget: "string" }
+    - { label: "Summary", name: "summary", widget: "markdown" }
+    - { label: "Explanation", name: "uitleg", widget: "markdown" }
+    - { label: "Card Title", name: "card_title", widget: "string" }
+    - { label: "Soundbites", name: "soundbites", widget: "string" }
+    - { label: "Soundbites Text", name: "soundbites_text", widget: "text" }
+
+  # English content as an object
+  - label: "English Content"
+    name: "en"
+    widget: "object"
+    collapsed: true
+    fields:
+    - { label: "Name", name: "title", widget: "string" }
+    - { label: "Function", name: "function", widget: "string" }
+    - { label: "Photo Description", name: "photo_description", widget: "string" }
+    - { label: "Summary", name: "summary", widget: "markdown" }
+    - { label: "Explanation", name: "uitleg", widget: "markdown" }
+    - { label: "Card Title", name: "card_title", widget: "string" }
+    - { label: "Soundbites", name: "soundbites", widget: "string" }
+    - { label: "Soundbites Text", name: "soundbites_text", widget: "text" }
 - name: "translations"
   label: "Pagina's"
   files:
