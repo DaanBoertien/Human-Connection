@@ -65,15 +65,6 @@ collections:
     editor:
       preview: false
     fields:
-    - label: "Global Settings"
-      name: "global"
-      widget: "object"
-      collapsed: true
-      fields:
-      - { label: "Nederlands Label", name: "global.nederlands", widget: "string" }
-      - { label: "English Label", name: "global.english", widget: "string" }
-      - { label: "Site Title", name: "global.site_title", widget: "string" }
-
     - label: "Coaching"
       name: "coaching"
       widget: "object"
@@ -222,7 +213,7 @@ collections:
       - { label: "More Info", name: "more-info", widget: "file" }
       - { label: "Button 2", name: "button2", widget: "string" }
 
-    - label: "Work Bij"
+    - label: "Werken Bij"
       name: "werken-bij"
       collapsed: true
       widget: "object"
@@ -286,15 +277,6 @@ collections:
     editor:
       preview: false
     fields:
-    - label: "Global Settings"
-      name: "global"
-      widget: "object"
-      collapsed: true
-      fields:
-      - { label: "Nederlands Label", name: "global.nederlands", widget: "string" }
-      - { label: "English Label", name: "global.english", widget: "string" }
-      - { label: "Site Title", name: "global.site_title", widget: "string" }
-
     - label: "Coaching"
       name: "coaching"
       widget: "object"
