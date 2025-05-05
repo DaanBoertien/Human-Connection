@@ -1,44 +1,42 @@
 ---
 layout: teammembers
-
-# --- Shared / Non-Translatable Fields ---
 email: anne@humanc.nl
 phonenumber: 06 36 25 62 32
 photo_url: /assets/images/upload/anne-23.jpg
-bg_color: Groen # Or maybe use CSS classes instead?
-menu: menu-active # Controls visibility in menus
-
-# --- Dutch Content ---
+bg_color: Lichtblauw
+menu: menu-active
 nl:
   title: Anne Boertien
   function: Visueel organisatieadviseur | Ontwikkelaar | Coach
   photo_description: Anne tekent
-  summary: Potentie maximaal benutten en mensen in beweging brengen, dat zijn de belangrijkste drijfveren in mijn werk.
-  uitleg: >-
-    Ik hou van het begrijpelijk en tastbaar maken van abstracte, complexe zaken.
-    Visueel, door middel van zakelijk tekenen. Met een goed gesprek en focus op de
-    volledige mens. En oplossingsgericht, vanuit het doel.
-    Anderen omschrijven mij als warm en oprecht in relaties, scherp op de inhoud, en praktisch en creatief in de uitvoering.
+  summary: Potentie maximaal benutten en mensen in beweging brengen, dat zijn de
+    belangrijkste drijfveren in mijn werk.
+  uitleg: Ik hou van het begrijpelijk en tastbaar maken van abstracte, complexe
+    zaken. Visueel, door middel van zakelijk tekenen. Met een goed gesprek en
+    focus op de volledige mens. En oplossingsgericht, vanuit het doel. Anderen
+    omschrijven mij als warm en oprecht in relaties, scherp op de inhoud, en
+    praktisch en creatief in de uitvoering.
   card_title: Tijd voor actie?
   soundbites: "Leuk feitje: "
   soundbites_text: >
-    Wil je meer weten over mijn specialisatie in Zakelijk Tekenen? Kijk dan op www.anneboertien.nl
-
-# --- English Content ---
+    Wil je meer weten over mijn specialisatie in Zakelijk Tekenen? Kijk dan op
+    www.anneboertien.nl
 en:
-  title: Anne Boertien # Name might be the same, translate if needed
-  function: Visual Organizational Advisor | Developer | Coach # Example translation
-  photo_description: Anne drawing # Example translation
-  summary: Maximizing potential and mobilizing people, those are the main drivers in my work. # Example translation
-  uitleg: >-
-    I love making abstract, complex matters understandable and tangible.
+  title: Anne Boertien
+  function: Visual Organizational Advisor | Developer | Coach
+  photo_description: Anne drawing
+  summary: Maximizing potential and mobilizing people, those are the main drivers
+    in my work.
+  uitleg: "I love making abstract, complex matters understandable and tangible.
     Visually, through business drawing. With good conversation and focus on the
-    complete person. And solution-oriented, based on the goal.
-    Others describe me as warm and sincere in relationships, sharp on content, and practical and creative in execution. # Example translation
-  card_title: Time for action? # Example translation
-  soundbites: "Fun fact: " # Example translation
+    complete person. And solution-oriented, based on the goal. Others describe
+    me as warm and sincere in relationships, sharp on content, and practical and
+    creative in execution. # Example translation"
+  card_title: Time for action?
+  soundbites: "Fun fact: "
   soundbites_text: >
-    Want to know more about my specialization in Business Drawing? Check out www.anneboertien.nl
+    Want to know more about my specialization in Business Drawing? Check out
+    www.anneboertien.nl
 ---
 
 # Any Markdown content below the front matter (if used) would likely need language switching too, or be purely structural.
