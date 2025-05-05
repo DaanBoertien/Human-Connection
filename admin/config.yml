@@ -16,46 +16,45 @@ collections:
     preview: false
   fields:
   - { label: "Layout", name: "layout", widget: "hidden", default: "teammembers" }
-
-  # Shared non-translatable fields
-  - { label: "Email", name: "email", widget: "string" }
-  - { label: "Phone", name: "phonenumber", widget: "string" }
-  - { label: "Photo", name: "photo_url", widget: "image" }
-  - label: "Background Color"
+  - { label: "E-mail", name: "email", widget: "string" } # Translated
+  - { label: "Telefoonnummer", name: "phonenumber", widget: "string" } # Translated
+  - { label: "Foto", name: "photo_url", widget: "image" } # Translated
+  - label: "Achtergrondkleur" # Translated
     name: "bg_color"
     widget: "select"
     options: [ "Donkerblauw", "Lichtblauw", "Groen", "Grijs", "Geel", "Rood" ]
-  - { label: "Menu", name: "menu", widget: "string", required: false, default: "menu-active" }
+  - { label: "Menu Status", name: "menu", widget: "hidden", required: false, default: "menu-active" } # Translated "Menu"
 
-  # Dutch content as an object
-  - label: "Dutch Content"
+  - label: "Nederlandse Content" # Translated "Dutch Content"
     name: "nl"
     widget: "object"
     collapsed: false
     fields:
-    - { label: "Name", name: "title", widget: "string" }
-    - { label: "Function", name: "function", widget: "string" }
-    - { label: "Photo Description", name: "photo_description", widget: "string" }
-    - { label: "Summary", name: "summary", widget: "markdown" }
-    - { label: "Explanation", name: "uitleg", widget: "markdown" }
-    - { label: "Card Title", name: "card_title", widget: "string" }
-    - { label: "Soundbites", name: "soundbites", widget: "string" }
-    - { label: "Soundbites Text", name: "soundbites_text", widget: "text" }
+    # Translated labels inside
+    - { label: "Naam", name: "title", widget: "string" }
+    - { label: "Functie", name: "function", widget: "string" }
+    - { label: "Fotobeschrijving", name: "photo_description", widget: "string" }
+    - { label: "Samenvatting", name: "summary", widget: "markdown" }
+    - { label: "Uitleg", name: "uitleg", widget: "markdown" }
+    - { label: "Kaart Titel", name: "card_title", widget: "string" }
+    - { label: "Soundbites Titel", name: "soundbites", widget: "string" } # Assuming 'Soundbites' is a title
+    - { label: "Soundbites Tekst", name: "soundbites_text", widget: "text" }
 
-  # English content as an object
-  - label: "English Content"
+  - label: "Engelse Content" # Translated "English Content"
     name: "en"
     widget: "object"
     collapsed: true
     fields:
-    - { label: "Name", name: "title", widget: "string" }
-    - { label: "Function", name: "function", widget: "string" }
-    - { label: "Photo Description", name: "photo_description", widget: "string" }
-    - { label: "Summary", name: "summary", widget: "markdown" }
-    - { label: "Explanation", name: "uitleg", widget: "markdown" }
-    - { label: "Card Title", name: "card_title", widget: "string" }
-    - { label: "Soundbites", name: "soundbites", widget: "string" }
-    - { label: "Soundbites Text", name: "soundbites_text", widget: "text" }
+    # Translated labels inside
+    - { label: "Naam", name: "title", widget: "string" } # Using Dutch label
+    - { label: "Functie", name: "function", widget: "string" } # Using Dutch label
+    - { label: "Fotobeschrijving", name: "photo_description", widget: "string" } # Using Dutch label
+    - { label: "Samenvatting", name: "summary", widget: "markdown" } # Using Dutch label
+    - { label: "Uitleg", name: "uitleg", widget: "markdown" } # Using Dutch label
+    - { label: "Kaart Titel", name: "card_title", widget: "string" } # Using Dutch label
+    - { label: "Soundbites Titel", name: "soundbites", widget: "string" } # Using Dutch label
+    - { label: "Soundbites Tekst", name: "soundbites_text", widget: "text" } # Using Dutch label
+
 - name: "translations"
   label: "Pagina's"
   files:
@@ -65,258 +64,318 @@ collections:
     editor:
       preview: false
     fields:
-    - label: "Coaching"
-      name: "coaching"
-      widget: "object"
-      collapsed: true
-      fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Page Title", name: "pagina-titel", widget: "string" }
-      - { label: "Coaching Text", name: "coaching-tekst", widget: "markdown" }
-
-    - label: "Navigatie"
-      name: "nav"
-      widget: "object"
-      collapsed: true
-      fields:
-      - { label: "Home URL", name: "home_url", widget: "string" }
-      - { label: "Logo Alt Text", name: "logo_alt_text", widget: "string" }
-      - { label: "Wie Wij Zijn URL", name: "wie_wij_zijn_url", widget: "string" }
-      - { label: "Wie Wij Zijn Text", name: "wie_wij_zijn_text", widget: "string" }
-      - { label: "Team Base URL", name: "team_base_url", widget: "string" }
-      - { label: "Wat Wij Doen Text", name: "wat_wij_doen_text", widget: "string" }
-      - { label: "Hoe Wij Werken URL", name: "hoe_wij_werken_url", widget: "string" }
-      - { label: "Hoe Wij Werken Text", name: "hoe_wij_werken_text", widget: "string" }
-      - { label: "Wat Wij Doen URL", name: "wat_wij_doen_url", widget: "string" }
-      - { label: "CTP Contact", name: "ctp-contact", widget: "string" }
-      - { label: "Connect to Perform URL", name: "connect_to_perform_url", widget: "string" }
-      - { label: "Connect to Perform Text", name: "connect_to_perform_text", widget: "string" }
-      - { label: "Vertrouwenspersoon URL", name: "vertrouwenspersoon_url", widget: "string" }
-      - { label: "Vertrouwenspersoon Text", name: "vertrouwenspersoon_text", widget: "string" }
-      - { label: "Coaching URL", name: "coaching_url", widget: "string" }
-      - { label: "Coaching Text", name: "coaching_text", widget: "string" }
-      - { label: "Contact Text", name: "contact_text", widget: "string" }
-      - { label: "Contact URL", name: "contact_url", widget: "string" }
-      - { label: "Werken Bij URL", name: "werken_bij_url", widget: "string" }
-      - { label: "Werken Bij Text", name: "werken_bij_text", widget: "string" }
-      - { label: "Nederlands Language", name: "lang_nl", widget: "string" }
-      - { label: "English Language", name: "lang_en", widget: "string" }
-      - { label: "Call Us", name: "call_us", widget: "string" }
-      - { label: "Email Us", name: "email_us", widget: "string" }
-
-    - label: "Home"
-      name: "home"
-      widget: "object"
-      collapsed: true
-      fields:
-      - { label: "Slogan", name: "slogan", widget: "string" }
-      - { label: "Landing Text", name: "landing-tekt", widget: "markdown" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Where We Stand For", name: "waar-wij-voor-staan", widget: "string" }
-      - { label: "Where We Stand For Text", name: "waar-wijvoor-staan-tekst", widget: "markdown" }
-      - { label: "Value 1 Title", name: "waarde-1-titel", widget: "string" }
-      - { label: "Value 1 Text", name: "waarde-1-tekst", widget: "markdown" }
-      - { label: "Value 1 Image", name: "waarde-1-afbeelding", widget: "image" }
-      - { label: "Value 2 Title", name: "waarde-2-titel", widget: "string" }
-      - { label: "Value 2 Text", name: "waarde-2-tekst", widget: "markdown" }
-      - { label: "Value 2 Image", name: "waarde-2-afbeelding", widget: "image" }
-      - { label: "Value 3 Title", name: "waarde-3-titel", widget: "string" }
-      - { label: "Value 3 Text", name: "waarde-3-tekst", widget: "markdown" }
-      - { label: "Value 3 Image", name: "waarde-3-afbeelding", widget: "image" }
-      - { label: "What We Do", name: "wat-wij-doen", widget: "string" }
-      - { label: "What We Do Text", name: "wat-wij-doen-tekst", widget: "string" }
-      - { label: "What We Do 1 Title", name: "wat-wij-doen-1-titel", widget: "string" }
-      - { label: "What We Do 1 Text", name: "wat-wij-doen-1-tekst", widget: "markdown" }
-      - { label: "What We Do 1 Contact", name: "wat-wij-doen-1-contact", widget: "markdown" }
-      - { label: "What We Do 1 Button", name: "wat-wij-doen-1-button", widget: "string" }
-      - { label: "What We Do 1 Link", name: "wat-wij-doen-1-link", widget: "string" }
-      - { label: "What We Do 2 Title", name: "wat-wij-doen-2-titel", widget: "string" }
-      - { label: "What We Do 2 Text", name: "wat-wij-doen-2-tekst", widget: "markdown" }
-      - { label: "What We Do 2 Contact", name: "wat-wij-doen-2-contact", widget: "markdown" }
-      - { label: "What We Do 2 Button", name: "wat-wij-doen-2-button", widget: "string" }
-      - { label: "What We Do 2 Link", name: "wat-wij-doen-2-link", widget: "string" }
-      - { label: "What We Do 3 Title", name: "wat-wij-doen-3-titel", widget: "string" }
-      - { label: "What We Do 3 Text", name: "wat-wij-doen-3-tekst", widget: "markdown" }
-      - { label: "What We Do 3 Contact", name: "wat-wij-doen-3-contact", widget: "markdown" }
-      - { label: "What We Do 3 Button", name: "wat-wij-doen-3-button", widget: "string" }
-      - { label: "How We Work", name: "hoe-wij-werken", widget: "string" }
-      - { label: "What We Do 3 Link", name: "wat-wij-doen-3-link", widget: "string" }
-      - { label: "Who We Are", name: "wie-wij-zijn", widget: "string" }
-      - { label: "Action Question", name: "actievraag", widget: "string" }
-      - { label: "Action Question Subtitle", name: "actievraag-subtitel", widget: "string" }
-      - { label: "Action Question Button", name: "actievraag-button", widget: "string" }
-      - { label: "Partners Title", name: "partners-titel", widget: "string" }
-      - { label: "Contact Title", name: "contact-titel", widget: "string" }
-      - { label: "Contact Description", name: "contact-omschrijving", widget: "markdown" }
-      - { label: "Contact Name", name: "contact-naam", widget: "string" }
-      - { label: "Contact Email", name: "contact-email", widget: "string" }
-      - { label: "Contact Subject", name: "contact-onderwerp", widget: "string" }
-      - { label: "Contact Message", name: "contact-bericht", widget: "string" }
-      - { label: "Contact Placeholder", name: "contact-placeholder", widget: "string" }
-      - { label: "Contact Placeholder 2", name: "contact_placeholder", widget: "string" }
-      - { label: "Contact Label Name", name: "contact_label_naam", widget: "string" }
-      - { label: "Contact Label Subject", name: "contact_label_onderwerp", widget: "string" }
-      - { label: "Contact Label Email", name: "contact_label_email", widget: "string" }
-      - { label: "Contact Label Message", name: "contact_label_bericht", widget: "string" }
-      - { label: "Contact Submit Button", name: "contact_submit_button", widget: "string" }
-      - { label: "Contact Org Name", name: "contact_org_name", widget: "string" }
-      - { label: "Invitation", name: "uitnodiging", widget: "string" }
-      - { label: "Postal Code", name: "postcode", widget: "string" }
-      - { label: "Contact Button", name: "contact-button", widget: "string" }
-      - { label: "Address", name: "adres", widget: "string" }
-      - { label: "Office Image", name: "afbeelding-kantoor", widget: "image" }
-
+    # === DUTCH SECTION - ALL LABELS TRANSLATED ===
     - label: "Hoe wij werken"
       name: "hoe-wij-werken"
       widget: "object"
       collapsed: true
       fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Where We Stand For", name: "waar-wij-voor-staan", widget: "string" }
-      - { label: "Where We Stand For Text", name: "waar-wijvoor-staan-tekst", widget: "markdown" }
-      - { label: "Value 1 Title", name: "waarde-1-titel", widget: "string" }
-      - { label: "Value 1 Text", name: "waarde-1-tekst", widget: "string" }
-      - { label: "Value 1 Image", name: "waarde-1-afbeelding", widget: "image", required: false }
-      - { label: "Value 2 Title", name: "waarde-2-titel", widget: "string" }
-      - { label: "Value 2 Text", name: "waarde-2-tekst", widget: "string" }
-      - { label: "Value 2 Image", name: "waarde-2-afbeelding", widget: "image", required: false }
-      - { label: "Value 3 Title", name: "waarde-3-titel", widget: "string" }
-      - { label: "Value 3 Text", name: "waarde-3-tekst", widget: "string" }
-      - { label: "Value 3 Image", name: "waarde-3-afbeelding", widget: "image", required: false }
-      - { label: "Value 4 Title", name: "waarde-4-titel", widget: "string" }
-      - { label: "Value 4 Text", name: "waarde-4-tekst", widget: "string" }
-      - { label: "Value 4 Image", name: "waarde-4-afbeelding", widget: "image", required: false }
-      - { label: "Value 5 Title", name: "waarde-5-titel", widget: "string" }
-      - { label: "Value 5 Text", name: "waarde-5-tekst", widget: "string" }
-      - { label: "Value 5 Image", name: "waarde-5-afbeelding", widget: "image", required: false }
+      - { label: "Titel", name: "title", widget: "string" } # Trans.
+      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" } # Trans.
+      - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" } # Trans.
+      - { label: "Waar Wij Voor Staan", name: "waar-wij-voor-staan", widget: "string" } # Trans.
+      - { label: "Waar Wij Voor Staan Tekst", name: "waar-wijvoor-staan-tekst", widget: "markdown" } # Trans.
+      - { label: "Waarde 1 Titel", name: "waarde-1-titel", widget: "string" } # Trans.
+      - { label: "Waarde 1 Tekst", name: "waarde-1-tekst", widget: "string" } # Trans.
+      - { label: "Waarde 1 Afbeelding", name: "waarde-1-afbeelding", widget: "image", required: false } # Trans.
+      - { label: "Waarde 2 Titel", name: "waarde-2-titel", widget: "string" } # Trans.
+      - { label: "Waarde 2 Tekst", name: "waarde-2-tekst", widget: "string" } # Trans.
+      - { label: "Waarde 2 Afbeelding", name: "waarde-2-afbeelding", widget: "image", required: false } # Trans.
+      - { label: "Waarde 3 Titel", name: "waarde-3-titel", widget: "string" } # Trans.
+      - { label: "Waarde 3 Tekst", name: "waarde-3-tekst", widget: "string" } # Trans.
+      - { label: "Waarde 3 Afbeelding", name: "waarde-3-afbeelding", widget: "image", required: false } # Trans.
+      - { label: "Waarde 4 Titel", name: "waarde-4-titel", widget: "string" } # Trans.
+      - { label: "Waarde 4 Tekst", name: "waarde-4-tekst", widget: "string" } # Trans.
+      - { label: "Waarde 4 Afbeelding", name: "waarde-4-afbeelding", widget: "image", required: false } # Trans.
+      - { label: "Waarde 5 Titel", name: "waarde-5-titel", widget: "string" } # Trans.
+      - { label: "Waarde 5 Tekst", name: "waarde-5-tekst", widget: "string" } # Trans.
+      - { label: "Waarde 5 Afbeelding", name: "waarde-5-afbeelding", widget: "image", required: false } # Trans.
 
-    - label: "Connect to Perform"
+    - label: "Connect to Perform" # Keeping specific name
       name: "connect-to-perform"
       collapsed: true
       widget: "object"
       fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Landing Text", name: "landing-tekst", widget: "string" }
-      - { label: "Methods", name: "methoden", widget: "string" }
-      - { label: "Methods Text", name: "methoden-tekst", widget: "string" }
-      - { label: "Page Illustration", name: "pagina-illustratie", widget: "image" }
-      - { label: "Approach Title", name: "werkwijze-titel", widget: "string" }
-      - { label: "Approach Text", name: "werkwijze-tekst", widget: "markdown" }
-      - { label: "Form Title", name: "werkvorm-titel", widget: "string" }
-      - { label: "Form Text", name: "werkvorm-tekst", widget: "markdown" }
-      - { label: "Button 1", name: "button1", widget: "string" }
-      - { label: "More Info", name: "more-info", widget: "file" }
-      - { label: "Button 2", name: "button2", widget: "string" }
-
-    - label: "Werken Bij"
-      name: "werken-bij"
-      collapsed: true
-      widget: "object"
-      fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Vacancy Open", name: "vacature-open", widget: "boolean" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
-      - { label: "Heading", name: "kop", widget: "string" }
-      - { label: "What You Do", name: "wat-je-doet", widget: "string" }
-      - { label: "What You Do Text", name: "wat-je-doet-tekst", widget: "markdown" }
-      - { label: "What We Offer", name: "wat-we-bieden", widget: "string" }
-      - { label: "What We Offer Text", name: "wat-we-bieden-tekst", widget: "markdown" }
-      - { label: "Contact", name: "contact", widget: "string" }
-      - { label: "Recruitment Agencies", name: "uitzendbureaus", widget: "string" }
+      - { label: "Titel", name: "title", widget: "string" } # Trans.
+      - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" } # Trans.
+      - { label: "Landings Tekst", name: "landing-tekst", widget: "string" } # Trans.
+      - { label: "Methoden", name: "methoden", widget: "string" } # Trans.
+      - { label: "Methoden Tekst", name: "methoden-tekst", widget: "string" } # Trans.
+      - { label: "Pagina Illustratie", name: "pagina-illustratie", widget: "image" } # Trans.
+      - { label: "Werkwijze Titel", name: "werkwijze-titel", widget: "string" } # Trans.
+      - { label: "Werkwijze Tekst", name: "werkwijze-tekst", widget: "markdown" } # Trans.
+      - { label: "Werkvorm Titel", name: "werkvorm-titel", widget: "string" } # Trans.
+      - { label: "Werkvorm Tekst", name: "werkvorm-tekst", widget: "markdown" } # Trans.
+      - { label: "Knop 1", name: "button1", widget: "string" } # Trans.
+      - { label: "Meer Info (bestand)", name: "more-info", widget: "file" } # Trans.
+      - { label: "Knop 2", name: "button2", widget: "string" } # Trans.
 
     - label: "Vertrouwenspersoon"
       collapsed: true
       name: "vertrouwenspersoon"
       widget: "object"
       fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Page Title", name: "pagina-titel", widget: "string" }
-      - { label: "Advisor Text", name: "vertrouwenspersoon-tekst", widget: "markdown" }
+      - { label: "Titel", name: "title", widget: "string" } # Trans.
+      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" } # Trans.
+      - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" } # Trans.
+      - { label: "Pagina Titel", name: "pagina-titel", widget: "string" } # Trans.
+      - { label: "Vertrouwenspersoon Tekst", name: "vertrouwenspersoon-tekst", widget: "markdown" } # Trans.
 
-    - label: "CTP Contact"
+    - label: "Coaching"
+      name: "coaching"
+      widget: "object"
+      collapsed: true
+      fields:
+      - { label: "Titel", name: "title", widget: "string" } # Trans.
+      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" } # Trans.
+      - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" } # Trans.
+      - { label: "Pagina Titel", name: "pagina-titel", widget: "string" } # Trans.
+      - { label: "Coaching Tekst", name: "coaching-tekst", widget: "markdown" } # Trans.
+
+    - label: "CTP Contact" # Keeping specific name
       name: "ctp-contact"
       collapsed: true
       widget: "object"
       fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
-      - { label: "Registration Title", name: "aanmelding-title", widget: "string" }
-      - { label: "Registration Zoom", name: "aanmelding-zoom", widget: "string" }
-      - { label: "Registration Text", name: "aanmelding-tekst", widget: "string" }
-      - { label: "Name", name: "naam", widget: "string" }
-      - { label: "Email", name: "email", widget: "string" }
-      - { label: "Company", name: "bedrijf", widget: "string" }
-      - { label: "Position", name: "functie", widget: "string" }
-      - { label: "Phone Number", name: "telefoonnummer", widget: "string" }
-      - { label: "Which Evening", name: "welke", widget: "string" }
-      - label: "Data"
+      - { label: "Titel", name: "title", widget: "string" } # Trans.
+      - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" } # Trans.
+      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" } # Trans.
+      - { label: "Aanmelding Titel", name: "aanmelding-title", widget: "string" } # Trans.
+      - { label: "Aanmelding Zoom Tekst", name: "aanmelding-zoom", widget: "string" } # Trans.
+      - { label: "Aanmelding Tekst", name: "aanmelding-tekst", widget: "string" } # Trans.
+      - { label: "Naam", name: "naam", widget: "string" } # Trans.
+      - { label: "E-mail", name: "email", widget: "string" } # Trans.
+      - { label: "Bedrijf", name: "bedrijf", widget: "string" } # Trans.
+      - { label: "Functie", name: "functie", widget: "string" } # Trans.
+      - { label: "Telefoonnummer", name: "telefoonnummer", widget: "string" } # Trans.
+      - { label: "Welke Avond?", name: "welke", widget: "string" } # Trans.
+      - label: "Data" # Already Dutch
         name: "data"
         widget: "list"
         fields:
-        - { label: "Date", name: "datum", widget: "string" }
-      - { label: "How Did You Hear", name: "hoe", widget: "string" }
-      - { label: "Reason", name: "reden", widget: "string" }
-      - { label: "Success", name: "success", widget: "string" }
-      - { label: "Success Text", name: "success-text", widget: "markdown" }
-      - { label: "Back Button", name: "button-terug", widget: "string" }
-      - { label: "Placeholder Answer", name: "placeholder-answer", widget: "string" }
-      - { label: "Submit Button", name: "button-submit", widget: "string" }
-      - { label: "Reset Button", name: "button-reset", widget: "string" }
-  - name: "english"
-    label: "Engels"
+        - { label: "Datum", name: "datum", widget: "string" } # Trans.
+      - { label: "Hoe Heb Je Over Ons Gehoord?", name: "hoe", widget: "string" } # Trans.
+      - { label: "Reden", name: "reden", widget: "string" } # Trans.
+      - { label: "Succes Titel", name: "success", widget: "string" } # Trans.
+      - { label: "Succes Tekst", name: "success-text", widget: "markdown" } # Trans.
+      - { label: "Terug Knop", name: "button-terug", widget: "string" } # Trans.
+      - { label: "Placeholder Antwoord", name: "placeholder-answer", widget: "string" } # Trans.
+      - { label: "Verzend Knop", name: "button-submit", widget: "string" } # Trans.
+      - { label: "Reset Knop", name: "button-reset", widget: "string" } # Trans.
+
+    - label: "Home" # Keeping specific name, contextually clear
+      name: "home"
+      widget: "object"
+      collapsed: true
+      fields:
+      - { label: "Slogan", name: "slogan", widget: "string" }
+      - { label: "Landings Tekst", name: "landing-tekt", widget: "markdown" } # Trans. (Kept typo in name)
+      - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" } # Trans.
+      - { label: "Waar Wij Voor Staan", name: "waar-wij-voor-staan", widget: "string" } # Trans.
+      - { label: "Waar Wij Voor Staan Tekst", name: "waar-wijvoor-staan-tekst", widget: "markdown" } # Trans.
+      - { label: "Waarde 1 Titel", name: "waarde-1-titel", widget: "string" } # Trans.
+      - { label: "Waarde 1 Tekst", name: "waarde-1-tekst", widget: "markdown" } # Trans.
+      - { label: "Waarde 1 Afbeelding", name: "waarde-1-afbeelding", widget: "image" } # Trans.
+      - { label: "Waarde 2 Titel", name: "waarde-2-titel", widget: "string" } # Trans.
+      - { label: "Waarde 2 Tekst", name: "waarde-2-tekst", widget: "markdown" } # Trans.
+      - { label: "Waarde 2 Afbeelding", name: "waarde-2-afbeelding", widget: "image" } # Trans.
+      - { label: "Waarde 3 Titel", name: "waarde-3-titel", widget: "string" } # Trans.
+      - { label: "Waarde 3 Tekst", name: "waarde-3-tekst", widget: "markdown" } # Trans.
+      - { label: "Waarde 3 Afbeelding", name: "waarde-3-afbeelding", widget: "image" } # Trans.
+      - { label: "Wat Wij Doen", name: "wat-wij-doen", widget: "string" } # Trans.
+      - { label: "Wat Wij Doen Tekst", name: "wat-wij-doen-tekst", widget: "string" } # Trans.
+      - { label: "Wat Wij Doen 1 Titel", name: "wat-wij-doen-1-titel", widget: "string" } # Trans.
+      - { label: "Wat Wij Doen 1 Tekst", name: "wat-wij-doen-1-tekst", widget: "markdown" } # Trans.
+      - { label: "Wat Wij Doen 1 Contact Tekst", name: "wat-wij-doen-1-contact", widget: "markdown" } # Trans.
+      - { label: "Wat Wij Doen 1 Knop", name: "wat-wij-doen-1-button", widget: "string" } # Trans.
+      - { label: "Wat Wij Doen 1 Link", name: "wat-wij-doen-1-link", widget: "string" } # Trans.
+      - { label: "Wat Wij Doen 2 Titel", name: "wat-wij-doen-2-titel", widget: "string" } # Trans.
+      - { label: "Wat Wij Doen 2 Tekst", name: "wat-wij-doen-2-tekst", widget: "markdown" } # Trans.
+      - { label: "Wat Wij Doen 2 Contact Tekst", name: "wat-wij-doen-2-contact", widget: "markdown" } # Trans.
+      - { label: "Wat Wij Doen 2 Knop", name: "wat-wij-doen-2-button", widget: "string" } # Trans.
+      - { label: "Wat Wij Doen 2 Link", name: "wat-wij-doen-2-link", widget: "string" } # Trans.
+      - { label: "Wat Wij Doen 3 Titel", name: "wat-wij-doen-3-titel", widget: "string" } # Trans.
+      - { label: "Wat Wij Doen 3 Tekst", name: "wat-wij-doen-3-tekst", widget: "markdown" } # Trans.
+      - { label: "Wat Wij Doen 3 Contact Tekst", name: "wat-wij-doen-3-contact", widget: "markdown" } # Trans.
+      - { label: "Wat Wij Doen 3 Knop", name: "wat-wij-doen-3-button", widget: "string" } # Trans.
+      - { label: "Wat Wij Doen 3 Link", name: "wat-wij-doen-3-link", widget: "string" } # Trans.
+      - { label: "Hoe Wij Werken (Link Titel)", name: "hoe-wij-werken", widget: "string" } # Trans.
+      - { label: "Wie Wij Zijn (Link Titel)", name: "wie-wij-zijn", widget: "string" } # Trans.
+      - { label: "Actievraag", name: "actievraag", widget: "string" } # Trans.
+      - { label: "Actievraag Subtitel", name: "actievraag-subtitel", widget: "string" } # Trans.
+      - { label: "Actievraag Knop", name: "actievraag-button", widget: "string" } # Trans.
+      - { label: "Partners Titel", name: "partners-titel", widget: "string" } # Trans.
+      - { label: "Contact Titel", name: "contact-titel", widget: "string" } # Trans.
+      - { label: "Contact Omschrijving", name: "contact-omschrijving", widget: "markdown" } # Trans.
+      - { label: "Contact Naam", name: "contact-naam", widget: "string" } # Trans.
+      - { label: "Contact E-mail", name: "contact-email", widget: "string" } # Trans.
+      - { label: "Contact Onderwerp", name: "contact-onderwerp", widget: "string" } # Trans.
+      - { label: "Contact Bericht", name: "contact-bericht", widget: "string" } # Trans.
+      - { label: "Contact Placeholder (Algemeen)", name: "contact-placeholder", widget: "string" } # Trans.
+      - { label: "Contact Placeholder 2", name: "contact_placeholder", widget: "string" } # Trans.
+      - { label: "Contact Label Naam", name: "contact_label_naam", widget: "string" } # Trans.
+      - { label: "Contact Label Onderwerp", name: "contact_label_onderwerp", widget: "string" } # Trans.
+      - { label: "Contact Label E-mail", name: "contact_label_email", widget: "string" } # Trans.
+      - { label: "Contact Label Bericht", name: "contact_label_bericht", widget: "string" } # Trans.
+      - { label: "Contact Verzend Knop", name: "contact_submit_button", widget: "string" } # Trans.
+      - { label: "Contact Organisatie Naam", name: "contact_org_name", widget: "string" } # Trans.
+      - { label: "Contact Knop", name: "contact-button", widget: "string" } # Trans.
+      - { label: "Uitnodiging", name: "uitnodiging", widget: "string" } # Trans.
+      - { label: "Adres", name: "adres", widget: "string" } # Trans.
+      - { label: "Postcode", name: "postcode", widget: "string" } # Trans.
+      - { label: "Afbeelding Kantoor", name: "afbeelding-kantoor", widget: "image" } # Trans.
+
+    - label: "Werken Bij"
+      name: "werken-bij"
+      collapsed: true
+      widget: "object"
+      fields:
+      - { label: "Titel", name: "title", widget: "string" } # Trans.
+      - { label: "Vacature Open?", name: "vacature-open", widget: "boolean" } # Trans.
+      - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" } # Trans.
+      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" } # Trans.
+      - { label: "Kop", name: "kop", widget: "string" } # Trans.
+      - { label: "Wat Je Doet", name: "wat-je-doet", widget: "string" } # Trans.
+      - { label: "Wat Je Doet Tekst", name: "wat-je-doet-tekst", widget: "markdown" } # Trans.
+      - { label: "Wat We Bieden", name: "wat-we-bieden", widget: "string" } # Trans.
+      - { label: "Wat We Bieden Tekst", name: "wat-we-bieden-tekst", widget: "markdown" } # Trans.
+      - { label: "Contact", name: "contact", widget: "string" } # Already Dutch
+      - { label: "Wervingsbureaus", name: "uitzendbureaus", widget: "string" } # Trans. "Recruitment Agencies"
+
+    - label: "Navigatie"
+      name: "nav"
+      widget: "object"
+      collapsed: true
+      fields:
+      - { label: "Home URL", name: "home_url", widget: "string" } # Already Dutch
+      - { label: "Logo Alt Tekst", name: "logo_alt_text", widget: "string" } # Trans.
+      - { label: "Wie Wij Zijn URL", name: "wie_wij_zijn_url", widget: "string" } # Already Dutch
+      - { label: "Wie Wij Zijn Tekst", name: "wie_wij_zijn_text", widget: "string" } # Already Dutch
+      - { label: "Team Basis URL", name: "team_base_url", widget: "string" } # Trans.
+      - { label: "Wat Wij Doen Tekst", name: "wat_wij_doen_text", widget: "string" } # Already Dutch
+      - { label: "Hoe Wij Werken URL", name: "hoe_wij_werken_url", widget: "string" } # Already Dutch
+      - { label: "Hoe Wij Werken Tekst", name: "hoe_wij_werken_text", widget: "string" } # Already Dutch
+      - { label: "Wat Wij Doen URL", name: "wat_wij_doen_url", widget: "string" } # Already Dutch
+      - { label: "CTP Contact (Nav Tekst)", name: "ctp-contact", widget: "string" } # Added context
+      - { label: "Connect to Perform URL", name: "connect_to_perform_url", widget: "string" } # Already Dutch
+      - { label: "Connect to Perform Tekst", name: "connect_to_perform_text", widget: "string" } # Already Dutch
+      - { label: "Vertrouwenspersoon URL", name: "vertrouwenspersoon_url", widget: "string" } # Already Dutch
+      - { label: "Vertrouwenspersoon Tekst", name: "vertrouwenspersoon_text", widget: "string" } # Already Dutch
+      - { label: "Coaching URL", name: "coaching_url", widget: "string" } # Already Dutch
+      - { label: "Coaching Tekst", name: "coaching_text", widget: "string" } # Already Dutch
+      - { label: "Contact Tekst", name: "contact_text", widget: "string" } # Already Dutch
+      - { label: "Contact URL", name: "contact_url", widget: "string" } # Already Dutch
+      - { label: "Werken Bij URL", name: "werken_bij_url", widget: "string" } # Already Dutch
+      - { label: "Werken Bij Tekst", name: "werken_bij_text", widget: "string" } # Already Dutch
+      - { label: "Taal: Nederlands", name: "lang_nl", widget: "string" } # Trans.
+      - { label: "Taal: Engels", name: "lang_en", widget: "string" } # Trans.
+      - { label: "Bel Ons", name: "call_us", widget: "string" } # Trans.
+      - { label: "Email Ons", name: "email_us", widget: "string" } # Trans.
+
+  - name: "english" # === ENGLISH SECTION - ALL LABELS NOW MIRROR DUTCH SECTION ===
+    label: "Engels" # Dutch label
     file: "_i18n/en.yml"
     editor:
       preview: false
     fields:
+    # Ensure this order and labels match the Dutch section above exactly
+    - label: "Hoe wij werken"
+      name: "hoe-wij-werken"
+      widget: "object"
+      collapsed: true
+      fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+      - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
+      - { label: "Waar Wij Voor Staan", name: "waar-wij-voor-staan", widget: "string" }
+      - { label: "Waar Wij Voor Staan Tekst", name: "waar-wijvoor-staan-tekst", widget: "markdown" }
+      - { label: "Waarde 1 Titel", name: "waarde-1-titel", widget: "string" }
+      - { label: "Waarde 1 Tekst", name: "waarde-1-tekst", widget: "string" }
+      - { label: "Waarde 1 Afbeelding", name: "waarde-1-afbeelding", widget: "image", required: false }
+      - { label: "Waarde 2 Titel", name: "waarde-2-titel", widget: "string" }
+      - { label: "Waarde 2 Tekst", name: "waarde-2-tekst", widget: "string" }
+      - { label: "Waarde 2 Afbeelding", name: "waarde-2-afbeelding", widget: "image", required: false }
+      - { label: "Waarde 3 Titel", name: "waarde-3-titel", widget: "string" }
+      - { label: "Waarde 3 Tekst", name: "waarde-3-tekst", widget: "string" }
+      - { label: "Waarde 3 Afbeelding", name: "waarde-3-afbeelding", widget: "image", required: false }
+      - { label: "Waarde 4 Titel", name: "waarde-4-titel", widget: "string" }
+      - { label: "Waarde 4 Tekst", name: "waarde-4-tekst", widget: "string" }
+      - { label: "Waarde 4 Afbeelding", name: "waarde-4-afbeelding", widget: "image", required: false }
+      - { label: "Waarde 5 Titel", name: "waarde-5-titel", widget: "string" }
+      - { label: "Waarde 5 Tekst", name: "waarde-5-tekst", widget: "string" }
+      - { label: "Waarde 5 Afbeelding", name: "waarde-5-afbeelding", widget: "image", required: false }
+
+    - label: "Connect to Perform"
+      name: "connect-to-perform"
+      collapsed: true
+      widget: "object"
+      fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
+      - { label: "Landings Tekst", name: "landing-tekst", widget: "string" }
+      - { label: "Methoden", name: "methoden", widget: "string" }
+      - { label: "Methoden Tekst", name: "methoden-tekst", widget: "string" }
+      - { label: "Pagina Illustratie", name: "pagina-illustratie", widget: "image" }
+      - { label: "Werkwijze Titel", name: "werkwijze-titel", widget: "string" }
+      - { label: "Werkwijze Tekst", name: "werkwijze-tekst", widget: "markdown" }
+      - { label: "Werkvorm Titel", name: "werkvorm-titel", widget: "string" }
+      - { label: "Werkvorm Tekst", name: "werkvorm-tekst", widget: "markdown" }
+      - { label: "Knop 1", name: "button1", widget: "string" }
+      - { label: "Meer Info (bestand)", name: "more-info", widget: "file" }
+      - { label: "Knop 2", name: "button2", widget: "string" }
+
+    - label: "Vertrouwenspersoon"
+      collapsed: true
+      name: "vertrouwenspersoon"
+      widget: "object"
+      fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+      - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
+      - { label: "Pagina Titel", name: "pagina-titel", widget: "string" }
+      - { label: "Vertrouwenspersoon Tekst", name: "vertrouwenspersoon-tekst", widget: "markdown" }
+
     - label: "Coaching"
       name: "coaching"
       widget: "object"
       collapsed: true
       fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Page Title", name: "pagina-titel", widget: "string" }
-      - { label: "Coaching Text", name: "coaching-tekst", widget: "markdown" }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+      - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
+      - { label: "Pagina Titel", name: "pagina-titel", widget: "string" }
+      - { label: "Coaching Tekst", name: "coaching-tekst", widget: "markdown" }
 
-    - label: "Navigatie"
-      name: "nav"
-      widget: "object"
+    - label: "CTP Contact"
+      name: "ctp-contact"
       collapsed: true
+      widget: "object"
       fields:
-      - { label: "Home URL", name: "home_url", widget: "string" }
-      - { label: "Logo Alt Text", name: "logo_alt_text", widget: "string" }
-      - { label: "Wie Wij Zijn URL", name: "wie_wij_zijn_url", widget: "string" }
-      - { label: "Wie Wij Zijn Text", name: "wie_wij_zijn_text", widget: "string" }
-      - { label: "Team Base URL", name: "team_base_url", widget: "string" }
-      - { label: "Wat Wij Doen Text", name: "wat_wij_doen_text", widget: "string" }
-      - { label: "Hoe Wij Werken URL", name: "hoe_wij_werken_url", widget: "string" }
-      - { label: "Hoe Wij Werken Text", name: "hoe_wij_werken_text", widget: "string" }
-      - { label: "Wat Wij Doen URL", name: "wat_wij_doen_url", widget: "string" }
-      - { label: "CTP Contact", name: "ctp-contact", widget: "string" }
-      - { label: "Connect to Perform URL", name: "connect_to_perform_url", widget: "string" }
-      - { label: "Connect to Perform Text", name: "connect_to_perform_text", widget: "string" }
-      - { label: "Vertrouwenspersoon URL", name: "vertrouwenspersoon_url", widget: "string" }
-      - { label: "Vertrouwenspersoon Text", name: "vertrouwenspersoon_text", widget: "string" }
-      - { label: "Coaching URL", name: "coaching_url", widget: "string" }
-      - { label: "Coaching Text", name: "coaching_text", widget: "string" }
-      - { label: "Contact Text", name: "contact_text", widget: "string" }
-      - { label: "Contact URL", name: "contact_url", widget: "string" }
-      - { label: "Werken Bij URL", name: "werken_bij_url", widget: "string" }
-      - { label: "Werken Bij Text", name: "werken_bij_text", widget: "string" }
-      - { label: "Nederlands Language", name: "lang_nl", widget: "string" }
-      - { label: "English Language", name: "lang_en", widget: "string" }
-      - { label: "Call Us", name: "call_us", widget: "string" }
-      - { label: "Email Us", name: "email_us", widget: "string" }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
+      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+      - { label: "Aanmelding Titel", name: "aanmelding-title", widget: "string" }
+      - { label: "Aanmelding Zoom Tekst", name: "aanmelding-zoom", widget: "string" }
+      - { label: "Aanmelding Tekst", name: "aanmelding-tekst", widget: "string" }
+      - { label: "Naam", name: "naam", widget: "string" }
+      - { label: "E-mail", name: "email", widget: "string" }
+      - { label: "Bedrijf", name: "bedrijf", widget: "string" }
+      - { label: "Functie", name: "functie", widget: "string" }
+      - { label: "Telefoonnummer", name: "telefoonnummer", widget: "string" }
+      - { label: "Welke Avond?", name: "welke", widget: "string" }
+      - label: "Data"
+        name: "data"
+        widget: "list"
+        fields:
+        - { label: "Datum", name: "datum", widget: "string" }
+      - { label: "Hoe Heb Je Over Ons Gehoord?", name: "hoe", widget: "string" }
+      - { label: "Reden", name: "reden", widget: "string" }
+      - { label: "Succes Titel", name: "success", widget: "string" }
+      - { label: "Succes Tekst", name: "success-text", widget: "markdown" }
+      - { label: "Terug Knop", name: "button-terug", widget: "string" }
+      - { label: "Placeholder Antwoord", name: "placeholder-answer", widget: "string" }
+      - { label: "Verzend Knop", name: "button-submit", widget: "string" }
+      - { label: "Reset Knop", name: "button-reset", widget: "string" }
 
     - label: "Home"
       name: "home"
@@ -324,165 +383,109 @@ collections:
       collapsed: true
       fields:
       - { label: "Slogan", name: "slogan", widget: "string" }
-      - { label: "Landing Text", name: "landing-tekt", widget: "markdown" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Where We Stand For", name: "waar-wij-voor-staan", widget: "string" }
-      - { label: "Where We Stand For Text", name: "waar-wijvoor-staan-tekst", widget: "markdown" }
-      - { label: "Value 1 Title", name: "waarde-1-titel", widget: "string" }
-      - { label: "Value 1 Text", name: "waarde-1-tekst", widget: "markdown" }
-      - { label: "Value 1 Image", name: "waarde-1-afbeelding", widget: "image" }
-      - { label: "Value 2 Title", name: "waarde-2-titel", widget: "string" }
-      - { label: "Value 2 Text", name: "waarde-2-tekst", widget: "markdown" }
-      - { label: "Value 2 Image", name: "waarde-2-afbeelding", widget: "image" }
-      - { label: "Value 3 Title", name: "waarde-3-titel", widget: "string" }
-      - { label: "Value 3 Text", name: "waarde-3-tekst", widget: "markdown" }
-      - { label: "Value 3 Image", name: "waarde-3-afbeelding", widget: "image" }
-      - { label: "What We Do", name: "wat-wij-doen", widget: "string" }
-      - { label: "What We Do Text", name: "wat-wij-doen-tekst", widget: "string" }
-      - { label: "What We Do 1 Title", name: "wat-wij-doen-1-titel", widget: "string" }
-      - { label: "What We Do 1 Text", name: "wat-wij-doen-1-tekst", widget: "markdown" }
-      - { label: "What We Do 1 Contact", name: "wat-wij-doen-1-contact", widget: "markdown" }
-      - { label: "What We Do 1 Button", name: "wat-wij-doen-1-button", widget: "string" }
-      - { label: "What We Do 1 Link", name: "wat-wij-doen-1-link", widget: "string" }
-      - { label: "What We Do 2 Title", name: "wat-wij-doen-2-titel", widget: "string" }
-      - { label: "What We Do 2 Text", name: "wat-wij-doen-2-tekst", widget: "markdown" }
-      - { label: "What We Do 2 Contact", name: "wat-wij-doen-2-contact", widget: "markdown" }
-      - { label: "What We Do 2 Button", name: "wat-wij-doen-2-button", widget: "string" }
-      - { label: "What We Do 2 Link", name: "wat-wij-doen-2-link", widget: "string" }
-      - { label: "What We Do 3 Title", name: "wat-wij-doen-3-titel", widget: "string" }
-      - { label: "What We Do 3 Text", name: "wat-wij-doen-3-tekst", widget: "markdown" }
-      - { label: "What We Do 3 Contact", name: "wat-wij-doen-3-contact", widget: "markdown" }
-      - { label: "What We Do 3 Button", name: "wat-wij-doen-3-button", widget: "string" }
-      - { label: "How We Work", name: "hoe-wij-werken", widget: "string" }
-      - { label: "What We Do 3 Link", name: "wat-wij-doen-3-link", widget: "string" }
-      - { label: "Who We Are", name: "wie-wij-zijn", widget: "string" }
-      - { label: "Action Question", name: "actievraag", widget: "string" }
-      - { label: "Action Question Subtitle", name: "actievraag-subtitel", widget: "string" }
-      - { label: "Action Question Button", name: "actievraag-button", widget: "string" }
-      - { label: "Partners Title", name: "partners-titel", widget: "string" }
-      - { label: "Contact Title", name: "contact-titel", widget: "string" }
-      - { label: "Contact Description", name: "contact-omschrijving", widget: "markdown" }
-      - { label: "Contact Name", name: "contact-naam", widget: "string" }
-      - { label: "Contact Email", name: "contact-email", widget: "string" }
-      - { label: "Contact Subject", name: "contact-onderwerp", widget: "string" }
-      - { label: "Contact Message", name: "contact-bericht", widget: "string" }
-      - { label: "Contact Placeholder", name: "contact-placeholder", widget: "string" }
+      - { label: "Landings Tekst", name: "landing-tekt", widget: "markdown" } # (Kept typo in name)
+      - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
+      - { label: "Waar Wij Voor Staan", name: "waar-wij-voor-staan", widget: "string" }
+      - { label: "Waar Wij Voor Staan Tekst", name: "waar-wijvoor-staan-tekst", widget: "markdown" }
+      - { label: "Waarde 1 Titel", name: "waarde-1-titel", widget: "string" }
+      - { label: "Waarde 1 Tekst", name: "waarde-1-tekst", widget: "markdown" }
+      - { label: "Waarde 1 Afbeelding", name: "waarde-1-afbeelding", widget: "image" }
+      - { label: "Waarde 2 Titel", name: "waarde-2-titel", widget: "string" }
+      - { label: "Waarde 2 Tekst", name: "waarde-2-tekst", widget: "markdown" }
+      - { label: "Waarde 2 Afbeelding", name: "waarde-2-afbeelding", widget: "image" }
+      - { label: "Waarde 3 Titel", name: "waarde-3-titel", widget: "string" }
+      - { label: "Waarde 3 Tekst", name: "waarde-3-tekst", widget: "markdown" }
+      - { label: "Waarde 3 Afbeelding", name: "waarde-3-afbeelding", widget: "image" }
+      - { label: "Wat Wij Doen", name: "wat-wij-doen", widget: "string" }
+      - { label: "Wat Wij Doen Tekst", name: "wat-wij-doen-tekst", widget: "string" }
+      - { label: "Wat Wij Doen 1 Titel", name: "wat-wij-doen-1-titel", widget: "string" }
+      - { label: "Wat Wij Doen 1 Tekst", name: "wat-wij-doen-1-tekst", widget: "markdown" }
+      - { label: "Wat Wij Doen 1 Contact Tekst", name: "wat-wij-doen-1-contact", widget: "markdown" }
+      - { label: "Wat Wij Doen 1 Knop", name: "wat-wij-doen-1-button", widget: "string" }
+      - { label: "Wat Wij Doen 1 Link", name: "wat-wij-doen-1-link", widget: "string" }
+      - { label: "Wat Wij Doen 2 Titel", name: "wat-wij-doen-2-titel", widget: "string" }
+      - { label: "Wat Wij Doen 2 Tekst", name: "wat-wij-doen-2-tekst", widget: "markdown" }
+      - { label: "Wat Wij Doen 2 Contact Tekst", name: "wat-wij-doen-2-contact", widget: "markdown" }
+      - { label: "Wat Wij Doen 2 Knop", name: "wat-wij-doen-2-button", widget: "string" }
+      - { label: "Wat Wij Doen 2 Link", name: "wat-wij-doen-2-link", widget: "string" }
+      - { label: "Wat Wij Doen 3 Titel", name: "wat-wij-doen-3-titel", widget: "string" }
+      - { label: "Wat Wij Doen 3 Tekst", name: "wat-wij-doen-3-tekst", widget: "markdown" }
+      - { label: "Wat Wij Doen 3 Contact Tekst", name: "wat-wij-doen-3-contact", widget: "markdown" }
+      - { label: "Wat Wij Doen 3 Knop", name: "wat-wij-doen-3-button", widget: "string" }
+      - { label: "Wat Wij Doen 3 Link", name: "wat-wij-doen-3-link", widget: "string" }
+      - { label: "Hoe Wij Werken (Link Titel)", name: "hoe-wij-werken", widget: "string" }
+      - { label: "Wie Wij Zijn (Link Titel)", name: "wie-wij-zijn", widget: "string" }
+      - { label: "Actievraag", name: "actievraag", widget: "string" }
+      - { label: "Actievraag Subtitel", name: "actievraag-subtitel", widget: "string" }
+      - { label: "Actievraag Knop", name: "actievraag-button", widget: "string" }
+      - { label: "Partners Titel", name: "partners-titel", widget: "string" }
+      - { label: "Contact Titel", name: "contact-titel", widget: "string" }
+      - { label: "Contact Omschrijving", name: "contact-omschrijving", widget: "markdown" }
+      - { label: "Contact Naam", name: "contact-naam", widget: "string" }
+      - { label: "Contact E-mail", name: "contact-email", widget: "string" }
+      - { label: "Contact Onderwerp", name: "contact-onderwerp", widget: "string" }
+      - { label: "Contact Bericht", name: "contact-bericht", widget: "string" }
+      - { label: "Contact Placeholder (Algemeen)", name: "contact-placeholder", widget: "string" }
       - { label: "Contact Placeholder 2", name: "contact_placeholder", widget: "string" }
-      - { label: "Contact Label Name", name: "contact_label_naam", widget: "string" }
-      - { label: "Contact Label Subject", name: "contact_label_onderwerp", widget: "string" }
-      - { label: "Contact Label Email", name: "contact_label_email", widget: "string" }
-      - { label: "Contact Label Message", name: "contact_label_bericht", widget: "string" }
-      - { label: "Contact Submit Button", name: "contact_submit_button", widget: "string" }
-      - { label: "Contact Org Name", name: "contact_org_name", widget: "string" }
-      - { label: "Invitation", name: "uitnodiging", widget: "string" }
-      - { label: "Postal Code", name: "postcode", widget: "string" }
-      - { label: "Contact Button", name: "contact-button", widget: "string" }
-      - { label: "Address", name: "adres", widget: "string" }
-      - { label: "Office Image", name: "afbeelding-kantoor", widget: "image" }
-
-    - label: "Hoe wij werken"
-      name: "hoe-wij-werken"
-      widget: "object"
-      collapsed: true
-      fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Where We Stand For", name: "waar-wij-voor-staan", widget: "string" }
-      - { label: "Where We Stand For Text", name: "waar-wijvoor-staan-tekst", widget: "markdown" }
-      - { label: "Value 1 Title", name: "waarde-1-titel", widget: "string" }
-      - { label: "Value 1 Text", name: "waarde-1-tekst", widget: "string" }
-      - { label: "Value 1 Image", name: "waarde-1-afbeelding", widget: "image", required: false }
-      - { label: "Value 2 Title", name: "waarde-2-titel", widget: "string" }
-      - { label: "Value 2 Text", name: "waarde-2-tekst", widget: "string" }
-      - { label: "Value 2 Image", name: "waarde-2-afbeelding", widget: "image", required: false }
-      - { label: "Value 3 Title", name: "waarde-3-titel", widget: "string" }
-      - { label: "Value 3 Text", name: "waarde-3-tekst", widget: "string" }
-      - { label: "Value 3 Image", name: "waarde-3-afbeelding", widget: "image", required: false }
-      - { label: "Value 4 Title", name: "waarde-4-titel", widget: "string" }
-      - { label: "Value 4 Text", name: "waarde-4-tekst", widget: "string" }
-      - { label: "Value 4 Image", name: "waarde-4-afbeelding", widget: "image", required: false }
-      - { label: "Value 5 Title", name: "waarde-5-titel", widget: "string" }
-      - { label: "Value 5 Text", name: "waarde-5-tekst", widget: "string" }
-      - { label: "Value 5 Image", name: "waarde-5-afbeelding", widget: "image", required: false }
-
-    - label: "Connect to Perform"
-      name: "connect-to-perform"
-      collapsed: true
-      widget: "object"
-      fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Landing Text", name: "landing-tekst", widget: "string" }
-      - { label: "Methods", name: "methoden", widget: "string" }
-      - { label: "Methods Text", name: "methoden-tekst", widget: "string" }
-      - { label: "Page Illustration", name: "pagina-illustratie", widget: "image" }
-      - { label: "Approach Title", name: "werkwijze-titel", widget: "string" }
-      - { label: "Approach Text", name: "werkwijze-tekst", widget: "markdown" }
-      - { label: "Form Title", name: "werkvorm-titel", widget: "string" }
-      - { label: "Form Text", name: "werkvorm-tekst", widget: "markdown" }
-      - { label: "Button 1", name: "button1", widget: "string" }
-      - { label: "More Info", name: "more-info", widget: "file" }
-      - { label: "Button 2", name: "button2", widget: "string" }
+      - { label: "Contact Label Naam", name: "contact_label_naam", widget: "string" }
+      - { label: "Contact Label Onderwerp", name: "contact_label_onderwerp", widget: "string" }
+      - { label: "Contact Label E-mail", name: "contact_label_email", widget: "string" }
+      - { label: "Contact Label Bericht", name: "contact_label_bericht", widget: "string" }
+      - { label: "Contact Verzend Knop", name: "contact_submit_button", widget: "string" }
+      - { label: "Contact Organisatie Naam", name: "contact_org_name", widget: "string" }
+      - { label: "Contact Knop", name: "contact-button", widget: "string" }
+      - { label: "Uitnodiging", name: "uitnodiging", widget: "string" }
+      - { label: "Adres", name: "adres", widget: "string" }
+      - { label: "Postcode", name: "postcode", widget: "string" }
+      - { label: "Afbeelding Kantoor", name: "afbeelding-kantoor", widget: "image" }
 
     - label: "Werken Bij"
       name: "werken-bij"
       collapsed: true
       widget: "object"
       fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Vacancy Open", name: "vacature-open", widget: "boolean" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
-      - { label: "Heading", name: "kop", widget: "string" }
-      - { label: "What You Do", name: "wat-je-doet", widget: "string" }
-      - { label: "What You Do Text", name: "wat-je-doet-tekst", widget: "markdown" }
-      - { label: "What We Offer", name: "wat-we-bieden", widget: "string" }
-      - { label: "What We Offer Text", name: "wat-we-bieden-tekst", widget: "markdown" }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Vacature Open?", name: "vacature-open", widget: "boolean" }
+      - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
+      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+      - { label: "Kop", name: "kop", widget: "string" }
+      - { label: "Wat Je Doet", name: "wat-je-doet", widget: "string" }
+      - { label: "Wat Je Doet Tekst", name: "wat-je-doet-tekst", widget: "markdown" }
+      - { label: "Wat We Bieden", name: "wat-we-bieden", widget: "string" }
+      - { label: "Wat We Bieden Tekst", name: "wat-we-bieden-tekst", widget: "markdown" }
       - { label: "Contact", name: "contact", widget: "string" }
-      - { label: "Recruitment Agencies", name: "uitzendbureaus", widget: "string" }
+      - { label: "Wervingsbureaus", name: "uitzendbureaus", widget: "string" }
 
-    - label: "Vertrouwenspersoon"
-      collapsed: true
-      name: "vertrouwenspersoon"
+    - label: "Navigatie"
+      name: "nav"
       widget: "object"
+      collapsed: true
       fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Page Title", name: "pagina-titel", widget: "string" }
-      - { label: "Advisor Text", name: "vertrouwenspersoon-tekst", widget: "markdown" }
+      - { label: "Home URL", name: "home_url", widget: "string" }
+      - { label: "Logo Alt Tekst", name: "logo_alt_text", widget: "string" }
+      - { label: "Wie Wij Zijn URL", name: "wie_wij_zijn_url", widget: "string" }
+      - { label: "Wie Wij Zijn Tekst", name: "wie_wij_zijn_text", widget: "string" }
+      - { label: "Team Basis URL", name: "team_base_url", widget: "string" }
+      - { label: "Wat Wij Doen Tekst", name: "wat_wij_doen_text", widget: "string" }
+      - { label: "Hoe Wij Werken URL", name: "hoe_wij_werken_url", widget: "string" }
+      - { label: "Hoe Wij Werken Tekst", name: "hoe_wij_werken_text", widget: "string" }
+      - { label: "Wat Wij Doen URL", name: "wat_wij_doen_url", widget: "string" }
+      - { label: "CTP Contact (Nav Tekst)", name: "ctp-contact", widget: "string" }
+      - { label: "Connect to Perform URL", name: "connect_to_perform_url", widget: "string" }
+      - { label: "Connect to Perform Tekst", name: "connect_to_perform_text", widget: "string" }
+      - { label: "Vertrouwenspersoon URL", name: "vertrouwenspersoon_url", widget: "string" }
+      - { label: "Vertrouwenspersoon Tekst", name: "vertrouwenspersoon_text", widget: "string" }
+      - { label: "Coaching URL", name: "coaching_url", widget: "string" }
+      - { label: "Coaching Tekst", name: "coaching_text", widget: "string" }
+      - { label: "Contact Tekst", name: "contact_text", widget: "string" }
+      - { label: "Contact URL", name: "contact_url", widget: "string" }
+      - { label: "Werken Bij URL", name: "werken_bij_url", widget: "string" }
+      - { label: "Werken Bij Tekst", name: "werken_bij_text", widget: "string" }
+      - { label: "Taal: Nederlands", name: "lang_nl", widget: "string" }
+      - { label: "Taal: Engels", name: "lang_en", widget: "string" }
+      - { label: "Bel Ons", name: "call_us", widget: "string" }
+      - { label: "Email Ons", name: "email_us", widget: "string" }
 
-    - label: "CTP Contact"
-      name: "ctp-contact"
-      collapsed: true
-      widget: "object"
-      fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Page Image", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Landing Text", name: "landing-tekst", widget: "markdown" }
-      - { label: "Registration Title", name: "aanmelding-title", widget: "string" }
-      - { label: "Registration Zoom", name: "aanmelding-zoom", widget: "string" }
-      - { label: "Registration Text", name: "aanmelding-tekst", widget: "string" }
-      - { label: "Name", name: "naam", widget: "string" }
-      - { label: "Email", name: "email", widget: "string" }
-      - { label: "Company", name: "bedrijf", widget: "string" }
-      - { label: "Position", name: "functie", widget: "string" }
-      - { label: "Phone Number", name: "telefoonnummer", widget: "string" }
-      - { label: "Which Evening", name: "welke", widget: "string" }
-      - label: "Data"
-        name: "data"
-        widget: "list"
-        fields:
-        - { label: "Date", name: "datum", widget: "string" }
-      - { label: "How Did You Hear", name: "hoe", widget: "string" }
-      - { label: "Reason", name: "reden", widget: "string" }
-      - { label: "Success", name: "success", widget: "string" }
-      - { label: "Success Text", name: "success-text", widget: "markdown" }
-      - { label: "Back Button", name: "button-terug", widget: "string" }
-      - { label: "Placeholder Answer", name: "placeholder-answer", widget: "string" }
-      - { label: "Submit Button", name: "button-submit", widget: "string" }
-      - { label: "Reset Button", name: "button-reset", widget: "string" }
 - name: "ctp"
   label: "Connect To Perform Spelavond"
   files:
@@ -492,29 +495,29 @@ collections:
     editor:
       preview: false
     fields:
-    - label: "Title"
+    - label: "Titel" # Trans.
       name: "title"
       widget: "string"
-    - label: "Landing Tekt"
+    - label: "Landings Tekst" # Trans. (Kept typo in name)
       name: "landing-tekst"
       widget: "markdown"
-    - label: "Page Image"
+    - label: "Pagina Afbeelding" # Trans.
       name: "pagina-afbeelding"
       widget: "image"
-    - label: "Page Title"
+    - label: "Pagina Titel" # Trans.
       name: "pagina-titel"
       widget: "string"
-    - label: "Welkom Tekst"
+    - label: "Welkom Tekst" # Trans.
       name: "welkom-tekst"
       widget: "markdown"
-    - label: "Videos"
+    - label: "Video's" # Trans.
       name: "video"
       widget: "list"
       fields:
-      - label: "Video Titel"
+      - label: "Video Titel" # Trans.
         name: "title"
         widget: "string"
-      - label: "YouTube ID"
+      - label: "YouTube ID" # Trans.
         name: "youtube-id"
         widget: "string"
   - name: "CTP Ronde 1"
@@ -523,30 +526,30 @@ collections:
     editor:
       preview: false
     fields:
-    - label: "Title"
+    - label: "Titel" # Trans.
       name: "title"
       widget: "string"
-    - label: "Landing tekst"
+    - label: "Landings Tekst" # Trans.
       name: "landing-tekst"
       widget: "markdown"
-    - label: "Page Image"
+    - label: "Pagina Afbeelding" # Trans.
       name: "pagina-afbeelding"
       widget: "image"
-    - label: "Page Title"
+    - label: "Pagina Titel" # Trans.
       name: "pagina-titel"
       widget: "string"
-    - label: "Ronde 1 tekst"
+    - label: "Ronde 1 Tekst" # Trans.
       name: "ronde1-tekst"
       widget: "markdown"
-    - label: "PDFs"
+    - label: "PDFs" # Kept as plural sounds ok in Dutch context
       label_singular: "PDF"
       name: "pdf"
       widget: "list"
       fields:
-      - label: "PDF Title"
+      - label: "PDF Titel" # Trans.
         name: "pdf-title"
         widget: "string"
-      - label: "PDF File"
+      - label: "PDF Bestand" # Trans.
         name: "pdf"
         widget: "file"
   - name: "CTP Ronde 2"
@@ -555,19 +558,19 @@ collections:
     editor:
       preview: false
     fields:
-    - label: "Title"
+    - label: "Titel" # Trans.
       name: "title"
       widget: "string"
-    - label: "Landing tekst"
+    - label: "Landings Tekst" # Trans.
       name: "landing-tekst"
       widget: "markdown"
-    - label: "Page Image"
+    - label: "Pagina Afbeelding" # Trans.
       name: "pagina-afbeelding"
       widget: "image"
-    - label: "Page Title"
+    - label: "Pagina Titel" # Trans.
       name: "pagina-titel"
       widget: "string"
-    - label: "Ronde 2 tekst"
+    - label: "Ronde 2 Tekst" # Trans.
       name: "ronde2-tekst"
       widget: "markdown"
     - label: "PDFs"
@@ -575,10 +578,10 @@ collections:
       name: "pdf"
       widget: "list"
       fields:
-      - label: "PDF Title"
+      - label: "PDF Titel" # Trans.
         name: "pdf-title"
         widget: "string"
-      - label: "PDF File"
+      - label: "PDF Bestand" # Trans.
         name: "pdf"
         widget: "file"
   - name: "CTP Ronde 3"
@@ -587,19 +590,19 @@ collections:
     editor:
       preview: false
     fields:
-    - label: "Title"
+    - label: "Titel" # Trans.
       name: "title"
       widget: "string"
-    - label: "Landing tekst"
+    - label: "Landings Tekst" # Trans.
       name: "landing-tekst"
       widget: "markdown"
-    - label: "Page Image"
+    - label: "Pagina Afbeelding" # Trans.
       name: "pagina-afbeelding"
       widget: "image"
-    - label: "Page Title"
+    - label: "Pagina Titel" # Trans.
       name: "pagina-titel"
       widget: "string"
-    - label: "Ronde 3 tekst"
+    - label: "Ronde 3 Tekst" # Trans.
       name: "ronde3-tekst"
       widget: "markdown"
     - label: "PDFs"
@@ -607,9 +610,9 @@ collections:
       name: "pdf"
       widget: "list"
       fields:
-      - label: "PDF Title"
+      - label: "PDF Titel" # Trans.
         name: "pdf-title"
         widget: "string"
-      - label: "PDF File"
+      - label: "PDF Bestand" # Trans.
         name: "pdf"
         widget: "file"
