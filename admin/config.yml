@@ -71,7 +71,7 @@ collections:
   # Define specific files managed by this collection
   # Dutch translations/content file
   - name: "dutch"
-    label: "Nederlands (nl.yml)" # Label for this specific file in CMS (Dutch)
+    label: "Nederlands" # Label for this specific file in CMS (Dutch)
     file: "_i18n/nl.yml" # Path to the Dutch YAML file
     editor:
       preview: false # Disable CMS preview
@@ -85,7 +85,7 @@ collections:
       fields:
       # Fields within this section
       - { label: "Slogan", name: "slogan", widget: "string" }
-      - { label: "Landings Tekst", name: "landing-tekt", widget: "markdown" } # Kept name typo as requested
+      - { label: "Introductietekst", name: "landing-tekt", widget: "markdown" } # Kept name typo as requested
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
       - { label: "Waar Wij Voor Staan", name: "waar-wij-voor-staan", widget: "string" }
       - { label: "Waar Wij Voor Staan Tekst", name: "waar-wijvoor-staan-tekst", widget: "markdown" }
@@ -148,7 +148,7 @@ collections:
       fields:
       # Fields within this section
       - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+      - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
       - { label: "Waar Wij Voor Staan", name: "waar-wij-voor-staan", widget: "string" }
       - { label: "Waar Wij Voor Staan Tekst", name: "waar-wijvoor-staan-tekst", widget: "markdown" }
@@ -176,7 +176,7 @@ collections:
       # Fields within this section
       - { label: "Titel", name: "title", widget: "string" }
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Landings Tekst", name: "landing-tekst", widget: "string" }
+      - { label: "Introductietekst", name: "landing-tekst", widget: "string" }
       - { label: "Methoden", name: "methoden", widget: "string" }
       - { label: "Methoden Tekst", name: "methoden-tekst", widget: "string" }
       - { label: "Pagina Illustratie", name: "pagina-illustratie", widget: "image" }
@@ -195,7 +195,7 @@ collections:
       fields:
       # Fields within this section
       - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+      - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
       - { label: "Pagina Titel", name: "pagina-titel", widget: "string" }
       - { label: "Vertrouwenspersoon Tekst", name: "vertrouwenspersoon-tekst", widget: "markdown" }
@@ -207,7 +207,7 @@ collections:
       fields:
       # Fields within this section
       - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+      - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
       - { label: "Pagina Titel", name: "pagina-titel", widget: "string" }
       - { label: "Coaching Tekst", name: "coaching-tekst", widget: "markdown" }
@@ -220,7 +220,7 @@ collections:
       # Fields within this section
       - { label: "Titel", name: "title", widget: "string" }
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+      - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
       - { label: "Aanmelding Titel", name: "aanmelding-title", widget: "string" }
       - { label: "Aanmelding Zoom Tekst", name: "aanmelding-zoom", widget: "string" }
       - { label: "Aanmelding Tekst", name: "aanmelding-tekst", widget: "string" }
@@ -254,7 +254,7 @@ collections:
       - { label: "Titel", name: "title", widget: "string" }
       - { label: "Vacature Open?", name: "vacature-open", widget: "boolean" }
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+      - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
       - { label: "Kop", name: "kop", widget: "string" }
       - { label: "Wat Je Doet", name: "wat-je-doet", widget: "string" }
       - { label: "Wat Je Doet Tekst", name: "wat-je-doet-tekst", widget: "markdown" }
@@ -296,7 +296,7 @@ collections:
 
   # English translations/content file
   - name: "english"
-    label: "Engels (en.yml)" # Label for this specific file in CMS (Dutch)
+    label: "Engels" # Label for this specific file in CMS (Dutch)
     file: "_i18n/en.yml" # Path to the English YAML file
     editor:
       preview: false # Disable CMS preview
@@ -310,7 +310,7 @@ collections:
       fields:
       # Fields within this section (using Dutch labels)
       - { label: "Slogan", name: "slogan", widget: "string" }
-      - { label: "Landings Tekst", name: "landing-tekt", widget: "markdown" } # Kept name typo as requested
+      - { label: "Introductietekst", name: "landing-tekt", widget: "markdown" } # Kept name typo as requested
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
       - { label: "Waar Wij Voor Staan", name: "waar-wij-voor-staan", widget: "string" }
       - { label: "Waar Wij Voor Staan Tekst", name: "waar-wijvoor-staan-tekst", widget: "markdown" }
@@ -373,7 +373,7 @@ collections:
       fields:
       # Fields within this section (using Dutch labels)
       - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+      - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
       - { label: "Waar Wij Voor Staan", name: "waar-wij-voor-staan", widget: "string" }
       - { label: "Waar Wij Voor Staan Tekst", name: "waar-wijvoor-staan-tekst", widget: "markdown" }
@@ -401,7 +401,7 @@ collections:
       # Fields within this section (using Dutch labels)
       - { label: "Titel", name: "title", widget: "string" }
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Landings Tekst", name: "landing-tekst", widget: "string" }
+      - { label: "Introductietekst", name: "landing-tekst", widget: "string" }
       - { label: "Methoden", name: "methoden", widget: "string" }
       - { label: "Methoden Tekst", name: "methoden-tekst", widget: "string" }
       - { label: "Pagina Illustratie", name: "pagina-illustratie", widget: "image" }
@@ -420,7 +420,7 @@ collections:
       fields:
       # Fields within this section (using Dutch labels)
       - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+      - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
       - { label: "Pagina Titel", name: "pagina-titel", widget: "string" }
       - { label: "Vertrouwenspersoon Tekst", name: "vertrouwenspersoon-tekst", widget: "markdown" }
@@ -432,7 +432,7 @@ collections:
       fields:
       # Fields within this section (using Dutch labels)
       - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+      - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
       - { label: "Pagina Titel", name: "pagina-titel", widget: "string" }
       - { label: "Coaching Tekst", name: "coaching-tekst", widget: "markdown" }
@@ -445,7 +445,7 @@ collections:
       # Fields within this section (using Dutch labels)
       - { label: "Titel", name: "title", widget: "string" }
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+      - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
       - { label: "Aanmelding Titel", name: "aanmelding-title", widget: "string" }
       - { label: "Aanmelding Zoom Tekst", name: "aanmelding-zoom", widget: "string" }
       - { label: "Aanmelding Tekst", name: "aanmelding-tekst", widget: "string" }
@@ -479,7 +479,7 @@ collections:
       - { label: "Titel", name: "title", widget: "string" }
       - { label: "Vacature Open?", name: "vacature-open", widget: "boolean" }
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
-      - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+      - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
       - { label: "Kop", name: "kop", widget: "string" }
       - { label: "Wat Je Doet", name: "wat-je-doet", widget: "string" }
       - { label: "Wat Je Doet Tekst", name: "wat-je-doet-tekst", widget: "markdown" }
@@ -532,7 +532,7 @@ collections:
     fields:
     # Fields within this data file
     - { label: "Titel", name: "title", widget: "string" }
-    - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" } # Kept name typo as requested
+    - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" } # Kept name typo as requested
     - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
     - { label: "Pagina Titel", name: "pagina-titel", widget: "string" }
     - { label: "Welkom Tekst", name: "welkom-tekst", widget: "markdown" }
@@ -551,7 +551,7 @@ collections:
     fields:
     # Fields within this data file
     - { label: "Titel", name: "title", widget: "string" }
-    - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+    - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
     - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
     - { label: "Pagina Titel", name: "pagina-titel", widget: "string" }
     - { label: "Ronde 1 Tekst", name: "ronde1-tekst", widget: "markdown" }
@@ -571,7 +571,7 @@ collections:
     fields:
     # Fields within this data file
     - { label: "Titel", name: "title", widget: "string" }
-    - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+    - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
     - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
     - { label: "Pagina Titel", name: "pagina-titel", widget: "string" }
     - { label: "Ronde 2 Tekst", name: "ronde2-tekst", widget: "markdown" }
@@ -591,7 +591,7 @@ collections:
     fields:
     # Fields within this data file
     - { label: "Titel", name: "title", widget: "string" }
-    - { label: "Landings Tekst", name: "landing-tekst", widget: "markdown" }
+    - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
     - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
     - { label: "Pagina Titel", name: "pagina-titel", widget: "string" }
     - { label: "Ronde 3 Tekst", name: "ronde3-tekst", widget: "markdown" }
