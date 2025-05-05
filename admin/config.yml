@@ -492,7 +492,7 @@ collections:
         name: "data"
         widget: "list"
         fields:
-        - { label: "Date", name: "datum", widget: "datetime" }
+        - { label: "Date", name: "datum", widget: "string" }
       - { label: "How Did You Hear", name: "hoe", widget: "string" }
       - { label: "Reason", name: "reden", widget: "string" }
       - { label: "Success", name: "success", widget: "string" }
