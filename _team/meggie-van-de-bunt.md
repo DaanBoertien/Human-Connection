@@ -1,19 +1,17 @@
 ---
 layout: teammembers
-
-# --- Shared / Non-Translatable Fields ---
 email: meggie@humanc.nl
 phonenumber: 06 50 83 56 58
 photo_url: /assets/images/upload/dsc_1717.jpg
-photo_description: Meggie
 bg_color: Geel
-menu: menu-active # Assuming this should be active
-
-# --- Dutch Content ---
+menu: menu-active
 nl:
   title: Meggie van de Bunt
   function: Organisatieadviseur | Interim-manager
-  summary: '"Een ervaren leider op gebied van Mens & Organisatie, met hart voor de zaak" is een omschrijving die mij goed past. Ik heb een uitgebreide trackrecord van management/bestuursfuncties binnen zowel de overheid als de gezondheidszorg.'
+  summary: '"Een ervaren leider op gebied van Mens & Organisatie, met hart voor de
+    zaak" is een omschrijving die mij goed past. Ik heb een uitgebreide
+    trackrecord van management/bestuursfuncties binnen zowel de overheid als de
+    gezondheidszorg.'
   uitleg: >-
     Ik ben initiatiefrijk en zet graag een koers uit die in lijn ligt met het
     grotere geheel. Ik draag graag bij aan tevreden klanten, gezonde
@@ -30,26 +28,30 @@ nl:
   card_title: Tijd voor actie?
   soundbites: "Meggie in drie woorden: "
   soundbites_text: Vakkennis | Vertrouwen | Verbinding
-
-# --- English Content ---
+  photo_description: meggie
 en:
   title: Meggie van de Bunt
   function: Organizational Advisor | Interim Manager
-  summary: '"An experienced leader in the field of People & Organization, with a heart for the business" is a description that fits me well. I have an extensive track record of management/board positions within both the public sector and healthcare.'
+  summary: '"An experienced leader in the field of People & Organization, with a
+    heart for the cause" is a description that suits me well. I have an
+    extensive track record of management/board positions within both the
+    governmenet and healthcare.'
   uitleg: >-
-    I am full of initiative and enjoy setting a course that aligns with the
-    bigger picture. I like to contribute to satisfied customers, healthy
-    business operations, and job satisfaction.
+    I am proactive and like to set a course that aligns with the bigger picture.
+    I enjoy contributing to satisfied customers, healthy business operations,
+    and job satisfaction.
 
 
-    As a 'people person', I get energy from setting goals and achieving results together with others. I decisively get to the core, set a clear course, and know how to steadily develop an organization (or part of it) in the right direction through collaboration.
+    As a 'people person', I get my energy from setting goals and achieving results together with others. I get to the core decisively , set out a clear course, and know how to steadily develop an organization (or part of it) in the right direction through collaboration.
 
 
-    I am just as comfortable at the board table as in a team meeting and know from experience that both are definitely related. As far as I'm concerned, a (change) plan is only truly successful when daily practice experiences a positive impact from it.
+    I am just as comfortable at the board table as in a team meeting and know from experience that both are related. In my opinion, a (change) plan is only truly successful if the daily practice positively reflects on it.
 
 
-    I am brimming with initiatives, creative, and have a fresh perspective on challenges. I have the courage to do what is necessary and do not shy away from complex situations. I consider tough issues my specialty. I enjoy reflecting and learning.
+    I am full of initiative, creative, and have a fresh perspective on challenges. I have thecourage to do what is necessary and do not shy away from complex situations. I see tough issues as my specialty. I like to reflect and learn.
   card_title: Time for action?
   soundbites: "Meggie in three words: "
   soundbites_text: Expertise | Trust | Connection
+  photo_description: meggie
+photo_description: Meggie
 ---
