@@ -63,7 +63,7 @@ home:
   waar-wij-voor-staan: What we stand for
   wat-wij-doen-1-contact: |-
     **Want to know more?**\
-    For example, contact Sjef or Zilla.
+    Please contact Sjef or Zilla.
   partners-titel: "Worked with, among others:"
   wat-wij-doen-2-contact: |-
     **Want to know more?**\
@@ -75,7 +75,7 @@ home:
   contact-placeholder: Your answer
   contact-bericht: Question/Message
   contact_label_naam: Name*
-  wat-wij-doen-1-titel: Organizational Development & Team Development
+  wat-wij-doen-1-titel: Organizational development & team development
   wat-wij-doen-2-titel: Interim Management
   contact_label_bericht: Question/Message*
   wat-wij-doen-3-titel: Learning & Development
@@ -135,43 +135,38 @@ home:
   waarde-2-afbeelding: /assets/images/upload/icoon2dun.png
   waarde-2-titel: In Trust
   wat-wij-doen-tekst: "We approach every issue with an organization-wide
-    perspective. We do this based on several areas of expertise:"
+    perspective. We do this from several areas of expertise:"
   waarde-1-afbeelding: /assets/images/upload/icoon3dun.png
   contact_submit_button: Send message
   waarde-3-titel: In Context
   adres: Singel 2a
   actievraag: What challenges are you facing in your organization?
   wat-wij-doen-1-tekst: >-
-    We advise and guide teams and organizations during changes. Through longer
+    We advise and guide teams and organizations through changes. Through longer
     trajectories (lasting cultural change or reorganizations), shorter
-    interventions (teambuilding and proactive behavior), and 'everything in
-    between'.
+    interventions (teambuilding and proactive behavior), and everything in
+    between.
 
 
     Examples include:
 
 
-    * Transformation towards more self-management  
-
+    * Transformation to more self-management  
 
     * Facilitating in-depth conversations and powerful decision-making.  
 
-
     * Culture development: better performance and a more (pro)active culture.  
-
 
     * Reorganizations, mergers, optimizing collaborations  
 
-
     * Compliance and integrity issues  
-
 
     * Implementing and guiding Agile/Scrum
   slogan: Change is human work
   wat-wij-doen-2-tekst: >-
-    As interim professionals, we become part of the organization for a period.
-    As a manager or director, together with the strategic partners present in
-    the organization, we proactively set a course that aligns with the bigger
+    As interim professionals, we are part of the organization for a while. As
+    managers or directors, we, together with the strategic partners present in
+    the organization, proactively set a course that aligns with the bigger
     picture. We enjoy doing this in combination with a change assignment.
 
 
@@ -180,17 +175,13 @@ home:
 
     * Change management  
 
-
     * HR management  
-
 
     * Strategy implementation  
 
-
     * ICT management  
 
-
-    * L&D Professional
+    * L&D professional
   contact-button: Send Message
 hoe-wij-werken:
   waar-wij-voor-staan: Methods and formats
