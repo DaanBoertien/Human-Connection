@@ -1,14 +1,10 @@
 ---
 layout: teammembers
-
-# --- Shared / Non-Translatable Fields ---
 email: daan@humanc.nl
 phonenumber: 06 51 29 27 47
 photo_url: /assets/images/upload/daan-23.jpg
 bg_color: Lichtblauw
-menu: menu-active # Assuming this should be active
-
-# --- Dutch Content ---
+menu: menu-active
 nl:
   title: Daan van der Weele
   function: Samenwerkingsontwikkelaar | Organisatieadviseur
@@ -31,9 +27,8 @@ nl:
     Liefdevol en confronterend help ik een team de goede richting in en verwonder ik me daarbij iedere keer weer over zowel de hogere productiviteit als het toegenomen geluk bij de teamleden.
   card_title: Tijd voor actie?
   soundbites: "Daan in het kort: "
-  soundbites_text: Verbindend, werkend met wat er op dat moment is, oog voor de mens, technisch en hands on
-
-# --- English Content ---
+  soundbites_text: Verbindend, werkend met wat er op dat moment is, oog voor de
+    mens, technisch en hands on
 en:
   title: Daan van der Weele
   function: Collaboration Developer | Organizational Advisor
@@ -42,19 +37,20 @@ en:
     Getting the most out of teams, that's what I'm about.
     The core of the matter is crucial: what is really going on?
   uitleg: >-
-    Time and again, I am curious and simultaneously moved by the
-    undercurrents in the collaboration among all those wonderful people regarding structure,
+    Time and again, I am curious and simultaneously moved by the undercurrents
+    in the collaboration among all those wonderful people regarding structure,
     processes, and behavior.
 
 
-    Then, I confidently implement the necessary interventions because I know they will truly work: often a combination of structure, processes, people, and IT. I also describe it as “managing the white spaces”.
+    Then, I confidently deploy the necessary interventions because I know they will really work: often a combination of structure, processes, people, and IT. I also describe it as “managing the white spaces”.
 
 
-    Sometimes I provide solutions, and sometimes I deliberately don't; in one case, I really push forward, and in another, just a conversation is more than enough.
+    Sometimes I provide solutions, and sometimes I deliberately don't. Sometimes I really push hard amd sometimes a gentle conversation is more than enough.
 
 
-    Lovingly and confrontingly, I help guide a team in the right direction, and each time I am amazed by both the increased productivity and the enhanced happiness of the team members.
+    Lovingly and confrontationally, I help guide teams in the right direction, and each time I am amazed by both the increased productivity and the enhanced happiness of the team members.
   card_title: Time for action?
   soundbites: "Daan in short: "
-  soundbites_text: Connecting, working with what is present at the moment, an eye for the human aspect, technical and hands-on
+  soundbites_text: Connecting, working with what is present at the moment, having
+    an eye for the human aspect, technical and hands-on
 ---
