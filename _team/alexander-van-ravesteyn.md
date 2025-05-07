@@ -1,19 +1,17 @@
 ---
 layout: teammembers
-
-# --- Shared / Non-Translatable Fields ---
-email: "alexander@humanc.nl" # Removed trailing space
+email: alexander@humanc.nl
 phonenumber: 06 577 42 619
 photo_url: /assets/images/upload/alexander-23.jpg
-bg_color: Donkerblauw # Or maybe use CSS classes instead? Consider consistency.
-menu: menu-active # Assuming this should be active like the example
-
-# --- Dutch Content ---
+bg_color: Donkerblauw
+menu: menu-active
 nl:
   title: Alexander van Ravesteyn
   function: Agile organisatieadviseur | Coach
-  photo_description: "Alexander van Ravesteyn Agile" # Removed trailing space
-  summary: Als agile organisatie adviseur, coach en senior scrummaster help ik bij verander- en organisatievraagstukken. Op organisatie/team niveau, maar ook op individueel niveau.​
+  photo_description: Alexander van Ravesteyn Agile
+  summary: Als agile organisatie adviseur, coach en senior scrummaster help ik bij
+    verander- en organisatievraagstukken. Op organisatie/team niveau, maar ook
+    op individueel niveau.​
   uitleg: >-
     Mijn opdrachtgevers zien mij als een deskundige en loyale aanjager van het
     realiseren van hun doelstellingen.​
@@ -26,15 +24,15 @@ nl:
   soundbites_text: |-
     Toegankelijk en betrokken​ | Nuchter en no-nonsens​ |
     Confronterend, maar wel op een vriendelijke manier
-
-# --- English Content ---
 en:
   title: Alexander van Ravesteyn
   function: Agile Organizational Advisor | Coach
-  photo_description: "Alexander van Ravesteyn Agile"
-  summary: As an agile organizational advisor, coach, and senior scrum master, I assist with change and organizational challenges, both at the organizational/team level and the individual level.
+  photo_description: Alexander van Ravesteyn Agile
+  summary: As an agile organizational advisor, coach, and senior scrum master, I
+    help with change and organizational challenges, both at the
+    organizational/team level and the individual level.
   uitleg: >-
-    My clients see me as an expert and loyal driver in achieving their goals.
+    My clients see me as an expert and loyal enabler to achieving their goals.
 
     My strength lies in: genuine connection, sharp analyses, doing what is necessary, setting clear lines together with others, and ensuring it continues to work.
 
@@ -43,5 +41,5 @@ en:
   soundbites: "Alexander in short: "
   soundbites_text: |-
     Accessible and involved | Down-to-earth and no-nonsense |
-    Confrontational, but in a friendly way
+    Confrontational, in a friendly way
 ---
