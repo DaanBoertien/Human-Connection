@@ -391,14 +391,15 @@ coaching:
     Contact one of our colleagues directly, or for more information contact [Marit.](https://www.humanc.nl/team/marit-weiss/)
 ctp-contact:
   success: Thank you for registering!
-  landing-tekst: As an introduction, we organize an open game evening several
-    times a year, often online these days, where our contacts and interested
-    parties are welcome to become familiar with this methodology. (Participation
-    is completely free and without further obligation). Through a login to our
-    online learning portal, you gain access to videos with explanations and
-    background information. Furthermore, experience shows it's very interesting
-    to exchange thoughts with people you haven't met before, working in various
-    organizations.
+  landing-tekst: >-
+    As an introduction, we organize an open game evening several times a year,
+    nowadays mostly online, where our relations and interested parties are
+    welcome to get to know this methodology. (Participation is completely free
+    and without further obligations).  Experience shows it's very interesting to
+    exchange thoughts with people you haven't met before, working in various
+    organizations. 
+
+    If you participate you gain access to videos with explanations and background information. You are very welcome!
   telefoonnummer: Phone Number*
   data:
     - datum: "Monday October 6th: 19:30-21:45."
@@ -439,7 +440,7 @@ werken-bij:
     personal development alone; you are interested in organizational
     development, from strategy to execution, and are eager to learn more about
     it.
-  wat-je-doet: "What You'll Do:"
+  wat-je-doet: "What you'll Do:"
   wat-we-bieden: "What We Offer You:"
   kop: As coach/facilitator of development programs
   pagina-afbeelding: /assets/images/upload/parachute.jpg
