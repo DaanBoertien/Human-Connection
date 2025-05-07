@@ -35,18 +35,23 @@ en:
     about for me. I do this by helping others to get the best out of themselves,
     improving the teams, processes and structures they operate in.
   uitleg: >-
-    With every issue, I look from the perspective of the coherence between:
+    With every issue, I look from tthe coherence between:
 
 
-    * (Organizational) goals * Structure and design * Mutual cooperation and dynamics * The context one is in
+    * (Organizational) goals 
+
+    * Structure and design  
+
+    * Collaboration and dynamics *
+
+    * The context people/ organizations operate in
 
 
-    As an organizational coach, trainer, and individual coach, I guide teams and managers in issues such as collaboration, clear objectives, and effective communication. It's important to discover: what is really going on here? And from there, connect with what is needed. Through customization and connection.
+    As an organizational coach, trainer, and individual coach, I help and advice teams and managers with issues such as collaboration, clear objectives, and effective communication. It's important to discover: what is really going on here? And from there to connect with what is needed. Through tailor-made solution and connection.
 
 
-    In interim assignments, I apply my HR expertise. The starting point is that HR supports the organizational goals, structure, and culture.
+    In interim assignments, I use my HR expertise. The starting point is that HR supports the organizational goals, structure, and culture.
   card_title: Time for action?
   soundbites: "Work with me? Then you get: "
-  soundbites_text: Commitment, diligence, transparency, connection,
-    results-orientation, and sharpness.
+  soundbites_text: Commitment, diligence, transparency, connection, result-focus, and sharpness.
 ---
