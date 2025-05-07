@@ -25,13 +25,16 @@ en:
   title: Anne Boertien
   function: Visual Organizational Advisor | Developer | Coach
   photo_description: Anne drawing
-  summary: Maximizing potential and mobilizing people, those are the main drivers
-    in my work.
-  uitleg: "I love making abstract, complex matters understandable and tangible.
-    Visually, through business drawing. With good conversation and focus on the
-    complete person. And solution-oriented, based on the goal. Others describe
-    me as warm and sincere in relationships, sharp on content, and practical and
-    creative in execution. # Example translation"
+  summary: Maximizing potential and inspiring people to take action, those are the
+    main drivers in my work.
+  uitleg: >-
+    I love making abstract, complex matters understandable and tangible.
+    Visually, through business drawing. Personally, through a good conversation
+    that focuses on the complete person. I am solution-oriented and always have
+    the end-goal in mind. 
+
+
+    Others describe me as warm and sincere in relationships, sharp on content, and practical and creative in execution.
   card_title: Time for action?
   soundbites: "Fun fact: "
   soundbites_text: >
