@@ -33,7 +33,7 @@ global:
   global.site_title: Human_connection
 home:
   wat-wij-doen-3-tekst: >-
-    We guide personal and professional development for directors, managers, and
+    We guide personal and professional development for executives, managers, and
     professionals. Personal leadership and personal effectiveness are important
     themes here.
 
@@ -43,20 +43,15 @@ home:
 
     * Development trajectories and training programs  
 
-
     * Leadership programs  
-
 
     * Intervision (Peer consultation)  
 
-
     * [Individual coaching](https://www.humanc.nl/coaching/)  
-
 
     * Talent management and trainee programs  
 
-
-    * Designing an effective learning infrastructure
+    * Setting up an effective learning infrastructure
   uitnodiging: "Or visit us at our picturesque Amsterdam office:"
   wie-wij-zijn: Who we are
   actievraag-button: Get in touch with us
@@ -67,11 +62,11 @@ home:
   partners-titel: "Worked with, among others:"
   wat-wij-doen-2-contact: |-
     **Want to know more?**\
-    For example, contact Meggie or Dorothé.
+    Please contact Meggie or Dorothé.
   contact_org_name: Human Connection
   wat-wij-doen-3-contact: |-
     **Want to know more?**\
-    For example, contact Marit or Annet.
+    Please contact Marit or Annet.
   contact-placeholder: Your answer
   contact-bericht: Question/Message
   contact_label_naam: Name*
@@ -186,11 +181,11 @@ home:
 hoe-wij-werken:
   waar-wij-voor-staan: Methods and formats
   landing-tekst: >-
-    Everything we do is custom-made, because every change has its own dynamics,
+    Everything we do is tailor-made, because every change has its own dynamics,
     complexity, and pace.
 
 
-    We have extensive knowledge in-house and are seasoned in a number of methodologies. Where necessary, we deploy these. We use theories and models as a collective frame of reference and common language. The emphasis for us is always on direct applicability in daily work.
+    We have extensive knowledge and have vast experience in several methodologies. We use theories and models as a collective frame of reference and common language. The emphasis for us is always on direct applicability in daily work.
   waarde-1-tekst: "It starts with personal contact. Together with a client, we
     examine what the context of the organization and the people on the work
     floor is. We look at the whole with a broad perspective: 'what is really
