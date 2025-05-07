@@ -34,7 +34,7 @@ en:
   uitleg: >-
     My clients see me as an expert and loyal enabler to achieving their goals.
 
-    My strength lies in: genuine connection, sharp analyses, doing what is necessary, setting clear lines together with others, and ensuring it continues to work.
+    My strength lies in: genuine connection, sharp analyses, doing what is necessary, setting out a clear course together with others, and ensuring it continues to work.
 
     A dose of humor and pleasant interpersonal contact are indispensable to me in this process.
   card_title: Time for action?
