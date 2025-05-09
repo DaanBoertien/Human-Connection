@@ -1,55 +1,76 @@
 ---
 layout: default
-title: Wat wij doen
+title: "Wat wij doen"
+namespace: wat-wij-doen
+permalink: /wat-wij-doen/
+permalink_en: /what-we-do/
 ---
+
+{% comment %} --- Define Language Prefix --- {% endcomment %}
+{% assign wwd_lang_prefix = "" %}
+{% if site.lang == site.default_language %}
+{% assign wwd_lang_prefix = "/" %}
+{% else %}
+{% assign wwd_lang_prefix = "/" | append: site.lang | append: "/" %}
+{% endif %}
 
 <main>
   {% include button-omhoog.html %}
-  <div
-    class="watwijdoen watwijdoen-lightblue padding-top-large wat-wij-doen lightblue-shadow bg-lightblue"
-  >
-    <h2>{{site.data.home.wat-wij-doen}}</h2>
-    {{site.data.home.wat-wij-doen-tekst | markdownify}}
+  <div class="watwijdoen watwijdoen-lightblue padding-top-large wat-wij-doen lightblue-shadow bg-lightblue">
+    <h2>{% t home.wat-wij-doen %}</h2>
+    {% capture wwd_text %}{% t home.wat-wij-doen-tekst %}{% endcapture %}
+    {{ wwd_text | markdownify }}
   </div>
   <div id="watwijdoenpagina" class="watwijdoenopsomming bg-lightestblue">
     <div class="innercontainer">
       <div class="wwd-grid">
         <div>
-          <h3 class="wwdfirstitem">{{site.data.home.wat-wij-doen-1-titel}}</h3>
-          {{site.data.home.wat-wij-doen-1-tekst | markdownify}}
-          {{site.data.home.wat-wij-doen-1-contact | markdownify}}
+          <h3 class="wwdfirstitem">{% t home.wat-wij-doen-1-titel %}</h3>
+          {% capture wwd1_text %}{% t home.wat-wij-doen-1-tekst %}{% endcapture %}
+          {{ wwd1_text | markdownify }}
+          {% capture wwd1_contact %}{% t home.wat-wij-doen-1-contact %}{% endcapture %}
+          {{ wwd1_contact | markdownify }}
           <p class="btn btn-outline">
-            <a href="{{site.data.home.wat-wij-doen-1-link}}"
-              >{{site.data.home.wat-wij-doen-1-button}}</a
-            >
+            {% capture link_path %}{% t home.wat-wij-doen-1-link %}{% endcapture %}
+            <a href="{{ link_path | prepend: wwd_lang_prefix | replace: '//', '/' }}">{% t home.wat-wij-doen-1-button
+              %}</a>
           </p>
         </div>
         <div>
-          <h3>{{site.data.home.wat-wij-doen-2-titel}}</h3>
-          {{site.data.home.wat-wij-doen-2-tekst | markdownify}}
-          {{site.data.home.wat-wij-doen-2-contact | markdownify}}
+          <h3>{% t home.wat-wij-doen-2-titel %}</h3>
+          {% capture wwd2_text %}{% t home.wat-wij-doen-2-tekst %}{% endcapture %}
+          {{ wwd2_text | markdownify }}
+          {% capture wwd2_contact %}{% t home.wat-wij-doen-2-contact %}{% endcapture %}
+          {{ wwd2_contact | markdownify }}
           <p class="btn btn-outline">
-            <a href="{{site.data.home.wat-wij-doen-2-link}}"
-              >{{site.data.home.wat-wij-doen-2-button}}</a
-            >
+            {% capture link_path %}{% t home.wat-wij-doen-2-link %}{% endcapture %}
+            <a href="{{ link_path | prepend: wwd_lang_prefix | replace: '//', '/' }}">{% t home.wat-wij-doen-2-button
+              %}</a>
           </p>
         </div>
         <div>
-          <h3>{{site.data.home.wat-wij-doen-3-titel}}</h3>
-          {{site.data.home.wat-wij-doen-3-tekst | markdownify}}
-          {{site.data.home.wat-wij-doen-3-contact | markdownify}}
+          <h3>{% t home.wat-wij-doen-3-titel %}</h3>
+          {% capture wwd3_text %}{% t home.wat-wij-doen-3-tekst %}{% endcapture %}
+          {{ wwd3_text | markdownify }}
+          {% capture wwd3_contact %}{% t home.wat-wij-doen-3-contact %}{% endcapture %}
+          {{ wwd3_contact | markdownify }}
           <p class="btn btn-outline">
-            <a href="{{site.data.home.wat-wij-doen-3-link}}"
-              >{{site.data.home.wat-wij-doen-3-button}}</a
-            >
+            {% capture link_path %}{% t home.wat-wij-doen-3-link %}{% endcapture %}
+            <a href="{{ link_path | prepend: wwd_lang_prefix | replace: '//', '/' }}">{% t home.wat-wij-doen-3-button
+              %}</a>
           </p>
         </div>
       </div>
       <div class="centered">
+        {% assign hww_page = site.pages | where_exp:"item", "item.namespace == 'hoe-wij-werken'" | first %}
+        {% assign hww_final_url = "/" %} {% comment %} Fallback URL {% endcomment %}
+        {% if hww_page %}
+        {% assign url_from_page = hww_page.url %}
+        {% assign raw_path = wwd_lang_prefix | append: url_from_page %}
+        {% assign hww_final_url = raw_path | replace: '//', '/' %}
+        {% endif %}
         <p class="btn btn-full">
-          <a href="{{site.data.nav.hoe-wij-werken}}"
-            >{{site.data.home.hoe-wij-werken}}</a
-          >
+          <a href="{{ hww_final_url }}">{% t home.hoe-wij-werken %}</a>
         </p>
       </div>
     </div>

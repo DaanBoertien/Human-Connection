@@ -1,166 +1,92 @@
 ---
 layout: default
-title: Meld je aan
+title: "Connect to Perform"
+namespace: ctp-contact
+permalink: /ctp-contact/
+permalink_en: /ctp-contact/
 ---
+
+{% assign date_data = site.data.ctp_contact_dates %}
 
 <main>
   {% include button-omhoog.html %}
   <div class="landing landing--lightblue bg-lightblue">
     <div class="innercontainer innercontainer--werken-bij">
       <div class="landing-content">
-        <h1>{{site.data.ctp-contact.title}}</h1>
-        {{site.data.ctp-contact.landing-tekst | markdownify}}
+        <h1>{% t ctp-contact.title %}</h1>
+        {% capture landing_text %}{% t ctp-contact.landing-tekst %}{% endcapture %}
+        {{ landing_text | markdownify }}
       </div>
     </div>
 
     <div class="img-overlay-wrap">
-      <img
-        class="landing-image"
-        src="{{site.data.ctp-contact.pagina-afbeelding}}"
-        alt=""
-      />
-      {% include svg1-lightblue.html %} {% include svg1-desktop-lightblue.html
-      %}
+      <img class="landing-image" src="{% t ctp-contact.pagina-afbeelding %}" alt="{% t ctp-contact.title %}" />
+      {% include svg1-lightblue.html %} {% include svg1-desktop-lightblue.html %}
     </div>
   </div>
   <div class="connect">
     <div class="innercontainer innercontainer--ctp margin-bottom-2">
-      <h2 class="margin-top-2">{{site.data.ctp-contact.aanmelding-title}}</h2>
-      <p class="zoom fs-20px">{{site.data.ctp-contact.aanmelding-zoom}}</p>
-      <p class="fs-16-px">{{site.data.ctp-contact.aanmelding-tekst}}</p>
+      <h2 class="margin-top-2">{% t ctp-contact.aanmelding-title %}</h2>
+      <p class="zoom fs-20px">{% t ctp-contact.aanmelding-zoom %}</p>
+      <p class="fs-16-px">{% t ctp-contact.aanmelding-tekst %}</p>
+
       <form name="connect to perform inschrijving" netlify action="/succes">
         <div class="did-floating-label-content">
-          <input
-            class="did-floating-input"
-            type="text"
-            name="naam"
-            placeholder="Jouw antwoord"
-          />
-          <label class="did-floating-label"
-            >{{site.data.ctp-contact.naam}}</label
-          >
+          <input class="did-floating-input" type="text" name="naam"
+            placeholder="{% t ctp-contact.placeholder-answer %}" />
+          <label class="did-floating-label">{% t ctp-contact.naam %}</label>
         </div>
 
         <div class="did-floating-label-content">
-          <input
-            class="did-floating-input"
-            type="email"
-            name="email"
-            placeholder="Jouw antwoord"
-          />
-          <label class="did-floating-label"
-            >{{site.data.ctp-contact.email}}</label
-          >
+          <input class="did-floating-input" type="email" name="email"
+            placeholder="{% t ctp-contact.placeholder-answer %}" />
+          <label class="did-floating-label">{% t ctp-contact.email %}</label>
         </div>
         <div class="did-floating-label-content">
-          <input
-            class="did-floating-input"
-            type="text"
-            name="bedrijf"
-            placeholder="Jouw antwoord"
-          />
-          <label class="did-floating-label"
-            >{{site.data.ctp-contact.bedrijf}}</label
-          >
+          <input class="did-floating-input" type="text" name="bedrijf"
+            placeholder="{% t ctp-contact.placeholder-answer %}" />
+          <label class="did-floating-label">{% t ctp-contact.bedrijf %}</label>
         </div>
         <div class="did-floating-label-content">
-          <input
-            class="did-floating-input"
-            type="text"
-            name="functie"
-            placeholder="Jouw antwoord"
-          />
-          <label class="did-floating-label"
-            >{{site.data.ctp-contact.functie}}</label
-          >
+          <input class="did-floating-input" type="text" name="functie"
+            placeholder="{% t ctp-contact.placeholder-answer %}" />
+          <label class="did-floating-label">{% t ctp-contact.functie %}</label>
         </div>
         <div class="did-floating-label-content">
-          <input
-            class="did-floating-input"
-            type="tel"
-            name="telefoonnummer"
-            placeholder="Jouw antwoord"
-          />
-          <label class="did-floating-label"
-            >{{site.data.ctp-contact.telefoonnummer}}</label
-          >
+          <input class="did-floating-input" type="tel" name="telefoonnummer"
+            placeholder="{% t ctp-contact.placeholder-answer %}" />
+          <label class="did-floating-label">{% t ctp-contact.telefoonnummer %}</label>
         </div>
 
         <fieldset class="did-floating-label-content margin-bottom-1em">
-          <label class="did-floating-label">
-            {{site.data.ctp-contact.welke}}
-          </label>
+          <label class="did-floating-label">{% t ctp-contact.welke %}</label>
           <div>
-            {% for datum in site.data.ctp-contact.data %}
+          
+            {% for datum in site.translations[site.lang].ctp-contact.data %}
             <div class="flex-radio">
-              <input
-                type="radio"
-                id="dateChoice1"
-                name="datum"
-                value="{{datum.datum}}"
-              />
-              <label for="dateChoice1">{{datum.datum}}</label>
+              <input type="radio" id="dateChoice{{ forloop.index }}" name="datum" value="{{ datum.datum }}" />
+              <label for="dateChoice{{ forloop.index }}">{{ datum.datum }}</label> 
             </div>
             {% endfor %}
           </div>
         </fieldset>
         <div class="did-floating-label-content">
-          <input
-            class="did-floating-input"
-            type="text"
-            name="hoe"
-            placeholder="Jouw antwoord"
-          />
-          <label class="did-floating-label"
-            >{{site.data.ctp-contact.hoe}}</label
-          >
+          <input class="did-floating-input" type="text" name="hoe"
+            placeholder="{% t ctp-contact.placeholder-answer %}" />
+          <label class="did-floating-label">{% t ctp-contact.hoe %}</label>
         </div>
         <div class="did-floating-label-content">
-          <input
-            class="did-floating-input"
-            type="text"
-            name="reden"
-            placeholder="Jouw antwoord"
-          />
-          <label class="did-floating-label"
-            >{{site.data.ctp-contact.reden}}</label
-          >
+          <input class="did-floating-input" type="text" name="reden"
+            placeholder="{% t ctp-contact.placeholder-answer %}" />
+          <label class="did-floating-label">{% t ctp-contact.reden %}</label>
         </div>
-        <!-- <fieldset
-          class="did-floating-label-content margin-bottom-1em informeer"
-        >
-          <legend class="did-floating-label">
-            {{site.data.ctp-contact.meer-informatie}}
-          </legend>
-          <div>
-            <div class="flex-radio">
-              <input
-                type="radio"
-                id="contactChoice1"
-                name="contact"
-                value="email"
-              />
-              <label for="contactChoice1">Ja</label>
-            </div>
 
-            <div class="flex-radio">
-              <input
-                type="radio"
-                id="contactChoice2"
-                name="contact"
-                value="phone"
-              />
-              <label for="contactChoice2">Nee</label>
-            </div>
-          </div>
-        </fieldset> -->
-        <!-- <p>*Vereist</p> -->
         <div class="flex space-between">
           <button type="submit" class="btn btn-full btn-left margin-top-1">
-            Verzend formulier
+            {% t ctp-contact.button-submit %}
           </button>
           <button type="reset" class="btn btn-outline clr-black margin-top-1">
-            Formulier wissen
+            {% t ctp-contact.button-reset %}
           </button>
         </div>
       </form>

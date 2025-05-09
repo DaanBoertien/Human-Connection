@@ -1,6 +1,10 @@
 ---
 layout: default
-title: Vertrouwenspersoon
+# Add namespace, use translated title, keep existing permalinks
+namespace: vertrouwenspersoon
+permalink: /vertrouwenspersoon/ # Path for 'nl' (default)
+permalink_en: /confidential-advisor/ # Path for 'en' (Corrected from adviser->advisor)
+title: "vertrouwenspersoon" # Use a key for the HTML title
 ---
 
 <main>
@@ -8,27 +12,24 @@ title: Vertrouwenspersoon
   <div class="landing landing--lightblue bg-lightblue">
     <div class="innercontainer innercontainer--werken-bij">
       <div class="landing-content">
-        <h1>{{site.data.vertrouwenspersoon.title}}</h1>
-        {{site.data.vertrouwenspersoon.landing-tekst | markdownify}}
+        <h1>{% t vertrouwenspersoon.title %}</h1>
+        {% capture landing_text %}{% t vertrouwenspersoon.landing-tekst %}{% endcapture %}
+        {{ landing_text | markdownify }}
       </div>
     </div>
 
     <div class="img-overlay-wrap">
-      <img
-        class="landing-image"
-        src="{{site.data.vertrouwenspersoon.pagina-afbeelding}}"
-        alt=""
-      />
-      {% include svg1-lightblue.html %} {% include svg1-desktop-lightblue.html
-      %}
+      <img class="landing-image" src="{% t vertrouwenspersoon.pagina-afbeelding %}" alt=""  />
+      {% include svg1-lightblue.html %} {% include svg1-desktop-lightblue.html %}
     </div>
   </div>
   <div class="connect">
     <div class="innercontainer innercontainer--ctp margin-bottom-2">
       <h2 class="margin-top-2">
-        {{site.data.vertrouwenspersoon.pagina-titel}}
+        {% t vertrouwenspersoon.pagina-titel %}
       </h2>
-      {{site.data.vertrouwenspersoon.vertrouwenspersoon-tekst | markdownify}}
+      {% capture vp_tekst %}{% t vertrouwenspersoon.vertrouwenspersoon-tekst %}{% endcapture %}
+      {{ vp_tekst | markdownify }}
     </div>
   </div>
 </main>

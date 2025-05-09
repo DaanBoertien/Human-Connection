@@ -39,6 +39,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- Add language alternates for SEO -->
+    <link rel="alternate" hreflang="{{ site.lang }}" href="{{ site.url }}{{ page.url }}" />
+    {% for lang in site.languages %}
+    {% if lang != site.lang %}
+    <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/{{ lang }}{{ page.url }}" />
+    {% endif %}
+    {% endfor %}
+    
+    <!-- Language meta tag -->
+    <meta property="og:locale" content="{{ site.lang }}_{{ site.lang | upcase }}" />
   </head>
   <body>
     <div class="container">

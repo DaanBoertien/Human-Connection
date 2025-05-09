@@ -1,0 +1,65 @@
+---
+title: Coaching
+landing-tekst: >-
+  Wil je meer zelfinzicht, meer grip op je aanpak van bepaalde zaken, af van
+  bepaalde patronen, of concrete tools om in je werk effectiever te zijn?  
+
+
+  Met individuele coaching helpen we je op maat. Op een manier (live, buiten, online, on the job) en ritme (een snelle boost of liever een rustiger, wat langer traject?) die bij jou past. 
+
+
+  Op basis van een intake kies je de coach die bij jou past en met diegene bepaal je hoe het coachtraject eruit ziet. Elk coachtraject stemmen we af op jouw behoeften, doelen en context. Enerzijds gaat dat over verdieping: wat is de achtergrond van je coachvraag? En anderzijds over praktische toepassing: de inzichten die je opdoet vertalen naar jouw leven en werk.  
+
+
+  We coachen van werkvloer tot en met executive level. Onafhankelijk en vertouwelijk. Het kan gekoppeld zijn aan een organisatie-ontwikkeltraject of leiderschapsontwikkeling. Maar ook voor mensen die individueel op zoek zijn naar meer balans of een volgende loopbaanstap.
+pagina-afbeelding: /assets/images/upload/kompas.jpg
+pagina-titel: Coaching
+coaching-tekst: >-
+  **Coachthema’s** 
+
+
+  Het doel en thema van het coachtraject is altijd individueel bepaald en vaak een combinatie van meerdere elementen. In de praktijk werken wij veel met de volgende themas: 
+
+
+  * Persoonlijke ontwikkeling
+
+  * Communicatie
+
+  * Balans en veerkracht | stress, burn-out
+
+  * Loopbaanontwikkeling
+
+
+  \
+
+  **Methoden en vormen**  \
+
+  We werken met methoden en materialen uit verschillende managementtheorieën, psychologie en stromingen zoals Voice Dialogue, Co-active coaching, ACT, Insights en Deep Democracy. \
+
+  \
+
+  In een coachtraject kunnen verschillende gespreksvormen en elementen worden ingezet, zoals: gesprekken (live, online of wandelend), verdiepingsopdrachten, praktijkopdrachten, coaching on the job, driegesprekken met de leidinggevende, leesmateriaal, achtergrondartikelen, reflectieopdrachten, testen en video’s.
+
+
+  **Altijd op maat** \
+
+  We helpen je inzicht te krijgen in je gedragspatronen, je comfortzone te verkennen en duurzame veranderingen door te voeren. Zo werk je niet alleen aan je professionele groei, maar ook aan een gezondere balans en meer veerkracht. 
+
+
+  Aan een ‘standaardtraject’ doen wij dus niet. Het is geen kwestie van ‘doe me module 2 en gespreksvorm x'. We kijken juist samen met jou wat werkt. In jouw context, met jouw doelen, wensen en eigen wijsheid. \
+
+  \
+
+  **De coaches** \
+
+  Een groot aantal van onze collega’s is professioneel coach. We hebben allemaal onze eigen achtergrond en stijl. Waar we in overeenkomen is dat we staan voor professionaliteit, vertrouwelijkheid en de brede blik op de mens, in zijn context. 
+
+
+  Hieronder vind je de namen van collega’s die coachen: [](https://www.humanc.nl/team/anne-boertien/)[Marit](https://www.humanc.nl/team/marit-weiss/), [Anne](https://www.humanc.nl/team/anne-boertien/), [Jojanneke](https://www.humanc.nl/team/jojanneke-van-goinga/), [Meggie,](https://www.humanc.nl/team/meggie-van-de-bunt/) [Alexander, ](https://www.humanc.nl/team/gerke-visser/)[Gerke,](https://www.humanc.nl/team/gerke-visser/) [Petra,](https://www.humanc.nl/team/petra-berry/) [Willemijn](https://www.humanc.nl/team/willemijn-dekker/),[ Zilla](https://www.humanc.nl/team/zilla-uiterwijk/) en [Sjef.](https://www.humanc.nl/team/sjef-van-gool/)\
+
+  \
+
+  **Interesse?**\
+
+  Neem direct contact op met een van onze collega's, of voor meer informatie neem contact op met [Marit.](https://www.humanc.nl/team/marit-weiss/)
+---

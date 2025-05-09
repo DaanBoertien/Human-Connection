@@ -1,7 +1,10 @@
 ---
 layout: default
-menu: menu-active
+menu: menuactive
 ---
+
+{% assign default_lang_code = site.default_language | default: "nl" %}
+{% assign current_lang_data = page[site.lang] | default: page[default_lang_code] %}
 
 <main class="bg-grey">
   {% include button-omhoog.html %}
@@ -9,20 +12,36 @@ menu: menu-active
     <div class="innercontainer innercontainer--werken-bij">
       <div class="grid-layout">
         <div class="a">
-          <h2>{{page.title}}</h2>
-          {{page.summary | markdownify}}
+          <h2>{{ current_lang_data.title | default: "Name Missing" }}</h2>
+          {% if current_lang_data.function %}
+          <p><em>{{ current_lang_data.function }}</em></p>
+          {% endif %}
+          {{ current_lang_data.summary | default: "" | markdownify }}
         </div>
-        <div class="card b {{page.bg_color}}">
-          <img src="{{page.photo_url}}" alt="" />
+        <div class="card b {{ page.bg_color }}">
+          <img src="{{ page.photo_url | relative_url }}"
+            alt="{{ current_lang_data.photo_description | default: current_lang_data.title | escape }}" />
           <div class="card-content">
-            <p class="card-title">{{page.card_title}}</p>
-            <p class="card-phone-number"><i class="fa-solid fa-phone"></i><a class="underline" href="tel:{{page.phonenumber}}">{{page.phonenumber}}</a> </p>
-            <p><i class="fa-solid fa-envelope"></i><a class="underline" href="mailto: {{page.email}}"> {{page.email}}</a> </a></p>
-            <p class="card-title">{{page.soundbites}}</p>
-            <p>{{page.soundbites_text}}</p>
+            {% if current_lang_data.card_title %}
+            <p class="card-title">{{ current_lang_data.card_title }}</p>
+            {% endif %}
+            {% if page.phonenumber %}
+            <p class="card-phone-number"><i class="fa-solid fa-phone"></i><a class="underline"
+                href="tel:{{ page.phonenumber }}">{{ page.phonenumber }}</a></p>
+            {% endif %}
+            {% if page.email %}
+            <p><i class="fa-solid fa-envelope"></i><a class="underline" href="mailto:{{ page.email }}">{{ page.email
+                }}</a></p>
+            {% endif %}
+            {% if current_lang_data.soundbites %}
+            <p class="card-title">{{ current_lang_data.soundbites }}</p>
+            {% endif %}
+            {% if current_lang_data.soundbites_text %}
+            <p>{{ current_lang_data.soundbites_text }}</p>
+            {% endif %}
           </div>
         </div>
-        <div class="c">{{page.uitleg |markdownify}}</div>
+        <div class="c">{{ current_lang_data.uitleg | default: "" | markdownify }}</div>
       </div>
     </div>
   </section>

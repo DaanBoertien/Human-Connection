@@ -1,0 +1,415 @@
+global:
+  nederlands: "Nederlands"
+  english: "English"
+  site_title: "Human Connection"
+coaching:
+  title: Coaching
+  landing-tekst: >-
+    Wil je meer zelfinzicht, meer grip op je aanpak van bepaalde zaken, af van bepaalde patronen, of concrete tools om in je werk effectiever te zijn?
+
+
+    Met individuele coaching helpen we je op maat. Op een manier (live, buiten, online, on the job) en ritme (een snelle boost of liever een rustiger, wat langer traject?) die bij jou past.
+
+
+    Op basis van een intake kies je de coach die bij jou past en met diegene bepaal je hoe het coachtraject eruit ziet. Elk coachtraject stemmen we af op jouw behoeften, doelen en context. Enerzijds gaat dat over verdieping: wat is de achtergrond van je coachvraag? En anderzijds over praktische toepassing: de inzichten die je opdoet vertalen naar jouw leven en werk.
+
+
+    We coachen van werkvloer tot en met executive level. Onafhankelijk en vertouwelijk. Het kan gekoppeld zijn aan een organisatie-ontwikkeltraject of leiderschapsontwikkeling. Maar ook voor mensen die individueel op zoek zijn naar meer balans of een volgende loopbaanstap.
+  pagina-afbeelding: /assets/images/upload/kompas.jpg
+  pagina-titel: Coaching
+  coaching-tekst: >-
+    **Coachthema’s**
+
+
+    Het doel en thema van het coachtraject is altijd individueel bepaald en vaak een combinatie van meerdere elementen. In de praktijk werken wij veel met de volgende themas:
+
+
+    * Persoonlijke ontwikkeling 
+
+    * Communicatie 
+
+    * Balans en veerkracht | stress, burn-out 
+
+    * Loopbaanontwikkeling
+
+
+    **Methoden en vormen**
+
+
+    We werken met methoden en materialen uit verschillende managementtheorieën, psychologie en stromingen zoals Voice Dialogue, Co-active coaching, ACT, Insights en Deep Democracy.
+
+
+    In een coachtraject kunnen verschillende gespreksvormen en elementen worden ingezet, zoals: gesprekken (live, online of wandelend), verdiepingsopdrachten, praktijkopdrachten, coaching on the job, driegesprekken met de leidinggevende, leesmateriaal, achtergrondartikelen, reflectieopdrachten, testen en video’s.
+
+
+    **Altijd op maat**
+
+
+    We helpen je inzicht te krijgen in je gedragspatronen, je comfortzone te verkennen en duurzame veranderingen door te voeren. Zo werk je niet alleen aan je professionele groei, maar ook aan een gezondere balans en meer veerkracht.
+
+
+    Aan een ‘standaardtraject’ doen wij dus niet. Het is geen kwestie van ‘doe me module 2 en gespreksvorm x'. We kijken juist samen met jou wat werkt. In jouw context, met jouw doelen, wensen en eigen wijsheid.
+
+
+    **De coaches**
+
+
+    Een groot aantal van onze collega’s is professioneel coach. We hebben allemaal onze eigen achtergrond en stijl. Waar we in overeenkomen is dat we staan voor professionaliteit, vertrouwelijkheid en de brede blik op de mens, in zijn context.
+
+
+    Hieronder vind je de namen van collega’s die coachen: [](https://www.humanc.nl/team/anne-boertien/)[Marit](https://www.humanc.nl/team/marit-weiss/), [Anne](https://www.humanc.nl/team/anne-boertien/), [Jojanneke](https://www.humanc.nl/team/jojanneke-van-goinga/), [Meggie,](https://www.humanc.nl/team/meggie-van-de-bunt/) [Alexander, ](https://www.humanc.nl/team/gerke-visser/)[Gerke,](https://www.humanc.nl/team/gerke-visser/) [Petra,](https://www.humanc.nl/team/petra-berry/) [Willemijn](https://www.humanc.nl/team/willemijn-dekker/),[ Zilla](https://www.humanc.nl/team/zilla-uiterwijk/) en [Sjef.](https://www.humanc.nl/team/sjef-van-gool/)
+
+
+    **Interesse?**
+
+
+    Neem direct contact op met een van onze collega's, of voor meer informatie neem contact op met [Marit.](https://www.humanc.nl/team/marit-weiss/)
+
+nav:
+  home_url: "/"
+  logo_alt_text: "Logo Human Connection"
+  wie_wij_zijn_url: "/wie-wij-zijn/"
+  wie_wij_zijn_text: "Wie wij zijn"
+  team_base_url: "/team/"
+  wat_wij_doen_text: "Wat wij doen"
+  hoe_wij_werken_url: "/hoe-wij-werken/"
+  hoe_wij_werken_text: "Hoe wij werken"
+  wat_wij_doen_url: "/wat-wij-doen/"
+  ctp-contact: "/ctp-contact/"
+  connect_to_perform_url: "/connect-to-perform/"
+  connect_to_perform_text: "Connect to Perform"
+  vertrouwenspersoon_url: "/vertrouwenspersoon/"
+  vertrouwenspersoon_text: "Vertrouwenspersoon"
+  coaching_url: "/coaching/"
+  coaching_text: "Coaching"
+  contact_text: "Contact"
+  contact_url: "/contact/"
+  werken_bij_url: "/werken-bij/"
+  werken_bij_text: "Werken bij ons"
+  lang_nl: "Nederlands"
+  lang_en: "English"
+  call_us: "Bel ons"
+  email_us: "Mail ons"
+home:
+  slogan: "Veranderen is mensenwerk"
+  landing-tekt: >-
+    Human Connection is een organisatieadviesbureau dat zich richt op de menselijke kant van organisaties. Vanuit verschillende rollen begeleiden we leiders, teams en individuele professionals om zich te ontwikkelen en proactiever (samen) te werken.
+
+
+    We werken altijd op maat, met een brede blik voor mensen in hun context, een gezonde bedrijfsvoering en de ontwikkeling van de organisatiecultuur.​ 
+
+
+    We zijn ervaren in een breed werkveld, houden van een complexe uitdaging en kijken met een optimistische blik naar de mogelijkheden.
+  pagina-afbeelding: "/assets/images/upload/parachute.jpg"
+  waar-wij-voor-staan: "Waar wij voor staan"
+  waar-wijvoor-staan-tekst: "We doen wat we zeggen en zeggen wat we doen. Zowel hoe we onderling samenwerken in ons bedrijf, als hoe we samenwerken met onze opdrachtgevers. Wij werken altijd:"
+  waarde-1-titel: "In verbinding"
+  waarde-1-tekst: >-
+    Synergie ontstaat daar waar mensen verbonden zijn met zichzelf, met elkaar en met het doel van de organisatie. 
+
+
+    Zelfbewustzijn, eigenaarschap, betrokkenheid en verantwoordelijkheid nemen zijn hierbij de kern. Daar staan we zelf voor en het is ook precies waar we onze klanten bij helpen. We nemen daarbij onze eigen persoonlijkheden, ervaringen en 'menselijkheid' mee in alles wat we doen.
+  waarde-1-afbeelding: "/assets/images/upload/icoon3dun.png"
+  waarde-2-titel: "In vertrouwen"
+  waarde-2-tekst: >-
+    Vertrouwen is voor ons de basis van waaruit we werken. Onderling als collega's en in samenwerking met onze klanten. Het is onze tweede natuur om waar we werken, te bouwen aan het vertrouwen tussen mensen onderling en in organisaties als geheel. 
+
+
+    We benaderen mensen en hun vraagstukken positief: we koesteren uit principe veel vertrouwen in ieders goede intenties, mogelijkheden en veerkracht.
+  waarde-2-afbeelding: "/assets/images/upload/icoon2dun.png"
+  waarde-3-titel: "In context"
+  waarde-3-tekst: >-
+    We bekijken iedere vraag, hoe groot of klein ook, met een brede blik. 'Wat is hier nou echt aan de hand? Welke patronen spelen hier?' 
+
+
+    Juist het samenspel tussen allerlei factoren (zoals de organisatie-inrichting, de manier van werken, de cultuur, de veranderende buitenwereld) bepalen het succes. Daarom sluiten we nauw aan bij de context van een organisatie en mensen en is alles wat we doen maatwerk.
+  waarde-3-afbeelding: "/assets/images/upload/icoon1dun.png"
+  wat-wij-doen: "Wat wij doen"
+  wat-wij-doen-tekst: "We benaderen ieder vraagstuk met een organisatiebrede blik. Dit doen we vanuit een aantal expertises:"
+  wat-wij-doen-1-titel: "Organisatieontwikkeling & teamontwikkeling"
+  wat-wij-doen-1-tekst: >-
+    We adviseren en begeleiden teams en organisaties bij veranderingen. Via langere trajecten (blijvende cultuurverandering of reorganisaties), kortere interventies (teambuilding en proactief gedrag) en 'alles daartussenin'.
+
+
+    Voorbeelden hiervan zijn: 
+
+
+    * Transformatie naar meer zelfsturing
+
+    * Faciliteren verdiepende gesprekken en krachtige besluitvorming.
+
+    * Cultuurontwikkeling: betere prestaties en een (pro)actievere cultuur.
+
+    * Reorganisaties, fusies, samenwerkingsverbanden optimaliseren
+
+    * Compliance en integriteitsvraagstukken
+
+    * Invoeren en begeleiden van Agile/Scrum
+  wat-wij-doen-1-contact: |-
+    **Meer weten?**\
+    Neem bijvoorbeeld contact op met Sjef of Zilla.
+  wat-wij-doen-1-button: "Contact met Sjef"
+  wat-wij-doen-1-link: "/team/sjef-van-gool/"
+  wat-wij-doen-2-titel: "Interim management"
+  wat-wij-doen-2-tekst: >-
+    Als interim-professional zijn we een tijdje onderdeel van de organisatie. Als manager of directeur zetten we, samen met de in de organisatie aanwezige strategische partners, initiatiefrijk een koers uit die in lijn ligt met het grotere geheel. Dit doen we graag in combinatie met een veranderopgave. 
+
+
+    We doen dit bijvoorbeeld op het gebied van:
+
+
+    * Verandermanagement
+
+    * HR-management
+
+    * Strategie-implementatie
+
+    * ICT-management
+
+    * L&O Professional
+  wat-wij-doen-2-contact: |-
+    **Meer weten?**\
+    Neem bijvoorbeeld contact op met Meggie of Dorothé.
+  wat-wij-doen-2-button: "Contact met Meggie"
+  wat-wij-doen-2-link: "/team/meggie-van-de-bunt/"
+  wat-wij-doen-3-titel: "Leren & ontwikkelen"
+  wat-wij-doen-3-tekst: >-
+    We begeleiden persoonlijke en professionele ontwikkeling voor bestuurders, leidinggevenden en professionals. Persoonlijk leiderschap en persoonlijke effectiviteit zijn hierbij belangrijke thema's.
+
+
+    We adviseren over de meest effectieve aanpak en ontwerpen en begeleiden workshops of trajecten zoals:
+
+
+    * Ontwikkeltrajecten en opleidingsprogramma's 
+
+    * Leiderschapsprogramma's
+
+    * Intervisie
+
+    * [Individuele coaching](https://www.humanc.nl/coaching/)
+
+    * Talentmanagement en traineeprogramma's 
+
+    * Inrichting van een effectieve leerinfrastructuur
+  wat-wij-doen-3-contact: |-
+    **Meer weten?**\
+    Neem contact op met bijvoorbeeld Marit of Annet.
+  wat-wij-doen-3-button: "Contact met Marit"
+  hoe-wij-werken: "Meer weten over hóe wij werken?"
+  wat-wij-doen-3-link: "/team/marit-weiss/"
+  wie-wij-zijn: "Wie wij zijn"
+  actievraag: "Waar loop jij tegenaan in je organisatie?"
+  actievraag-subtitel: "Ontdek hoe wij hierbij kunnen helpen."
+  actievraag-button: "Kom in contact met ons"
+  partners-titel: "Samengewerkt met o.a."
+  contact-titel: "Contact"
+  contact-omschrijving: "We komen graag met je in contact. Bel of mail direct een van onze collega's of vul onderstaand formulier in."
+  contact-naam: "Naam"
+  contact-email: "E-mail"
+  contact-onderwerp: "Onderwerp"
+  contact-bericht: "Vraag/bericht"
+  contact-placeholder: "Jouw antwoord"
+  contact_placeholder: "Jouw antwoord"
+  contact_label_naam: "Naam*"
+  contact_label_onderwerp: "Onderwerp*"
+  contact_label_email: "Email*"
+  contact_label_bericht: "Vraag/Bericht*"
+  contact_submit_button: "Verzend bericht"
+  contact_org_name: "Human Connection"
+  uitnodiging: "Of kom langs in ons pittoreske Amsterdamse kantoor:"
+  postcode: "1013 GA Amsterdam"
+  contact-button: "Verzend bericht"
+  adres: "Singel 2a"
+  afbeelding-kantoor: "/assets/images/upload/kantoor.png"
+hoe-wij-werken:
+  title: "Hoe wij werken"
+  landing-tekst: >-
+    Alles wat we doen is maatwerk, omdat elke verandering haar eigen dynamiek, complexiteit en tempo heeft.  
+
+    We hebben veel kennis in huis en zijn doorgewinterd in een aantal methodieken. Waar nodig zetten we deze in. Theorie en modellen gebruiken we als collectief begrippenkader en gemeenschappelijk taal. Het accent ligt bij ons altijd op directe toepasbaarheid in het dagelijkse werk.
+  pagina-afbeelding: "/assets/images/upload/impact.jpg"
+  waar-wij-voor-staan: "Methoden en werkvormen"
+  waar-wijvoor-staan-tekst: >-
+    Voorbeelden van methoden en werkvormen zijn: Connect to Perform-cultuurontwikkeling, agile/scrum, deep democracy, zakelijk tekenen, Discovery Insights, Voice Dialogue, onomkeerbaar veranderen, ontwerpen met de leerinfrastructuur, diverse creatieve werkvormen 
+
+
+    Ontwikkelingsgericht als we zijn, blijven we up to date met de nieuwste inzichten op het gebied van theorie en praktijk.
+  waarde-1-titel: "1. Contact en context"
+  waarde-1-tekst: "Het begint bij persoonlijk contact. We bekijken samen met een opdrachtgever wat de context van de organisatie en de mensen op de werkvloer is. We kijken met een brede blik op het geheel: 'wat is hier nou echt aan de hand?'"
+  waarde-1-afbeelding: ""
+  waarde-2-titel: "2. Pragmatisch ontwerp en advies"
+  waarde-2-tekst: "Op basis daarvan geven we advies over een effectieve aanpak. Hierbij laten we de organisatie zoveel mogelijk zelf aan het stuur staan. We ontwerpen vooruit, het liefst samen met de mensen om wie het gaat. We scheppen realistische verwachtingen en kaders."
+  waarde-2-afbeelding: ""
+  waarde-3-titel: "3. Begeleiding"
+  waarde-3-tekst: "We begeleiden de uitvoering stap voor stap, zodat bijstelling altijd mogelijk is. We werken methodisch waar nodig. We begrijpen de dynamiek en complexiteit van organisaties en hebben ook altijd oog voor de individuele mens en zijn werk en privé context."
+  waarde-3-afbeelding: ""
+  waarde-4-titel: "4. Doorpakken tot het echt werkt"
+  waarde-4-tekst: "Juist op lastige momenten, of op het punt dat het juist te stil lijkt, helpen we om door te pakken. We helpen de bewustwording om te zetten in actie op de werkvloer. Niet krampachtig vasthoudend aan het 'plan van een half jaar geleden', maar opnieuw in relatie tot de huidige koers en omstandigheden van de organisatie. Met de blik op lange termijn resultaat."
+  waarde-4-afbeelding: ""
+  waarde-5-titel: "5. Evalueren"
+  waarde-5-tekst: "Ontwikkeling is nooit 'af'. Wel vinden we het belangrijk dat onze klanten na onze begeleiding ook weer een tijd zelfstandig verder weten gaan. We helpen scherp te evalueren en te anticiperen op volgende ontwikkelingen. En we houden de lijn voor een even sparren of bijpraten altijd open."
+  waarde-5-afbeelding: ""
+hoe-wij-werken:
+  title: Hoe wij werken
+  landing-tekst: >-
+    Alles wat we doen is maatwerk, omdat elke verandering haar eigen dynamiek, complexiteit en tempo heeft.  
+
+    We hebben veel kennis in huis en zijn doorgewinterd in een aantal methodieken. Waar nodig zetten we deze in. Theorie en modellen gebruiken we als collectief begrippenkader en gemeenschappelijk taal. Het accent ligt bij ons altijd op directe toepasbaarheid in het dagelijkse werk.
+  pagina-afbeelding: /assets/images/upload/impact.jpg
+  waar-wij-voor-staan: Methoden en werkvormen
+  waar-wijvoor-staan-tekst: >-
+    Voorbeelden van methoden en werkvormen zijn: Connect to Perform-cultuurontwikkeling, agile/scrum, deep democracy, zakelijk tekenen, Discovery Insights, Voice Dialogue, onomkeerbaar veranderen, ontwerpen met de leerinfrastructuur, diverse creatieve werkvormen 
+
+
+    Ontwikkelingsgericht als we zijn, blijven we up to date met de nieuwste inzichten op het gebied van theorie en praktijk.
+  waarde-1-titel: 1. Contact en context
+  waarde-1-tekst: "Het begint bij persoonlijk contact. We bekijken samen met een opdrachtgever wat de context van de organisatie en de mensen op de werkvloer is. We kijken met een brede blik op het geheel: 'wat is hier nou echt aan de hand?'"
+  waarde-1-afbeelding: ""
+  waarde-2-titel: 2. Pragmatisch ontwerp en advies
+  waarde-2-tekst: Op basis daarvan geven we advies over een effectieve aanpak. Hierbij laten we de organisatie zoveel mogelijk zelf aan het stuur staan. We ontwerpen vooruit, het liefst samen met de mensen om wie het gaat. We scheppen realistische verwachtingen en kaders.
+  waarde-2-afbeelding: ""
+  waarde-3-titel: 3.  Begeleiding
+  waarde-3-tekst: We begeleiden de uitvoering stap voor stap, zodat bijstelling altijd mogelijk is. We werken methodisch waar nodig. We begrijpen de dynamiek en complexiteit van organisaties en hebben ook altijd oog voor de individuele mens en zijn werk en privé context.
+  waarde-3-afbeelding: ""
+  waarde-4-titel: 4. Doorpakken tot het echt werkt​
+  waarde-4-tekst: Juist op lastige momenten, of op het punt dat het juist te stil lijkt, helpen we om door te pakken.  We helpen de bewustwording om te zetten in actie op de werkvloer. Niet krampachtig vasthoudend aan het 'plan van een half jaar geleden', maar opnieuw in relatie tot de huidige koers en omstandigheden van de organisatie. Met de blik op lange termijn resultaat.​
+  waarde-4-afbeelding: ""
+  waarde-5-titel: 5. Evalueren
+  waarde-5-tekst: Ontwikkeling is nooit 'af'. Wel vinden we het belangrijk dat onze klanten na onze begeleiding ook weer een tijd zelfstandig verder weten gaan. We helpen scherp te evalueren en te anticiperen op volgende ontwikkelingen. En we houden de lijn voor een even sparren of bijpraten altijd open.
+  waarde-5-afbeelding: ""
+connect-to-perform:
+  title: Connect to Perform
+  pagina-afbeelding: /assets/images/upload/verandering-transitie.jpg
+  landing-tekst: ‘Connect to Perform’ is het gedachtegoed dat de basis vormt voor Human Connection’s advieswerk. Het demonstreert hoe teams en organisaties naar een meer effectieve én prettige werkwijze te bewegen zijn door (onderlinge) verbinding te maken. Om de brug te slaan tussen ’theorie’ en ‘zelf toepassen’, hebben we een spel ontworpen wat met groot succes in organisaties en op onze open avonden gespeeld wordt.
+  methoden: Connect to Perform Cultuurontwikkeling
+  methoden-tekst: " "
+  pagina-illustratie: /assets/images/upload/connect-to-perform-ingevuld.jpg
+  werkwijze-titel: "Connect to Perform: het spel "
+  werkwijze-tekst: >-
+    Tijdens het spel krijg je aan de hand van een fictieve situatie inzicht in de methodiek en mogelijke interventies om de organisatiecultuur en prestaties te ontwikkelen. Er wordt helder hoe je kunt signaleren in welke ontwikkelfase een organisatie (of team)cultuur zich bevindt. Op basis van voorbeelden uit de praktijk zie je spelenderwijs in wat er nodig is om de volgende ontwikkelstap te maken en wat juist zaken zijn die averechts uitpakken.
+
+
+    Je krijgt zicht op zo’n vijftig verschillende interventies die toepasbaar zijn in de werkpraktijk, om het gedrag en de cultuur van een team en organisatie te beïnvloeden. Kortom, in een paar uur wordt je op interactieve wijze ondergedompeld in onze succesvolle aanpak hoe je meer impact met je team maakt.
+  werkvorm-titel: Open spelavond
+  werkvorm-tekst: >
+    Als kennismaking organiseren we een aantal keer per jaar een open spelavond, tegenwoordig veelal online, waarop onze relaties en geïnteresseerden welkom zijn kennis te maken met deze methodiek. (deelname geheel gratis en zonder verdere verplichtingen) Via een inlog in ons online leerportaal krijg je toegang tot video’s met uitleg en achtergrondinformatie. Bovendien leert de ervaring dat het erg interessant is van gedachten te wisselen met mensen die je nog niet kende, werkzaam in diverse organisaties.
+
+
+    In organisaties spelen we het spel (online of offline) in MT-trajecten of leiderschapsprogramma’s. We hebben verschillende werkvormen, afhankelijk van tijd en interesse van de doelgroep en passen het spel ook inhoudelijk op maat aan waar nodig. De vertaling naar de werkcontext, in het licht van de strategie van de organisatie en tevens de concretisering ‘wat ga ik er morgen mee doen’ zijn belangrijke onderdelen in de nabespreking en eventuele follow-up.
+
+
+    Ook is het spel aan te vragen als losse workshop. Denk daarbij aan een halve of hele dag, online of offline voor een groep van 4 tot 80 deelnemers. Stuur voor meer informatie svp een mail naar Jojanneke van Goïnga.
+  button1: Meer weten over Connect to Perform
+  more-info: /assets/images/upload/connect_to_perform.pdf
+  button2: Meld je hier aan voor de open spelavond
+werken-bij:
+  title: Werken bij
+  vacature-open: false
+  pagina-afbeelding: /assets/images/upload/parachute.jpg
+  landing-tekst: We zoeken iemand die met zelfvertrouwen en een frisse blik voor de groep kan staan en ook in staat is individuele coachgesprekken te voeren. Je frisse blik en creativiteit zijn van harte welkom, evenals je vermogen om, ongeacht de omstandigheden, op een constructieve manier om te gaan met groepsdynamiek. Je blik is breder dan persoonlijke ontwikkeling alleen, je hebt interesse in organisatie ontwikkeling, van strategie tot uitvoering en bent eager om daar meer over te leren.
+  kop: Als coach/begeleider van ontwikkelprogramma’s
+  wat-je-doet: Wat doe je als?
+  wat-je-doet-tekst: >-
+    Je maakt op maat programma’s waarin medewerkers en managers van organisaties zich kunnen ontwikkelen. Denk hierbij als een jaartraject ‘Persoonlijk Leiderschap’, een ‘Masterclass-traject voor talent’ of andere vormen van trainee- of leiderschapsprogramma’s.
+
+
+    We zoeken iemand die met zelfvertrouwen en een frisse blik voor de groep kan staan en ook in staat is individuele coachgesprekken te voeren. Je frisse blik en creativiteit zijn van harte welkom, evenals je vermogen om, ongeacht de omstandigheden, op een constructieve manier om te gaan met groepsdynamiek. Je blik is breder dan persoonlijke ontwikkeling alleen, je hebt interesse in organisatie ontwikkeling, van strategie tot uitvoering en bent eager om daar meer over te leren. Je kunt goed samenwerken en bent tegelijkertijd autonoom genoeg om in onze kleinschalige, platte organisatie je eigen weg te vinden. Het spiegelen van klanten, collega’s en ook de spotlight op jezelf richten, vind je een mooie uitdaging.
+  wat-we-bieden: Dit bieden we je ook
+  wat-we-bieden-tekst: >-
+    * Een salaris dat past bij jouw kennis en ervaring. 
+
+    * Een eindejaarsbonus op basis van de gezamenlijk gemaakte winst. 
+
+    * Een laptop, telefoon, 1e klas OV kaart, alles wat je nodig hebt om goed hybride te werken en goede secundaire voorwaarden. 
+
+    * Een kantoor in hartje Amsterdam, 2 minuten lopen vanaf CS (waar je alleen hoeft te zijn als je samen met collega’s aan opdrachten werkt).
+  contact: Neem contact op met Meggie via [meggie@humanc.nl](#) of 06 50 83 56 58.
+  uitzendbureaus: Uitzend- of wervingsbureaus hoeven niet op deze vacature te reageren.
+vertrouwenspersoon:
+  title: Vertrouwenspersoon
+  landing-tekst: >-
+    **Vertrouwenspersoon en preventie als prioriteit voor een sociaal veilige werkplek**
+
+
+    In een tijd waarin de nadruk steeds meer komt te liggen op het **creëren van een gezond en plezierig werkklimaat**, rijst de vraag: hoe kunnen organisaties **een veilige omgeving waarborgen voor hun medewerkers?** Het benoemen van een (interne) vertrouwenspersoon is voor bedrijven een veel gekozen **eerste stap.** Om daadwerkelijk een veilige werkomgeving te creëren en houden, zijn daarnaast **bredere maatregelen en soms zelfs een cultuurverandering nodig.** 
+
+
+    Het **integreren van sociale veiligheid op de werkplek** blijkt namelijk een cruciale factor te zijn in het streven naar **een duurzaam gezonde organisatie.** 
+
+
+    Als er een **prettig leer- en werkklimaat is, zijn de resultaten beter, wordt er effectiever gewerkt en is er meer innovatie** mogelijk is. Maar wat houdt dit precies in, en hoe kunnen organisaties dit realiseren?
+  pagina-afbeelding: /assets/images/upload/sociale-veiligheid.webp
+  pagina-titel: Vertrouwenspersoon
+  vertrouwenspersoon-tekst: >-
+    ### Wat is een sociaal veilige werkplek?
+
+
+    Iedere werkplek is anders, iedere bedrijfscultuur is anders. Toch is er een aantal elementen waaraan je herkent dat er sprake is van een sociaal veilige werkplek:
+
+
+    * Medewerkers uiten zich makkelijk. 
+
+    * Ze praten óok over knelpunten in de uitvoering van hun werk.
+
+    * Ze praten open en vrij.
+
+    * Ze spreken zich uit zonder angst voor de gevolgen.
+
+
+    ### Brede, systemische benadering 
+
+
+    Human Connection onderscheidt zich door een bredere benadering van het creëren van een sociale veilige werkplek, waarbij een vertrouwenspersoon een essentieel onderdeel vormt. 
+
+
+    De focus ligt op preventieve maatregelen, naast het bieden van hulp bij contextanalyse, interventies en begeleiding, mocht het toch tot escalatie komen. We doen dit met een doordachte en systemische aanpak die we al sinds 1998 gebruiken en doorontwikkelen. Kijk voor meer informatie [hier](https://www.humanc.nl/hoe-wij-werken/).
+
+
+    ### Human Connection biedt:
+
+
+    * Gecertificeerde vertrouwenspersonen
+
+    * Ieder vertrouwenspersoon brengt minimaal een extra expertise mee
+
+    * Vervanging bij ziekte of vakantie
+
+    * Onderlinge intervisie, ontsluit een nog breder perspectief op kwesties
+
+    * Ervaring met het betrekken van de hele organisatie bij start, vervolg en executie van (verander)traject.  
+
+
+    ### Meer weten?
+
+
+    Wil je meer weten over hoe Human Connection kijkt naar de rol van vertrouwenspersoon en preventie als prioriteit binnen een gezonde werkplek? Download hier ons whitepaper met sleutelfactoren van een sociaal veilige werkomgeving.
+ctp-contact:
+  title: Connect to perform
+  pagina-afbeelding: /assets/images/upload/verandering-transitie.jpg
+  landing-tekst: Als kennismaking organiseren we een aantal keer per jaar een open spelavond, tegenwoordig veelal online, waarop onze relaties en geïnteresseerden welkom zijn kennis te maken met deze methodiek. (deelname geheel gratis en zonder verdere verplichtingen) Via een inlog in ons online leerportaal krijg je toegang tot video’s met uitleg en achtergrondinformatie. Bovendien leert de ervaring dat het erg interessant is van gedachten te wisselen met mensen die je nog niet kende, werkzaam in diverse organisaties.
+  aanmelding-title: Aanmeldformulier Spelavond
+  aanmelding-zoom: " "
+  aanmelding-tekst: Vul hier je gegevens in om je aan te melden voor de spelavond.
+  naam: Naam*
+  email: Email*
+  bedrijf: Bedrijf*
+  functie: Functie*
+  telefoonnummer: Telefoonnummer*
+  welke: Voor welke avond meld je je aan?*
+  data:
+  - datum: "Maandag 6 oktober: 19:30-21:45 uur."
+  hoe: Via wie of hoe weet je van de Connect to Perform avond?
+  reden: Wat is je reden van aanmelden?
+  success: Dankjewel voor je bericht!
+  success-text: >-
+    Bedankt voor je aanmelding, leuk dat je erbij bent! 
+
+    Voor nu hoef je niets te doen, behalve de datum in je agenda te zetten. 
+
+    Ongeveer een week van te voren ontvang je een voorbereidingsmail met meer informatie. 
+
+    Heb je voor die tijd vragen, neem dan contact op met jojanneke@humanc.nl
+  button-terug: Terug naar de homepage
+  placeholder-answer: Jouw antwoord
+  button-submit: Verzend formulier
+  button-reset: Formulier wissen

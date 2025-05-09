@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Connect to perform
+namespace: connect-to-perform
+permalink: /connect-to-perform/
+permalink_en: /connect-to-perform/
 ---
 
 <main>
@@ -8,50 +11,40 @@ title: Connect to perform
   <div class="landing landing--lightblue bg-lightblue">
     <div class="innercontainer innercontainer--werken-bij">
       <div class="landing-content">
-        <h1>{{site.data.connect-to-perform.title}}</h1>
-        {{site.data.connect-to-perform.landing-tekst | markdownify}}
+        <h1>{% t connect-to-perform.title %}</h1>
+        {% capture landing_text %}{% t connect-to-perform.landing-tekst %}{% endcapture %}
+        {{ landing_text | markdownify }}
       </div>
     </div>
 
     <div class="img-overlay-wrap">
-      <img
-        class="landing-image"
-        src="{{site.data.connect-to-perform.pagina-afbeelding}}"
-        alt=""
-      />
-      {% include svg1-lightblue.html %} {% include svg1-desktop-lightblue.html
-      %}
+      <img class="landing-image" src="{% t connect-to-perform.pagina-afbeelding %}" alt="" />
+      {% include svg1-lightblue.html %} {% include svg1-desktop-lightblue.html %}
     </div>
   </div>
   <div class="connect">
     <div class="innercontainer innercontainer--ctp margin-bottom-2">
-      <h2 class="margin-top-2">{{site.data.connect-to-perform.methoden}}</h2>
+      <h2 class="margin-top-2">{% t connect-to-perform.methoden %}</h2>
       <p class="bold fs-16-px">
-        {{site.data.connect-to-perform.methoden-tekst}}
+        {% t connect-to-perform.methoden-tekst %}
       </p>
-      <img
-        class="margin-top-2"
-        src="{{site.data.connect-to-perform.pagina-illustratie}}"
-        alt=""
-      />
+      <img class="margin-top-2" src="{% t connect-to-perform.pagina-illustratie %}" alt="" />
       <h3 class="margin-top-2">
-        {{site.data.connect-to-perform.werkwijze-titel}}
+        {% t connect-to-perform.werkwijze-titel %}
       </h3>
-      {{site.data.connect-to-perform.werkwijze-tekst | markdownify}}
+      {% capture werkwijze_text %}{% t connect-to-perform.werkwijze-tekst %}{% endcapture %}
+      {{ werkwijze_text | markdownify }}
       <h3 class="margin-top-2">
-        {{site.data.connect-to-perform.werkvorm-titel}}
+        {% t connect-to-perform.werkvorm-titel %}
       </h3>
-      {{site.data.connect-to-perform.werkvorm-tekst | markdownify}}
+      {% capture werkvorm_text %}{% t connect-to-perform.werkvorm-tekst %}{% endcapture %}
+      {{ werkvorm_text | markdownify }}
       <p class="btn btn-full margin-bottom-1em block max-content margin-top-2">
-        <a href="{{site.data.connect-to-perform.more-info}}" target="_blank"
-          >{{site.data.connect-to-perform.button1}}</a
-        >
+        <a href="{% t connect-to-perform.more-info %}" target="_blank">{% t connect-to-perform.button1 %}</a>
       </p>
 
       <p class="btn btn-full block max-content margin-bottom-4">
-        <a href="{{site.data.nav.ctp-contact}}"
-          >{{site.data.connect-to-perform.button2}}</a
-        >
+        <a href="{% t nav.ctp-contact %}" {# Uses key from nav namespace #}>{% t connect-to-perform.button2 %}</a>
       </p>
     </div>
   </div>
