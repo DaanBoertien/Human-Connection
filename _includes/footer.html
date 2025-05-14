@@ -1,67 +1,27 @@
-{% comment %} --- Bilingual Footer --- {% endcomment %}
+{% comment %} --- Bilingual Footer with Debug --- {% endcomment %}
 
-{% if site.lang == "nl" %}
-{% comment %} --- DUTCH FOOTER --- {% endcomment %}
-<footer>
-  <div class="footer-flex">
-    <div class="connect-to-perform">
-      <h2>Doe je mee met onze Connect to Perform Spelavond? <br>Eerstvolgende datum: <br>{% for datum in
-        site.data.ctp-contact.data limit:1 %}{{datum.datum}}{% endfor %}</h2>
-      <p class="btn btn-full Lichtblauw">
-        <a href="{{site.data.nav.ctp-contact}}">Ik schrijf me in!</a>
-      </p>
-    </div>
-  </div>
-  <div class="Groen footer footer-bottom">
-    <div class="volgons">
-      <p class="bold margin-bottom-0 fs-15px">Volg ons</p>
-      <a href="https://nl.linkedin.com/company/human-connection" target="_blank" class="footer-link-small">
-        <img src="/assets/images/LinkedIn.png" alt="LinkedIn">
-      </a>
-    </div>
-    <p>
-      Ontwerp: <a class="underline" href="https://studioryza.nl">studioryza.nl </a>| Realisatie:
-      <a href="https://www.daanboertien.com" class="underline" target="_blank">Daan Boertien</a>
-    </p>
-    <p>©{{"now" | date: "%Y"}} All Rights Reserved | Disclaimer | Cookie Policy | <a
-        href="/assets/docs/Privacy_Policy_Website.pdf" class="underline" target="_blank">Privacy</a></p>
-  </div>
-</footer>
-
-<div class="footer-desktop">
-  {%- comment -%} <div class="footer-menu-flex"> ... existing commented menu ... </div> {%- endcomment -%}
-
-  <div class="volgons fs-15px">
-    <p class="bold margin-bottom-0">Volg ons</p>
-    <a href="https://nl.linkedin.com/company/human-connection" target="_blank" class="footer-link-small">
-      <img src="/assets/images/LinkedIn.png" alt="LinkedIn">
-    </a>
-  </div>
-
-  <div class="connect">
-    <h2>Doe je mee met onze Connect to Perform Spelavond?<br>Eerstvolgende datum: <br>{% for datum in
-      site.data.ctp-contact.data limit:1 %}{{datum.datum}}{% endfor %}</h2>
-    <p class="btn btn-full Lichtblauw btn-ctp">
-      <a href="{{site.data.nav.ctp-contact}}">Ik schrijf me in!</a>
-    </p>
-  </div>
-
-  <p class="ontwerp fs-12px">
-    Ontwerp: <a class="underline" href="https://studioryza.nl">studioryza.nl </a>| Realisatie:
-    <a href="https://www.daanboertien.com" class="underline" target="_blank">Daan Boertien</a>
-  </p>
-  <p class="disclaimer fs-12px">©{{"now" | date: "%Y"}} All Rights Reserved | Cookie Policy | <a
-      href="/assets/docs/Privacy_Policy_Website.pdf" class="underline" target="_blank">Privacy</a></p>
-  <div class="green-space"></div>
-</div>
-
-{% elsif site.lang == "en" %}
+{% if site.lang == "en" %}
 {% comment %} --- ENGLISH FOOTER --- {% endcomment %}
 <footer>
   <div class="footer-flex">
     <div class="connect-to-perform">
-      <h2>Will you join our Connect to Perform Game Evening? <br>Next date: <br>{% for datum in
-        site.data.ctp-contact.data limit:1 %}{{datum.datum}}{% endfor %}</h2>
+      <h2>Will you join our Connect to Perform Game Evening? <br>Next date: <br>
+        {% comment %} Debug information {% endcomment %}
+        <span style="font-size: 0.7em; color: #555;">
+          Lang: {{ site.lang }} |
+          Data exists: {% if site.data.en %} Yes {% else %} No {% endif %} |
+          CTP exists: {% if site.data.en.ctp-contact %} Yes {% else %} No {% endif %} |
+          Array exists: {% if site.data.en.ctp-contact.data %} Yes {% else %} No {% endif %} |
+          Array size: {% if site.data.en.ctp-contact.data %}{{ site.data.en.ctp-contact.data.size }}{% else %}N/A{%
+          endif %}
+        </span><br>
+        {% if site.data.en.ctp-contact.data != nil and site.data.en.ctp-contact.data.size > 0 %}
+        {{ site.data.en.ctp-contact.data[0].datum }}
+        {% else %}
+        {% comment %} Fallback to hard-coded date {% endcomment %}
+        Monday October 6th: 19:30-21:45.
+        {% endif %}
+      </h2>
       <p class="btn btn-full Lichtblauw">
         <a href="{{site.data.nav.ctp-contact}}">Sign me up!</a>
       </p>
@@ -84,8 +44,6 @@
 </footer>
 
 <div class="footer-desktop">
-  {%- comment -%} <div class="footer-menu-flex"> ... existing commented menu ... </div> {%- endcomment -%}
-
   <div class="volgons fs-15px">
     <p class="bold margin-bottom-0">Follow us</p>
     <a href="https://nl.linkedin.com/company/human-connection" target="_blank" class="footer-link-small">
@@ -94,8 +52,14 @@
   </div>
 
   <div class="connect">
-    <h2>Will you join our Connect to Perform Game Evening?<br>Next date: <br>{% for datum in site.data.ctp-contact.data
-      limit:1 %}{{datum.datum}}{% endfor %}</h2>
+    <h2>Will you join our Connect to Perform Game Evening?<br>Next date: <br>
+      {% if site.data.en.ctp-contact.data != nil and site.data.en.ctp-contact.data.size > 0 %}
+      {{ site.data.en.ctp-contact.data[0].datum }}
+      {% else %}
+      {% comment %} Fallback to hard-coded date {% endcomment %}
+      Monday October 6th: 19:30-21:45.
+      {% endif %}
+    </h2>
     <p class="btn btn-full Lichtblauw btn-ctp">
       <a href="{{site.data.nav.ctp-contact}}">Sign me up!</a>
     </p>
@@ -110,4 +74,77 @@
   <div class="green-space"></div>
 </div>
 
+{% else %}
+{% comment %} --- DUTCH FOOTER (Default) --- {% endcomment %}
+<footer>
+  <div class="footer-flex">
+    <div class="connect-to-perform">
+      <h2>Doe je mee met onze Connect to Perform Spelavond? <br>Eerstvolgende datum: <br>
+        {% comment %} Debug information {% endcomment %}
+        <span style="font-size: 0.7em; color: #555;">
+          Lang: {{ site.lang }} |
+          Data exists: {% if site.data.nl %} Yes {% else %} No {% endif %} |
+          CTP exists: {% if site.data.nl.ctp-contact %} Yes {% else %} No {% endif %} |
+          Array exists: {% if site.data.nl.ctp-contact.data %} Yes {% else %} No {% endif %} |
+          Array size: {% if site.data.nl.ctp-contact.data %}{{ site.data.nl.ctp-contact.data.size }}{% else %}N/A{%
+          endif %}
+        </span><br>
+        {% if site.data.nl.ctp-contact.data != nil and site.data.nl.ctp-contact.data.size > 0 %}
+        {{ site.data.nl.ctp-contact.data[0].datum }}
+        {% else %}
+        {% comment %} Fallback to hard-coded date {% endcomment %}
+        Maandag 6 oktober: 19:30-21:45 uur.
+        {% endif %}
+      </h2>
+      <p class="btn btn-full Lichtblauw">
+        <a href="{{site.data.nav.ctp-contact}}">Ik schrijf me in!</a>
+      </p>
+    </div>
+  </div>
+  <div class="Groen footer footer-bottom">
+    <div class="volgons">
+      <p class="bold margin-bottom-0 fs-15px">Volg ons</p>
+      <a href="https://nl.linkedin.com/company/human-connection" target="_blank" class="footer-link-small">
+        <img src="/assets/images/LinkedIn.png" alt="LinkedIn">
+      </a>
+    </div>
+    <p>
+      Ontwerp: <a class="underline" href="https://studioryza.nl">studioryza.nl </a>| Realisatie:
+      <a href="https://www.daanboertien.com" class="underline" target="_blank">Daan Boertien</a>
+    </p>
+    <p>©{{"now" | date: "%Y"}} All Rights Reserved | Disclaimer | Cookie Policy | <a
+        href="/assets/docs/Privacy_Policy_Website.pdf" class="underline" target="_blank">Privacy</a></p>
+  </div>
+</footer>
+
+<div class="footer-desktop">
+  <div class="volgons fs-15px">
+    <p class="bold margin-bottom-0">Volg ons</p>
+    <a href="https://nl.linkedin.com/company/human-connection" target="_blank" class="footer-link-small">
+      <img src="/assets/images/LinkedIn.png" alt="LinkedIn">
+    </a>
+  </div>
+
+  <div class="connect">
+    <h2>Doe je mee met onze Connect to Perform Spelavond?<br>Eerstvolgende datum: <br>
+      {% if site.data.nl.ctp-contact.data != nil and site.data.nl.ctp-contact.data.size > 0 %}
+      {{ site.data.nl.ctp-contact.data[0].datum }}
+      {% else %}
+      {% comment %} Fallback to hard-coded date {% endcomment %}
+      Maandag 6 oktober: 19:30-21:45 uur.
+      {% endif %}
+    </h2>
+    <p class="btn btn-full Lichtblauw btn-ctp">
+      <a href="{{site.data.nav.ctp-contact}}">Ik schrijf me in!</a>
+    </p>
+  </div>
+
+  <p class="ontwerp fs-12px">
+    Ontwerp: <a class="underline" href="https://studioryza.nl">studioryza.nl </a>| Realisatie:
+    <a href="https://www.daanboertien.com" class="underline" target="_blank">Daan Boertien</a>
+  </p>
+  <p class="disclaimer fs-12px">©{{"now" | date: "%Y"}} All Rights Reserved | Cookie Policy | <a
+      href="/assets/docs/Privacy_Policy_Website.pdf" class="underline" target="_blank">Privacy</a></p>
+  <div class="green-space"></div>
+</div>
 {% endif %}

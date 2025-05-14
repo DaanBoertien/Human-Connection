@@ -369,7 +369,7 @@ ctp-contact:
   telefoonnummer: Telefoonnummer*
   welke: Voor welke avond meld je je aan?*
   data:
-  - datum: "Maandag 6 oktober: 19:30-21:45 uur."
+  - datum: "Maandag 6 oktober: 19:30-21:45"
   hoe: Via wie of hoe weet je van de Connect to Perform avond?
   reden: Wat is je reden van aanmelden?
   success: Dankjewel voor je bericht!
