@@ -3,7 +3,7 @@
 
 backend:
   name: git-gateway
-  branch: dev # Make sure this matches your development branch
+  branch: master
 
 # Location for media uploads relative to the project root
 media_folder: assets/images/upload/
