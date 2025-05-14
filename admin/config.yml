@@ -30,7 +30,7 @@ collections:
     name: "bg_color"
     widget: "select"
     options: [ "Donkerblauw", "Lichtblauw", "Groen", "Grijs", "Geel", "Rood" ] # Color options
-  - { label: "Menu Status", name: "menu", widget: "string", required: false, default: "menu-active" } # Translated label (e.g., show in menu)
+  - { label: "Menu Status", name: "menu", widget: "hidden", required: false, default: "menu-active" } # Translated label (e.g., show in menu)
 
   # Nested object for Dutch content specific to team members
   - label: "Nederlandse Content" # Translated label for the Dutch content group
