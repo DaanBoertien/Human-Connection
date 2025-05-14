@@ -6,15 +6,7 @@
   <div class="footer-flex">
     <div class="connect-to-perform">
       <h2>Will you join our Connect to Perform Game Evening? <br>Next date: <br>
-        {% comment %} Debug information {% endcomment %}
-        <span style="font-size: 0.7em; color: #555;">
-          Lang: {{ site.lang }} |
-          Data exists: {% if site.data.en %} Yes {% else %} No {% endif %} |
-          CTP exists: {% if site.data.en.ctp-contact %} Yes {% else %} No {% endif %} |
-          Array exists: {% if site.data.en.ctp-contact.data %} Yes {% else %} No {% endif %} |
-          Array size: {% if site.data.en.ctp-contact.data %}{{ site.data.en.ctp-contact.data.size }}{% else %}N/A{%
-          endif %}
-        </span><br>
+      
         {% if site.data.en.ctp-contact.data != nil and site.data.en.ctp-contact.data.size > 0 %}
         {{ site.data.en.ctp-contact.data[0].datum }}
         {% else %}
@@ -80,15 +72,7 @@
   <div class="footer-flex">
     <div class="connect-to-perform">
       <h2>Doe je mee met onze Connect to Perform Spelavond? <br>Eerstvolgende datum: <br>
-        {% comment %} Debug information {% endcomment %}
-        <span style="font-size: 0.7em; color: #555;">
-          Lang: {{ site.lang }} |
-          Data exists: {% if site.data.nl %} Yes {% else %} No {% endif %} |
-          CTP exists: {% if site.data.nl.ctp-contact %} Yes {% else %} No {% endif %} |
-          Array exists: {% if site.data.nl.ctp-contact.data %} Yes {% else %} No {% endif %} |
-          Array size: {% if site.data.nl.ctp-contact.data %}{{ site.data.nl.ctp-contact.data.size }}{% else %}N/A{%
-          endif %}
-        </span><br>
+   
         {% if site.data.nl.ctp-contact.data != nil and site.data.nl.ctp-contact.data.size > 0 %}
         {{ site.data.nl.ctp-contact.data[0].datum }}
         {% else %}
