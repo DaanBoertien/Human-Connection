@@ -3,7 +3,7 @@ layout: teammembers
 email: anne@humanc.nl
 phonenumber: 06 36 25 62 32
 photo_url: /assets/images/upload/anne-23.jpg
-bg_color: Groen
+bg_color: Lichtblauw
 menu: menu-active
 nl:
   title: Anne Boertien
