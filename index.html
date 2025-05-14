@@ -178,15 +178,19 @@ namespace: home
       {% comment %} 1. Find the contact page object using its namespace {% endcomment %}
       {% assign contact_page_ref = site.pages | where_exp: "item", "item.namespace == 'contact'" | first %}
 
-      {% comment %} 2. Get the URL from the page object (should include language prefix if needed) {% endcomment %}
+      {% comment %} 2. Initialize a fallback URL {% endcomment %}
+      {% assign contact_url_final = "/" %}
+
+      {% comment %} 3. If contact page is found, construct the internationalized URL {% endcomment %}
       {% if contact_page_ref %}
-      {% assign contact_url_final = contact_page_ref.url %}
-      {% else %}
-      {% assign contact_url_final = "/" %} {% comment %} Fallback URL if contact page not found {% endcomment %}
+      {% assign url_from_contact_page = contact_page_ref.url %}
+      {% comment %} Prepend the language prefix and clean up any double slashes {% endcomment %}
+      {% assign raw_contact_path = index_lang_prefix | append: url_from_contact_page %}
+      {% assign contact_url_final = raw_contact_path | replace: '//', '/' %}
       {% endif %}
 
       <p class="btn btn-full">
-        {% comment %} 3. Use the obtained URL {% endcomment %}
+        {% comment %} 4. Use the constructed URL {% endcomment %}
         <a href="{{ contact_url_final | relative_url }}">{% t home.actievraag-button %}</a>
       </p>
     </div>
@@ -197,6 +201,8 @@ namespace: home
     {% include svg2.html %}
     {% include svg2-desktop.html %}
   </div>
+</div>
+
 </div>
   <div class="partners">
     <h2>{% t home.partners-titel %}</h2>
