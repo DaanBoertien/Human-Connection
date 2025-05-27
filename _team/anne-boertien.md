@@ -23,15 +23,15 @@ nl:
     www.anneboertien.nl
 en:
   title: Anne Boertien
-  function: Visual Organizational Advisor | Developer | Coach
+  function: Visual Facilitator | (Voice Dialogue) Coach
   photo_description: Anne drawing
   summary: Maximizing potential and inspiring people to take action, those are the
     main drivers in my work.
   uitleg: >-
     I love making abstract, complex matters understandable and tangible.
-    Visually, through business drawing. Personally, through a good conversation
-    that focuses on the complete person. I am solution-oriented and always have
-    the end-goal in mind. 
+    Visually, through graphic facilitation. Personally, through a good
+    conversation that focuses on the complete person. I am solution-oriented and
+    always have the end-goal in mind. 
 
 
     Others describe me as warm and sincere in relationships, sharp on content, and practical and creative in execution.
