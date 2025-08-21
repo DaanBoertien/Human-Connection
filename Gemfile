@@ -16,4 +16,4 @@ gem 'base64'
 gem 'bigdecimal'
 gem 'ostruct'
 gem 'stringio'
-
+gem 'liquid', '~> 5.4'
