@@ -1,56 +1,94 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    albino (1.3.3)
-      posix-spawn (>= 0.3.6)
+    addressable (2.8.7)
+      public_suffix (>= 2.0.2, < 7.0)
     base64 (0.3.0)
     bigdecimal (3.2.2)
-    classifier (1.4.4)
-      fast-stemmer (~> 1.0)
-      mutex_m (~> 0.2)
-      rake
+    colorator (1.1.0)
+    concurrent-ruby (1.3.5)
     csv (3.3.5)
-    directory_watcher (1.5.1)
-    fast-stemmer (1.0.2)
-    hamburgers (1.1.3)
-    jekyll (0.11.0)
-      albino (>= 1.3.2)
-      classifier (>= 1.3.1)
-      directory_watcher (>= 1.1.1)
-      kramdown (>= 0.13.2)
-      liquid (>= 1.9.0)
-      maruku (>= 0.5.9)
-    jekyll-multiple-languages-plugin (1.3.0)
-    kramdown (2.4.0)
-      rexml
-    liquid (5.8.7)
+    em-websocket (0.5.3)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0)
+    eventmachine (1.2.7)
+    ffi (1.17.2-x64-mingw-ucrt)
+    forwardable-extended (2.6.0)
+    google-protobuf (4.32.0-x64-mingw-ucrt)
       bigdecimal
-      strscan (>= 3.1.1)
+      rake (>= 13)
+    hamburgers (1.1.3)
+    http_parser.rb (0.8.0)
+    i18n (1.14.7)
+      concurrent-ruby (~> 1.0)
+    jekyll (4.4.1)
+      addressable (~> 2.4)
+      base64 (~> 0.2)
+      colorator (~> 1.0)
+      csv (~> 3.0)
+      em-websocket (~> 0.5)
+      i18n (~> 1.0)
+      jekyll-sass-converter (>= 2.0, < 4.0)
+      jekyll-watch (~> 2.0)
+      json (~> 2.6)
+      kramdown (~> 2.3, >= 2.3.1)
+      kramdown-parser-gfm (~> 1.0)
+      liquid (~> 4.0)
+      mercenary (~> 0.3, >= 0.3.6)
+      pathutil (~> 0.9)
+      rouge (>= 3.0, < 5.0)
+      safe_yaml (~> 1.0)
+      terminal-table (>= 1.8, < 4.0)
+      webrick (~> 1.7)
+    jekyll-multiple-languages-plugin (1.8.0)
+      jekyll (>= 2.0, < 5.0)
+    jekyll-sass-converter (3.1.0)
+      sass-embedded (~> 1.75)
+    jekyll-watch (2.2.1)
+      listen (~> 3.0)
+    json (2.13.2)
+    kramdown (2.5.1)
+      rexml (>= 3.3.9)
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
+    liquid (4.0.4)
+    listen (3.9.0)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.7.0)
-    maruku (0.7.3)
-    mutex_m (0.3.0)
+    mercenary (0.4.0)
     ostruct (0.6.3)
-    posix-spawn (0.3.15)
+    pathutil (0.16.2)
+      forwardable-extended (~> 2.6)
+    public_suffix (6.0.2)
     rake (13.3.0)
-    rexml (3.2.5)
+    rb-fsevent (0.11.2)
+    rb-inotify (0.11.1)
+      ffi (~> 1.0)
+    rexml (3.4.1)
+    rouge (4.6.0)
+    safe_yaml (1.0.5)
+    sass-embedded (1.90.0-x64-mingw-ucrt)
+      google-protobuf (~> 4.31)
     stringio (3.1.7)
-    strscan (3.1.5)
+    terminal-table (3.0.2)
+      unicode-display_width (>= 1.1.1, < 3)
+    unicode-display_width (2.6.0)
+    webrick (1.9.1)
 
 PLATFORMS
   x64-mingw-ucrt
-  x64-mingw32
 
 DEPENDENCIES
   base64
   bigdecimal
   csv
   hamburgers
-  jekyll
+  jekyll (~> 4.3)
   jekyll-multiple-languages-plugin
-  liquid (~> 5.4)
   logger
   ostruct
   stringio
 
 BUNDLED WITH
-   2.3.22
+   2.6.2
