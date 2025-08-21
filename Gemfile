@@ -10,5 +10,6 @@ gem 'jekyll-multiple-languages-plugin'
 # gem 'jekyll-compress-images'
 # gem "image_optim"
 # gem "image_optim_pack"
-
+gem 'csv'
+gem 'logger'
 
