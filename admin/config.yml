@@ -2,8 +2,9 @@
 # Version 4: Reordered page sections and ensured ALL labels are Dutch.
 
 backend:
-  name: git-gateway
+  name: github
   branch: master
+  repo: DaanBoertien/Human-Connection
 
 # Location for media uploads relative to the project root
 media_folder: assets/images/upload/
