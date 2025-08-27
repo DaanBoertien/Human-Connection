@@ -24,8 +24,8 @@ nl:
     Wij ontmoeten graag toekomstige medior en senior collega’s die zichzelf willen verbreden en ontwikkelen, en die óók iets nieuws en eigens toevoegen aan Human Connection.
   uitleg: Omdat we geloven in de rijkheid van diversiteit, versterken we ons team heel graag met mensen met een eigen geluid, achtergrond en perspectief. Het is in ons werk belangrijk dat je als nieuwe collega in het Nederlands en Engels comfortabel kunt communiceren.
   card_title: Meer weten of eens kennismaken?
-  soundbites: Neem contact op met Zilla.
-  soundbites_text: Bel, mail of app gerust!
+  soundbites: Neem contact op met Zilla
+  soundbites_text: bel, mail of app gerust!
 en:
   title: Will you be working with us soon?
   function: Organizational Advisor
