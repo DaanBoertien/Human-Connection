@@ -21,11 +21,11 @@ nl:
 
     ✨ …vanuit jouw ervaring en expertise (bijvoorbeeld als organisatieadviseur, interim-manager trainer, veranderaar, procesbegeleider, interim-manager of coach), waarbij je je netwerk en talent inzet om samen te groeien? 
 
-    Wij ontmoeten graag toekomstige medior en senior collega’s die zichzelf willen verbreden en ontwikkelen, en die óók iets nieuws en eigens toevoegen aan Human Connection. Omdat we geloven in de rijkheid van diversiteit, versterken we ons team heel graag met mensen met een eigen geluid, achtergrond en perspectief. Het is in ons werk belangrijk dat je als nieuwe collega in het Nederlands en Engels comfortabel kunt communiceren.
-  uitleg: 'We houden onze ogen en oren altijd open voor nieuwe collega’s. Of dat nu voor morgen is of voor later: kennismaken en samen verkennen vinden we altijd leuk!'
-  card_title: Sta jij hier binnenkort?
-  soundbites: Neem contact op met Zilla Uiterwijk
-  soundbites_text: Jij in soundbites? Verras ons!
+    Wij ontmoeten graag toekomstige medior en senior collega’s die zichzelf willen verbreden en ontwikkelen, en die óók iets nieuws en eigens toevoegen aan Human Connection.
+  uitleg: Omdat we geloven in de rijkheid van diversiteit, versterken we ons team heel graag met mensen met een eigen geluid, achtergrond en perspectief. Het is in ons werk belangrijk dat je als nieuwe collega in het Nederlands en Engels comfortabel kunt communiceren.
+  card_title: Meer weten of eens kennismaken?
+  soundbites: Neem contact op met Zilla.
+  soundbites_text: Bel, mail of app gerust!
 en:
   title: Will you be working with us soon?
   function: Organizational Advisor
