@@ -2,7 +2,7 @@
 layout: teammembers
 email: hilmar@humanc.nl
 phonenumber: 06 26 05 07 47
-photo_url: /assets/images/upload/Hilmar.jpeg
+photo_url: /assets/images/upload/hilmar2.jpg
 bg_color: Groen
 menu: menu-active
 nl:
