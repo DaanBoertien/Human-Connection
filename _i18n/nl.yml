@@ -35,14 +35,14 @@ home:
 
     Voorbeelden hiervan zijn: 
 
-    * Transformatie naar meer zelfsturing
-    * Faciliteren verdiepende gesprekken en krachtige besluitvorming.
-    * Cultuurontwikkeling: betere prestaties en een (pro)actievere cultuur.
-    * Reorganisaties, fusies, samenwerkingsverbanden optimaliseren
-    * Compliance en integriteitsvraagstukken
-    * Invoeren en begeleiden van Agile/Scrum
+    - Transformatie naar meer zelfsturing
+    - Faciliteren verdiepende gesprekken en krachtige besluitvorming.
+    - Cultuurontwikkeling: betere prestaties en een (pro)actievere cultuur.
+    - Reorganisaties, fusies, samenwerkingsverbanden optimaliseren
+    - Compliance en integriteitsvraagstukken
+    - Invoeren en begeleiden van Agile/Scrum
   wat-wij-doen-1-contact: |-
-    **Meer weten?**\
+    \*\*Meer weten?\*\*\\
     Neem bijvoorbeeld contact op met Sjef of Zilla.
   wat-wij-doen-1-button: Contact met Sjef
   wat-wij-doen-1-link: /team/sjef-van-gool/
@@ -52,29 +52,29 @@ home:
 
     We doen dit bijvoorbeeld op het gebied van:
 
-    * Verandermanagement
-    * HR-management
-    * Strategie-implementatie
-    * ICT-management
-    * L&O Professional
-    * Sociale Veiligheid
+    - Verandermanagement
+    - HR-management
+    - Strategie-implementatie
+    - ICT-management
+    - L&O Professional
+    - Sociale Veiligheid
   wat-wij-doen-2-contact: |-
-    **Meer weten?**\
+    \*\*Meer weten?\*\*\\
     Neem bijvoorbeeld contact op met Meggie of Dorothé.
-  wat-wij-doen-2-button: Contact met Meggie
-  wat-wij-doen-2-link: /team/meggie-van-de-bunt/
+  wat-wij-doen-2-button: Contact met Dorothé
+  wat-wij-doen-2-link: /team/dorothé-wissink/
   wat-wij-doen-3-titel: Leren & ontwikkelen
   wat-wij-doen-3-tekst: |-
     We begeleiden persoonlijke en professionele ontwikkeling voor bestuurders, leidinggevenden en professionals. Persoonlijk leiderschap en persoonlijke effectiviteit zijn hierbij belangrijke thema's.
 
     We adviseren over de meest effectieve aanpak en ontwerpen en begeleiden workshops of trajecten zoals:
 
-    * Ontwikkeltrajecten en opleidingsprogramma's 
-    * Leiderschapsprogramma's
-    * Intervisie
-    * [Individuele coaching](https://www.humanc.nl/coaching/)
-    * Talentmanagement en traineeprogramma's 
-    * Inrichting van een effectieve leerinfrastructuur
+    - Ontwikkeltrajecten en opleidingsprogramma's 
+    - Leiderschapsprogramma's
+    - Intervisie
+    - [Individuele coaching](https://www.humanc.nl/coaching/)
+    - Talentmanagement en traineeprogramma's 
+    - Inrichting van een effectieve leerinfrastructuur
   wat-wij-doen-3-contact: |-
     **Meer weten?**\
     Neem contact op met bijvoorbeeld Marit of Annet.
@@ -316,6 +316,6 @@ nav:
   email_us: Mail ons
 global:
   global:
-    site_title: jkl
-    english: jkl;
     nederlands: adsf
+    english: jkl;
+    site_title: jkl
