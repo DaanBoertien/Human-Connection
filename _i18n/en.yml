@@ -1,488 +1,333 @@
-nav:
-  wat_wij_doen_url: /what-we-do/
-  succes_url: /success/
-  email_us: Email us
-  connect_to_perform_url: /connect-to-perform/
-  team_base_url: /team/
-  coaching_text: Coaching
-  werken_bij_url: /work-with-us/
-  wie_wij_zijn_text: Who we are
-  hoe_wij_werken_url: /how-we-work/
-  contact_text: Contact
-  vertrouwenspersoon_text: Confidential Advisor
-  vertrouwenspersoon_url: /confidential-advisor/
-  lang_nl: NL
-  home_url: /
-  contact_url: /contact/
-  ctp-contact: /ctp-contact/
-  hoe_wij_werken_text: How we work
-  wie_wij_zijn_url: /who-we-are/
-  logo_alt_text: Human Connection Logo
-  coaching_url: /coaching/
-  werken_bij_text: Work with us
-  lang_en: EN
-  connect_to_perform_text: Connect to Perform
-  wat_wij_doen_text: What we do
-  call_us: Call us
-global:
-  nederlands: Dutch
-  english: English
-  site_title: Human Connection
-  global.nederlands: Nederlands
-  global.english: english
-  global.site_title: Human_connection
 home:
-  wat-wij-doen-3-tekst: >-
-    We guide personal and professional development for executives, managers, and
-    professionals. Personal leadership and personal effectiveness are important
-    themes here.
-
-
-    We advise on the most effective approach and design and facilitate workshops or programs such as:
-
-
-    * Development trajectories and training programs  
-
-    * Leadership programs  
-
-    * Intervision (Peer consultation)  
-
-    * [Individual coaching](https://www.humanc.nl/en/coaching/)  
-
-    * Talent management and trainee programs  
-
-    * Setting up an effective learning infrastructure
-  uitnodiging: "Or visit us at our picturesque Amsterdam office:"
-  wie-wij-zijn: Who we are
-  actievraag-button: Get in touch with us
-  waar-wij-voor-staan: What we stand for
-  wat-wij-doen-1-contact: |-
-    **Want to know more?**\
-    Please contact Sjef or Zilla.
-  partners-titel: "Worked with, among others:"
-  wat-wij-doen-2-contact: |-
-    **Want to know more?**\
-    Please contact Meggie or Dorothé.
-  contact_org_name: Human Connection
-  wat-wij-doen-3-contact: |-
-    **Want to know more?**\
-    Please contact Marit or Annet.
-  contact-placeholder: Your answer
-  contact-bericht: Question/Message
-  contact_label_naam: Name*
-  wat-wij-doen-1-titel: Organizational development & team development
-  wat-wij-doen-2-titel: Interim Management
-  contact_label_bericht: Question/Message*
-  wat-wij-doen-3-titel: Learning & Development
-  contact-naam: Name
-  wat-wij-doen: What we do
-  postcode: 1013 GA Amsterdam
-  wat-wij-doen-3-button: Contact Marit
-  waarde-1-tekst: >-
-    Synergy arises where people are connected with themselves, with each other,
-    and with the purpose of the organization.
-
-
-    Self-awareness, ownership, engagement, and taking responsibility are central to this. We stand for this ourselves, and this is also exactly what we help our clients with. We bring our own personalities, experiences, and 'humanity' to everything we do.
-  wat-wij-doen-2-button: Contact Meggie
-  waarde-2-tekst: "For us, trust is the foundation from which we work. Amongst
-    colleagues and in collaboration with our clients. It is our second nature,
-    to build trust between people and within organizations wherever we work. We
-    approach people and their issues positively: we inherently trust everyone's
-    good intentions, capabilities, and resilience."
-  wat-wij-doen-1-button: Contact Sjef
-  contact-email: E-mail
-  landing-tekt: >-
-    Human Connection is a management consultancy that focuses on the human side
-    of organizations. In various roles, we guide leaders, teams, and individual
-    professionals to develop and work more proactively (together).
-
+  slogan: Change is driven by people
+  landing-tekt: |-
+    Human Connection is a management consultancy that focuses on the human side of organizations. In various roles, we guide leaders, teams, and individual professionals to develop and work more proactively (together).
 
     We work in a tailor-made manner, taking into account each specificity of the project and with a broad view of people in their context, healthy business operations, and the development of organizational culture.
 
-
     Our experience is wide-ranging. We love a complex challenge, and look at opportunities with optimism.
-  waar-wijvoor-staan-tekst: "We do what we say and say what we do. Both in how we
-    collaborate internally within our company, and how we collaborate with our
-    clients. We always work:"
-  waarde-3-tekst: >-
-    We take a broad view of every question and ask ourselves: 'What is really
-    going on here? What patterns are at play?'
+  pagina-afbeelding: /assets/images/upload/parachute.jpg
+  waar-wij-voor-staan: What we stand for
+  waar-wijvoor-staan-tekst: 'We do what we say and say what we do. Both in how we collaborate internally within our company, and how we collaborate with our clients. We always work:'
+  waarde-1-titel: In Connection
+  waarde-1-tekst: |-
+    Synergy arises where people are connected with themselves, with each other, and with the purpose of the organization.
 
+    Self-awareness, ownership, engagement, and taking responsibility are central to this. We stand for this ourselves, and this is also exactly what we help our clients with. We bring our own personalities, experiences, and 'humanity' to everything we do.
+  waarde-1-afbeelding: /assets/images/upload/icoon3dun.png
+  waarde-2-titel: Built on Trust
+  waarde-2-tekst: "For us, trust is the foundation from which we work. Amongst colleagues and in collaboration with our clients. It is our second nature, to build trust between people and within organizations wherever we work. We approach people and their issues positively: we inherently trust everyone's good intentions, capabilities, and resilience."
+  waarde-2-afbeelding: /assets/images/upload/icoon2dun.png
+  waarde-3-titel: In Context
+  waarde-3-tekst: |-
+    We take a broad view of every question and ask ourselves: 'What is really going on here? What patterns are at play?'
 
     The interplay between various factors (such as organizational structure, way of working, culture, the changing external world) determines success. Therefore, we closely align with the context of an organization and people, and everything we do is tailor-made.
-  contact-onderwerp: Subject
-  contact_label_email: Email*
-  contact-omschrijving: We would like to get in touch with you. Call or email one
-    of our colleagues directly, or fill in the form below.
-  contact_label_onderwerp: Subject*
-  hoe-wij-werken: Want to know more about how we work?
-  contact_placeholder: Your answer
-  pagina-afbeelding: /assets/images/upload/parachute.jpg
-  wat-wij-doen-3-link: /team/marit-weiss/
-  afbeelding-kantoor: /assets/images/upload/kantoor.png
-  wat-wij-doen-2-link: /team/meggie-van-de-bunt/
-  actievraag-subtitel: Discover how we can help with this.
-  wat-wij-doen-1-link: /team/sjef-van-gool/
   waarde-3-afbeelding: /assets/images/upload/icoon1dun.png
-  contact-titel: Contact
-  waarde-1-titel: In Connection
-  waarde-2-afbeelding: /assets/images/upload/icoon2dun.png
-  waarde-2-titel: Built on Trust
-  wat-wij-doen-tekst: "We approach every issue with an organization-wide
-    perspective. We do this from several areas of expertise:"
-  waarde-1-afbeelding: /assets/images/upload/icoon3dun.png
-  contact_submit_button: Send message
-  waarde-3-titel: In Context
-  adres: Singel 2a
-  actievraag: What challenges are you facing in your organization?
-  wat-wij-doen-1-tekst: >-
-    We advise and guide teams and organizations through changes. Through longer
-    trajectories (lasting cultural change or reorganizations), shorter
-    interventions (teambuilding and proactive behavior), and everything in
-    between.
-
+  wat-wij-doen: What we do
+  wat-wij-doen-tekst: 'We approach every issue with an organization-wide perspective. We do this from several areas of expertise:'
+  wat-wij-doen-1-titel: Organizational development & team development
+  wat-wij-doen-1-tekst: |-
+    We advise and guide teams and organizations through changes. Through longer trajectories (lasting cultural change or reorganizations), shorter interventions (teambuilding and proactive behavior), and everything in between.
 
     Examples include:
 
-
-    * Transformation to more self-management  
-
-    * Facilitating in-depth conversations and powerful decision-making.  
-
-    * Culture development: better performance and a more (pro)active culture.  
-
-    * Reorganizations, mergers, optimizing collaborations  
-
-    * Compliance and integrity issues  
-
-    * Implementing and guiding Agile/Scrum
-  slogan: Change is driven by people
-  wat-wij-doen-2-tekst: >-
-    As interim professionals, we are part of the organization for a while. As
-    managers or directors, we, together with the strategic partners present in
-    the organization, proactively set a course that aligns with the bigger
-    picture. We enjoy doing this in combination with a change assignment.
-
+    - Transformation to more self-management  
+    - Facilitating in-depth conversations and powerful decision-making.  
+    - Culture development: better performance and a more (pro)active culture.  
+    - Reorganizations, mergers, optimizing collaborations  
+    - Compliance and integrity issues  
+    - Implementing and guiding Agile/Scrum
+  wat-wij-doen-1-contact: |-
+    \*\*Want to know more?\*\*\\
+    Please contact Sjef or Zilla.
+  wat-wij-doen-1-button: Contact Sjef
+  wat-wij-doen-1-link: /team/sjef-van-gool/
+  wat-wij-doen-2-titel: Interim Management
+  wat-wij-doen-2-tekst: |-
+    As interim professionals, we are part of the organization for a while. As managers or directors, we, together with the strategic partners present in the organization, proactively set a course that aligns with the bigger picture. We enjoy doing this in combination with a change assignment.
 
     We do this, for example, in the areas of:
 
+    - Change management  
+    - HR management  
+    - Strategy implementation  
+    - ICT management  
+    - L&D professional
+    - Social Safety
+  wat-wij-doen-2-contact: |-
+    \*\*Want to know more?\*\*\\
+    Please contact Dorothé.
+  wat-wij-doen-2-button: Contact Dorothé
+  wat-wij-doen-2-link: /team/dorothé-wissink/
+  wat-wij-doen-3-titel: Learning & Development
+  wat-wij-doen-3-tekst: |-
+    We guide personal and professional development for executives, managers, and professionals. Personal leadership and personal effectiveness are important themes here.
 
-    * Change management  
+    We advise on the most effective approach and design and facilitate workshops or programs such as:
 
-    * HR management  
-
-    * Strategy implementation  
-
-    * ICT management  
-
-    * L&D professional
-
-    * Social Safety
+    - Development trajectories and training programs  
+    - Leadership programs  
+    - Intervision (Peer consultation)  
+    - [Individual coaching](https://www.humanc.nl/en/coaching/)  
+    - Talent management and trainee programs  
+    - Setting up an effective learning infrastructure
+  wat-wij-doen-3-contact: |-
+    **Want to know more?**\
+    Please contact Marit or Annet.
+  wat-wij-doen-3-button: Contact Marit
+  wat-wij-doen-3-link: /team/marit-weiss/
+  hoe-wij-werken: Want to know more about how we work?
+  wie-wij-zijn: Who we are
+  actievraag: What challenges are you facing in your organization?
+  actievraag-subtitel: Discover how we can help with this.
+  actievraag-button: Get in touch with us
+  partners-titel: 'Worked with, among others:'
+  contact-titel: Contact
+  contact-omschrijving: We would like to get in touch with you. Call or email one of our colleagues directly, or fill in the form below.
+  contact-naam: Name
+  contact-email: E-mail
+  contact-onderwerp: Subject
+  contact-bericht: Question/Message
+  contact-placeholder: Your answer
+  contact_placeholder: Your answer
+  contact_label_naam: Name*
+  contact_label_onderwerp: Subject*
+  contact_label_email: Email*
+  contact_label_bericht: Question/Message*
+  contact_submit_button: Send message
+  contact_org_name: Human Connection
   contact-button: Send Message
+  uitnodiging: 'Or visit us at our picturesque Amsterdam office:'
+  adres: Singel 2a
+  postcode: 1013 GA Amsterdam
+  afbeelding-kantoor: /assets/images/upload/kantoor.png
 hoe-wij-werken:
-  waar-wij-voor-staan: Methods and formats
-  landing-tekst: >-
-    Everything we do is tailor-made, because every change has its own dynamics,
-    complexity, and pace.
-
+  title: How we work
+  landing-tekst: |-
+    Everything we do is tailor-made, because every change has its own dynamics, complexity, and pace.
 
     We have extensive knowledge and have vast experience in several methodologies. We use theories and models as a collective frame of reference and common language. The emphasis for us is always on direct applicability in daily work.
-  waarde-1-tekst: "It starts with personal contact. Together with a client, we
-    look at the context of the organization and the people on the work floor is.
-    We look with a broad view on the whole: 'what is really going on here?'"
-  waarde-2-tekst: Based on the intake, we advise on an effective approach. We let
-    the organization take the lead as much as possible. We design and plan
-    ahead, preferably together with the people involved. We create realistic
-    expectations and frameworks.
-  waar-wijvoor-staan-tekst: >-
+  pagina-afbeelding: /assets/images/upload/impact.jpg
+  waar-wij-voor-staan: Methods and formats
+  waar-wijvoor-staan-tekst: |-
     Examples of methods and formats we are familiar with (a.o.): 
-
 
     \- Our Connect to Perform philosophy is at the base of our consultance work
 
-
     \- Working and collaboration methods/formats like agile/scrum, Scaling Up and Deep Democracy
-
 
     \- Teamreflection using Lencioni, Belbin and Inisghts Discovery
 
-
     \- Business Drawing: powerful tool to visualize concepts 
-
 
     \- Personal development and coaching using Voice Dialogue, Co-active coaching, ACT
 
-
     \- Organizational Change theories
 
-
     Development-oriented as we are, we stay up to date with the latest insights in theory and practice.
-  waarde-3-tekst: We guide the implementation step by step, so that adjustment is
-    always possible. We work methodically where necessary. We understand the
-    dynamics and complexity of organizations and always have an eye for the
-    individual and their work and private context.
-  waarde-4-tekst: Especially at difficult moments, or when things seem too quiet,
-    we help to push through.  We help turn awareness into action on the work
-    floor. Not clinging rigidly to the 'plan from six months ago', but again in
-    relation to the current course and circumstances of the organization. With a
-    focus on long-term results.​
-  waarde-5-tekst: Development is never finished. However, we find it important
-    that our clients can continue independently for a while after our guidance.
-    We help to evaluate sharply and anticipate future developments. And we
-    always keep the line open for a quick chat or catch-up.
-  pagina-afbeelding: /assets/images/upload/impact.jpg
-  waarde-5-afbeelding: ""
-  waarde-4-afbeelding: ""
-  waarde-3-afbeelding: ""
-  title: How we work
   waarde-1-titel: 1. Contact and context
-  waarde-2-afbeelding: ""
+  waarde-1-tekst: "It starts with personal contact. Together with a client, we look at the context of the organization and the people on the work floor is. We look with a broad view on the whole: 'what is really going on here?'"
+  waarde-1-afbeelding: ''
   waarde-2-titel: 2. Pragmatic design and advice
-  waarde-1-afbeelding: ""
+  waarde-2-tekst: Based on the intake, we advise on an effective approach. We let the organization take the lead as much as possible. We design and plan ahead, preferably together with the people involved. We create realistic expectations and frameworks.
+  waarde-2-afbeelding: ''
   waarde-3-titel: 3.  Guidance
+  waarde-3-tekst: We guide the implementation step by step, so that adjustment is always possible. We work methodically where necessary. We understand the dynamics and complexity of organizations and always have an eye for the individual and their work and private context.
+  waarde-3-afbeelding: ''
   waarde-4-titel: 4. Pushing through until it really works​
+  waarde-4-tekst: Especially at difficult moments, or when things seem too quiet, we help to push through.  We help turn awareness into action on the work floor. Not clinging rigidly to the 'plan from six months ago', but again in relation to the current course and circumstances of the organization. With a focus on long-term results.​
+  waarde-4-afbeelding: ''
   waarde-5-titel: 5. Evaluating
+  waarde-5-tekst: Development is never finished. However, we find it important that our clients can continue independently for a while after our guidance. We help to evaluate sharply and anticipate future developments. And we always keep the line open for a quick chat or catch-up.
+  waarde-5-afbeelding: ''
 connect-to-perform:
-  button2: Sign up here for the open game evening
-  landing-tekst: "'Connect to Perform' is the philosophy that forms the basis for
-    Human Connection's consultancy work. It demonstrates how teams and
-    organizations can move to a more effective and pleasant way of working by
-    making (mutual) connections. To bridge the gap between 'theory' and
-    'self-application', we have designed a game that is played with great
-    success in organizations and during our open evenings."
-  more-info: /assets/images/upload/connect_to_perform.pdf
-  werkvorm-tekst: >-
-    As an introduction, we organize an open game evening several times a year,
-    nowadays mostly online, where our relations and interested parties are
-    welcome to get acquainted with this methodology. (participation is
-    completely free and without further obligations). Moreover, experience shows
-    that it is very interesting to exchange thoughts with people you didn't know
-    before and who are working in different organizations. When you partcipate,
-    you will get access to videos with explanations and background information. 
+  title: Connect to Perform
+  pagina-afbeelding: /assets/images/upload/verandering-transitie.jpg
+  landing-tekst: "'Connect to Perform' is the philosophy that forms the basis for Human Connection's consultancy work. It demonstrates how teams and organizations can move to a more effective and pleasant way of working by making (mutual) connections. To bridge the gap between 'theory' and 'self-application', we have designed a game that is played with great success in organizations and during our open evenings."
+  methoden: Connect to Perform Culture Development
+  methoden-tekst: ''
+  pagina-illustratie: /assets/images/upload/connect-to-perform-eng.png
+  werkwijze-titel: 'Connect to Perform: the game'
+  werkwijze-tekst: |-
+    During the game, using a fictional situation, you will gain insight into the methodology and possible interventions to develop organizational culture and performance. You will learn how you can identify which development phase an organization (or team) culture is in. Based on practical examples, you will find out what is needed to take the next development step and what interventions have a counterproductive effect.
 
+    You will gain insight into some fifty different interventions that can be applied in the work practice, to influence the behavior and culture of a team and organization. In short you will be immersed 
+    interactively in our successful approach on how to make more impact with your team in a few hours.
+  werkvorm-titel: Open Game Evening
+  werkvorm-tekst: |-
+    As an introduction, we organize an open game evening several times a year, nowadays mostly online, where our relations and interested parties are welcome to get acquainted with this methodology. (participation is completely free and without further obligations). Moreover, experience shows that it is very interesting to exchange thoughts with people you didn't know before and who are working in different organizations. When you partcipate, you will get access to videos with explanations and background information. 
 
     In organizations, we play the game (online or offline) in MT trajectories or leadership programs. We have different formats, depending on the time and interest of the target group, and we also tailor the game content where necessary. The translation to the work context, in light of the organization's strategy, and the concretization 'what will I do with it tomorrow' are important parts of the debriefing and possible follow-up.
 
-
     The game can also be requested as a standalone workshop. Think of a half or full day, online or offline, for a group of 4 to 80 participants. For more information, please send an email to Jojanneke.
-  methoden: Connect to Perform Culture Development
-  werkwijze-tekst: >-
-    During the game, using a fictional situation, you will gain insight into the
-    methodology and possible interventions to develop organizational culture and
-    performance. You will learn how you can identify which development phase an
-    organization (or team) culture is in. Based on practical examples, you will
-    find out what is needed to take the next development step and what
-    interventions have a counterproductive effect.
-
-
-    You will gain insight into some fifty different interventions that can be applied in the work practice, to influence the behavior and culture of a team and organization. In short you will be immersed 
-
-    interactively in our successful approach on how to make more impact with your team in a few hours.
-  pagina-illustratie: /assets/images/upload/connect-to-perform-eng.png
-  werkvorm-titel: Open Game Evening
-  pagina-afbeelding: /assets/images/upload/verandering-transitie.jpg
-  werkwijze-titel: "Connect to Perform: the game "
-  methoden-tekst: " "
-  title: Connect to Perform
   button1: Learn more about Connect to Perform
+  more-info: /assets/images/upload/connect_to_perform.pdf
+  button2: Sign up here for the open game evening
 vertrouwenspersoon:
   title: Confidential advisor
-  landing-tekst: >-
-    **Confidential advisor and prevention as a priority for a socially safe
-    workplace**
-
+  landing-tekst: |-
+    **Confidential advisor and prevention as a priority for a socially safe workplace**
 
     At a time during which the emphasis is increasingly placed on creating a healthy and pleasant work climate, the question arises: how can organizations ensure a safe environment for their employees? Appointing an (internal) confidential advisor is a commonly chosen first step for companies. To actually create and maintain a safe working environment, broader measures and sometimes even a culture change are needed.
 
-
     Integrating social safety in the workplace turns out to be a crucial factor in striving for a sustainably healthy organization.
-
 
     If there is a pleasant learning and working climate, results are better, work is done more effectively, and there is more opportunity for innovation. But what exactly does this entail, and how can organizations achieve this?
   pagina-afbeelding: /assets/images/upload/sociale-veiligheid.webp
   pagina-titel: Confidential Advisor
-  vertrouwenspersoon-tekst: >-
+  vertrouwenspersoon-tekst: |-
     ### What is a socially safe workplace?
-
 
     Every workplace is different, every corporate culture is different. However, there are a number of elements that indicate a socially safe workplace:
 
-
     * Employees express themselves easily.  
-
     * They *also* talk about bottlenecks in the execution of their work.  
-
     * They talk openly and freely.  
-
     * They speak out without fear of consequences.
-
 
     ### Broad, systemic approach
 
-
     Human Connection distinguishes itself by a broader approach to creating a socially safe workplace, where a confidential advisor is an essential part.
-
 
     The focus is on preventive measures, in addition to providing help with context analysis, interventions, and guidance, should escalation occur. We do this with a well-thought-out and systemic approach that we have been using and further developing since 1998. For more information, look [here](https://www.humanc.nl/en/how-we-work/).
 
-
     ### Human Connection offers:
 
-
     * Certified confidential advisors  
-
     * Each confidential advisor brings at least one additional expertise  
-
     * Replacement during illness or vacation  
-
     * Mutual intervision (peer consultation), unlocks an even broader perspective on issues  
-
     * Experience in involving the entire organization at the start, continuation, and execution of (change) trajectories.
 
-
     ### Want to know more?
-
 
     Do you want to know more about how Human Connection views the role of the confidential advisor and prevention as a priority within a healthy workplace? Download our whitepaper (Dutch) here with key factors for a socially safe working environment.
 coaching:
   title: Coaching
-  landing-tekst: >-
-    Do you want more self-insight, more control over your approach to certain
-    matters, to get rid of certain patterns, or concrete tools to be more
-    effective in your work?
-
+  landing-tekst: |-
+    Do you want more self-insight, more control over your approach to certain matters, to get rid of certain patterns, or concrete tools to be more effective in your work?
 
     With individual coaching, we help you in a way (live, outdoors, online, on the job) and rhythm (a quick boost or rather a calmer, somewhat longer trajectory) that suits you.
 
-
     Based on an intake, you will choose the coach that suits you, and jointly  determine what the coaching trajectory will look like for you. The coaching trajectory will be tailored to your needs, goals, and context. On one hand, this involves depth: what is the background of your coaching question? And on the other hand, about practical application: translating the insights you will gain into your life and work.
-
 
     We coach from the work floor up to the executive level. Independently and confidentially. Coaching trajectories can be linked to an organizational development trajectory or a leadership program. But also for individuals looking for more balance or the next career step.
   pagina-afbeelding: /assets/images/upload/kompas.jpg
   pagina-titel: Coaching
-  coaching-tekst: >-
+  coaching-tekst: |-
     **Coaching Themes**
-
 
     The goal and theme of the coaching trajectory are always individually determined and often a combination of several elements. In practice, we often work with the following themes:
 
-
     * Personal development  
-
     * Communication  
-
     * Balance and resilience 
-
     * Stress, burn-out  
-
     * Career development
 
-
     **Methods and formats**
-
     We work with methods and materials from various management theories, psychology, and approaches such as Voice Dialogue, Co-active coaching, ACT, Insights Benelux, and Deep Democracy.
-
     In a coaching trajectory, various conversation forms and elements can be used, such as: conversations (live, online, or walking), deepening assignments, practical assignments, coaching on the job, three-way conversations with the manager, reading material, background articles, reflection assignments, tests, and videos.
 
-
     **Always tailor-made**
-
     We help you gain insight into your behavioral patterns, explore your comfort zone, and implement sustainable changes. This way, you will not only work not on your professional growth but also on achieving a healthier balance and more resilience.
-
 
     So, we don't do 'standard programs'. It's not a matter of 'give me module 2 and session type x'. Instead, we look together with you at what works. In your context, with your goals, wishes, and own wisdom.
 
-
     **The coaches**
-
     A large number of our colleagues are professional coaches. We all have our own background and style. What we have in common is that we stand for professionalism, confidentiality, and a broad view of the person, in their context.
 
-
     Below you will find the names of colleagues who coach: 
-
     [Marit](https://www.humanc.nl/en/team/marit-weiss/), [Anne](https://www.humanc.nl/en/team/anne-boertien/), [Jojanneke](https://www.humanc.nl/en/team/jojanneke-van-goinga/), [Meggie,](https://www.humanc.nl/en/team/meggie-van-de-bunt/) [Alexander, ](https://www.humanc.nl/en/team/alexander-van-ravesteyn/)[Gerke,](https://www.humanc.nl/en/team/gerke-visser/) [Petra,](https://www.humanc.nl/en/team/petra-berry/) [Willemijn](https://www.humanc.nl/en/team/willemijn-dekker/), [Zilla](https://www.humanc.nl/en/team/zilla-uiterwijk/) and [Sjef.](https://www.humanc.nl/en/team/sjef-van-gool/)
 
-
     **Interested?**
-
     Contact one of our colleagues directly, or for more information contact [Marit.](https://www.humanc.nl/en/team/marit-weiss/)
 ctp-contact:
-  success: Thank you for registering!
-  landing-tekst: >-
-    As an introduction, we organize an open game evening several times a year,
-    nowadays mostly online, where our relations and interested parties are
-    welcome to get to know this methodology. (Participation is completely free
-    and without further obligations).  Experience shows it's very interesting to
-    exchange thoughts with people you haven't met before, working in various
-    organizations. 
-
-    If you participate you gain access to videos with explanations and background information. You are very welcome!
-  telefoonnummer: Phone Number*
-  data:
-    - datum: "Monday October 6th: 19:30-21:45"
-  functie: Position*
-  aanmelding-title: Game Evening Registration Form
-  aanmelding-tekst: Fill in your details here to register for the game evening.
-  button-submit: Send form
-  bedrijf: Company*
-  button-reset: Reset form
+  title: Connect to perform
   pagina-afbeelding: /assets/images/upload/verandering-transitie.jpg
-  success-text: >-
+  landing-tekst: |-
+    As an introduction, we organize an open game evening several times a year, nowadays mostly online, where our relations and interested parties are welcome to get to know this methodology. (Participation is completely free and without further obligations).  Experience shows it's very interesting to exchange thoughts with people you haven't met before, working in various organizations. 
+    If you participate you gain access to videos with explanations and background information. You are very welcome!
+  aanmelding-title: Game Evening Registration Form
+  aanmelding-zoom: ''
+  aanmelding-tekst: Fill in your details here to register for the game evening.
+  naam: Name*
+  email: Email*
+  bedrijf: Company*
+  functie: Position*
+  telefoonnummer: Phone Number*
+  welke: Which evening are you registering for?*
+  data:
+    - datum: 'Monday October 6th: 19:30-21:45'
+  hoe: Via whom or how did you hear about the Connect to Perform evening?
+  reden: What is your reason for registering?
+  success: Thank you for registering!
+  success-text: |-
     Thanks for registering, we're happy you'll be joining!
-
 
     For now, you don't need to do anything except put the date in your calendar.
 
-
     About a week beforehand, you will receive a preparation email with more information.
-
 
     If you have any questions before then, please contact jojanneke@humanc.nl
   button-terug: Back to the homepage
-  welke: Which evening are you registering for?*
   placeholder-answer: Your answer
-  title: Connect to perform
-  reden: What is your reason for registering?
-  aanmelding-zoom: " "
-  email: Email*
-  hoe: Via whom or how did you hear about the Connect to Perform evening?
-  naam: Name*
+  button-submit: Send form
+  button-reset: Reset form
 werken-bij:
-  contact: Contact Meggie via [meggie@humanc.nl](#) or 06 50 83 56 58.
-  landing-tekst: We are looking for someone who can stand in front of a group with
-    self-confidence and a fresh perspective, and is also capable of conducting
-    individual coaching sessions. Your fresh perspective and creativity are very
-    welcome, as is your ability to, regardless of the circumstances, deal
-    constructively with group dynamics. Your perspective is broader than
-    personal development alone; you are interested in organizational
-    development, from strategy to execution, and are eager to learn more about
-    it.
-  wat-je-doet: "What you'll Do:"
-  wat-we-bieden: "What We Offer You:"
-  kop: As coach/facilitator of development programs
+  title: Working at
+  vacature-open: false
   pagina-afbeelding: /assets/images/upload/parachute.jpg
-  wat-je-doet-tekst: >-
-    You create custom programs in which employees and managers of organizations
-    can develop themselves. Think of a year-long trajectory 'Personal
-    Leadership', a 'Masterclass trajectory for talent', or other forms of
-    trainee or leadership programs.
-
+  landing-tekst: We are looking for someone who can stand in front of a group with self-confidence and a fresh perspective, and is also capable of conducting individual coaching sessions. Your fresh perspective and creativity are very welcome, as is your ability to, regardless of the circumstances, deal constructively with group dynamics. Your perspective is broader than personal development alone; you are interested in organizational development, from strategy to execution, and are eager to learn more about it.
+  kop: As coach/facilitator of development programs
+  wat-je-doet: "What you'll Do:"
+  wat-je-doet-tekst: |-
+    You create custom programs in which employees and managers of organizations can develop themselves. Think of a year-long trajectory 'Personal Leadership', a 'Masterclass trajectory for talent', or other forms of trainee or leadership programs.
 
     We are looking for someone who can stand in front of a group with self-confidence and a fresh perspective, and is also capable of conducting individual coaching sessions. Your fresh perspective and creativity are very welcome, as is your ability to, regardless of the circumstances, deal constructively with group dynamics. Your perspective is broader than personal development alone; you are interested in organizational development, from strategy to execution, and are eager to learn more about it. You can collaborate well and are simultaneously autonomous enough to find your own way in our small-scale, flat organization. Mirroring clients, colleagues, and also turning the spotlight on yourself, you find an appealing challenge.
-  uitzendbureaus: Temporary employment or recruitment agencies need not respond to
-    this vacancy.
-  title: Working at
-  wat-we-bieden-tekst: >-
+  wat-we-bieden: 'What We Offer You:'
+  wat-we-bieden-tekst: |-
     * A salary that matches your knowledge and experience. 
-
 
     * An end-of-year bonus based on the profit made together. 
 
-
     * A laptop, phone, 1st class public transport card, everything you need to work well hybridly, and good secondary benefits. 
 
-
     * An office in the heart of Amsterdam, a 2-minute walk from CS (Central Station) (where you only need to be when working on assignments with colleagues).
-  vacature-open: false
+  contact: Contact Meggie via [meggie@humanc.nl](#) or 06 50 83 56 58.
+  uitzendbureaus: Temporary employment or recruitment agencies need not respond to this vacancy.
+nav:
+  home_url: /
+  logo_alt_text: Human Connection Logo
+  wie_wij_zijn_url: /who-we-are/
+  wie_wij_zijn_text: Who we are
+  team_base_url: /team/
+  wat_wij_doen_text: What we do
+  hoe_wij_werken_url: /how-we-work/
+  hoe_wij_werken_text: How we work
+  wat_wij_doen_url: /what-we-do/
+  ctp-contact: /ctp-contact/
+  connect_to_perform_url: /connect-to-perform/
+  connect_to_perform_text: Connect to Perform
+  vertrouwenspersoon_url: /confidential-advisor/
+  vertrouwenspersoon_text: Confidential Advisor
+  coaching_url: /coaching/
+  coaching_text: Coaching
+  contact_text: Contact
+  contact_url: /contact/
+  werken_bij_url: /work-with-us/
+  werken_bij_text: Work with us
+  lang_nl: NL
+  lang_en: EN
+  call_us: Call us
+  email_us: Email us
+  succes_url: /success/
+global:
+  global:
+    site_title: Human_connection
+    english: english
+    nederlands: Nederlands
+  site_title: Human Connection
+  english: English
+  nederlands: Dutch
