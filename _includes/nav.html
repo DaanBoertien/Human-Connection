@@ -172,15 +172,19 @@
             <ul class="dropdown" aria-label="submenu">
               <li class="menu-filler menu-filler-contact"></li>
               <li><a href="{{ contact_path | relative_url }}" class="dropdown-link">{% t nav.contact_text %}</a></li>
-              {% comment %} Conditionally show Werken Bij link {% endcomment %}
-              {% if site.data.werken-bij-ons.vacature-open == true %}
-              <li><a href="{{ werken_path | relative_url }}" class="dropdown-link">{% t nav.werken_bij_text %}</a></li>
+            
+              {% comment %} Use Method 3: Capture translation and compare as string {% endcomment %}
+              {% capture vacancy_status %}{% t werken-bij.vacature-open %}{% endcapture %}
+              {% if vacancy_status == 'ja' and site.lang == 'nl' %}
+              <li><a href="/werken-bij/" class="dropdown-link">Werken bij ons</a></li>
               {% endif %}
             </ul>
           </li>
           {% comment %} --- End Contact Dropdown --- {% endcomment %}
 
         {% comment %} --- Language Switcher Dropdown (Item 4) --- {% endcomment %}
+        {% comment %} Hide language switcher on werken-bij page since it only exists in Dutch {% endcomment %}
+        {% unless page.namespace == 'werken-bij' %}
         <li class="main-menu-list language-menu">
           <a href="#" aria-haspopup="true" class="main-menu-link">
             {% if site.lang == "nl" %}{% t nav.lang_nl %}{% elsif site.lang == "en" %}{% t nav.lang_en %}{% endif %}
@@ -226,6 +230,7 @@
             {% endfor %}
           </ul>
         </li>
+        {% endunless %}
         {% comment %} --- End Language Switcher --- {% endcomment %}
         </ul>
       </div> {% comment %} --- End Desktop Navigation --- {% endcomment %}
@@ -261,16 +266,19 @@
 
           {% comment %} Mobile Contact {% endcomment %}
           <li class="submenu-mobile-toggle3 li-outer">
-            <a href="#">{% t nav.contact_text %}</a>
+            <a href="#">Contact</a>
             <ul class="submenu-mobile">
-              <li><a href="{{ contact_path | relative_url }}">{% t nav.contact_text %}</a></li>
-              {% if site.data.werken-bij-ons.vacature-open == true %}
-              <li><a href="{{ werken_path | relative_url }}">{% t nav.werken_bij_text %}</a></li>
+              <li><a href="{{site.data.nav.contact}}">Contact</a></li>
+              {% comment %} Check for "ja" to show vacancy in mobile nav {% endcomment %}
+              {% capture vacancy_status %}{% t werken-bij.vacature-open %}{% endcapture %}
+              {% if vacancy_status == 'ja' and site.lang == 'nl' %}
+              <li><a href="/werken-bij/">Werken bij ons</a></li>
               {% endif %}
             </ul>
           </li>
 
-          {% comment %} Mobile Language Switcher {% endcomment %}
+          {% comment %} Mobile Language Switcher - Hide on werken-bij page {% endcomment %}
+          {% unless page.namespace == 'werken-bij' %}
           <li class="li-outer language-menu submenu-mobile-toggle4">
             <a href="#" aria-haspopup="true">
               {% if site.lang == "nl" %}{% t nav.lang_nl %}{% elsif site.lang == "en" %}{% t nav.lang_en %}{% endif %}
@@ -284,7 +292,7 @@
               {% if lang_code_switch_mob != default_lang_code_mob %}
               {% assign target_lang_prefix_mob = "/" | append: lang_code_switch_mob | append: "/" %}
               {% endif %}
-
+          
               {% if page.collection == 'team' %}
               {% assign member_slug_mob = page.slug | default: page.name %}
               {% assign member_base_url_mob = "/team/" | append: member_slug_mob | append: "/" %}
@@ -307,7 +315,7 @@
               {% else %}
               {% assign target_page_url_mob = target_lang_prefix_mob | replace: '//', '/' %}
               {% endif %}
-
+          
               {% capture target_lang_name_mob %}{% if lang_code_switch_mob == "nl" %}{% t nav.lang_nl %}{% elsif
               lang_code_switch_mob == "en" %}{% t nav.lang_en %}{% endif %}{% endcapture %}
               <li><a href="{{ target_page_url_mob | relative_url }}">{{ target_lang_name_mob | strip }}</a></li>
@@ -315,6 +323,7 @@
               {% endfor %}
             </ul>
           </li>
+          {% endunless %}
 
         </ul>
 

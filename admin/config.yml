@@ -478,7 +478,13 @@ collections:
       fields:
       # Fields within this section (using Dutch labels)
       - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Vacature Open?", name: "vacature-open", widget: "boolean" }
+      - label: "Vacature open"
+        name: "vacature-open"
+        widget: "select"
+        options:
+        - { label: "Ja", value: "ja" }
+        - { label: "Nee", value: "nee" }
+        default: "nee"
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
       - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
       - { label: "Kop", name: "kop", widget: "string" }

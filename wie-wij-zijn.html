@@ -43,7 +43,7 @@ namespace: wie-wij-zijn
               class="photo" />
           </div>
         </a>
-        <a href="{{ member_final_url }}"> 
+        <a href="{{ member_final_url }}">
           <p class="bold member-name">{{ current_lang_data.title | default: "Name Missing" }}</p>
           <p class="member-function">{{ current_lang_data.function | default: "Function Missing" }}</p>
         </a>
@@ -51,6 +51,10 @@ namespace: wie-wij-zijn
       {% endunless %}
       {% endfor %}
 
+      {% comment %}
+      Only show the vacancy page in Dutch, not in English
+      {% endcomment %}
+      {% if site.lang != 'en' %}
       {% for member in site.team %}
       {% assign default_lang_data = member[default_lang_code] %}
       {% assign current_lang_data = member[site.lang] | default: default_lang_data %}
@@ -84,6 +88,7 @@ namespace: wie-wij-zijn
       </div>
       {% endif %}
       {% endfor %}
+      {% endif %}
 
     </div>
   </div>

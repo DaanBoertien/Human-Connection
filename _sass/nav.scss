@@ -129,6 +129,7 @@ ul.dropdown {
   background-color: white;
   opacity: 1;
   min-height: 14.5px;
+  border-right: white solid 2px;
   width: 100%;
   max-width: 100%;
   &-contact {
@@ -279,9 +280,15 @@ ul.dropdown {
 }
 
 .submenu-mobile-toggle1.open .submenu-mobile,
-.submenu-mobile-toggle3.open .submenu-mobile,
+
 .submenu-mobile-toggle4.open .submenu-mobile {
   height: 3.5em;
+  opacity: 1;
+}
+
+.submenu-mobile-toggle3.open .submenu-mobile {
+  min-height: 5em;
+  /* Changed from 3.5em to 7em to fit both Contact + Werken bij ons */
   opacity: 1;
 }
 

@@ -249,7 +249,7 @@ ctp-contact:
   telefoonnummer: Telefoonnummer*
   welke: Voor welke avond meld je je aan?*
   data:
-    - datum: 'Maandag 6 oktober 2025: 19:30-21:45'
+  - datum: 'Maandag 6 oktober 2025: 19:30-21:45'
   hoe: Via wie of hoe weet je van de Connect to Perform avond?
   reden: Wat is je reden van aanmelden?
   success: Dankjewel voor je bericht!
@@ -264,7 +264,7 @@ ctp-contact:
   button-reset: Formulier wissen
 werken-bij:
   title: Werken bij
-  vacature-open: true
+  vacature-open: "ja"
   pagina-afbeelding: /assets/images/upload/parachute.jpg
   landing-tekst: 'We houden onze ogen en oren altijd open voor nieuwe collega’s. Of dat nu voor morgen is of voor later: kennismaken en samen verkennen vinden we altijd leuk!'
   kop: Organisatie adviseur
