@@ -179,7 +179,7 @@ collections:
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
       - { label: "Introductietekst", name: "landing-tekst", widget: "string" }
       - { label: "Methoden", name: "methoden", widget: "string" }
-      - { label: "Methoden Tekst", name: "methoden-tekst", widget: "string" }
+      - { label: "Methoden Tekst", name: "methoden-tekst", widget: "string", required: false }
       - { label: "Pagina Illustratie", name: "pagina-illustratie", widget: "image" }
       - { label: "Werkwijze Titel", name: "werkwijze-titel", widget: "string" }
       - { label: "Werkwijze Tekst", name: "werkwijze-tekst", widget: "markdown" }
@@ -223,7 +223,7 @@ collections:
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
       - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
       - { label: "Aanmelding Titel", name: "aanmelding-title", widget: "string" }
-      - { label: "Aanmelding Zoom Tekst", name: "aanmelding-zoom", widget: "string" }
+      - { label: "Aanmelding Zoom Tekst", name: "aanmelding-zoom", widget: "string", required: false }
       - { label: "Aanmelding Tekst", name: "aanmelding-tekst", widget: "string" }
       - { label: "Naam", name: "naam", widget: "string" }
       - { label: "E-mail", name: "email", widget: "string" }
@@ -404,7 +404,7 @@ collections:
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
       - { label: "Introductietekst", name: "landing-tekst", widget: "string" }
       - { label: "Methoden", name: "methoden", widget: "string" }
-      - { label: "Methoden Tekst", name: "methoden-tekst", widget: "string" }
+      - { label: "Methoden Tekst", name: "methoden-tekst", widget: "string", required: false }
       - { label: "Pagina Illustratie", name: "pagina-illustratie", widget: "image" }
       - { label: "Werkwijze Titel", name: "werkwijze-titel", widget: "string" }
       - { label: "Werkwijze Tekst", name: "werkwijze-tekst", widget: "markdown" }
@@ -448,7 +448,7 @@ collections:
       - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
       - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
       - { label: "Aanmelding Titel", name: "aanmelding-title", widget: "string" }
-      - { label: "Aanmelding Zoom Tekst", name: "aanmelding-zoom", widget: "string" }
+      - { label: "Aanmelding Zoom Tekst", name: "aanmelding-zoom", widget: "string", required: false }
       - { label: "Aanmelding Tekst", name: "aanmelding-tekst", widget: "string" }
       - { label: "Naam", name: "naam", widget: "string" }
       - { label: "E-mail", name: "email", widget: "string" }
