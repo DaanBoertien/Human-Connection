@@ -2,7 +2,7 @@
 layout: teammembers
 email: anne@humanc.nl
 phonenumber: 06 36 25 62 32
-photo_url: /assets/images/upload/Afbeelding2.jpg
+photo_url: /assets/images/upload/Afbeelding3.jpg
 bg_color: Lichtblauw
 menu: menu-active
 nl:
