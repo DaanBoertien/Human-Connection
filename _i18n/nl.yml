@@ -249,7 +249,7 @@ ctp-contact:
   telefoonnummer: Telefoonnummer*
   welke: Voor welke avond meld je je aan?*
   data:
-    - datum: 'Maandag 6 oktober 2025: 19:30-21:45'
+    - datum: 'Dinsdag 4 februari 2026: 19:30-21:45'
   hoe: Via wie of hoe weet je van de Connect to Perform avond?
   reden: Wat is je reden van aanmelden?
   success: Dankjewel voor je bericht!
@@ -316,6 +316,6 @@ nav:
   email_us: Mail ons
 global:
   global:
-    site_title: jkl
-    english: jkl;
     nederlands: adsf
+    english: jkl;
+    site_title: jkl
