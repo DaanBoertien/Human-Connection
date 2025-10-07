@@ -259,7 +259,7 @@ ctp-contact:
   telefoonnummer: Phone Number*
   welke: Which evening are you registering for?*
   data:
-    - datum: 'Monday October 6th: 19:30-21:45'
+  - datum: 'Tuesday February 4th: 19:30-21:45'
   hoe: Via whom or how did you hear about the Connect to Perform evening?
   reden: What is your reason for registering?
   success: Thank you for registering!
@@ -331,3 +331,10 @@ global:
   site_title: Human Connection
   english: English
   nederlands: Dutch
+footer:
+  ctp-question: Will you join our Connect to Perform Game Evening?
+  next-date: 'Next date:'
+  sign-up: Sign me up!
+  follow-us: Follow us
+  design: Design
+  development: Development
