@@ -550,7 +550,7 @@ collections:
       # Fields for items in the list
       - { label: "Video Titel", name: "title", widget: "string" }
       - { label: "YouTube ID", name: "youtube-id", widget: "string" }
-  - name: "CTP Ronde 1"
+  - name: "ctp-ronde-1"
     label: "CTP Ronde 1" # Label for this specific file in CMS (Dutch)
     file: "_data/ronde1.yml" # Path to the data file
     editor:
@@ -570,7 +570,7 @@ collections:
       # Fields for items in the list
       - { label: "PDF Titel", name: "pdf-title", widget: "string" }
       - { label: "PDF Bestand", name: "pdf", widget: "file" }
-  - name: "CTP Ronde 2"
+  - name: "ctp-ronde-2"
     label: "CTP Ronde 2" # Label for this specific file in CMS (Dutch)
     file: "_data/ronde2.yml" # Path to the data file
     editor:
@@ -590,7 +590,7 @@ collections:
       # Fields for items in the list
       - { label: "PDF Titel", name: "pdf-title", widget: "string" }
       - { label: "PDF Bestand", name: "pdf", widget: "file" }
-  - name: "CTP Ronde 3"
+  - name: "ctp-ronde-3"
     label: "CTP Ronde 3" # Label for this specific file in CMS (Dutch)
     file: "_data/ronde3.yml" # Path to the data file
     editor:
