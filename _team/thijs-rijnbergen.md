@@ -1,6 +1,6 @@
 ---
 layout: teammembers
-email: thijs@humanc.nl
+email: Thijs@humanc.nl
 phonenumber: '0622683736'
 photo_url: /assets/images/upload/44.png
 bg_color: Groen
@@ -9,7 +9,12 @@ nl:
   title: Thijs Rijnbergen
   function: Organisatieadviseur | Teamcoach
   photo_description: Thijs
-  summary: Teamcoach  | Zelforganisatie Specialist (Holacracy, Sociocratie 3.0) | Arbeids- en Organisatiepsycholoog (MSc)
+  summary: |-
+    - Teamcoach
+
+    - Zelforganisatie Specialist (Holacracy, Sociocratie 3.0) 
+
+    - Arbeids- en Organisatiepsycholoog (MSc)
   uitleg: Samenwerken begint bij de overtuiging dat elke stem ertoe doet.
   card_title: Tijd voor actie?
   soundbites: 'Thijs in het kort:'
