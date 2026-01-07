@@ -220,10 +220,10 @@ coaching:
 
     The goal and theme of the coaching trajectory are always individually determined and often a combination of several elements. In practice, we often work with the following themes:
 
-    * Personal development  
-    * Communication  
-    * Balance and resilience 
-    * Stress, burn-out  
+    * Personal development
+    * Communication
+    * Balance and resilience
+    * Stress, burn-out
     * Career development
 
     **Methods and formats**
@@ -238,8 +238,8 @@ coaching:
     **The coaches**
     A large number of our colleagues are professional coaches. We all have our own background and style. What we have in common is that we stand for professionalism, confidentiality, and a broad view of the person, in their context.
 
-    Below you will find the names of colleagues who coach: 
-    [Marit](https://www.humanc.nl/en/team/marit-weiss/), [Anne](https://www.humanc.nl/en/team/anne-boertien/), [Jojanneke](https://www.humanc.nl/en/team/jojanneke-van-goinga/), [Meggie,](https://www.humanc.nl/en/team/meggie-van-de-bunt/) [Alexander, ](https://www.humanc.nl/en/team/alexander-van-ravesteyn/)[Gerke,](https://www.humanc.nl/en/team/gerke-visser/) [Petra,](https://www.humanc.nl/en/team/petra-berry/) [Willemijn](https://www.humanc.nl/en/team/willemijn-dekker/), [Zilla](https://www.humanc.nl/en/team/zilla-uiterwijk/) and [Sjef.](https://www.humanc.nl/en/team/sjef-van-gool/)
+    Below you will find the names of colleagues who coach:
+    [Marit](https://www.humanc.nl/en/team/marit-weiss/),  [Jojanneke](https://www.humanc.nl/en/team/jojanneke-van-goinga/)[,](https://www.humanc.nl/en/team/meggie-van-de-bunt/) [Alexander, ](https://www.humanc.nl/en/team/alexander-van-ravesteyn/)[Gerke,](https://www.humanc.nl/en/team/gerke-visser/) [Petra,](https://www.humanc.nl/en/team/petra-berry/) [Zilla](https://www.humanc.nl/en/team/zilla-uiterwijk/), Simone and [Sjef.](https://www.humanc.nl/en/team/sjef-van-gool/)
 
     **Interested?**
     Contact one of our colleagues directly, or for more information contact [Marit.](https://www.humanc.nl/en/team/marit-weiss/)
@@ -259,7 +259,7 @@ ctp-contact:
   telefoonnummer: Phone Number*
   welke: Which evening are you registering for?*
   data:
-  - datum: 'Tuesday February 4th: 19:30-21:45'
+    - datum: 'Tuesday February 4th: 19:30-21:45'
   hoe: Via whom or how did you hear about the Connect to Perform evening?
   reden: What is your reason for registering?
   success: Thank you for registering!
@@ -323,18 +323,18 @@ nav:
   call_us: Call us
   email_us: Email us
   succes_url: /success/
-global:
-  global:
-    site_title: Human_connection
-    english: english
-    nederlands: Nederlands
-  site_title: Human Connection
-  english: English
-  nederlands: Dutch
 footer:
-  ctp-question: Will you join our Connect to Perform Game Evening?
-  next-date: 'Next date:'
-  sign-up: Sign me up!
-  follow-us: Follow us
-  design: Design
   development: Development
+  design: Design
+  follow-us: Follow us
+  sign-up: Sign me up!
+  next-date: 'Next date:'
+  ctp-question: Will you join our Connect to Perform Game Evening?
+global:
+  nederlands: Dutch
+  english: English
+  site_title: Human Connection
+  global:
+    nederlands: Nederlands
+    english: english
+    site_title: Human_connection
