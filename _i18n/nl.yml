@@ -249,7 +249,7 @@ ctp-contact:
   telefoonnummer: Telefoonnummer*
   welke: Voor welke avond meld je je aan?*
   data:
-    - datum: Dinsdag 4 februari 2026 19:30-21:45
+    - datum: Woensdag 8 april 2026 19:30-21:45
   hoe: Via wie of hoe weet je van de Connect to Perform avond?
   reden: Wat is je reden van aanmelden?
   success: Dankjewel voor je bericht!
@@ -314,15 +314,15 @@ nav:
   lang_en: EN
   call_us: Bel ons
   email_us: Mail ons
-footer:
-  development: Realisatie
-  design: Ontwerp
-  follow-us: Volg ons
-  sign-up: Ik schrijf me in!
-  next-date: 'Eerstvolgende datum:'
-  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
 global:
   global:
-    site_title: jkl
-    english: jkl;
     nederlands: adsf
+    english: jkl;
+    site_title: jkl
+footer:
+  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
+  next-date: 'Eerstvolgende datum:'
+  sign-up: Ik schrijf me in!
+  follow-us: Volg ons
+  design: Ontwerp
+  development: Realisatie
