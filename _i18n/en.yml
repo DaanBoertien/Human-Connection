@@ -247,7 +247,7 @@ ctp-contact:
   title: Connect to perform
   pagina-afbeelding: /assets/images/upload/verandering-transitie.jpg
   landing-tekst: |-
-    As an introduction, we organize an open game evening several times a year, nowadays mostly online, where our relations and interested parties are welcome to get to know this methodology. (Participation is completely free and without further obligations).  Experience shows it's very interesting to exchange thoughts with people you haven't met before, working in various organizations. 
+    As an introduction, we organize an open game evening several times a year, nowadays mostly online, where our relations and interested parties are welcome to get to know this methodology. (Participation is completely free and without further obligations).  Experience shows it's very interesting to exchange thoughts with people you haven't met before, working in various organizations.
     If you participate you gain access to videos with explanations and background information. You are very welcome!
   aanmelding-title: Game Evening Registration Form
   aanmelding-zoom: ''
@@ -259,7 +259,7 @@ ctp-contact:
   telefoonnummer: Phone Number*
   welke: Which evening are you registering for?*
   data:
-    - datum: 'Tuesday February 4th: 19:30-21:45'
+    - datum: 'Wednesday June 10th: 19:30-21:45'
   hoe: Via whom or how did you hear about the Connect to Perform evening?
   reden: What is your reason for registering?
   success: Thank you for registering!
@@ -323,18 +323,18 @@ nav:
   call_us: Call us
   email_us: Email us
   succes_url: /success/
-footer:
-  development: Development
-  design: Design
-  follow-us: Follow us
-  sign-up: Sign me up!
-  next-date: 'Next date:'
-  ctp-question: Will you join our Connect to Perform Game Evening?
 global:
-  nederlands: Dutch
-  english: English
-  site_title: Human Connection
   global:
-    nederlands: Nederlands
-    english: english
     site_title: Human_connection
+    english: english
+    nederlands: Nederlands
+  site_title: Human Connection
+  english: English
+  nederlands: Dutch
+footer:
+  ctp-question: Will you join our Connect to Perform Game Evening?
+  next-date: 'Next date:'
+  sign-up: Sign me up!
+  follow-us: Follow us
+  design: Design
+  development: Development
