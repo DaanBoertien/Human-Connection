@@ -11,13 +11,13 @@ nl:
   photo_description: Thijs Rijnbergen
   summary: _Ik maak SAMEN, simpel en effectief!_
   uitleg: |-
-    Ik werk als teamcoach, zelforganisatiespecialist en high-performance coach. En dat is tof werk! Mensen helpen om fijnere werkdagen te hebben, meer impact te maken en professional te zijn. Daar gaat mijn hart sneller van kloppen!
+    Mensen willen prettig samenwerken en samen resultaten behalen waar ze trots op zijn. Toch lukt het niet altijd om het beste in jezelf en elkaar naar boven te halen. Goede professionals lopen vastlopen in negatieve patronen, onduidelijke afspraken of gesprekken die niet echt gevoerd worden. Frustraties stapelen zich op en blijft waardevol talent blijft onbenut.
 
-    Klanten omschrijven mij als verbindend, eerlijk en nieuwsgierig. 
+    Als teamcoach help ik die patronen zichtbaar en bespreekbaar te maken. Samen onderzoeken we wat er speelt, wat er nodig is en welke mogelijkheden er zijn om de samenwerking te versterken. Van daaruit experimenteren we met nieuwe manieren van samenwerken in hun dagelijkse praktijk en bouwen we stap voor stap aan een sterker team.
 
-    Ik geloof dat sterke teams ontstaan wanneer mensen zich uitspreken, elkaar echt begrijpen en samen verantwoordelijkheid nemen voor het resultaat. Leiderschap voorop. 
+    Wat mij daarin drijft is simpel. Ik kom mijn bed uit om de werkdag van mensen leuker te maken en om mensen te helpen het beste uit zichzelf en elkaar naar boven te halen. Want niets is zo frustrerend als talent dat onbenut blijft of een team dat elkaar nooit echt vindt.
 
-    Thijs als begeleider betekent: Samen op ontdekkingsreis. Samen verantwoordelijk voor een ijzersterk resultaat.
+    Wanneer teams wél leren om elkaar te versterken, ontstaat er iets bijzonders. Mensen nemen verantwoordelijkheid, benutten hun talent en groeien samen naar hun beste niveau. Zo ontstaat een team dat samen resultaten behaalt voor klanten en cliënten waar ze trots op zijn.
   card_title: Tijd voor actie?
   soundbites: 'Thijs in het kort:'
   soundbites_text: Mensenmens, dierenvriend, analytisch en met een technische twist.
