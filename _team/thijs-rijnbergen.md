@@ -15,7 +15,7 @@ nl:
 
     Ik kom mijn bed uit om de werkdag van mensen leuker en impactvoller te maken. Want niets is zo frustrerend als talent dat onbenut blijft of een team waar je niemand z'n beste zelf kan zijn.
 
-    Wanneer teams wél leren om elkaar te versterken, ontstaat er iets bijzonders. Mensen nemen verantwoordelijkheid, benutten hun talent en groeien samen naar hun beste niveau. Zo ontstaat een team dat samen resultaten behaalt voor klanten en cliënten waar ze trots op zijn.
+    Wanneer het teams wel lukt om om elkaar te versterken, ontstaat er iets bijzonders. Mensen nemen verantwoordelijkheid, hebben plezier en groeien boven zichzelf uit. Zo ontstaat een team dat samen resultaten behaalt voor klanten en cliënten waar ze trots op zijn.
   card_title: Tijd voor actie?
   soundbites: 'Thijs in het kort:'
   soundbites_text: Nieuwsgierig, verbindend, critical friend.
