@@ -18,7 +18,7 @@ nl:
     Wanneer het teams wel lukt om om elkaar te versterken, ontstaat er iets bijzonders. Mensen nemen verantwoordelijkheid, hebben plezier en groeien boven zichzelf uit. Zo ontstaat een team dat samen resultaten behaalt voor klanten en cliënten waar ze trots op zijn.
   card_title: Tijd voor actie?
   soundbites: 'Thijs in het kort:'
-  soundbites_text: Nieuwsgierig, verbindend, critical friend.
+  soundbites_text: Ik maak SAMEN, simpel en effectief!
 en:
   title: Thijs Rijnbergen
   function: Consultant
