@@ -7,9 +7,9 @@ bg_color: Groen
 menu: menu-active
 nl:
   title: Thijs Rijnbergen
-  function: Teamcoach, zelforganisatiespecialist en high-performance coach
-  photo_description: Thijs Rijnbergen
-  summary: _Ik maak SAMEN, simpel en effectief!_
+  function: Teamcoach | Zelforganisatiespecialist | high-performance coach
+  photo_description: Ik maak SAMEN, simpel en effectief!
+  summary: _asdf_
   uitleg: |-
     Mensen willen prettig samenwerken en samen resultaten behalen waar ze trots op zijn. Toch lukt het niet altijd om het beste in jezelf en elkaar naar boven te halen. Goede professionals lopen vastlopen in negatieve patronen, onduidelijke afspraken of gesprekken die niet echt gevoerd worden. Frustraties stapelen zich op en blijft waardevol talent blijft onbenut.
 
