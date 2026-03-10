@@ -18,7 +18,7 @@ nl:
     Wanneer teams wél leren om elkaar te versterken, ontstaat er iets bijzonders. Mensen nemen verantwoordelijkheid, benutten hun talent en groeien samen naar hun beste niveau. Zo ontstaat een team dat samen resultaten behaalt voor klanten en cliënten waar ze trots op zijn.
   card_title: Tijd voor actie?
   soundbites: 'Thijs in het kort:'
-  soundbites_text: Nieuwsgierig, verbindend, liefdevol scherp.
+  soundbites_text: Nieuwsgierig, verbindend, critical friend.
 en:
   title: Thijs Rijnbergen
   function: Consultant
