@@ -2,17 +2,15 @@
 layout: teammembers
 email: simone@humanc.nl
 phonenumber: '0619402599'
-photo_url: /assets/images/upload/11.png
-bg_color: Lichtblauw
+photo_url: /assets/images/upload/bewerkt.jpg
+bg_color: Groen
 menu: menu-active
 nl:
   title: Simone van Steekelenburg
   function: Consultant, teamcoach
   photo_description: Simone
   summary: Teamcoach, organisatie adviseur en inspirerend sparringpartner
-  uitleg: |-
-    Expertise op terrein van onderlinge communicatie, samenwerken en teamontwikkeling. Ik houd me bezig met ontwikkeling van professionals in de brede zin van het woord. Met ruime ervaring in het werken met groepen van professionals ben ik gewend om groepsdynamiek te benutten voor het leerproces. Vastgelopen teams ontdekken hiermee de sleutel tot verandering. Verwaarloosde teams help ik om perspectief te vinden en behoeften te adresseren. Na heftige incidenten op de werkvloer geef ik graag adviezen over peer-to-peer coaching en hoe de werknemers optimaal te begeleiden. 
-    Bij individuele coaching hebben onderwerpen als keuzes maken, zingeving, omgaan met gemaakte fouten, werk-privé balans  mijn bijzondere interesse.
+  uitleg: 'Expert in het leren en ontwikkelen van professionals. Houdt van groepen en het verbeteren van  samenwerking in teams.  De wisselwerking tussen omgeving en menselijk gedrag hebben haar bijzondere interesse: hoe kunnen mensen floreren in organisaties? Hieraan levert ze graag een bijdrage.'
   card_title: Over Simone
   soundbites: Simone in soundbites
   soundbites_text: Zachte kracht met verrassende scherpte. Verbinder, nieuwsgierig, ziet schoonheid in de grote en kleine dingen
