@@ -270,22 +270,22 @@ werken-bij:
   kop: Organisatieadviseur
   wat-je-doet: Zie jij jezelf werken....
   wat-je-doet-tekst: |-
-    ✨ …bij een club waar verbinding, vertrouwen, vrijheid én verantwoordelijkheid de kern vormen? 
+    ✨ …bij een club waar verbinding, vertrouwen, vrijheid én verantwoordelijkheid de kern vormen?
 
-    ✨ …op een manier die jou past: zelfstandig, maar ook in wisselende teams met collega’s en klanten? 
+    ✨ …op een manier die jou past: zelfstandig, maar ook in wisselende teams met collega’s en klanten?
 
-    ✨ …aan je eigen ontwikkeling én die van ons bureau, met volop ruimte om je eigen koers te bepalen en je ideeën en initiatieven in te brengen? 
+    ✨ …aan je eigen ontwikkeling én die van ons bureau, met volop ruimte om je eigen koers te bepalen en je ideeën en initiatieven in te brengen?
 
-    ✨ …vanuit jouw ervaring en expertise (bijvoorbeeld als organisatieadviseur, interim-manager trainer, veranderaar, procesbegeleider, interim-manager of coach), waarbij je je netwerk en talent inzet om samen te groeien? 
+    ✨ …vanuit jouw ervaring en expertise (bijvoorbeeld als organisatieadviseur, interim-manager trainer, veranderaar, procesbegeleider, interim-manager of coach), waarbij je je netwerk en talent inzet om samen te groeien?
 
-    Wij ontmoeten graag toekomstige medior en senior collega’s die zichzelf willen verbreden en ontwikkelen, en die óók iets nieuws en eigens toevoegen aan Human Connection. 
+    Wij ontmoeten graag toekomstige senior collega’s die zichzelf willen verbreden en ontwikkelen, en die óók iets nieuws en eigens toevoegen aan Human Connection.
 
     Omdat we geloven in de rijkheid van diversiteit, versterken we ons team heel graag met mensen met een eigen geluid, achtergrond en perspectief. Het is in ons werk belangrijk dat je als nieuwe collega in het Nederlands en Engels comfortabel kunt communiceren.
   wat-we-bieden: Dit bieden we je ook
   wat-we-bieden-tekst: |-
-    - Een salaris dat past bij jouw kennis en ervaring. 
-    - Een eindejaarsbonus op basis van de gezamenlijk gemaakte winst. 
-    - Een laptop, telefoon, 1e klas OV kaart, alles wat je nodig hebt om goed hybride te werken en goede secundaire voorwaarden. 
+    - Een salaris dat past bij jouw kennis en ervaring.
+    - Een eindejaarsbonus op basis van de gezamenlijk gemaakte winst.
+    - Een laptop, telefoon, 1e klas OV kaart, alles wat je nodig hebt om goed hybride te werken en goede secundaire voorwaarden.
     - Een kantoor in hartje Amsterdam, 2 minuten lopen vanaf CS (waar je alleen hoeft te zijn als je samen met collega’s aan opdrachten werkt).
   contact: Neem contact op met Zilla via [zilla@humanc.nl](#) of 06 11 00 60 48.
   uitzendbureaus: Uitzend- of wervingsbureaus hoeven niet op deze vacature te reageren.
@@ -314,15 +314,15 @@ nav:
   lang_en: EN
   call_us: Bel ons
   email_us: Mail ons
-footer:
-  development: Realisatie
-  design: Ontwerp
-  follow-us: Volg ons
-  sign-up: Ik schrijf me in!
-  next-date: 'Eerstvolgende datum:'
-  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
 global:
   global:
-    site_title: jkl
-    english: jkl;
     nederlands: adsf
+    english: jkl;
+    site_title: jkl
+footer:
+  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
+  next-date: 'Eerstvolgende datum:'
+  sign-up: Ik schrijf me in!
+  follow-us: Volg ons
+  design: Ontwerp
+  development: Realisatie
