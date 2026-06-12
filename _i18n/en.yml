@@ -243,6 +243,18 @@ coaching:
 
     **Interested?**
     Contact one of our colleagues directly, or for more information contact [Marit.](https://www.humanc.nl/en/team/marit-weiss/)
+inclusieve-organisaties:
+  title: Inclusieve organisaties
+  landing-tekst: ''
+  pagina-afbeelding: /assets/images/upload/kompas.jpg
+  pagina-titel: Inclusieve organisaties
+  pagina-tekst: ''
+inclusieve-participatieprocessen:
+  title: Inclusieve participatieprocessen
+  landing-tekst: ''
+  pagina-afbeelding: /assets/images/upload/kompas.jpg
+  pagina-titel: Inclusieve participatieprocessen
+  pagina-tekst: ''
 ctp-contact:
   title: Connect to perform
   pagina-afbeelding: /assets/images/upload/verandering-transitie.jpg
@@ -259,7 +271,7 @@ ctp-contact:
   telefoonnummer: Phone Number*
   welke: Which evening are you registering for?*
   data:
-    - datum: 'Wednesday June 10th: 19:30-21:45'
+    - datum: ''
   hoe: Via whom or how did you hear about the Connect to Perform evening?
   reden: What is your reason for registering?
   success: Thank you for registering!

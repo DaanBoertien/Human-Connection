@@ -12,7 +12,7 @@
 {% if site.lang == "en" %}
 {% comment %} --- ENGLISH FOOTER --- {% endcomment %}
 <footer>
-  {% if ctp_datum != "" and ctp_datum != nil %}
+  {% if ctp_datum != "" and ctp_datum != nil and page.hide_ctp_footer != true %}
   <div class="footer-flex">
     <div class="connect-to-perform">
       <h2>{% t footer.ctp-question %}<br>{% t footer.next-date %}<br>
@@ -49,7 +49,7 @@
     </a>
   </div>
 
-  {% if ctp_datum != "" and ctp_datum != nil %}
+  {% if ctp_datum != "" and ctp_datum != nil and page.hide_ctp_footer != true %}
   <div class="connect">
     <h2>{% t footer.ctp-question %}<br>{% t footer.next-date %}<br>
       {{ ctp_datum }}
@@ -73,6 +73,7 @@
 {% else %}
 {% comment %} --- DUTCH FOOTER (Default) --- {% endcomment %}
 <footer>
+  {% if ctp_datum != "" and ctp_datum != nil and page.hide_ctp_footer != true %}
   <div class="footer-flex">
     <div class="connect-to-perform">
       <h2>{% t footer.ctp-question %}<br>{% t footer.next-date %}<br>
@@ -83,6 +84,7 @@
       </p>
     </div>
   </div>
+  {% endif %}
   <div class="Groen footer footer-bottom">
     <div class="volgons">
       <p class="bold margin-bottom-0 fs-15px">{% t footer.follow-us %}</p>
@@ -108,6 +110,7 @@
     </a>
   </div>
 
+  {% if ctp_datum != "" and ctp_datum != nil and page.hide_ctp_footer != true %}
   <div class="connect">
     <h2>{% t footer.ctp-question %}<br>{% t footer.next-date %}<br>
       {{ ctp_datum }}
@@ -116,6 +119,7 @@
       <a href="{% t nav.ctp-contact %}">{% t footer.sign-up %}</a>
     </p>
   </div>
+  {% endif %}
 
   <p class="ontwerp fs-12px">
     {% t footer.design %}: <a class="underline" href="https://studioryza.nl">studioryza.nl </a>| {% t footer.development

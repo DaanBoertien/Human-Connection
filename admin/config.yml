@@ -213,6 +213,28 @@ collections:
       - { label: "Pagina Titel", name: "pagina-titel", widget: "string" }
       - { label: "Coaching Tekst", name: "coaching-tekst", widget: "markdown" }
 
+    - label: "Inclusieve organisaties (verborgen pagina)"
+      name: "inclusieve-organisaties"
+      widget: "object"
+      collapsed: true
+      fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
+      - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
+      - { label: "Pagina Titel", name: "pagina-titel", widget: "string" }
+      - { label: "Pagina Tekst", name: "pagina-tekst", widget: "markdown" }
+
+    - label: "Inclusieve participatieprocessen (verborgen pagina)"
+      name: "inclusieve-participatieprocessen"
+      widget: "object"
+      collapsed: true
+      fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Introductietekst", name: "landing-tekst", widget: "markdown" }
+      - { label: "Pagina Afbeelding", name: "pagina-afbeelding", widget: "image" }
+      - { label: "Pagina Titel", name: "pagina-titel", widget: "string" }
+      - { label: "Pagina Tekst", name: "pagina-tekst", widget: "markdown" }
+
     - label: "CTP Contact" # 6th Item
       name: "ctp-contact" # YAML key
       collapsed: true

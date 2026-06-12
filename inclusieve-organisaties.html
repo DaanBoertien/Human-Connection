@@ -1,0 +1,35 @@
+---
+layout: default
+title: Inclusieve organisaties
+namespace: inclusieve-organisaties
+permalink: /inclusieve-organisaties/
+permalink_en: /inclusieve-organisaties/
+hide_ctp_footer: true
+---
+
+<main>
+  {% include button-omhoog.html %}
+  <div class="landing landing--lightblue bg-lightblue">
+    <div class="innercontainer innercontainer--werken-bij">
+      <div class="landing-content">
+        <h1>{% t inclusieve-organisaties.title %}</h1>
+        {% capture landing_text %}{% t inclusieve-organisaties.landing-tekst %}{% endcapture %}
+        {{ landing_text | markdownify }}
+      </div>
+    </div>
+
+    <div class="img-overlay-wrap">
+      <img class="landing-image" src="{% t inclusieve-organisaties.pagina-afbeelding %}" alt="" />
+      {% include svg1-lightblue.html %} {% include svg1-desktop-lightblue.html %}
+    </div>
+  </div>
+  <div class="connect">
+    <div class="innercontainer innercontainer--ctp margin-bottom-2">
+      <h2 class="margin-top-2">
+        {% t inclusieve-organisaties.pagina-titel %}
+      </h2>
+      {% capture pagina_text %}{% t inclusieve-organisaties.pagina-tekst %}{% endcapture %}
+      {{ pagina_text | markdownify }}
+    </div>
+  </div>
+</main>

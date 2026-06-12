@@ -235,6 +235,18 @@ coaching:
     **Interesse?**
 
     Neem direct contact op met een van onze collega's, of voor meer informatie neem contact op met [Marit.](https://www.humanc.nl/team/marit-weiss/)
+inclusieve-organisaties:
+  title: Inclusieve organisaties
+  landing-tekst: ''
+  pagina-afbeelding: /assets/images/upload/kompas.jpg
+  pagina-titel: Inclusieve organisaties
+  pagina-tekst: ''
+inclusieve-participatieprocessen:
+  title: Inclusieve participatieprocessen
+  landing-tekst: ''
+  pagina-afbeelding: /assets/images/upload/kompas.jpg
+  pagina-titel: Inclusieve participatieprocessen
+  pagina-tekst: ''
 ctp-contact:
   title: Connect to perform
   pagina-afbeelding: /assets/images/upload/verandering-transitie.jpg
@@ -249,7 +261,7 @@ ctp-contact:
   telefoonnummer: Telefoonnummer*
   welke: Voor welke avond meld je je aan?*
   data:
-    - datum: Woensdag 10 juni 2026 19:30-21:45
+    - datum: ''
   hoe: Via wie of hoe weet je van de Connect to Perform avond?
   reden: Wat is je reden van aanmelden?
   success: Dankjewel voor je bericht!
