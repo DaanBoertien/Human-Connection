@@ -238,13 +238,13 @@ coaching:
 inclusieve-organisaties:
   title: Inclusieve organisaties
   landing-tekst: Hier komt de introductietekst
-  pagina-afbeelding: /assets/images/upload/kompas.jpg
+  pagina-afbeelding: /assets/images/upload/12046.jpg
   pagina-titel: Inclusieve organisaties
   pagina-tekst: Hier komt de pagina tekst
 inclusieve-participatieprocessen:
   title: Inclusieve participatieprocessen
   landing-tekst: Hier komt de introductietekst
-  pagina-afbeelding: /assets/images/upload/kompas.jpg
+  pagina-afbeelding: /assets/images/upload/12046.jpg
   pagina-titel: Inclusieve participatieprocessen
   pagina-tekst: Hier komt de paginatekst
 ctp-contact:
@@ -326,15 +326,15 @@ nav:
   lang_en: EN
   call_us: Bel ons
   email_us: Mail ons
-footer:
-  development: Realisatie
-  design: Ontwerp
-  follow-us: Volg ons
-  sign-up: Ik schrijf me in!
-  next-date: 'Eerstvolgende datum:'
-  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
 global:
   global:
-    site_title: jkl
-    english: jkl;
     nederlands: adsf
+    english: jkl;
+    site_title: jkl
+footer:
+  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
+  next-date: 'Eerstvolgende datum:'
+  sign-up: Ik schrijf me in!
+  follow-us: Volg ons
+  design: Ontwerp
+  development: Realisatie
