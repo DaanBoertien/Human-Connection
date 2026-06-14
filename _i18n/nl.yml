@@ -237,10 +237,18 @@ coaching:
     Neem direct contact op met een van onze collega's, of voor meer informatie neem contact op met [Marit.](https://www.humanc.nl/team/marit-weiss/)
 inclusieve-organisaties:
   title: Inclusieve organisaties
-  landing-tekst: Hier komt de introductietekst
+  landing-tekst: |-
+    - Organisaties draaien om en op mensen. Daar waar mensen van elkaar verschillen, ligt veel waarde verscholen. Dat is ook waar het vaak spannend of ongemakkelijk wordt.​
+
+    - Human Connection helpt organisaties, teams en individuen om de waarde van verschillende persoonlijkheden en perspectieven te onderzoeken, te ontwikkelen en te verzilveren - in plaats van deze door de snelheid van alledag te laten ondersneeuwen.​
+
+    - De weg naar een open, inclusieve cultuur (Diversity, Equity & Inclusion) is geen geëffend pad. Gezamenlijke visie, beleid, inspanningen van boven tot beneden, in het collectief en individueel zijn hiervoor nodig.
   pagina-afbeelding: /assets/images/upload/12046.jpg
   pagina-titel: Inclusieve organisaties
-  pagina-tekst: Hier komt de pagina tekst
+  pagina-tekst: |-
+    - Human Connection 
+    - Human Connection begint en begeleidt ook graag 'klein'.  Persoonlijke coaching of persoonlijk leiderschap, vormgegeven in een kleine groep. Van zelfkennis en een open blik naar contact met anderen om je heen in je team. En van daaruit tussen mensen en in teams. ​
+    - En ook juist ín de werkpraktijk: tijdens inhoudelijke overleggen en cruciale besluitvorming begeleiden wij on the job om met houding en een aantal praktische tools, alle perspectieven tot hun recht te laten komen.​
 inclusieve-participatieprocessen:
   title: Inclusieve participatieprocessen
   landing-tekst: Hier komt de introductietekst
@@ -326,15 +334,15 @@ nav:
   lang_en: EN
   call_us: Bel ons
   email_us: Mail ons
+footer:
+  development: Realisatie
+  design: Ontwerp
+  follow-us: Volg ons
+  sign-up: Ik schrijf me in!
+  next-date: 'Eerstvolgende datum:'
+  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
 global:
   global:
-    nederlands: adsf
-    english: jkl;
     site_title: jkl
-footer:
-  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
-  next-date: 'Eerstvolgende datum:'
-  sign-up: Ik schrijf me in!
-  follow-us: Volg ons
-  design: Ontwerp
-  development: Realisatie
+    english: jkl;
+    nederlands: adsf
