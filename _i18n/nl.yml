@@ -287,9 +287,7 @@ inclusieve-participatieprocessen:
 
     ##### Wie wij zijn
 
-    Onze aanpak is ontwikkeld door drie professionals met ruime ervaring in participatie, organisatieontwikkeling en maatschappelijke transities. We leerden elkaar kennen als gespreksbegeleiders van het Nationaal Burgerberaad Klimaat en werken samen vanuit een gedeelde overtuiging: participatie wordt sterker wanneer organisaties zelf het vermogen ontwikkelen om het goed te doen.
-
-    We combineren onze expertise en werken vanuit een breed netwerk van professionals via onder andere Human Connection en [Human Dimensions](https://humandimensions.nl/).
+    Onze aanpak is ontwikkeld door drie professionals met ruime ervaring in participatie, organisatieontwikkeling en maatschappelijke transities. We werken samen vanuit een gedeelde overtuiging: participatie wordt sterker wanneer organisaties zelf het vermogen ontwikkelen om het goed te doen. Eerder werkten we samen bij het Nationaal Burgerberaad Klimaat en bij diverse overheden. Een succesvol van onze aanpak voorbeeld is de gemeente Den Haag, te bekijken via deze [video](https://vimeo.com/1190162776/d03903e9d5). We combineren onze expertise en werken vanuit een breed netwerk van professionals via onder andere Human Connection en [Human Dimensions](https://humandimensions.nl/). 
 
     [**Karim Maarek**](https://www.linkedin.com/in/karimmaarek/)
     Karim ontwerpt en begeleidt participatieprocessen rond maatschappelijke vraagstukken en transities. Vanuit zijn achtergrond in innovatie, communicatie en Deep Democracy brengt hij verschillende perspectieven bij elkaar en ontwerpt hij processen die bijdragen aan inclusieve én uitvoerbare keuzes.
@@ -413,15 +411,15 @@ nav:
   lang_en: EN
   call_us: Bel ons
   email_us: Mail ons
-footer:
-  development: Realisatie
-  design: Ontwerp
-  follow-us: Volg ons
-  sign-up: Ik schrijf me in!
-  next-date: 'Eerstvolgende datum:'
-  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
 global:
   global:
-    site_title: jkl
-    english: jkl;
     nederlands: adsf
+    english: jkl;
+    site_title: jkl
+footer:
+  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
+  next-date: 'Eerstvolgende datum:'
+  sign-up: Ik schrijf me in!
+  follow-us: Volg ons
+  design: Ontwerp
+  development: Realisatie
