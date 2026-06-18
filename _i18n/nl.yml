@@ -268,7 +268,9 @@ inclusieve-organisaties:
 inclusieve-participatieprocessen:
   title: Inclusieve participatie
   landing-tekst: |-
-    Participatie vraagt om vakmanschap én om organisaties die participatie goed weten te ondersteunen. Onderzoek laat zien dat betekenisvolle participatie niet alleen afhangt van procesbegeleiding, maar ook van onder meer bestuurlijk commitment, heldere rolverdeling en goede terugkoppeling naar deelnemers. ([Kennisknooppunt Participatie](https://www.kennisknooppuntparticipatie.nl/nieuws/i/BR2xL/wat-vraagt-goede-participatie-van-professionals-n-organisaties-onderzoek-naar-competenties-voor-participatieprofessionals-en-organisaties-nu-beschikbaar))
+    Participatie vraagt om vakmanschap én om organisaties die participatie goed weten te ondersteunen. Onderzoek laat zien dat beteke
+
+    nisvolle participatie niet alleen afhangt van procesbegeleiding, maar ook van onder meer bestuurlijk commitment, heldere rolverdeling en goede terugkoppeling naar deelnemers. ([Kennisknooppunt Participatie](https://www.kennisknooppuntparticipatie.nl/nieuws/i/BR2xL/wat-vraagt-goede-participatie-van-professionals-n-organisaties-onderzoek-naar-competenties-voor-participatieprofessionals-en-organisaties-nu-beschikbaar))
 
     Bij lokale vraagstukken én bij grote maatschappelijke transities is participatie een vast onderdeel van hoe overheden beleid ontwikkelen en maatschappelijke vraagstukken aanpakken. Er wordt veel geïnvesteerd in het betrekken van inwoners, ondernemers en maatschappelijke organisaties. Tegelijk is de praktijk weerbarstig. Wij zien dat participatieprocessen uit voorzorg 'veilig' worden gehouden om 'gedoe te voorkomen', participatieprofessionals stoeien met hun rol en invloed binnen de dynamiek van de organisatie en niet zelden te maken krijgen met veel weerstand en oplopende emoties.
 
@@ -334,6 +336,8 @@ inclusieve-participatieprocessen:
     - het organiseren van vervolg, terugkoppeling en verbinding met inwoners en stakeholders.
 
     Zo groeit het vertrouwen en de vaardigheid om participatieprocessen vorm te geven die leiden tot rijkere inzichten, betere beleidskeuzes en meer betrokkenheid tussen overheid en samenleving.** Zo groeit de organisatie in duurzame participatie: zorgvuldig, praktisch en herhaalbaar.** Participatie wordt een vanzelfsprekend onderdeel van de manier van werken.
+
+    ![](/assets/images/upload/Marit%20NBK%20hand%20hart.jpeg)
 
     #### Wie wij zijn
 
@@ -433,15 +437,15 @@ nav:
   lang_en: EN
   call_us: Bel ons
   email_us: Mail ons
-footer:
-  development: Realisatie
-  design: Ontwerp
-  follow-us: Volg ons
-  sign-up: Ik schrijf me in!
-  next-date: 'Eerstvolgende datum:'
-  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
 global:
   global:
-    site_title: jkl
-    english: jkl;
     nederlands: adsf
+    english: jkl;
+    site_title: jkl
+footer:
+  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
+  next-date: 'Eerstvolgende datum:'
+  sign-up: Ik schrijf me in!
+  follow-us: Volg ons
+  design: Ontwerp
+  development: Realisatie
