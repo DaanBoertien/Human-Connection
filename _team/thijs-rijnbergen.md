@@ -2,7 +2,7 @@
 layout: teammembers
 email: Thijs@humanc.nl
 phonenumber: '0622683736'
-photo_url: /assets/images/upload/44.png
+photo_url: /assets/images/upload/ThijsRijnbergen.png
 bg_color: Groen
 menu: menu-active
 nl:
