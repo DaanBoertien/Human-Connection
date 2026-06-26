@@ -337,7 +337,7 @@ inclusieve-participatieprocessen:
 
     Zo groeit het vertrouwen en de vaardigheid om participatieprocessen vorm te geven die leiden tot rijkere inzichten, betere beleidskeuzes en meer betrokkenheid tussen overheid en samenleving.** Zo groeit de organisatie in duurzame participatie: zorgvuldig, praktisch en herhaalbaar.** Participatie wordt een vanzelfsprekend onderdeel van de manier van werken.
 
-    ![](/assets/images/upload/Marit%20NBK%20hand%20hart.jpeg)
+    ![](/assets/images/upload/Marit%20uitleg%20bord%20AI%20bewerkt.png)
 
     #### Wie wij zijn
 
@@ -351,6 +351,8 @@ inclusieve-participatieprocessen:
 
     [**Tijmen Rümke**](https://www.linkedin.com/in/tijmenrumke/)
     Tijmen ontwerpt leer- en ontwikkelprocessen die organisaties helpen complexe vraagstukken met meer helderheid en gezamenlijkheid te benaderen. Vanuit zijn achtergrond als strategieconsultant bij Andersson Elffers Felix begeleidt hij leerprogramma’s, strategische sessies en intervisietrajecten.
+
+    ![](/assets/images/upload/Tijmen.jpeg)
 
     #### In gesprek?
 
@@ -437,15 +439,15 @@ nav:
   lang_en: EN
   call_us: Bel ons
   email_us: Mail ons
+footer:
+  development: Realisatie
+  design: Ontwerp
+  follow-us: Volg ons
+  sign-up: Ik schrijf me in!
+  next-date: 'Eerstvolgende datum:'
+  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
 global:
   global:
-    nederlands: adsf
-    english: jkl;
     site_title: jkl
-footer:
-  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
-  next-date: 'Eerstvolgende datum:'
-  sign-up: Ik schrijf me in!
-  follow-us: Volg ons
-  design: Ontwerp
-  development: Realisatie
+    english: jkl;
+    nederlands: adsf
