@@ -1,1 +1,18 @@
 _site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Secrets — never commit environment files
+.env
+.env.*
+
+# Stray vendored/build artifacts
+*-temp.js
+
+# Bundler / local gem install
+.bundle/
+vendor/
+
+# OS cruft
+.DS_Store
+Thumbs.db

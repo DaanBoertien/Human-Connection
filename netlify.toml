@@ -1,0 +1,32 @@
+# Netlify configuration — HTTP security headers only.
+#
+# NOTE: intentionally no [build] section. Build settings stay in the Netlify
+# UI so this file does not override them. This file only adds response headers
+# applied at Netlify's edge (a `_headers` file would NOT work here because
+# Jekyll excludes underscore-prefixed files from the build output).
+
+# ---------------------------------------------------------------------------
+# Security headers for every route.
+# ---------------------------------------------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Force HTTPS for 2 years, include subdomains. Remove `preload` unless you
+    # intend to submit the domain to the HSTS preload list.
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains"
+    # Disallow the site being framed by other origins (clickjacking).
+    X-Frame-Options = "SAMEORIGIN"
+    # Stop MIME-type sniffing.
+    X-Content-Type-Options = "nosniff"
+    # Don't leak full URLs in the Referer header to other origins.
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Disable powerful APIs the site doesn't use.
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), payment=(), usb=(), interest-cohort=()"
+
+    # Content-Security-Policy in REPORT-ONLY mode first: it logs violations to
+    # the browser console but blocks nothing, so it cannot break the live site
+    # or the /admin CMS. Watch the console on the deployed site for a few days,
+    # then (a) rename this header to `Content-Security-Policy` to enforce, and
+    # (b) tighten script-src by removing 'unsafe-inline' once the inline init
+    # script in _layouts/default.html is moved to assets/js/script.js.
+    Content-Security-Policy-Report-Only = "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://identity.netlify.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; frame-src https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://api.github.com https://identity.netlify.com; object-src 'none'; base-uri 'self'; form-action 'self'"
