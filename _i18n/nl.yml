@@ -42,7 +42,7 @@ home:
     - Compliance en integriteitsvraagstukken
     - Invoeren en begeleiden van Agile/Scrum
   wat-wij-doen-1-contact: |-
-    \*\*Meer weten?\*\*\
+    **Meer weten?**\
     Neem bijvoorbeeld contact op met Sjef of Zilla.
   wat-wij-doen-1-button: Contact met Sjef
   wat-wij-doen-1-link: /team/sjef-van-gool/
@@ -59,7 +59,7 @@ home:
     - L&O Professional
     - Sociale Veiligheid
   wat-wij-doen-2-contact: |-
-    \*\*Meer weten?\*\*\
+    **Meer weten?**\
     Neem bijvoorbeeld contact op met Jojanneke of Dorothé.
   wat-wij-doen-2-button: Contact met Dorothé
   wat-wij-doen-2-link: /team/dorothé-wissink/
@@ -76,7 +76,7 @@ home:
     - Talentmanagement en traineeprogramma's
     - Inrichting van een effectieve leerinfrastructuur
   wat-wij-doen-3-contact: |-
-    \*\*Meer weten?\*\*\
+    **Meer weten?**\
     Neem contact op met bijvoorbeeld Marit of Annet.
   wat-wij-doen-3-button: Contact met Marit
   wat-wij-doen-3-link: /team/marit-weiss/
@@ -374,7 +374,7 @@ ctp-contact:
   telefoonnummer: Telefoonnummer*
   welke: Voor welke avond meld je je aan?*
   data:
-    - datum: Woensdag 10 juni 2026 19:30-21:45
+    - datum: ''
   hoe: Via wie of hoe weet je van de Connect to Perform avond?
   reden: Wat is je reden van aanmelden?
   success: Dankjewel voor je bericht!

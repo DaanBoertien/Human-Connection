@@ -12,7 +12,7 @@
 {% if site.lang == "en" %}
 {% comment %} --- ENGLISH FOOTER --- {% endcomment %}
 <footer>
-  {% if ctp_datum != "" and ctp_datum != nil and page.hide_ctp_footer != true %}
+  {% if site.show_ctp_footer and ctp_datum != "" and ctp_datum != nil and page.hide_ctp_footer != true %}
   <div class="footer-flex">
     <div class="connect-to-perform">
       <h2>{% t footer.ctp-question %}<br>{% t footer.next-date %}<br>
@@ -49,7 +49,7 @@
     </a>
   </div>
 
-  {% if ctp_datum != "" and ctp_datum != nil and page.hide_ctp_footer != true %}
+  {% if site.show_ctp_footer and ctp_datum != "" and ctp_datum != nil and page.hide_ctp_footer != true %}
   <div class="connect">
     <h2>{% t footer.ctp-question %}<br>{% t footer.next-date %}<br>
       {{ ctp_datum }}
@@ -73,7 +73,7 @@
 {% else %}
 {% comment %} --- DUTCH FOOTER (Default) --- {% endcomment %}
 <footer>
-  {% if ctp_datum != "" and ctp_datum != nil and page.hide_ctp_footer != true %}
+  {% if site.show_ctp_footer and ctp_datum != "" and ctp_datum != nil and page.hide_ctp_footer != true %}
   <div class="footer-flex">
     <div class="connect-to-perform">
       <h2>{% t footer.ctp-question %}<br>{% t footer.next-date %}<br>
@@ -110,7 +110,7 @@
     </a>
   </div>
 
-  {% if ctp_datum != "" and ctp_datum != nil and page.hide_ctp_footer != true %}
+  {% if site.show_ctp_footer and ctp_datum != "" and ctp_datum != nil and page.hide_ctp_footer != true %}
   <div class="connect">
     <h2>{% t footer.ctp-question %}<br>{% t footer.next-date %}<br>
       {{ ctp_datum }}

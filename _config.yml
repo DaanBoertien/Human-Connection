@@ -12,6 +12,10 @@ default_language: "nl"
 exclude_from_localization: [ "assets", "admin", "js", "css", "images", "fonts" ]
 parallel_localization: true
 
+# Set to true to show the CTP open-spelavond callout in the footer.
+# Lives here (not in the CMS) so a Decap save can't resurrect it.
+show_ctp_footer: false
+
 # Add to your plugins list if you have one already
 plugins:
 - jekyll-multiple-languages-plugin
