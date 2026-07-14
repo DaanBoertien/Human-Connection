@@ -30,7 +30,16 @@ permalink_en: /ctp-contact/
       <p class="zoom fs-20px">{% t ctp-contact.aanmelding-zoom %}</p>
       <p class="fs-16-px">{% t ctp-contact.aanmelding-tekst %}</p>
 
-      <form name="connect to perform inschrijving" netlify action="/succes">
+      {% comment %} Language-aware success page URL {% endcomment %}
+      {% assign ctp_lang_prefix = "" %}
+      {% if site.lang == site.default_language %}
+      {% assign ctp_lang_prefix = "/" %}
+      {% else %}
+      {% assign ctp_lang_prefix = "/" | append: site.lang | append: "/" %}
+      {% endif %}
+      {% assign succes_page = site.pages | where_exp:"item", "item.namespace == 'succes'" | first %}
+      {% assign ctp_succes_url = ctp_lang_prefix | append: succes_page.url | replace: '//', '/' %}
+      <form name="connect to perform inschrijving" netlify action="{{ ctp_succes_url }}">
         <div class="did-floating-label-content">
           <input class="did-floating-input" type="text" name="naam"
             placeholder="{% t ctp-contact.placeholder-answer %}" />

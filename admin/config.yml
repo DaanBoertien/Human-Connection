@@ -261,8 +261,8 @@ collections:
         - { label: "Datum", name: "datum", widget: "string", required: false }
       - { label: "Hoe Heb Je Over Ons Gehoord?", name: "hoe", widget: "string" }
       - { label: "Reden", name: "reden", widget: "string" }
-      - { label: "Succes Titel", name: "success", widget: "string" }
-      - { label: "Succes Tekst", name: "success-text", widget: "markdown" }
+      - { label: "Succes Titel (na versturen formulier)", name: "success", widget: "string" }
+      - { label: "Succes Tekst (na versturen formulier)", name: "success-text", widget: "markdown" }
       - { label: "Terug Knop", name: "button-terug", widget: "string" }
       - { label: "Placeholder Antwoord", name: "placeholder-answer", widget: "string" }
       - { label: "Verzend Knop", name: "button-submit", widget: "string" }
@@ -486,8 +486,8 @@ collections:
         - { label: "Datum", name: "datum", widget: "string", required: false }
       - { label: "Hoe Heb Je Over Ons Gehoord?", name: "hoe", widget: "string" }
       - { label: "Reden", name: "reden", widget: "string" }
-      - { label: "Succes Titel", name: "success", widget: "string" }
-      - { label: "Succes Tekst", name: "success-text", widget: "markdown" }
+      - { label: "Succes Titel (na versturen formulier)", name: "success", widget: "string" }
+      - { label: "Succes Tekst (na versturen formulier)", name: "success-text", widget: "markdown" }
       - { label: "Terug Knop", name: "button-terug", widget: "string" }
       - { label: "Placeholder Antwoord", name: "placeholder-answer", widget: "string" }
       - { label: "Verzend Knop", name: "button-submit", widget: "string" }

@@ -274,15 +274,8 @@ ctp-contact:
     - datum: ''
   hoe: Via whom or how did you hear about the Connect to Perform evening?
   reden: What is your reason for registering?
-  success: Thank you for registering!
-  success-text: |-
-    Thanks for registering, we're happy you'll be joining!
-
-    For now, you don't need to do anything except put the date in your calendar.
-
-    About a week beforehand, you will receive a preparation email with more information.
-
-    If you have any questions before then, please contact jojanneke@humanc.nl
+  success: Thank you for your message.
+  success-text: We will contact you within 3 working days.
   button-terug: Back to the homepage
   placeholder-answer: Your answer
   button-submit: Send form
@@ -334,7 +327,6 @@ nav:
   lang_en: EN
   call_us: Call us
   email_us: Email us
-  succes_url: /success/
 global:
   global:
     site_title: Human_connection

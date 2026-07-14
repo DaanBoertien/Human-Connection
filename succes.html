@@ -6,13 +6,22 @@ permalink_en: /success/
 namespace: succes
 ---
 
+{% comment %} --- Define Language Prefix --- {% endcomment %}
+{% assign succes_lang_prefix = "" %}
+{% if site.lang == site.default_language %}
+{% assign succes_lang_prefix = "/" %}
+{% else %}
+{% assign succes_lang_prefix = "/" | append: site.lang | append: "/" %}
+{% endif %}
+
 <main class="page-contact">
   <div class="contact">
     <div class="innercontainer">
-      <h2 class="margin-top-4">{{site.data.ctp-contact.success}}</h2>
-      <p>{{site.data.ctp-contact.success-text}}</p>
+      <h2 class="margin-top-4">{% t ctp-contact.success %}</h2>
+      {% capture success_text %}{% t ctp-contact.success-text %}{% endcapture %}
+      {{ success_text | markdownify }}
       <p class="btn btn-full margin-top-2 margin-bottom-4">
-        <a href="/">{{site.data.ctp-contact.button-terug}}</a>
+        <a href="{{ succes_lang_prefix }}">{% t ctp-contact.button-terug %}</a>
       </p>
     </div>
   </div>

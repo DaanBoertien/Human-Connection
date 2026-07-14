@@ -227,8 +227,8 @@ namespace: home
           {% capture contact_omschrijving %}{% t home.contact-omschrijving %}{% endcapture %}
           <p>{{ contact_omschrijving | markdownify }}</p>
           {% comment %} Contact Form Action {% endcomment %}
-          {% assign succes_base_path = 'nav.succes_url' | t %} {% comment %} Corrected: Use 't' filter {% endcomment %}
-          {% assign succes_raw_path = index_lang_prefix | append: succes_base_path %}
+          {% assign succes_page = site.pages | where_exp:"item", "item.namespace == 'succes'" | first %}
+          {% assign succes_raw_path = index_lang_prefix | append: succes_page.url %}
           {% assign succes_final_path = succes_raw_path | replace: '//', '/' %}
           <form name="contact" netlify action="{{ succes_final_path }}">
             <div class="did-floating-label-content">

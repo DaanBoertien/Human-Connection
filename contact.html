@@ -26,9 +26,9 @@ title: "contact" # Use H2 text for HTML title
 
           {% comment %} Find the 'succes' page object to get its URL {% endcomment %}
           {% assign succes_page = site.pages | where_exp:"item", "item.namespace == 'succes'" | first %}
-          {% assign succes_url = "/" %} {% comment %} Fallback URL {% endcomment %}
+          {% assign succes_url = contact_lang_prefix %} {% comment %} Fallback URL {% endcomment %}
           {% if succes_page %}
-          {% assign succes_url = succes_page.url %}
+          {% assign succes_url = contact_lang_prefix | append: succes_page.url | replace: '//', '/' %}
           {% endif %}
 
           <form name="contact" netlify action="{{ succes_url }}"> {% comment %} Use language-aware success page URL {%
