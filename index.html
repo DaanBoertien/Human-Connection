@@ -221,10 +221,10 @@ namespace: home
   </div>
   <div class="contact">
     <div class="innercontainer">
-      <h2>{% t home.contact-titel %}</h2>
+      <h2>{% t contact.contact-titel %}</h2>
       <div class="contact-flex">
         <div class="contact-left">
-          {% capture contact_omschrijving %}{% t home.contact-omschrijving %}{% endcapture %}
+          {% capture contact_omschrijving %}{% t contact.contact-omschrijving %}{% endcapture %}
           <p>{{ contact_omschrijving | markdownify }}</p>
           {% comment %} Contact Form Action {% endcomment %}
           {% assign succes_page = site.pages | where_exp:"item", "item.namespace == 'succes'" | first %}
@@ -233,35 +233,35 @@ namespace: home
           <form name="contact" netlify action="{{ succes_final_path }}">
             <div class="did-floating-label-content">
               <input class="did-floating-input" type="text" name="naam"
-                placeholder="{% t home.contact-placeholder %}" />
-              <label class="did-floating-label">{% t home.contact-naam %}</label>
+                placeholder="{% t contact.contact-placeholder %}" />
+              <label class="did-floating-label">{% t contact.contact-naam %}</label>
             </div>
             <div class="did-floating-label-content">
               <input class="did-floating-input" type="text" name="onderwerp"
-                placeholder="{% t home.contact-placeholder %}" />
-              <label class="did-floating-label">{% t home.contact-onderwerp %}</label>
+                placeholder="{% t contact.contact-placeholder %}" />
+              <label class="did-floating-label">{% t contact.contact-onderwerp %}</label>
             </div>
             <div class="did-floating-label-content">
               <input class="did-floating-input" type="email" name="email"
-                placeholder="{% t home.contact-placeholder %}" />
-              <label class="did-floating-label">{% t home.contact-email %}</label>
+                placeholder="{% t contact.contact-placeholder %}" />
+              <label class="did-floating-label">{% t contact.contact-email %}</label>
             </div>
             <div class="did-floating-label-content">
               <textarea id="bericht" rows="6" cols="50" class="did-floating-input" name="bericht"
-                placeholder="{% t home.contact-placeholder %}"></textarea>
-              <label class="did-floating-label">{% t home.contact-bericht %}</label>
+                placeholder="{% t contact.contact-placeholder %}"></textarea>
+              <label class="did-floating-label">{% t contact.contact-bericht %}</label>
             </div>
-            <button type="submit" class="btn btn-full">{% t home.contact-button %}</button>
+            <button type="submit" class="btn btn-full">{% t contact.contact-button %}</button>
           </form>
         </div>
         <div class="contact-info">
           <div>
-            <p>{% t home.uitnodiging %}</p>
+            <p>{% t contact.uitnodiging %}</p>
             <p class="contact-name">Human Connection</p>
-            <p class="contact-address">{% t home.adres %}</p>
-            <p class="contact-zipcode">{% t home.postcode %}</p>
+            <p class="contact-address">{% t contact.adres %}</p>
+            <p class="contact-zipcode">{% t contact.postcode %}</p>
           </div>
-          <img src="{% t home.afbeelding-kantoor %}" alt="" />
+          <img src="{% t contact.afbeelding-kantoor %}" alt="" />
         </div>
       </div>
     </div>

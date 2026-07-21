@@ -122,6 +122,13 @@ collections:
       - { label: "Actievraag Subtitel", name: "actievraag-subtitel", widget: "string" }
       - { label: "Actievraag Knop", name: "actievraag-button", widget: "string" }
       - { label: "Partners Titel", name: "partners-titel", widget: "string" }
+
+    # === CONTACT PAGE (own top-level 'contact:' section, easy to find & edit) ===
+    - label: "Contact" # Dedicated Contact page section
+      name: "contact" # YAML key -> _i18n/nl.yml: contact
+      widget: "object"
+      collapsed: false # Start expanded so it is immediately visible
+      fields:
       - { label: "Contact Titel", name: "contact-titel", widget: "string" }
       - { label: "Contact Omschrijving", name: "contact-omschrijving", widget: "markdown" }
       - { label: "Contact Naam", name: "contact-naam", widget: "string" }
@@ -369,6 +376,13 @@ collections:
       - { label: "Actievraag Subtitel", name: "actievraag-subtitel", widget: "string" }
       - { label: "Actievraag Knop", name: "actievraag-button", widget: "string" }
       - { label: "Partners Titel", name: "partners-titel", widget: "string" }
+
+    # === CONTACT PAGE (own top-level 'contact:' section, easy to find & edit) ===
+    - label: "Contact" # Dedicated Contact page section (Dutch label)
+      name: "contact" # YAML key -> _i18n/en.yml: contact
+      widget: "object"
+      collapsed: false # Start expanded so it is immediately visible
+      fields:
       - { label: "Contact Titel", name: "contact-titel", widget: "string" }
       - { label: "Contact Omschrijving", name: "contact-omschrijving", widget: "markdown" }
       - { label: "Contact Naam", name: "contact-naam", widget: "string" }

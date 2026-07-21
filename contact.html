@@ -18,10 +18,10 @@ title: "contact" # Use H2 text for HTML title
 <main class="page-contact">
   <div class="contact">
     <div class="innercontainer">
-      <h2 class="margin-top-4">{% t home.contact-titel %}</h2>
+      <h2 class="margin-top-4">{% t contact.contact-titel %}</h2>
       <div class="contact-flex">
         <div class="contact-left">
-          {% capture contact_omschrijving %}{% t home.contact-omschrijving %}{% endcapture %}
+          {% capture contact_omschrijving %}{% t contact.contact-omschrijving %}{% endcapture %}
           {{ contact_omschrijving | markdownify }} {% comment %} Applied markdownify {% endcomment %}
 
           {% comment %} Find the 'succes' page object to get its URL {% endcomment %}
@@ -34,43 +34,43 @@ title: "contact" # Use H2 text for HTML title
           <form name="contact" netlify action="{{ succes_url }}"> {% comment %} Use language-aware success page URL {%
             endcomment %}
             <div class="did-floating-label-content">
-              <input class="did-floating-input" type="text" name="naam" placeholder="{% t home.contact_placeholder %}"
+              <input class="did-floating-input" type="text" name="naam" placeholder="{% t contact.contact_placeholder %}"
                 {% comment %} Translated placeholder {% endcomment %} />
-              <label class="did-floating-label">{% t home.contact_label_naam %}</label> {% comment %} Translated label
+              <label class="did-floating-label">{% t contact.contact_label_naam %}</label> {% comment %} Translated label
               {% endcomment %}
             </div>
             <div class="did-floating-label-content">
               <input class="did-floating-input" type="text" name="onderwerp"
-                placeholder="{% t home.contact_placeholder %}" {% comment %} Translated placeholder {% endcomment %} />
-              <label class="did-floating-label">{% t home.contact_label_onderwerp %}</label> {% comment %} Translated
+                placeholder="{% t contact.contact_placeholder %}" {% comment %} Translated placeholder {% endcomment %} />
+              <label class="did-floating-label">{% t contact.contact_label_onderwerp %}</label> {% comment %} Translated
               label {% endcomment %}
             </div>
             <div class="did-floating-label-content">
-              <input class="did-floating-input" type="email" name="email" placeholder="{% t home.contact_placeholder %}"
+              <input class="did-floating-input" type="email" name="email" placeholder="{% t contact.contact_placeholder %}"
                 {% comment %} Translated placeholder {% endcomment %} />
-              <label class="did-floating-label">{% t home.contact_label_email %}</label> {% comment %} Translated label
+              <label class="did-floating-label">{% t contact.contact_label_email %}</label> {% comment %} Translated label
               {% endcomment %}
             </div>
             <div class="did-floating-label-content">
               <textarea id="bericht" rows="6" cols="50" class="did-floating-input" name="bericht"
-                placeholder="{% t home.contact_placeholder %}" {% comment %} Translated placeholder {% endcomment
+                placeholder="{% t contact.contact_placeholder %}" {% comment %} Translated placeholder {% endcomment
                 %}></textarea>
-              <label class="did-floating-label">{% t home.contact_label_bericht %}</label> {% comment %} Translated
+              <label class="did-floating-label">{% t contact.contact_label_bericht %}</label> {% comment %} Translated
               label {% endcomment %}
             </div>
-            {% comment %} Consider translating this if uncommented: {% t home.contact_required %} {% endcomment %}
-            <button type="submit" class="btn btn-full">{% t home.contact_submit_button %}</button> {% comment %}
+            {% comment %} Consider translating this if uncommented: {% t contact.contact_required %} {% endcomment %}
+            <button type="submit" class="btn btn-full">{% t contact.contact_submit_button %}</button> {% comment %}
             Translated button text {% endcomment %}
           </form>
         </div>
         <div class="contact-info">
           <div>
-            <p>{% t home.uitnodiging %}</p>
-            <p class="contact-name">{% t home.contact_org_name %}</p> {% comment %} Translated org name {% endcomment %}
-            <p class="contact-address">{% t home.adres %}</p>
-            <p class="contact-zipcode">{% t home.postcode %}</p>
+            <p>{% t contact.uitnodiging %}</p>
+            <p class="contact-name">{% t contact.contact_org_name %}</p> {% comment %} Translated org name {% endcomment %}
+            <p class="contact-address">{% t contact.adres %}</p>
+            <p class="contact-zipcode">{% t contact.postcode %}</p>
           </div>
-          <img src="{% t home.afbeelding-kantoor %}" alt="" /> 
+          <img src="{% t contact.afbeelding-kantoor %}" alt="" /> 
         </div>
       </div>
     </div>
