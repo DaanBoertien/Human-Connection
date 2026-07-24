@@ -632,3 +632,17 @@ collections:
       # Fields for items in the list
       - { label: "PDF Titel", name: "pdf-title", widget: "string" }
       - { label: "PDF Bestand", name: "pdf", widget: "file" }
+
+# Collection for footer documents (PDFs linked in the site footer)
+- name: "footer"
+  label: "Footer" # Collection label (Dutch)
+  files:
+  # Single data file holding the footer document links
+  - name: "footer-documenten"
+    label: "Footer documenten" # Label for this specific file in CMS (Dutch)
+    file: "_data/footer.yml" # Path to the data file
+    editor:
+      preview: false
+    fields:
+    # Klachtenprocedure PDF shown in the footer next to Privacy (same file for NL & EN)
+    - { label: "Klachtenprocedure (PDF)", name: "klachtenprocedure", widget: "file" }
