@@ -236,14 +236,11 @@ coaching:
 
     Neem direct contact op met een van onze collega's, of voor meer informatie neem contact op met [Marit.](https://www.humanc.nl/team/marit-weiss/)
 inclusieve-organisaties:
-  title: Inclusieve organisaties
+  title: Integriteit & sociale en psychologische veiligheid
   landing-tekst: |-
-    - **Het creëren van een een gezond en plezierig werkklimaat** is een van de kernpunten waar Human Connection organisaties bij helpt.
-    - Diversiteit, inclusie en sociale veiligheid zijn geen kwestie van het aan tafel zetten van meer verschillende mensen en het "elimineren van vooroordelen." Het vraagt om **dagelijkse vaardigheden**: nieuwsgierig blijven, luisteren zonder direct te oordelen, ruimte maken voor andere perspectieven en ongemak kunnen verdragen. En: wat gebeurt er daarna? Worden verschillen gezien en benut, in besluitvorming, beleid, op de werkvloer en manieren van samenwerken?
-    - Het is een proces van het **ontwikkelen van empathie, het opbouwen van inclusieve vaardigheden en het veranderen van gedrag**.
-    - Gezamenlijke visie, beleid, heldere doelen en kaders, procedures, inspanningen van boven tot beneden, in het collectief en individueel zijn hiervoor nodig.
-    - We helpen bij het samen vormgeven van de gewenste cultuur, passend bij de organisatie, en de de manier van werken. Om zaken fundamenteel en in de kern te optimaliseren kijken we naar hoe dingen samenhangen en **onderliggende patronen**. Tegelijk maken we het ook **behapbaar en praktisch**.
-    -  Waar mensen samen werken, en helemaal als dat onder druk of hoge ambitie is, worden verschillen van aanpak of mening zichtbaar. Dat ik waar het soms spannend of ongemakkelijk wordt. In deze verschillen ligt ook veel waarde verscholen.  Wij helpen organisaties, teams en individuen om **de waarde van verschillende persoonlijkheden en perspectieven te onderzoeken, te ontwikkelen en te verzilveren**.
+    - Een veilige en integere organisatie ontstaat niet alleen door goede regels, een gedragscode of een training. Het zit vooral in wat mensen iedere dag doen: hoe leidinggevenden reageren op signalen, hoe collega’s elkaar aanspreken, hoe verschil en spanning worden besproken en wat er gebeurt wanneer iets misgaat. 
+    - De meeste mensen willen het goede doen. Tegelijkertijd zijn we allemaal beïnvloedbaar door onze omgeving, groepsdynamiek, werkdruk en positie. Daarom kijken wij nooit alleen naar het gedrag van één persoon, maar naar de samenhang tussen persoon, interactie, leiderschap, team en organisatie. 
+    - Human Connection helpt organisaties om psychologische en sociale veiligheid en integriteit te versterken, kwetsbaarheden eerder te herkennen en zorgvuldig te handelen op de momenten waarop het ertoe doet. Praktisch en menselijk, met oog voor zowel de betrokken personen als de bredere context.
   pagina-afbeelding: /assets/images/upload/12046.jpg
   pagina-titel: Hoe helpen wij bij het vormgeven van een inclusieve, veilige cultuur?
   pagina-tekst: |-
@@ -440,15 +437,15 @@ nav:
   lang_en: EN
   call_us: Bel ons
   email_us: Mail ons
+footer:
+  development: Realisatie
+  design: Ontwerp
+  follow-us: Volg ons
+  sign-up: Ik schrijf me in!
+  next-date: 'Eerstvolgende datum:'
+  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
 global:
   global:
-    nederlands: adsf
-    english: jkl;
     site_title: jkl
-footer:
-  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
-  next-date: 'Eerstvolgende datum:'
-  sign-up: Ik schrijf me in!
-  follow-us: Volg ons
-  design: Ontwerp
-  development: Realisatie
+    english: jkl;
+    nederlands: adsf
