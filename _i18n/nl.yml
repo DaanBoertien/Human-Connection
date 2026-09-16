@@ -191,7 +191,7 @@ vertrouwenspersoon:
 
     ### Meer weten?
 
-    Wil je meer weten over hoe Human Connection kijkt naar de rol van vertrouwenspersoon en preventie als prioriteit binnen een gezonde werkplek? Download hier binnenkort ons whitepaper met sleutelfactoren van een sociaal veilige werkomgeving.
+    Neem contact op met Olivier Sueur op 0610580264."
 coaching:
   title: Coaching
   landing-tekst: |-
@@ -454,15 +454,15 @@ nav:
   lang_en: EN
   call_us: Bel ons
   email_us: Mail ons
+footer:
+  development: Realisatie
+  design: Ontwerp
+  follow-us: Volg ons
+  sign-up: Ik schrijf me in!
+  next-date: 'Eerstvolgende datum:'
+  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
 global:
   global:
-    nederlands: adsf
-    english: jkl;
     site_title: jkl
-footer:
-  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
-  next-date: 'Eerstvolgende datum:'
-  sign-up: Ik schrijf me in!
-  follow-us: Volg ons
-  design: Ontwerp
-  development: Realisatie
+    english: jkl;
+    nederlands: adsf
