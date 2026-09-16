@@ -278,6 +278,8 @@ inclusieve-organisaties:
 
     Onze aanpak: zo licht als mogelijk, zo diepgaand als nodig.
 
+    Meer weten of een concrete situatie bespreken? Neem contact op met Olivier Sueur | 06 10 58 02 64 We denken graag mee – ook als nog niet helder is wat precies nodig is.
+
     Meer weten of een concrete situatie bespreken? Neem contact op met [Olivier Sueur](https://www.humanc.nl/team/olivier-sueur/) | [06 10 58 02 64](mailto:olivier@humanc.nl) We denken graag mee – ook als nog niet helder is wat precies nodig is.
 inclusieve-participatieprocessen:
   title: Inclusieve participatie
@@ -454,15 +456,15 @@ nav:
   lang_en: EN
   call_us: Bel ons
   email_us: Mail ons
-footer:
-  development: Realisatie
-  design: Ontwerp
-  follow-us: Volg ons
-  sign-up: Ik schrijf me in!
-  next-date: 'Eerstvolgende datum:'
-  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
 global:
   global:
-    site_title: jkl
-    english: jkl;
     nederlands: adsf
+    english: jkl;
+    site_title: jkl
+footer:
+  ctp-question: Doe je mee met onze Connect to Perform Spelavond?
+  next-date: 'Eerstvolgende datum:'
+  sign-up: Ik schrijf me in!
+  follow-us: Volg ons
+  design: Ontwerp
+  development: Realisatie
