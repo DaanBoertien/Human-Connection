@@ -263,32 +263,24 @@ ul.dropdown {
   color: var(--clr-darkblue);
 }
 
+// Collapsed mobile submenu. Sized with max-height instead of a fixed height
+// per menu, so an open submenu is always as tall as its own items. Adding or
+// removing a menu item can no longer clip the list.
 .submenu-mobile {
-  height: 0;
+  max-height: 0;
+  overflow: hidden;
   opacity: 0;
-  // pointer-events: none;
-  transition: all 0.2s ease-out;
+  transition: max-height 0.25s ease-out, opacity 0.2s ease-out;
 }
 
 .submenu-mobile a {
   pointer-events: none;
 }
 
-.submenu-mobile-toggle2.open .submenu-mobile {
-  height: 9em;
-  opacity: 1;
-}
-
-.submenu-mobile-toggle1.open .submenu-mobile,
-
-.submenu-mobile-toggle4.open .submenu-mobile {
-  height: 3.5em;
-  opacity: 1;
-}
-
-.submenu-mobile-toggle3.open .submenu-mobile {
-  min-height: 5em;
-  /* Changed from 3.5em to 7em to fit both Contact + Werken bij ons */
+// One rule for all four mobile submenus. The value is only a ceiling for the
+// animation, not the rendered height, so it needs no upkeep as menus change.
+.li-outer.open > .submenu-mobile {
+  max-height: 40em;
   opacity: 1;
 }
 
