@@ -11,10 +11,3 @@
 @import "helperclasses";
 @import "mediaqueries";
 
-{% if site.data.werken-bij-ons.vacature-open == false %}
-.submenu-mobile-toggle3.open .submenu-mobile {
-    height: 1.9em;
-}
-
-{% endif %}
-
